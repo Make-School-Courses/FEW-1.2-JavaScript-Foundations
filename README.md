@@ -1,1 +1,1 @@
-# FEW-1.2-Mastering-JavaScript-with-Games
+# FEW 1.2 Mastering JavaScript with Games
