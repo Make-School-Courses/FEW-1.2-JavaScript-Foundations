@@ -1,16 +1,4 @@
-# FEW 1.2 Foundation JavaScript
-
----
-Catalog Desc
-Prerequisites: FEW 1.1
-Projects: Clicker Game, Phaser Game, 
-
-
-Learn key concepts in JavaScript and gain a strong understanding of syntax and features. The course will cover foundational JavaScript, debugging JavaScript and working with various JavaScript Libraries to build applications and games. Classes and Object Oriented Programming (OOP) are introduced with a closer look at how OOP is uniquely implemented in JavaScript.   
-
-
-Tools: HTML, CSS, JavaScript
----
+# Title 
 
 ## Course Description
 
