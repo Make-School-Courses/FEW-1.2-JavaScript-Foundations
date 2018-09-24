@@ -1,0 +1,118 @@
+html {
+  height: 100%;
+}
+ 
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Courier;
+}
+ 
+.hidden {
+  display: none;
+}
+ 
+#home {
+  background-color: red;
+}
+ 
+#journey {
+  height: 100%;
+  background-color: #5F9FFF;
+}
+ 
+#event {
+  background-color: magenta;
+}
+ 
+#progress-area {
+  float: left;
+  position: relative;
+  width: 400px;
+  margin: 10px;
+}
+ 
+#trees {
+  width: 100%;
+  image-rendering: pixelated;
+}
+ 
+#caravan {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+}
+ 
+#stats-area {
+  background-color: white;
+  float: left;
+  height: 150px;
+  width: 156px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+ 
+ 
+ 
+.stat-value {
+  float: right;
+}
+ 
+#updates-area {
+  background-color: white;
+  float: left;
+  width: 350px;
+  margin: 10px;
+  height: 150px;
+  padding: 10px;
+  font-size: 12px;
+  overflow-y: scroll;
+}
+ 
+.update-positive {
+  color: #669966;
+}
+ 
+.update-negative {
+  color: red;
+}
+ 
+.update-neutral {
+  color: #90908F;
+}
+ 
+#shop {
+  float: left;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  height: 90px;
+  width: 350px;
+}
+ 
+.product {
+  float: left;
+  margin: 5px;
+  padding: 2px;
+  border: 1px solid black;
+  font-size: 12px;
+}
+ 
+#shop button {
+  clear: both;
+  float: left;
+  margin: 5px;
+}
+ 
+#attack {
+  float: left;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  height: 60px;
+  width: 150px;
+}

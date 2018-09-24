@@ -1,0 +1,157 @@
+body {
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: none;
+    font-family: Helvetica;
+}
+
+
+
+html, body {
+	background-color:#000000;
+	color:#FFF;
+	margin:0;
+}
+
+h1 {
+	text-align:center;
+	font-size: 18px;
+}
+
+#tetris {
+	width:310px;
+	height:460px;
+	padding:5px;
+	/* border: solid 1px red; */
+}
+
+#grid {
+	float:left;
+}
+
+#left_column {
+	/* border:solid 1px blue; */
+	float:right;
+	width:100px;
+}
+
+
+#grid table, #next table {
+	/* border-collapse: collapse;*/
+}
+#grid table {
+	
+}
+
+#next table {
+	width:100px; 	/* 5 x 20px */
+}
+
+#grid td, #next td {
+	width:16px;
+	height:16px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius:5px;
+}
+
+#next {
+	margin-bottom:1em;
+	float:right;
+}
+
+#stats {
+	margin-bottom:1em;
+}
+
+#stats div {
+	font-size:120%;
+	text-align:right;
+}
+
+#cmd {
+	font-size:120%;
+	text-align:right;
+}
+
+#cmd input {
+	margin-bottom:1em;
+}
+
+#info {
+	display:none;
+	font-size:80%;
+	text-align:right;
+}
+
+#info input {
+	text-align:center;
+}
+
+#src {
+	font-family:arial,helvetica;
+	font-size:80%;
+	color:#FFF;
+}
+
+#start {
+	width:95px;
+	height:45px;
+	background:#0FF;
+	margin-bottom:4px;
+	line-height: 45px;
+	text-align: center;
+}
+
+#stop {
+	width:95px;
+	height:45px;
+	background:#F0F;
+	line-height: 45px;
+	text-align: center;
+}
+
+#controls {
+	clear:both;
+	margin-top:4px;
+	float:left;
+}
+
+.tapme {
+	width:49px;
+	height:49px;
+	float:left;
+	margin-right:2px;
+}
+
+#controls>div {
+	-webkit-border-radius: 12px;
+	-webkit-box-shadow: inset 0 0 5px #000;
+	-moz-border-radius: 12px;
+	-moz-box-shadow: inset 0 0 5px #000;
+	text-align: center;
+	background-color:#DDD;
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+}
+
+#tap_left {
+	background-image:url(arrow_left.png);
+	
+}
+
+#tap_right {
+	background-image:url(arrow_right.png);
+}
+
+#tap_down {
+	background-image:url(arrow_down.png);
+}
+
+#tap_rotate {
+	background:#F0F;
+}
+
+
+
+
