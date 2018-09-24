@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    
+    <div id="game-board"></div>
+    
+    <script>
+      (() => {
+        class Block {
+          constructor() {
+            this.shapeArray 
+          }
+        }
+        
+        class GameBoard {
+          constructor() {
+            this.el = document.getElementById('game-board')
+            this.el.style.display = 'grid'
+            this.el.style.gridTemplateColumns = 'repeat(10, 1fr)'
+            this.el.style.justifyContent = 'center'
+            this.el.style.width = `${(20 + 1) * 10}px`
+            this.el.style.margin = 'auto'
+            this.board = []
+            this.rows = 18
+            this.cols = 10
+            this.setup();
+          }
+          
+          setup() {
+            let boardStr = ''
+            for(let row = 0; row < this.rows; row += 1) {
+              let rowArray = [];
+              let color = `hsl(${360 / this.rows * row}, 100%, 50%)`
+              for(let col = 0; col < this.cols; col += 1) {
+                let square = new Square(color)
+                this.el.append(square.el)
+                rowArray.push(square)
+              }
+              this.board.push(rowArray)
+            }
+          }
+        }
+        
+        class Square {
+          constructor(color) {
+            this.color = color
+            this.setup()
+          }
+          
+          setup() {
+            this.el = document.createElement('div')
+            this.el.style.backgroundColor = this.color
+            this.el.style.width = '20px'
+            this.el.style.height = '20px'
+            this.el.style.border = 'solid 1px #000'
+          }
+        }
+        
+        const gameBoard = new GameBoard()
+        
+      })()
+    </script>
+  </body>
+</html>
