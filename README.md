@@ -14,7 +14,7 @@ Tools: HTML, CSS, JavaScript
 
 ## Course Description
 
-Describe your course here. A short elevator pitch for the course. This will be listed as the course description in the course catalog.
+Deepen your understanding of the JavaScript language by writing games. 
 
 ## Course Specifics
 
@@ -28,7 +28,7 @@ Class Sessions:  14 classes, 7 labs
 
 ## Prerequisites:  
 
-MOB 1.1, MOB 1.2, MOB 1.3, MOB 1.4 <br>
+FEW 1.1 <br>
 
 ## Learning Objectives or Competencies (5-8)
 

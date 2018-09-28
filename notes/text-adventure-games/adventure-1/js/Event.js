@@ -9,6 +9,13 @@ OregonH.Event.eventTypes = [
     type: 'STAT-CHANGE',
     notification: 'negative',
     stat: 'crew',
+    value: -2,
+    text: 'Attacked by rabid wombats! Casualties: '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'negative',
+    stat: 'crew',
     value: -3,
     text: 'Food intoxication. Casualties: '
   },
@@ -46,6 +53,13 @@ OregonH.Event.eventTypes = [
     stat: 'food',
     value: 20,
     text: 'Found wild berries. Food added: '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'food',
+    value: 23,
+    text: 'Friendly unicorns bless the carvan. Food added: '
   },
   {
     type: 'STAT-CHANGE',

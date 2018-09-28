@@ -8,21 +8,27 @@ OregonH.UI = {};
 OregonH.UI.notify = function(message, type){
   document.getElementById('updates-area').innerHTML = '<div class="update-' + type + '">Day '+ Math.ceil(this.caravan.day) + ': ' + message+'</div>' + document.getElementById('updates-area').innerHTML;
 };
+
+
  
 // refresh visual caravan stats
 OregonH.UI.refreshStats = function() {
+  // Destructure some objects for easy access
+  const { day, distance, crew, oxen, food, money, firepower, weight, capacity } = this.caravan;
+  const {ceil, floor } = Math;
+
   // modify the dom
-  document.getElementById('stat-day').innerHTML = Math.ceil(this.caravan.day);
-  document.getElementById('stat-distance').innerHTML = Math.floor(this.caravan.distance);
-  document.getElementById('stat-crew').innerHTML = this.caravan.crew;
-  document.getElementById('stat-oxen').innerHTML = this.caravan.oxen;
-  document.getElementById('stat-food').innerHTML = Math.ceil(this.caravan.food);
-  document.getElementById('stat-money').innerHTML = this.caravan.money;
-  document.getElementById('stat-firepower').innerHTML = this.caravan.firepower;
-  document.getElementById('stat-weight').innerHTML = Math.ceil(this.caravan.weight) + '/' + this.caravan.capacity;
+  document.getElementById('stat-day').innerHTML = `${ceil(day)}` // Math.ceil(this.caravan.day);
+  document.getElementById('stat-distance').innerHTML = `${floor(distance)}`;
+  document.getElementById('stat-crew').innerHTML = `${crew}`;
+  document.getElementById('stat-oxen').innerHTML = `${oxen}`;
+  document.getElementById('stat-food').innerHTML = `${ceil(food)}`;
+  document.getElementById('stat-money').innerHTML = `${money}`;
+  document.getElementById('stat-firepower').innerHTML = `${firepower}`;
+  document.getElementById('stat-weight').innerHTML = `${ceil(weight)}/${capacity}`;
  
   // update caravan position
-  document.getElementById('caravan').style.left = (380 * this.caravan.distance/OregonH.FINAL_DISTANCE) + 'px';
+  document.getElementById('caravan').style.left = (380 * distance/OregonH.FINAL_DISTANCE) + 'px';
 };
 
 // show attack
