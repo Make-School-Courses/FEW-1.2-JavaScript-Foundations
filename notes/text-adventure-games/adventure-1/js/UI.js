@@ -15,7 +15,7 @@ OregonH.UI.notify = function(message, type){
 OregonH.UI.refreshStats = function() {
   // Destructure some objects for easy access
   const { day, distance, crew, oxen, food, money, firepower, weight, capacity } = this.caravan;
-  const {ceil, floor } = Math;
+  const { ceil, floor } = Math;
 
   // modify the dom
   document.getElementById('stat-day').innerHTML = `${ceil(day)}` // Math.ceil(this.caravan.day);

@@ -4,6 +4,18 @@ Classes -
 
 ## Oregon Trail
 
+- Section Objectives 
+  - Best Practices
+  - Examining an Existing Codebase 
+  - Making Classes 
+  - Using ES6 
+    - Template Strings
+    - ES6 Class Syntax
+    - Object Destructuring
+
+0. Industry Standards and Best Practice
+  - Airbnb style guide
+    - Apply this to the code 
 1. Build Oregon Trail 
   - In class 
     - Start building the game from the tutorial
@@ -17,7 +29,7 @@ Classes -
       - https://wesbos.com/template-strings-html/
     - Object deconstruction
   - After Class
-    - 
+    - Replace string concatenation with template strings
 3. Classes 
   - In Class 
     - ES Classes 
@@ -29,9 +41,22 @@ Classes -
 
 ## Text Adventure - Zork
 
+- Objectives 
+  - Extending Objects
+  - String Manipulation
+
 1. Building a Text adventure
   - In Class 
     - What is a Text adventure
+    
+## Tetris 
+
+- Objectives 
+  - Manipulating the DOM
+  - 
+  
+1. Touring the starter project
+
 
 FEW 1.2
 

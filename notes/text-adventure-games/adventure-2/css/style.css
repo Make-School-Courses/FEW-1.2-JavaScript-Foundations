@@ -1,0 +1,14 @@
+.screen-container {
+  border: 1px solid;
+  padding: 1em;
+  margin: 1em;
+}
+
+.keyboard, .ouput {
+  border: 1px solid;
+  padding: 1em;
+}
+
+
+
+
