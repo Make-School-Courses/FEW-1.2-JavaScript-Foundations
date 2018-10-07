@@ -1,0 +1,22 @@
+{
+    "name": "Phaser PWA",
+    "short_name": "Phaser",
+    "description": "Phaser template Web App.",
+    "start_url": "/",
+    "background_color": "#000000",
+    "theme_color": "#0f4a73",
+    "display": "standalone",
+    "icons": [{
+      "src": "img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },{
+      "src": "img/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },{
+      "src": "img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }]
+  }

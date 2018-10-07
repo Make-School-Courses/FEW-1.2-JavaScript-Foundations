@@ -1,4 +1,4 @@
- var config = {
+ const config = {
    type: Phaser.AUTO,
    width: 800,
    height: 600,
@@ -18,14 +18,20 @@
    }
  };
 
- var game = new Phaser.Game(config);
- var platforms;
- var player;
- var cursors;
- var stars;
- var score = 0;
- var scoreText;
- var bombs;
+// SETUP SKY
+config.prototype = function setupSky() {
+  console.log(this)
+  this.add.image(400, 300, 'sky');
+}
+
+ const game = new Phaser.Game(config);
+ let platforms;
+ let player;
+ let cursors;
+ let stars;
+ let score = 0;
+ let scoreText;
+ let bombs;
 
  function preload() {
    this.load.image('sky', 'assets/sky.png');
@@ -47,7 +53,8 @@
    // function createPlatforms() {
 
    // SKY
-   this.add.image(400, 300, 'sky');
+   console.log(this)
+   setupSky();
 
    // PLATFORMS
    platforms = this.physics.add.staticGroup();
