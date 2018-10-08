@@ -24,8 +24,18 @@ OregonH.Caravan = {};
 // Caravan
 
 class Caravan {
-  constructor() {
-    
+  constructor(game) {
+    this.game = game;
+    // Initialize Caravan
+    this.init({
+      day: 0,
+      distance: 0,
+      crew: 30,
+      food: 80,
+      oxen: 2,
+      money: 300,
+      firepower: 2
+    });
   }
 
   init({ day, distance, crew, food, oxen, money, firepower }) {
