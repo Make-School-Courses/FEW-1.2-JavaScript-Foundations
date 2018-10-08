@@ -1,59 +1,10 @@
 <!-- 
 
-# Oregon Trail 
-
-https://gamedevacademy.org/js13kgames-tutorial/
+  https://gamedevacademy.org/js13kgames-tutorial/
   
-Game from the tutorial based on Oregon Trail
+  Game from the tutorial based on Oregon Trail
 
-## Challenges 
-
-1) Get the tutorial working 
-2) Play the game
-3) Check for errors.
-  - Check for any errors you might find
-  - Play test and make sure all of the features in the game are working. 
-4) Update the code to more modern and easier to understand syntax
-  - Replace var with let, and const
-  - Object deconstruction
-5) OOP - Define class Objects for Caravan, Event, Game, and UI
-  
-  
-Lessons Ideas 
-
-Repls illustrate concepts used in tutorial projects and challenges. 
-
-- Arrays 
-  - Defining an array 
-  - Accessing elements from an array 
-  - Adding elements to an array
-  - Removing items from an array
-  - finding an element in an array 
-- Objects 
-  - Defining an Object
-  - Accessing Keys and values 
-  - adding keys and values 
-  - removing keys and values 
-- Loops 
-  - Counting forwards 
-  - Counting backwards 
-  - starting at a value
-  - Looping through all of the items in an array 
-  - Looping through all keys in an object
-- OOP - Class syntax and concepts
-  - Defining a class
-  - Defining properties 
-  - Defining methods 
-  - Making an Instance of a class
-  - Calling methods on an instance 
-  - Accessing properties of an instance 
-  - Getters and setters 
-  - Static properties 
-- 
-
-
-    -->
-    
+-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -92,17 +43,46 @@ Repls illustrate concepts used in tutorial projects and challenges.
       </div>
       
       <div id="progress-area">
-        <img id="caravan" src="images/caravan.png" alt="Caravan Image">
-        <img id="trees" src="images/trees.png" alt="Trees Image">
+        <img id="caravan" src="images/caravan.png" />
+        <img id="trees" src="images/trees.png" />
       </div>
     </div>
  
     <div id="event"></div>
     
+    <!-- 
+
+Challenges 
+
+1) Get the tutorial working 
+2) Play the game
+3) Check for errors.
+  - Check for any errors you might find
+  - Play test and make sure all of the features in the game are working. 
+4) Update the code to more modern and easier to understand syntax
+  - Replace var with let, and const
+  - Object deconstruction
+5) OOP - Define class Objects for Caravan, Event, Game, and UI
+  
+  
+
+    -->
+    
     <script src="js/Event.js"></script>
     <script src="js/Caravan.js"></script>
     <script src="js/UI.js"></script>
     <script src="js/Game.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+      var test = {};
+      test.foo = 'bar';
+      
+      test.obj = {};
+      test.obj.hello = function() {
+        console.log(`testing foo ${this.foo}`);
+      }
+      
+      test.obj.hello();
+      
+    </script>
   </body>
 </html>
