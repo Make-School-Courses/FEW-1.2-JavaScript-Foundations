@@ -68,7 +68,7 @@ class Caravan {
     }
 
     if (droppedGuns) {
-      this.ui.notify('Left ' + droppedGuns + ' guns behind', 'negative');
+      this.game.ui.notify('Left ' + droppedGuns + ' guns behind', 'negative');
     }
 
     while (this.food && this.capacity <= this.weight) {
@@ -78,7 +78,7 @@ class Caravan {
     }
 
     if (droppedFood) {
-      this.ui.notify('Left ' + droppedFood + ' food provisions behind', 'negative');
+      this.game.ui.notify('Left ' + droppedFood + ' food provisions behind', 'negative');
     }
   }
 

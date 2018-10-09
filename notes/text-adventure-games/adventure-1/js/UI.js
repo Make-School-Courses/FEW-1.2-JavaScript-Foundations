@@ -9,6 +9,12 @@ var OregonH = OregonH || {};
 class UI {
   constructor(game) {
     this.game = game;
+    this.shopDiv = document.getElementById('shop');
+    this.prodsDiv = document.getElementById('prods');
+    
+    this.shopDiv.addEventListener('click', (e) => {
+      this.shopDivHandler(e);
+    });
   }
   
   // show a notification in the message area
@@ -63,7 +69,7 @@ class UI {
   
   // fight
   fight () {
-    console.log('Fight!')
+    console.log('Fight!');
 
     var firepower = this.firepower;
     var gold = this.gold;
@@ -79,7 +85,7 @@ class UI {
       this.notify('Found $' + gold, 'gold');
     }
     else {
-      this.caravan.crew = 0;
+      this.game.caravan.crew = 0;
       this.notify('Everybody died in the fight', 'negative');
     }
 
@@ -99,80 +105,83 @@ class UI {
 
     // check there are survivors
     if(damage < this.caravan.crew) {
-      this.caravan.crew -= damage;
+      this.game.caravan.crew -= damage;
       this.notify(damage + ' people were killed running', 'negative');
     }
     else {
-      this.caravan.crew = 0;
+      this.gamge.caravan.crew = 0;
       this.notify('Everybody died running away', 'negative');
     }
 
     // remove event listener
     // document.getElementById('runaway').removeEventListener('click', this.runaway);
 
-    //resume journey
+    // resume journey
     document.getElementById('attack').classList.add('hidden');
     this.game.resumeJourney();
   }
   
-  //show shop
+  // show shop
   showShop (products) {
+    console.log('Show Shop!');
+    console.log(products)
+    
+    // show shop area
+    this.shopDiv.classList.remove('hidden');
+    
+    // clear existing content
+    this.prodsDiv.innerHTML = '';
 
-    //get shop area
-    var shopDiv = document.getElementById('shop');
-    shopDiv.classList.remove('hidden');
-
-    //init the shop just once
-    if(!this.shopInitiated) {
-
-      //event delegation
-      // FIXME: this doesn't reference this Object in listener!
-      // FIXED: Use ES6 function
-      shopDiv.addEventListener('click', (e) => {
-        //what was clicked
-        var target = e.target || e.src;
-
-        //exit button
-        if(target.tagName == 'BUTTON') {
-          //resume journey
-          shopDiv.classList.add('hidden');
-          this.game.resumeJourney();
-        }
-        else if(target.tagName == 'DIV' && target.className.match(/product/)) {
-
-          OregonH.UI.buyProduct({
-            item: target.getAttribute('data-item'),
-            qty: target.getAttribute('data-qty'),
-            price: target.getAttribute('data-price')
-          });
-
-        }
-      });
-
-      this.shopInitiated = true;
+    //show products
+    let product;
+    for(let i = 0; i < products.length; i++) {
+      product = products[i];
+      this.prodsDiv.innerHTML += `<div class="product" data-qty="${product.qty}" data-item="${product.item}" data-price="${product.price}">${product.qty} ${product.item} - $${product.price}</div>`;
     }
   }
-    
-    //buy product
-    buyProduct (product) {
-      //check we can afford it
-      if(product.price > OregonH.UI.caravan.money) {
-        OregonH.UI.notify('Not enough money', 'negative');
-        return false;
-      }
+  
+  shopDivHandler (e) {
+    // what was clicked
+    var target = e.target || e.src;
 
-      OregonH.UI.caravan.money -= product.price;
+    // exit button
+    if (target.tagName == 'BUTTON') {
+      //resume journey
+      this.shopDiv.classList.add('hidden');
+      this.game.resumeJourney();
+    } else if (target.tagName == 'DIV' && target.className.match(/product/)) {
 
-      OregonH.UI.caravan[product.item] += +product.qty;
+      this.buyProduct({
+        item: target.getAttribute('data-item'),
+        qty: target.getAttribute('data-qty'),
+        price: target.getAttribute('data-price')
+      });
 
-      OregonH.UI.notify('Bought ' + product.qty + ' x ' + product.item, 'positive');
-
-      //update weight
-      OregonH.UI.caravan.updateWeight();
-
-      //update visuals
-      OregonH.UI.refreshStats();
     }
+  }
+  
+  // ----------------------------------
+    
+  //buy product
+  buyProduct (product) {
+    //check we can afford it
+    if(product.price > OregonH.UI.caravan.money) {
+      this.game.ui.notify('Not enough money', 'negative');
+      return false;
+    }
+
+    this.game.caravan.money -= product.price;
+
+    this.game.caravan[product.item] += +product.qty;
+
+    this.notify('Bought ' + product.qty + ' x ' + product.item, 'positive');
+
+    //update weight
+    this.game.caravan.updateWeight();
+
+    //update visuals
+    this.refreshStats();
+  }
 
 }
 

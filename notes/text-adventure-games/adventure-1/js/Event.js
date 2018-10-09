@@ -209,18 +209,19 @@ class EventManager {
   }
  
   shopEvent (eventData) {
-    //number of products for sale
-    var numProds = Math.ceil(Math.random() * 4);
+    // number of products for sale
+    // FIXME: Not displaying products in shop
+    const numProds = Math.ceil(Math.random() * 4);
 
-    //product list
-    var products = [];
-    var j, priceFactor;
+    // product list
+    const products = [];
+    let j, priceFactor;
 
-    for(var i = 0; i < numProds; i++) {
-      //random product
+    for(let i = 0; i < numProds; i++) {
+      // random product
       j = Math.floor(Math.random() * eventData.products.length);
 
-      //multiply price by random factor +-30%
+      // multiply price by random factor +-30%
       priceFactor = 0.7 + 0.6 * Math.random();
 
       products.push({
