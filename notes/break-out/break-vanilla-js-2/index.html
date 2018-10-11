@@ -39,17 +39,28 @@ Stretch Goals
   
 1) Change the colors of the bricks, ball, and paddle
 2) Change the background
-3) Create a game over message that appears in game, that is replace
+3) Start with one row of bricks, then add another row as each level
+is completed.
+4) Make each row of bricks a different color. 
+5) Create a game over message that appears in game, that is replace
 the alert message with something that displays in canvas. 
-4) Start with one row of bricks, then add another row as each level
-is completed. 
-5) Make each row of bricks a different color. 
+6) Move the ball on a vector. There are several ways to handle this. 
+  - Give the ball a direction or angle in degrees or radians
+  - Give the ball a speed
+  - calculate the x and y using sine and cosine of the angle/direction https://stackoverflow.com/questions/40472364/moving-object-from-a-to-b-smoothly-across-canvas
+  - As the ball bounces off another object the angle needs to be recalculated. https://www.oreilly.com/library/view/html5-canvas/9781449308032/ch05s02.html
+7) Improve the collision detection.
+  - There are two routes you can choose
+    - Easier: Look up rectangle rectangle collision
+    - Harder: Look up circle rectangle collision
+8) 
 
   -->
 
   <canvas id="myCanvas" width="480" height="320"></canvas>
 
   <script>
+    
     // JavaScript code goes here
     document.addEventListener("keydown", keyDownHandler, false);
     document.addEventListener("keyup", keyUpHandler, false);
@@ -71,11 +82,11 @@ is completed.
     // Ball
 
     class Ball {
-      constructor(radius) {
+      constructor(radius, color = "#0095DD") {
         this.radius = radius;
-        this.color = "#0095DD";
+        this.color = color;
       }
-
+      
       render(ctx) {
         ctx.beginPath();
         ctx.arc(x, y, this.radius, 0, Math.PI * 2);
@@ -84,9 +95,42 @@ is completed.
         ctx.closePath();
       }
     }
+    
+    class Ball2 {
+      constructor(radius, x = 0, y = 0, color = "#0095DD") {
+        this.radius = radius;
+        this.color = color;
+        this.x = x;
+        this.y = y;
+        this.speed = 1;
+        this.direction = Math.random() * Math.PI * 2;
+      }
+      
+      move() {
+        this.x += Math.cos(this.direction) * this.speed;
+        this.y += Math.sin(this.direction) * this.speed;
+        if (this.x > 480 || this.x < 0) {
+            this.direction = Math.PI - this.direction;
+        } else if (this.y > 320 || this.y < 0) {
+          this.direction = Math.PI * 2 - this.direction;
+        }
+      }
 
+      render(ctx) {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+        ctx.closePath();
+      }
+    }
+
+    
+    // ----------------------------------------------
+    
     var ballRadius = 10;
     const ball = new Ball(ballRadius);
+    const redBall = new Ball2(ballRadius, 100, 300, 'red');
 
     var paddleHeight = 10;
     var paddleWidth = 75;
@@ -130,9 +174,18 @@ is completed.
       }
     }
 
+    
+    
+    // Draw ball 
+    
     function drawBall() {
       ball.render(ctx);
+      redBall.move()
+      redBall.render(ctx);
     }
+    
+    
+    
 
     function drawPaddle() {
       ctx.beginPath();
@@ -200,7 +253,8 @@ is completed.
       drawScore();
       drawLives();
       collisionDetection();
-
+      
+      // Bounce ball off edges 
       if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
         dx = -dx;
       }
@@ -227,8 +281,10 @@ is completed.
         }
       }
 
+      // Move ball 
       x += dx;
       y += dy;
+      
 
       if (rightPressed && paddleX < canvas.width - paddleWidth) {
         paddleX += 7;
