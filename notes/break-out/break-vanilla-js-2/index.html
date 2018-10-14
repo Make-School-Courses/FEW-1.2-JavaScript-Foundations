@@ -70,6 +70,7 @@ the alert message with something that displays in canvas.
     document.addEventListener("keyup", keyUpHandler, false);
     document.addEventListener("mousemove", mouseMoveHandler, false);
 
+    
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
 
@@ -129,7 +130,6 @@ the alert message with something that displays in canvas.
       }
     }
 
-    
     // ----------------------------------------------
     
     var ballRadius = 10;
@@ -142,10 +142,6 @@ the alert message with something that displays in canvas.
     var rightPressed = false;
     var leftPressed = false;
 
-    
-    
-    
-    
     // ================================================
     // Canvas Button 
     
@@ -196,18 +192,51 @@ the alert message with something that displays in canvas.
     // ==============================================
     
     
+    class Iterator {
+      
+    }
+    
     class Particle {
       constructor(x, y, size) {
         this.x = x;
         this.y = y;
         this.size = size;
+        this.radius = size;
+        this.t = size;
+        this.speed = Math.random() * 10 - 5;
+        this.angle = Math.random() * Math.PI * 2;
+      }
+      
+      move(ctx) {
+        const w = ctx.canvas.clientWidth;
+        const h = ctx.canvas.clientHeight;
+        
+        this.x += Math.cos(this.angle) * this.speed;
+        this.y += Math.sin(this.angle) * this.speed;
+        
+        if (this.x < 0) {
+            this.x += w;
+        } else if (this.x > w) {
+          this.x -= w;          
+        }
+        
+        if (this.y < 0) {
+          this.y += h
+        } else if (this.y > h) {
+          this.y -= h
+        } 
+      }
+      
+      scale() {
+        this.t += this.speed * 0.01;
+        this.size = Math.abs(Math.sin(this.t) * this.radius);
       }
       
       render(ctx) {
-        ctx.fillStyle = '#ff00ff66';
+        ctx.fillStyle = '#ff00ff44';
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
-        ctx.stroke();
+        ctx.fill();
       }
     }
     
@@ -216,14 +245,49 @@ the alert message with something that displays in canvas.
         this.particles = [];
     
         for (let n = 0; n < count; n += 1) {
-          this.particles.push(new Particle(Math.random() * 400, Math.random() * 400, 5));
+          const x = Math.random() * 400;
+          const y = Math.random() * 400;
+          const size = Math.random() * 40
+          this.particles.push(new Particle(x, y, size));
+        }
+      }
+      
+      particleIterator() {
+        let index = 0;
+        let result;
+        return { 
+          next: () => {
+            if (index < this.particles.length - 1) {
+              result = { value: this.particles[index], done: false };
+              index += 1;
+            } else if (index === this.particles.length - 1) {
+              result = { value: this.particles[index], done: true };
+            } else {
+              result = { done: true }
+            }
+            
+            return result;
+          }
         }
       }
       
       render(ctx) {
-        for (let p in this.particles) {
-          this.particles[p].render(ctx);
+        const it = this.particleIterator();
+        let result = it.next();
+        while(!result.done) {
+          const particle = result.value;
+          // particle.move(ctx);
+          particle.scale();
+          particle.render(ctx);
+          result = it.next();
         }
+        
+//        for (let p in this.particles) {
+//          const particle = this.particles[p];
+//          // particle.move(ctx);
+//          particle.scale();
+//          particle.render(ctx);
+//        }
       }
     }
     
@@ -239,6 +303,7 @@ the alert message with something that displays in canvas.
         this.x = x;
         this.y = y;
         this.status = 1;
+        this.color = color;
       }
 
       render(ctx) {
@@ -246,7 +311,7 @@ the alert message with something that displays in canvas.
         ctx.rect(this.x, this.y, brickWidth, brickHeight);
         ctx.fillStyle = this.color;
         ctx.fill();
-        ctx.closePath();
+//        ctx.closePath();
       }
     }
 
@@ -286,7 +351,7 @@ the alert message with something that displays in canvas.
       ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
       ctx.fillStyle = "#0095DD";
       ctx.fill();
-      ctx.closePath();
+//      ctx.closePath();
     }
 
     function drawBricks() {
@@ -338,14 +403,14 @@ the alert message with something that displays in canvas.
 
     function draw() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      swarm.render(ctx);
       drawBricks();
       drawBall();
       drawPaddle();
       drawScore();
       drawLives();
       collisionDetection();
-      
-      swarm.render(ctx);
       
       // Bounce ball off edges 
       if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
