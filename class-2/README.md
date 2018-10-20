@@ -60,9 +60,9 @@ To determine the colors you'll need to have a plan. First you'll need to decide 
 - [RGBA Color](https://www.w3schools.com/css/css3_colors.asp):
   - `'rgba(255, 0, 0, 0.5)'`, `'rgba(123, 87, 255, 0.76)'`
 - [HSL Color](https://www.w3schools.com/colors/colors_hsl.asp):
-  - `'hsl(205, 100%, 50%)', 'hsl(115, 59%, 50%)'`
+  - `'hsl(205, 100%, 50%)'`, `'hsl(115, 59%, 50%)'`
 - [HSLA Color](https://www.w3schools.com/css/css3_colors.asp):
-  - `'hsla(0, 100%, 30%, 0.3)', 'hsla(115, 59%, 50%, 0.83)'`
+  - `'hsla(0, 100%, 30%, 0.3)'`, `'hsla(115, 59%, 50%, 0.83)'`
 
 **Tip!** HSL colors separate the Hue from the other color components. Because of this use HSL can easily create rainbows, that is a sequence of colors that change hue, or tints and shades of a color, colors that get lighter or darker but stay in the same hue. Using HSL it's easier to programatically transform one color into another or create a sequence.  
 
