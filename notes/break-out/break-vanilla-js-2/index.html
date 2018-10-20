@@ -158,6 +158,9 @@ the alert message with something that displays in canvas.
         
         this.canvas.addEventListener('click', (e) => {
           this.handleClick(e);
+          if (this.onclick) {
+            this.onclick();
+          }
         });
       }
       
@@ -188,13 +191,11 @@ the alert message with something that displays in canvas.
     }
     
     const button = new Button(canvas, 200, 220, 100, 40, 'Hello');
+    button.onclick = function() {
+      console.log('whoa...')
+    }
     
     // ==============================================
-    
-    
-    class Iterator {
-      
-    }
     
     class Particle {
       constructor(x, y, size) {
@@ -241,14 +242,14 @@ the alert message with something that displays in canvas.
     }
     
     class ParticleSwarm {
-      constructor(count = 100) {
+      constructor(count = 10, x = 240, y = 160, size = 240) {
         this.particles = [];
     
         for (let n = 0; n < count; n += 1) {
-          const x = Math.random() * 400;
-          const y = Math.random() * 400;
-          const size = Math.random() * 40
-          this.particles.push(new Particle(x, y, size));
+          const xpos = x // Math.random() * 400;
+          const ypos = y // Math.random() * 400;
+          const radius = Math.random() * size
+          this.particles.push(new Particle(xpos, ypos, radius));
         }
       }
       
@@ -282,18 +283,16 @@ the alert message with something that displays in canvas.
           result = it.next();
         }
         
-//        for (let p in this.particles) {
-//          const particle = this.particles[p];
-//          // particle.move(ctx);
-//          particle.scale();
-//          particle.render(ctx);
-//        }
+        //        for (let p in this.particles) {
+        //          const particle = this.particles[p];
+        //          // particle.move(ctx);
+        //          particle.scale();
+        //          particle.render(ctx);
+        //        }
       }
     }
     
     let swarm = new ParticleSwarm()
-    
-    
 
     // ----------------------------------------------
     // Brick
@@ -311,7 +310,7 @@ the alert message with something that displays in canvas.
         ctx.rect(this.x, this.y, brickWidth, brickHeight);
         ctx.fillStyle = this.color;
         ctx.fill();
-//        ctx.closePath();
+        // ctx.closePath();
       }
     }
 
@@ -330,8 +329,6 @@ the alert message with something that displays in canvas.
         bricks[c][r] = new Brick();
       }
     }
-
-    
     
     // Draw ball 
     
@@ -342,16 +339,12 @@ the alert message with something that displays in canvas.
       button.render(ctx);
     }
     
-    
-    
-    
-
     function drawPaddle() {
       ctx.beginPath();
       ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
       ctx.fillStyle = "#0095DD";
       ctx.fill();
-//      ctx.closePath();
+      // ctx.closePath();
     }
 
     function drawBricks() {

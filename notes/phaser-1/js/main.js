@@ -14,24 +14,23 @@
    scene: {
      preload: preload,
      create: create,
-     update: update
+     update: update,
+     setupSky: setupSky
    }
  };
 
 // SETUP SKY
-config.prototype = function setupSky() {
-  console.log(this)
-  this.add.image(400, 300, 'sky');
-}
 
- const game = new Phaser.Game(config);
- let platforms;
- let player;
- let cursors;
- let stars;
- let score = 0;
- let scoreText;
- let bombs;
+
+const game = new Phaser.Game(config);
+
+let platforms;
+let player;
+let cursors;
+let stars;
+let score = 0;
+let scoreText;
+let bombs;
 
  function preload() {
    this.load.image('sky', 'assets/sky.png');
@@ -46,6 +45,10 @@ config.prototype = function setupSky() {
    );
  }
 
+function setupSky() {
+  this.add.image(400, 300, 'sky');
+}
+
  function create() {
    //   createPlatforms();
    // }
@@ -53,8 +56,8 @@ config.prototype = function setupSky() {
    // function createPlatforms() {
 
    // SKY
-   console.log(this)
-   setupSky();
+   // console.log(this)
+   // this.setupSky();
 
    // PLATFORMS
    platforms = this.physics.add.staticGroup();
