@@ -33,10 +33,10 @@ Feedback from extensive user testing has revealed that people would find the gam
 The new colors are good but someone had the brilliant idea, and it might really be brilliant, to make make the bricks alternate in color. 
 
 <figure>
-    <img src='images/Break-Out-Bricks.png' />
-    <figcaption> 
-      Bricks Default Color 
-    </figcaption>
+  <figcaption> 
+    Bricks Default Color 
+  </figcaption>
+  <img src='images/Break-Out-Bricks.png' />
 </figure> 
 
 To do this you will need to use some conditional logic within the function that draws the bricks. The `drawBricks()` function uses two loops to draw bricks along columns and rows. 
@@ -126,23 +126,23 @@ You're doing well. So well you've been assigned to the _experimental squad_. You
   3. Make each row use different sized bricks
   
 <figure>
-  <img src='images/Break-Out-Bricks-sizes.png' />
   <figcaption> 
     Stretch 1.1: Bricks resized
   </figcaption>
+  <img src='images/Break-Out-Bricks-sizes.png' />
 </figure>
 
 <figure>
+  <figcaption> 
+    Stretch 1.2: Bricks staggered
+  </figcaption>
   <img src='images/Break-Out-Bricks-sizes-2.png' />
-  <figcaption> 
-    Stretch 1.2: Bricks staggered
-  </figcaption>
 </figure>
 
 <figure>
-  <img src='images/Break-Out-Bricks-sizes-3.png' />
   <figcaption> 
     Stretch 1.2: Bricks staggered
   </figcaption>
+  <img src='images/Break-Out-Bricks-sizes-3.png' />
 </figure>
 
