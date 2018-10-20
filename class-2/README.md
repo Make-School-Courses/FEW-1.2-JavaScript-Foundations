@@ -23,7 +23,7 @@ The game is going over great with investors. The UI/UX teams have been working f
 
 Feedback from extensive user testing has revealed that people would find the game more interesting and engaging if there were more colors. You have to admit they may have a point, right?
 
-- Challenge 1
+- **Challenge 1**
   - Change the colors. 
     - The colors appear as strings in the drawBall(), drawPaddle(), and drawBricks() functions. 
     - Find these, and choose your own colors. 
@@ -32,79 +32,117 @@ Feedback from extensive user testing has revealed that people would find the gam
 
 The new colors are good but someone had the brilliant idea, and it might really be brilliant, to make make the bricks alternate in color. 
 
+<figure>
+    <img src='images/Break-Out-Bricks.png' />
+    <figcaption> 
+      Bricks Default Color 
+    </figcaption>
+</figure> 
+
 To do this you will need to use some conditional logic within the function that draws the bricks. The `drawBricks()` function uses two loops to draw bricks along columns and rows. 
 
-There are a couple variables here that could be useful you in your question for colors!
+There are a couple variables here that could be useful you in your quest for colors!
 
 `c` is the column number. It's used to set the x or horizontal position of a brick. This variable counts from 0 to `brickColumnCount`. 
 
 `r` is the row number. It's used to set the y or vertical position of the brick. This variable counts from 0 to `brickRowCount`. 
 
-To determine the colors you'll need to have a plan. First you'll need to decide on the colors you want to use. The colors are stored as strings but the value can be any color that you can use with CSS. Here are a few options: 
+To determine the colors you'll need to have a plan. First you'll need to decide on the colors you want to use. The colors are stored as strings but the value can be any color that you could use with CSS. Here are a few options: 
 
-Color Types: 
+**Color Types:**
 
-- Color Word: 
-  - 'red', 'green', 'brown', 'orange', 'cadetblue'
-  - https://www.w3schools.com/tags/ref_colornames.asp
-- Hex color: 
-  - '#ff0000', '#ff00ff', '#ddd', '#12ddaa77'
-  - https://www.w3schools.com/colors/colors_hexadecimal.asp
-- RGB Color
-  - 'rgb(255, 0, 0)', 'rgb(123, 87, 255)'
-  - https://www.w3schools.com/colors/colors_rgb.asp
-  - 'rgba(255, 0, 0, 0.5)', 'rgba(123, 87, 255, 0.76)'
-  - https://www.w3schools.com/css/css3_colors.asp
-- HSL Colors
-  - 'hsl(205, 100%, 50%)', 'hsl(115, 59%, 50%)'
-  - https://www.w3schools.com/colors/colors_hsl.asp
-  - 'hsla(0, 100%, 30%, 0.3)', 'hsla(115, 59%, 50%, 0.83)'
-  - https://www.w3schools.com/css/css3_colors.asp
+- [Named Color](https://www.w3schools.com/tags/ref_colornames.asp): 
+  - `'red'`, `'green'`, `'brown'`, `'orange'`, `'cadetblue'`
+- [Hex Color](https://www.w3schools.com/colors/colors_hexadecimal.asp): 
+  - `'#ff0000'`, `'#ff00ff'`, `'#ddd'`, `'#12ddaa77'`
+- [RGB Color](https://www.w3schools.com/colors/colors_rgb.asp):
+  - `'rgb(255, 0, 0)'`, `'rgb(123, 87, 255)'`
+- [RGBA Color](https://www.w3schools.com/css/css3_colors.asp):
+  - `'rgba(255, 0, 0, 0.5)'`, `'rgba(123, 87, 255, 0.76)'`
+- [HSL Color](https://www.w3schools.com/colors/colors_hsl.asp):
+  - `'hsl(205, 100%, 50%)', 'hsl(115, 59%, 50%)'`
+- [HSLA Color](https://www.w3schools.com/css/css3_colors.asp):
+  - `'hsla(0, 100%, 30%, 0.3)', 'hsla(115, 59%, 50%, 0.83)'`
 
-Tip! HSL colors separate the Hue from the other color components. Because of this use HSL you can easily create rainbows, that is a sequence of colors that change hue, or tints and shades, colors that get lighter or darker but stay in the same hue. 
+**Tip!** HSL colors separate the Hue from the other color components. Because of this use HSL can easily create rainbows, that is a sequence of colors that change hue, or tints and shades of a color, colors that get lighter or darker but stay in the same hue. Using HSL it's easier to programatically transform one color into another or create a sequence.  
 
-Strategies
+Hue has a range of 0 to 360. Think of color as a circle and hue moves around the circle starting with red, moving through all of the colors of the rainbow and ending on red. 
+
+**Strategies**
 
 Since the color values used are strings you can generate a string with variables. 
 
-`hsl(${hue}, 100%, 50%)`
+```JavaScript
+for (let hue = 0; hue < 360; hue += 20) {
+  const hslStr = `hsl(${hue}, 100%, 50%)`;
+}
+```
 
-You could also store a list of colors in an array. 
+You could also store a list of colors in an array. This would be good if you decide on the colors you want to use in advance. 
 
 `['red', 'green', 'blue']` or `['#f0f', '#ff0', '#0ff']`
 
-- Challenge 2 
+- **Challenge 2**
   - Make the bricks different colors
-    - Make each row of bricks a different
-    - Make each column s different color
-    - Make each brick a different random color
-    - Make the bricks alternate in color
+    1. Make each row of bricks a different
+    2. Make each column s different color
+    3. Make the bricks alternate in color
+    4. Make each brick a different random color
     
     
 <figure>
-    <img src='Break-Bricks-Colors.png' />
-    <figcaption> Abb.1: <a href= "http://r-spatial.org//2016/11/29/openeo.html">http://r-spatial.org//2016/11/29/openeo.html </a> 
+    <img src='images/Break-Out-Bricks-Colors-Rows.png' />
+    <figcaption> 
+      Challenge 1.1: Bricks colored by row 
     </figcaption>
 </figure>
 
+<figure>
+    <img src='images/Break-Out-Bricks-Colors-Columns.png' />
+    <figcaption> 
+      Challenge 1.2: Bricks colored by column
+    </figcaption>
+</figure>
 
-![Break-Bricks-Colors.png](Break-Bricks-Colors.png)
+<figure>
+    <img src='images/Break-Out-Bricks-Colors-Alternate.png' />
+    <figcaption> 
+      Challenge 1.3: Bricks Alternate color
+    </figcaption>
+</figure>
 
+<figure>
+    <img src='images/Break-Out-Bricks-Random.png' />
+    <figcaption> 
+      Challenge 1.4: Bricks random colors
+    </figcaption>
+</figure>
 
-![Break-Bricks-Colors-Alternate.png](Break-Bricks-Colors-Alternate.png)
-![Break-Bricks-Colors-Columns.png](Break-Bricks-Colors-Columns.png)
-![Break-Bricks-Colors-Rows.png](Break-Bricks-Colors-Rows.png)
+You're doing well. So well you've been assigned to the _experimental squad_. You've been given the go ahead to implement new and experimental features. These are are dangerous and often have deeper implicatoins that leave regular people scratching their heads asking "but, why would you want to do that?"
 
-You're doing well so well you've been assigned to the experimental squad. You've been given the go ahead to implement experimental features. 
-
-- Stretch Challenges 
-  - Make the bricks different sizes
-  - Stagger the rows so that the first row is a little further to the left and the next row is a little further to the right. 
-  - Make each row use different sized bricks
+- **Stretch Challenges**
+  1. Make the bricks different sizes
+  2. Stagger the rows so that the first row is a little further to the left and the next row is a little further to the right. 
+  3. Make each row use different sized bricks
   
-![Break-Out-Bricks-sizes.png](Break-Out-Bricks-sizes.png)
-![Break-Out-Bricks-sizes-2.png](Break-Out-Bricks-sizes-2.png)
-![Break-Out-Bricks-sizes-3.png](Break-Out-Bricks-sizes-3.png)
+<figure>
+  <img src='images/Break-Out-Bricks-sizes.png' />
+  <figcaption> 
+    Stretch 1.1: Bricks resized
+  </figcaption>
+</figure>
 
+<figure>
+  <img src='images/Break-Out-Bricks-sizes-2.png' />
+  <figcaption> 
+    Stretch 1.2: Bricks staggered
+  </figcaption>
+</figure>
 
+<figure>
+  <img src='images/Break-Out-Bricks-sizes-3.png' />
+  <figcaption> 
+    Stretch 1.2: Bricks staggered
+  </figcaption>
+</figure>
 
