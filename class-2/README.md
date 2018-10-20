@@ -91,31 +91,31 @@ You could also store a list of colors in an array. This would be good if you dec
     
     
 <figure>
-    <img src='images/Break-Out-Bricks-Colors-Rows.png' />
-    <figcaption> 
-      Challenge 1.1: Bricks colored by row 
-    </figcaption>
+  <figcaption> 
+    Challenge 1.1: Bricks colored by row 
+  </figcaption>
+  <img src='images/Break-Out-Bricks-Colors-Rows.png' />
 </figure>
 
 <figure>
-    <img src='images/Break-Out-Bricks-Colors-Columns.png' />
-    <figcaption> 
-      Challenge 1.2: Bricks colored by column
-    </figcaption>
+  <figcaption> 
+    Challenge 1.2: Bricks colored by column
+  </figcaption>
+  <img src='images/Break-Out-Bricks-Colors-Columns.png' />
 </figure>
 
 <figure>
-    <img src='images/Break-Out-Bricks-Colors-Alternate.png' />
-    <figcaption> 
-      Challenge 1.3: Bricks Alternate color
-    </figcaption>
+  <figcaption> 
+    Challenge 1.3: Bricks Alternate color
+  </figcaption>
+  <img src='images/Break-Out-Bricks-Colors-Alternate.png' />
 </figure>
 
 <figure>
-    <img src='images/Break-Out-Bricks-Random.png' />
-    <figcaption> 
-      Challenge 1.4: Bricks random colors
-    </figcaption>
+  <figcaption> 
+    Challenge 1.4: Bricks random colors
+  </figcaption>
+  <img src='images/Break-Out-Bricks-Random.png' />
 </figure>
 
 You're doing well. So well you've been assigned to the _experimental squad_. You've been given the go ahead to implement new and experimental features. These are are dangerous and often have deeper implicatoins that leave regular people scratching their heads asking "but, why would you want to do that?"
