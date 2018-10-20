@@ -4,58 +4,81 @@ Canvas draws things into an image made of pixels.
 
 ## Canvas 
 
-Study up on canvas
+Study up on canvas here are a few articles you can read. Or just jump in and come back to these later. 
 
 - https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors
 - https://eloquentjavascript.net/17_canvas.html
 
 ## Break Out canvas challenges 
 
-This game is looking really good. But, marketing thinks it could look even better, have they even played it yet? Doesn't matter they have the ear of the investors, and they want some fancy graphics, but that's okay because so do you!
+This game is looking really good. But, marketing thinks it could look even better, have they even played it yet? It doesn't matter they have the ear of the investors, and they want some fancy graphics, but that's okay because so do you!
 
-Use a function or functions to colve these challenges. Take a hint from the starting tutorial code. Notice that the tutorial uses a function to handle drawing each the, bricks, ball, paddle, score, and lives. 
+Use a function or functions to solve these challenges. Take a hint from the starting tutorial code. Notice that the tutorial uses a function to handle drawing the, bricks, ball, paddle, score, and lives. 
 
-Your goals are to make the game look super fancy by drawing more than just solid colors. 
+_Your goals are to make the game look super fancy by drawing more than just solid colors._
 
-Gradients
+**Add a gradient background**
 
-At the moment you're clearing the canvas then drawing bricks, ball, and paddle over the cleared cavnas. Clearing the canvas happens on the first line of the `draw()` function. 
+At the moment you're clearing the canvas then drawing bricks, ball, and paddle over the cleared canvas. Clearing the canvas happens on the first line of the `draw()` function. 
 
-If you want the background to look like something you'll need to fill it before drawing all of the other things on top of it.
+If you want the background to look like something you'll need to fill it *before* drawing all of the other things on top of it.
 
-- Challenge 1 
-  - Fill the background with a gradient
-  - https://www.w3schools.com/graphics/canvas_gradients.asp
-  - Use a gradient fill for each brick
-  
-![Break-Bricks-gradient.png](Break-Bricks-gradient.png)
+[Read up on gradient fills with canvas](https://www.w3schools.com/graphics/canvas_gradients.asp)
 
-Graphical embelishment is the next big thing. Everyone thinks this could crack the product hunt top ten with a little "graphical embelishment". No one else knows how to do this so it's up to you!
+```JavaScript
+// Create gradient
+var grd = ctx.createLinearGradient(startX, startY, endX, endY);
+grd.addColorStop(0, 'red');   // Places a color at the start
+grd.addColorStop(1, 'white');  // Places a color at the end
 
-Don't bother looking up "graphical embelishment" it just means draw anything you want, take my word for it. 
-
-The goal is draw stuff on the background then draw the bricks, paddle, and the ball on top.
-
-Sounds pretty random huh? Hey, here's a function that generates random numbers: 
-
-```
-function random(n) {
-  return Math.floor(Math.random() * n);
-}
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(x, y, width, height);
 ```
 
-- Challenge 2 
-  - Write a function that draws 100 squares positioned at a random x and y positions. 
-  - Give each square a random height and width
-  - Give each square a random color
-    - Tip give the squares a transparent color
-  - Draw some columns across the canvas. Follow these steps:
-    - Create a function that will draw the background. Call this function on line one of `draw()` function. Be sure to remove the line there that clears the canvas!
-    - Decide on a number of columns. 
-    - Make for loop that repeats for the number of columns. 
-    - Position the current rectangle at column width times the step. 
+- **Challenge 1** 
+  1. Fill the background with a gradient
+  2. Use a gradient fill for each brick
   
-![Break-Bricks-rainbow-1.png](Break-Bricks-rainbow-1.png)
+<figure>
+  <figcaption> 
+    Challenge 1.1: Gradient Background 
+  </figcaption>
+  <img src='images/Break-Bricks-gradient-back.png' />
+</figure> 
+  
+<figure>
+  <figcaption> 
+    Challenge 1.2: Gradient bricks
+  </figcaption>
+  <img src='images/Break-Bricks-Gradient-Bricks.png' />
+</figure> 
+
+Graphical embelishment is the next big thing. Everyone thinks this game could crack the product hunt top ten with a little "graphical embelishment". No one else on the team knows how to do this so it's up to you!
+
+Don't bother looking up "graphical embelishment", it just means draw anything you want, take my word for it. 
+
+The goal is to draw stuff on the background then draw the bricks, paddle, and the ball on top.
+
+For these challenges you'll need to create a function something like: `drawBackground()`. Call this at the top of the `draw()` immediately _after_ `ctx.clearRect(0, 0, canvas.width, canvas.height);`.
+
+- **Challenge 2** 
+  1. Fill the background with vertical stripes.
+    - In side your `drawBackground()` function draw 10 rectangles.
+    - Use a loop to that counts to 10. 
+    - Set the x position of each rectangle to `canvas width / 10 * count`
+    - Set the y of each rectangle to 0
+    - Set the width of each rectangle to 40
+    - Set the height of each rectangle to the height of the canvas
+    - Set the color to `hsl(${360 / 10 * index}, 100%, 50%)`
+  2. Invent your color own scheme
+  
+<figure>
+  <figcaption> 
+    Challenge 1.1:  
+  </figcaption>
+  <img src='images/Break-Bricks-rainbow-1.png' />
+</figure> 
   
 You're probably sick of drawing rectangles. Draw a circle! Here is some code. 
 
@@ -66,32 +89,58 @@ ctx.arc(x, y, radius, 0, 2 * Math.PI);
 ctx.fill();
 ```
 
+Look at the `drawBall()` function similar code is used there. 
+
 The important line is this one:
 
 `ctx.arc(x, y, radius, 0, 2 * Math.PI);`
 
-The lasy two parameters set the starting and ending angle of the arc. An arc is measured in radians. A comnplete circle is 2 PI Radians. In degrees a complete circle is measured as 360.
+The first two parameters position the circle on the x, and y axis. 
+
+The third parameter sets the radius of the circle centered at the x and y position. 
+
+The last two parameters set the _starting_ and _ending_ angle of the arc. An arc is measured in radians. A comnplete circle is 2 PI Radians. In degrees a complete circle is measured as 360.
 
 - https://www.w3schools.com/tags/canvas_arc.asp
 
-When drawing an arc you'll need to fill it you want to draw it onto the canvas. 
+The code above generates a path, to see the circle you'll need to stroke and or fill the path. To fill the path set the `cts.fillStyle` and call `ctx.fill()`.
 
-For all of challenges here you'll need to redraw the background before you draw bricks, ball, paddle etc. Best to put this in a function and call it at the top of `draw()`.
-
-- Challenge 3
-  - Draw a big circle in the center of the canvas
-  - Marketing is cutting a deal with Target you need to draw the Target logo on the canvas. 
-    - Draw a big red circle, then draw a medium white circle, last draw a small red circle. 
-  - Screw Target and their capitalist schemes, it's Alan's birthday draw a rainbow! Follow this guide:
+- **Challenge 3**
+  1. Draw a big circle in the center of the canvas
+  2. Marketing is cutting a deal with Target. You need to draw the Target logo on the canvas. 
+    - Draw a big red circle
+    - then draw a medium white circle
+    - last draw a small red circle
+  3. Screw Target and their capitalist schemes! It's Alan's birthday draw a rainbow! Follow this guide:
     - Position the circles in the horizontal center at the bottom edge. This should be x of canvas width / 2, and y of canvas height. 
     - Draw the largest circle first, and concetric circle working inward. 
-    - Use hsl color. The hue runs 0 to 360. You want to set it to `360 / totalSteps * step`
-  - Draw the rainbow in front of the column pattern. 
+    - Use HSL color. The hue runs 0 to 360. You want to set it to `360 / totalSteps * step`
+  4. Draw the rainbow in front of the column pattern. 
     
-  ![Break-Bricks-rainbow.png](Break-Bricks-rainbow.png)
-  
-  ![Break-Bricks-rainbow-2.png](Break-Bricks-rainbow-2.png)
-  
+<figure>
+  <figcaption> 
+    Challenge 1.1: Draw a circle
+  </figcaption>
+  <img src='images/Break-Bricks-circle.png' />
+</figure> 
 
-    
+<figure>
+  <figcaption> 
+    Challenge 1.2: Draw Target
+  </figcaption>
+  <img src='images/Break-Bricks-Target.png' />
+</figure>
 
+<figure>
+  <figcaption> 
+    Challenge 1.3: Draw Rainbow
+  </figcaption>
+  <img src='images/Break-Bricks-rainbow.png' />
+</figure>
+
+<figure>
+  <figcaption> 
+    Challenge 1.4: Draw Rainbow on a Rainbow
+  </figcaption>
+  <img src='images/Break-Bricks-rainbow-2.png' />
+</figure>

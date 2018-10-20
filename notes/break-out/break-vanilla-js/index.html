@@ -134,6 +134,13 @@
 
     function draw() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < 100; i++) {
+        const x = Math.floor(Math.random() * 400);
+        const y = Math.floor(Math.random() * 320);
+        ctx.rect(x, y, 40, 40);
+        ctx.fillStyle = "#000000dd";
+        ctx.fill();
+      }
       drawBricks();
       drawBall();
       drawPaddle();

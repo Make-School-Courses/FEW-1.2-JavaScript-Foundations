@@ -75,6 +75,7 @@ Since the color values used are strings you can generate a string with variables
 ```JavaScript
 for (let hue = 0; hue < 360; hue += 20) {
   const hslStr = `hsl(${hue}, 100%, 50%)`;
+  ...
 }
 ```
 
