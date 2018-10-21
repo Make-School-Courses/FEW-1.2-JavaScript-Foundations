@@ -1,4 +1,6 @@
-# FEW 1.2 - Canvas
+# FEW 1.2 - Class 3
+
+Working with Canvas
 
 Canvas draws things into an image made of pixels. 
 

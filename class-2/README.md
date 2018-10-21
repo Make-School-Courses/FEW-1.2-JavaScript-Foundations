@@ -1,4 +1,6 @@
-# FEW 1.2 - Loops and Conditionals
+# FEW 1.2 - Class 2
+
+Loops and Conditionals
 
 Break out loops and conditionals
 

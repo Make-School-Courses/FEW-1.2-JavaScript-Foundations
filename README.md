@@ -20,17 +20,17 @@ Deepen your understanding of the JavaScript language by creating games.
 
 Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
 
-| Week   | Class    | Topics                              |
-|:-------|:---------|:------------------------------------|
-| Week 1 |          | Break Out                           |
-|        | Class 1  | [JavaScript Games intro](/class-1/) |
-|        | Class 2  | [Working with Canvas](/class-2/)    |
-| Week 2 |          |                                     |
-|        | Class 3  | JavaScript Games intro              |
-|        | Class 4  | Working with Canvas                 |
-| Week 3 |          |                                     |
-|        | Class 5  | JavaScript Games intro              |
-|        | Class 6  | Working with Canvas                 |
+| Week   | Class    | Topics                                 |
+|:-------|:---------|:---------------------------------------|
+| Week 1 |          | Break Out                              |
+|        | Class 1  | [JavaScript with Games intro](class-1) |
+|        | Class 2  | [Loops and Conditionals](class-2)      |
+| Week 2 |          |                                        |
+|        | Class 3  | [Working with Canvas](class-3)         |
+|        | Class 4  | [Class Objects](class-4)               |
+| Week 3 |          | Oregon Trail                           |
+|        | Class 5  | [Oregon Trail Tutorial](class-5)       |
+|        | Class 6  | [Updating and refactoring](class-6)    |
 | Week 4 |          |                                     |
 |        | Class 7  | JavaScript Games intro              |
 |        | Class 8  | Working with Canvas                 |
