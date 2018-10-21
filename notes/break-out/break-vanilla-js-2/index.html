@@ -111,7 +111,7 @@ the alert message with something that displays in canvas.
         this.direction = Math.random() * Math.PI * 2;
       }
       
-      move() {
+      move(bricks) {
         this.x += Math.cos(this.direction) * this.speed;
         this.y += Math.sin(this.direction) * this.speed;
         if (this.x > 480 || this.x < 0) {
@@ -119,6 +119,18 @@ the alert message with something that displays in canvas.
         } else if (this.y > 320 || this.y < 0) {
           this.direction = Math.PI * 2 - this.direction;
         }
+        
+        bricks.forEach((brick) => {
+          if (this.x > brick.x && this.x < this.brick.x + brickWidth &&
+             this.y > brick.y && this.y < this.brick.y + brickHeight) {
+            // Collides with brick
+            const centerX = brick.x + brickWidth / 2;
+            const centerY = brick.y + brickHeight / 2;
+            if () {
+                
+            }
+          } 
+        })
       }
 
       render(ctx) {

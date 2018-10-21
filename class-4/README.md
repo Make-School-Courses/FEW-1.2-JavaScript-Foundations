@@ -170,3 +170,46 @@ This OOP thing is fun! I can tell you want more! Here are a few more things you 
     - `keyDownHandler()`
     - `keyUpHandler()`
     - `mouseMoveHandler()`
+
+## Further Challenges 
+
+Stretch challenge week. The goal this week is to complete as many of the challenges and stratch challenges as you can. 
+
+If you have completed all of the challenges you try the challenges here or can design your own challenges. 
+
+## Challenges
+
+This section has some futher challenges you can try if you need more work. 
+
+**Challenge**: Improve the Alert messages
+
+**Problem**: That Alert box is really annoying. It also stops everything until you click it. The Alert box should not be used by applications unless they issuing system type alerts. 
+
+**Solution**: Make a custom overlay that displays a message. There are two approaches you can take
+  
+- Make a 
+
+**Challenge**: Improve Ball Movement
+
+**Problem**: Currently the ball moves an amount on the x and and an amount on the y. This means the ball will always move at a similar angle. It also means that the ball will move faster or slower depending on difference between the amount moved on x and y. 
+
+**Solution**: A better system would be to give the ball a direction and a speed. The ball moves in the direction a number of pixels set by speed. 
+
+Give the ball an `angle` or `direction`property. This will be a number set in radians. Remember radians represent angle like degrees. This value will determine the direction the ball moves. 
+
+Give the ball a `speed` peoperty. This is a number representing pixels. Used with the angle you'll move the ball this number of pixels at it's angle. The snippet below shows how to implement this. 
+  
+You will need to refactor the code that handles the ball bouncing off other bricks and the sides of the screen. Now the ball uses an angle which will need to be reflected. Here is a sample snippet. 
+
+- https://stackoverflow.com/questions/40472364/moving-object-from-a-to-b-smoothly-across-canvas
+- https://www.oreilly.com/library/view/html5-canvas/9781449308032/ch05s02.html
+
+**Challenge**: The collisions are not that great. 
+
+**Problem**: Notice that ball overlaps with a brick as it makes a collision. The the area of the ball is not repsected in the collision detection system. Instead it's center point that is used. The system only sees a collision when the center position of the ball overlaps a brick. 
+
+**Solution**: The solution is to improve the collision. The math of this type of solution can be pretty complex. You can try this if you like, but the better solution is use a 2d Physics library. 
+
+If you want to give it a try look up "Circle Rectangle collisions JavaScript" 
+
+https://stackoverflow.com/questions/21089959/detecting-collision-of-rectangle-with-circle
