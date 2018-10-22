@@ -18,19 +18,19 @@ You can view these properties yourself by openign the game in the browser. Open 
 
 Here is a list of all of these properties. 
 
-- DAY_PER_STEP: 0.2
-- ENEMY_FIREPOWER_AVG: 5
-- ENEMY_GOLD_AVG: 50
-- EVENT_PROBABILITY: 0.15
-- FINAL_DISTANCE: 1000
-- FIREPOWER_WEIGHT: 5
-- FOOD_PER_PERSON: 0.02
-- FOOD_WEIGHT: 0.6
-- FULL_SPEED: 5
-- GAME_SPEED: 800
-- SLOW_SPEED: 3
-- WEIGHT_PER_OX: 20
-- WEIGHT_PER_PERSON: 2
+- `DAY_PER_STEP`
+- `ENEMY_FIREPOWER_AVG`
+- `ENEMY_GOLD_AVG`
+- `EVENT_PROBABILITY`
+- `FINAL_DISTANCE`
+- `FIREPOWER_WEIGHT`
+- `FOOD_PER_PERSON`
+- `FOOD_WEIGHT`
+- `FULL_SPEED`
+- `GAME_SPEED`
+- `SLOW_SPEED`
+- `WEIGHT_PER_OX`
+- `WEIGHT_PER_PERSON`
 
 The `OregonH` object also holds a couple other objects. These contain systems that manage parts of the game. These are: 
 
@@ -41,9 +41,17 @@ The `OregonH` object also holds a couple other objects. These contain systems th
 
 Each of these has it's own file and the code that generates this object is contained in that file. 
 
+The original code declares the `OregonH` variabel at the top of each of these files like this: 
+
+`var OregonH = OregonH || {};`
+
+This says assign `OregonH` to itself or assign it an empty object. If the variable is not set then it is set to an emptry object. If it is set it's set to itself. This mechanism is used to share this object across all of the JS files. 
+
 ## Challenges 
 
 The game is made up of several Objects each with properties and methods that control and manage game play. 
+
+Your job is to convert these 
 
 - **Challenge 1**: Update the Caravan Class
   1. 

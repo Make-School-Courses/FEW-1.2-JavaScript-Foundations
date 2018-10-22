@@ -77,4 +77,4 @@ this.ui.notify(`Left ${droppedGuns} guns behind`, 'negative');
     - Make a new event for each of the three types of events: `STAT-CHANGE`, `SHOP`, `ATTACK`
     - For `SHOP` events modify the products Array.
 
-    
+  
