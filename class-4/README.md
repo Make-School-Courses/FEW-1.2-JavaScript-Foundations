@@ -139,7 +139,7 @@ Your job is to refactor your work. You'll be making class object to replace the 
     - Methods 
       - `render()`
   4. Define a class for `Background`
-    - Properties *
+    - Properties (The Background Object is responsible for rendering the background image. The properties are up to you, and might be as simple as a color)
       - ?
     - Methods 
       - `render()`
@@ -164,8 +164,8 @@ Your job is to refactor your work. You'll be making class object to replace the 
   7. Replace all `var` with `const` or `let`
   8. Fix formatting and indentation
   9. Add comments
-  
-* The Background Object is responsible for rendering the background image. The properties are up to you, and might be as simple as a color. 
+   
+The goal is not to add new features. At the end you should have better code that works the same. You're paying off technical debt and refactoring to make a better code base. 
     
 ## Stretch Challenges 
 
@@ -204,17 +204,27 @@ This section has some futher challenges you can try if you need more work.
 
 **Solution**: Make a custom overlay that displays a message. There are two approaches you can take
   
-- Make a 
+- Use a DOM element
+  - Make a div that you will hide and show when you win or lose the game. 
+  - Use tricky CSS wizardry (absolute position) to place the div over the canvas.
+  - Use JavaScript to handle button clicks. 
+- Draw the dialog box on canvas (not for the faint of heart)
+  - Make a class that renders a dialog box
+  - Listen for clicks on canvas check if a click is within the area of a button
 
 **Challenge**: Improve Ball Movement
 
 **Problem**: Currently the ball moves an amount on the x and and an amount on the y. This means the ball will always move at a similar angle. It also means that the ball will move faster or slower depending on difference between the amount moved on x and y. 
 
+Don't believe me ask [Pythagoras](https://en.wikipedia.org/wiki/Pythagorean_theorem). It's a direct effect of using `dx` and `dy` to control the movement of the ball. 
+
 **Solution**: A better system would be to give the ball a direction and a speed. The ball moves in the direction a number of pixels set by speed. 
 
-Give the ball an `angle` or `direction`property. This will be a number set in radians. Remember radians represent angle like degrees. This value will determine the direction the ball moves. 
+Give the ball an `angle` or `direction` property. This will be a number set in radians. Remember radians represent an angle like degrees. This value will determine the direction the ball moves. 
 
-Give the ball a `speed` peoperty. This is a number representing pixels. Used with the angle you'll move the ball this number of pixels at it's angle. The snippet below shows how to implement this. 
+Give the ball a `speed` peoperty. This is a number representing pixels. Used with the angle you'll move the ball this number of pixels _along it's angle_. The snippet below shows how to implement this. 
+
+
   
 You will need to refactor the code that handles the ball bouncing off other bricks and the sides of the screen. Now the ball uses an angle which will need to be reflected. Here is a sample snippet. 
 
