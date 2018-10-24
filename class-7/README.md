@@ -54,4 +54,18 @@ The game is made up of several Objects each with properties and methods that con
 Your job is to convert these 
 
 - **Challenge 1**: Update the Caravan Class
-  1. 
+    1. Convert the Caravan Object into a Class. This Object is defined in `Caravan.js`. The Caravan Object has the following properties and methods. 
+      - Properties: 
+        - day
+        - distance 
+        - crew
+        - food
+        - oxen
+        - money
+        - firepower
+      - Methods 
+        - init(stats)
+        - updateWeight()
+        - updateDistance()
+        - consumeFood()
+      

@@ -125,8 +125,9 @@ You're doing well. So well you've been assigned to the _experimental squad_. You
 
 - **Stretch Challenges**
   1. Make the bricks different sizes
-  2. Stagger the rows so that the first row is a little further to the left and the next row is a little further to the right. 
-  3. Make each row use different sized bricks
+    - You can give the each brick object a width and or height. You'll have to be more careful about layout. 
+  2. Stagger the rows so that the first row is a little further to the left and the next row is a little further to the right. You can probably handle this all in `drawBricks()`.
+  3. Make each row use different sized bricks. You can store the width and height of a brick in brick objects in the bricks Array. You'll need to take in to account the size of each brick in `drawBricks()`. 
   
 <figure>
   <figcaption> 
