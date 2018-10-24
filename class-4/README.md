@@ -1,6 +1,6 @@
 # FEW 1.2 - Class 4
 
-Class Objects
+## Class Objects
 
 Class Objects and OOP. Use Object Oriented programming techniques to make your code modular and organized. 
 

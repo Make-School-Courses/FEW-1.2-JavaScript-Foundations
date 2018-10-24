@@ -1,6 +1,6 @@
 # FEW 1.2 - Class 6 
 
-Updating and refactoring 
+## Updating and refactoring 
 
 There is a lot of code here. You need to start digging in and figuring out how it works. 
 
