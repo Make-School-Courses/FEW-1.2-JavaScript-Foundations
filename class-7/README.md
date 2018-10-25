@@ -1,8 +1,8 @@
 # FEW 1.2 - Class 7
 
-Using Class Objects
+## Working with Class Objects
 
-The original game was made with Object literals. We can improve on this by using Class Objects. Defining a Class makes the code easier to read and provides more intent on what we are trying to express with code. Using Classes also gives us a better syntax for expressing our code. 
+The original game was made with Object literals. You can improve on this by using Class Objects. Defining a Class makes the code easier to read and provides more intent on what we are trying to express with code. Using Classes also gives us a better syntax for expressing our code. 
 
 ## Update to Class Objects 
 
@@ -10,13 +10,15 @@ Read up on JavaScript Classes [here](https://developer.mozilla.org/en-US/docs/We
 
 ## General Structure 
 
-The game is built with a single object `OregonH` this acts as a name space. This name space gives the game a place to store all of it's data and methods. This good because other scripts are unlikely to overwrite names used here. 
+The game is built with a single object `OregonH`. This acts as a _name space_. The name space is a single variable to store all variables and functions used by the application. The alternative would be to have many global variables and functions, which is error prone and invites missuse. 
 
-At the root of `OregonH` are properties that are global to the game. These are things like `FINAL_DISTANCE` which sets the distance the caravan has to travel, and `WEIGHT_PER_OX` which sets the amount each oxen can carry. 
+This name space gives the game a place to store all of it's data and methods. This good because other scripts are unlikely to overwrite names used here. 
 
-You can view these properties yourself by openign the game in the browser. Open the console and type: `OregonH`
+At the root of `OregonH` are properties that are global to the game, that is they are shared by all of the Objects and methods. These are things like `FINAL_DISTANCE` which sets the distance the caravan has to travel to, and `WEIGHT_PER_OX` which sets the amount each oxen can carry. 
 
-Here is a list of all of these properties. 
+You can view these properties yourself by opening the game in the browser. Open the console and type: `OregonH`. You'll see an object with many properties.
+
+Here is a list of all of the properties. 
 
 - `DAY_PER_STEP`
 - `ENEMY_FIREPOWER_AVG`
@@ -41,17 +43,123 @@ The `OregonH` object also holds a couple other objects. These contain systems th
 
 Each of these has it's own file and the code that generates this object is contained in that file. 
 
-The original code declares the `OregonH` variabel at the top of each of these files like this: 
+Each of these files declares the `OregonH` variabel at the top like this: 
 
 `var OregonH = OregonH || {};`
 
-This says assign `OregonH` to itself or assign it an empty object. If the variable is not set then it is set to an emptry object. If it is set it's set to itself. This mechanism is used to share this object across all of the JS files. 
+This says assign `OregonH` to itself or assign it an empty object, if it has been assigned.  This mechanism is used to share this object across all of the JS files. 
 
 ## Challenges 
 
 The game is made up of several Objects each with properties and methods that control and manage game play. 
 
-Your job is to convert these 
+Your job is to convert these into Class Objects. You need to define a class to replace each of the object literals that were used by the original code. 
 
-- **Challenge 1**: Update the Caravan Class
-  1. 
+**Challenge 1**: Create the Caravan Class. 
+
+Convert the Caravan Object into a Class. This Object is defined in `Caravan.js`. The Caravan Object has the following properties and methods.
+    
+- Properties: 
+  - `day`
+  - `distance` 
+  - `crew`
+  - `food`
+  - `oxen`
+  - `money`
+  - `firepower`
+- Methods 
+  - `init(stats)`
+  - `updateWeight()`
+  - `updateDistance()`
+  - `consumeFood()`
+- Create an instance of the class to replace the existing object. 
+
+**Challenge 2**: Create the UI Class
+
+Convert the UI Object to a class. This Object is defined in 'UI.js'. The `UI` Object doesn't have any properties. Though it could make use of a few! The `refreshStats` looks up the 'stat' elements each time it is called. Rather than looking these up you could get a reference once and store it in a property. The same is true for the `div#shop` and `div#prods`.  
+    
+- Properties:
+  - ?
+- Methods:
+  - `notify(message, type)`
+  - `refreshStats()`
+  - `showAttack(firePower, gold)`
+  - `fight()`
+  - `runAway()`
+  - `showShop(products)`
+  - `shopDivHandler(e)`
+  - `buyProduct(product)`
+  
+**Challenge 3**: Create a Game Class. This should replace the Game Object. This Object is responsible for managing all of the other Objects. 
+    
+- Properties: 
+  - `ui`
+  - `eventManager`
+  - `caravan`
+- Methods
+  - `init()`
+  - `startJourney()`
+  - `step()`
+  - `updateGame()`
+  - `pauseJourney()`
+
+**Challenge 4**: Create an Event Class, and classes for the other Objects used by Event. 
+
+Look closely at `Event.js`. This file creates several Objects. 
+  
+- `Event` - Holds and manages all of the Event functionality. 
+- `eventTypes` - is an Array of Objects. These Objects all describe an Event that can occur in the game. There are different types of events here
+  - STAT-CHANGE
+  - ATTACK
+  - SHOP
+  
+Within a 'SHOP' event there is a `products` property. This is an Array of Objects. These Objects describe a product a player can buy from the shop. These Objects have the following properties: 
+
+- `item`
+- `qty`
+- `price`
+
+You should make a Class for each of these Objects! Here is a list of the Classes their properties and methods:  
+
+- `Product`
+  - Properties:
+    - `item`
+    - `qty`
+    - `price`
+- `EventType`
+  - Properties:
+    - `type`
+    - `notification`
+    - `stat`
+    - `value`
+    - `text`
+    - `products`
+- `EventManager`
+  - Properties:
+    - 
+- `EventManager`
+  - Properties:
+    - game
+    - eventTypes
+  - Methods:
+    - `generateEvent()`
+    - `stateChangeEvent(eventData)`
+    - `shopEvent(eventData)`
+    - `attackEvent(eventData)`
+
+** Challenge 4**: Make it all work! The last step is getting all of this updated code to work. The goal is to have instances of the Class Objects replace the Objects from the original tutorial code. 
+
+You'll need to create an instance of each of the new Class Objects. You'll also need to make these instances available to other instances. Notice in `OregonH.Game.init()` find: 
+
+```JavaScript
+//reference ui
+this.ui = OregonH.UI;
+```
+
+Earlier in 'UI.js' the `UI` Object was created and assigned to `OregonH` as a property. The code snippet above from 'Game.js' assigns this to it's own `ui` property so it has a reference to UI. This happens in a few places. 
+
+
+
+
+
+

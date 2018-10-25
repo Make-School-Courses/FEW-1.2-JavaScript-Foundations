@@ -1,6 +1,6 @@
 # FEW 1.2 - Class 1
 
-Learn JavaScript by making games! 
+## Learn JavaScript by making games! 
 
 You're hired! Consider this class your job for the next 7 weeks. You'll be respobsinble for making three games, maintaining and improving the code base for your games, keeping notes and documentation for the code that you produce. 
 

@@ -1,6 +1,6 @@
 # FEW 1.2 - Class 2
 
-Loops and Conditionals
+## Loops and Conditionals
 
 Break out loops and conditionals
 
@@ -91,6 +91,7 @@ You could also store a list of colors in an array. This would be good if you dec
     2. Make each column s different color
     3. Make the bricks alternate in color
     4. Make each brick a different random color
+    5. Make more rows and columns (you may need to increase the size of the canvas)
     
     
 <figure>
@@ -121,12 +122,20 @@ You could also store a list of colors in an array. This would be good if you dec
   <img src='images/Break-Out-Bricks-Random.png' />
 </figure>
 
+<figure>
+  <figcaption> 
+    Challenge 1.5: More bricks
+  </figcaption>
+  <img src='images/Break-Bricks-More.png' />
+</figure>
+
 You're doing well. So well you've been assigned to the _experimental squad_. You've been given the go ahead to implement new and experimental features. These are are dangerous and often have deeper implicatoins that leave regular people scratching their heads asking "but, why would you want to do that?"
 
 - **Stretch Challenges**
   1. Make the bricks different sizes
-  2. Stagger the rows so that the first row is a little further to the left and the next row is a little further to the right. 
-  3. Make each row use different sized bricks
+    - You can give the each brick object a width and or height. You'll have to be more careful about layout. 
+  2. Stagger the rows so that the first row is a little further to the left and the next row is a little further to the right. You can probably handle this all in `drawBricks()`.
+  3. Make each row use different sized bricks. You can store the width and height of a brick in brick objects in the bricks Array. You'll need to take in to account the size of each brick in `drawBricks()`. 
   
 <figure>
   <figcaption> 

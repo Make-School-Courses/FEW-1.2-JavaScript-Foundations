@@ -1,6 +1,6 @@
 # FEW 1.2 - Class 5
 
-Oregon Trail Tutorial
+## Oregon Trail Tutorial
 
 Lets start a new game. This game is a classic text adventure game: [Oregon Trail](https://en.wikipedia.org/wiki/The_Oregon_Trail_(series)). Did you catch the bit about "historical probabilities". This game has a lot in common with the Heard Immunity project and data science. 
 
