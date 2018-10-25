@@ -91,6 +91,7 @@ You could also store a list of colors in an array. This would be good if you dec
     2. Make each column s different color
     3. Make the bricks alternate in color
     4. Make each brick a different random color
+    5. Make more rows and columns (you may need to increase the size of the canvas)
     
     
 <figure>
@@ -119,6 +120,13 @@ You could also store a list of colors in an array. This would be good if you dec
     Challenge 1.4: Bricks random colors
   </figcaption>
   <img src='images/Break-Out-Bricks-Random.png' />
+</figure>
+
+<figure>
+  <figcaption> 
+    Challenge 1.5: More bricks
+  </figcaption>
+  <img src='images/Break-Bricks-More.png' />
 </figure>
 
 You're doing well. So well you've been assigned to the _experimental squad_. You've been given the go ahead to implement new and experimental features. These are are dangerous and often have deeper implicatoins that leave regular people scratching their heads asking "but, why would you want to do that?"

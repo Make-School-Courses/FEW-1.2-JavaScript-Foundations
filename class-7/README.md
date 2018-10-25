@@ -1,6 +1,6 @@
 # FEW 1.2 - Class 7
 
-## Using Class Objects
+## Working with Class Objects
 
 The original game was made with Object literals. You can improve on this by using Class Objects. Defining a Class makes the code easier to read and provides more intent on what we are trying to express with code. Using Classes also gives us a better syntax for expressing our code. 
 
