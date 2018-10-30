@@ -91,6 +91,12 @@ Students by the end of the course will be able to ...
 
 - https://eloquentjavascript.net/
 
+## Study Resources
+
+- https://repl.it/classroom/invite/ZLKqpSw
+- http://www.jshero.net/en/success.html
+- https://www.codecademy.com/learn/introduction-to-javascript
+
 ## Evaluation
 
 To pass this course you must meet the following requirements:
