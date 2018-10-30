@@ -2,7 +2,9 @@
 
 ## Working with Canvas
 
-Canvas draws things into an image made of pixels. 
+Canvas draws things into an image made of pixels. Canvas has a few methods that let you draw paths and then fill the path with pixels. You can fill with a color or a gradient. You can also stroke the path with pixels. 
+
+There are too many options to list, and the posibilities are endless! Try the challenges below to experiment with canvas. 
 
 ## Canvas 
 
@@ -15,7 +17,11 @@ Study up on canvas here are a few articles you can read. Or just jump in and com
 
 This game is looking really good. But, marketing thinks it could look even better, have they even played it yet? It doesn't matter they have the ear of the investors, and they want some fancy graphics, but that's okay because so do you!
 
-Use a function or functions to solve these challenges. Take a hint from the starting tutorial code. Notice that the tutorial uses a function to handle drawing the, bricks, ball, paddle, score, and lives. 
+Use a function or functions to solve these challenges. That is, break complex code out of the a larger block and into a new function to make it more readable. 
+
+Take a hint from the starting tutorial code. Notice that the tutorial uses a function to handle drawing the, bricks, ball, paddle, score, and lives. This is instead of keeping all of these systems together in the same function. 
+
+The code also tries to separate code into related blocks. The function that draws the ball only draws the ball. The code here doesn't try to draw other things. 
 
 _Your goals are to make the game look super fancy by drawing more than just solid colors._
 
@@ -40,6 +46,7 @@ ctx.fillRect(x, y, width, height);
 
 - **Challenge 1** 
   1. Fill the background with a gradient
+    - Hint: use sublte changes in the starting and ending gradient color to make better looking gradients. 
   2. Use a gradient fill for each brick
   
 <figure>
@@ -56,9 +63,9 @@ ctx.fillRect(x, y, width, height);
   <img src='images/Break-Bricks-Gradient-Bricks.png' />
 </figure> 
 
-Graphical embelishment is the next big thing. Everyone thinks this game could crack the product hunt top ten with a little "graphical embelishment". No one else on the team knows how to do this so it's up to you!
+_Graphical embelishment_ is the next big thing. Everyone thinks this game could crack the product hunt top ten with a little "graphical embelishment". No one else on the team knows how to do this so it's up to you!
 
-Don't bother looking up "graphical embelishment", it just means draw anything you want, take my word for it. 
+Don't bother looking up "graphical embelishment", it just means draw anything you want, take my word for it, you go this! 
 
 The goal is to draw stuff on the background then draw the bricks, paddle, and the ball on top.
 
@@ -82,7 +89,7 @@ For these challenges you'll need to create a function something like: `drawBackg
   <img src='images/Break-Bricks-rainbow-1.png' />
 </figure> 
   
-You're probably sick of drawing rectangles. Draw a circle! Here is some code. 
+You're probably sick of drawing rectangles. Good it's time to draw something new. Draw a circle! Here is some code. 
 
 ```
 ctx.fillStyle = '#ff00ff44';
@@ -91,17 +98,19 @@ ctx.arc(x, y, radius, 0, 2 * Math.PI);
 ctx.fill();
 ```
 
+Note: The basic procedure with canvas is to create a path then fill and stroke the path.
+
 Look at the `drawBall()` function similar code is used there. 
 
 The important line is this one:
 
 `ctx.arc(x, y, radius, 0, 2 * Math.PI);`
 
-The first two parameters position the circle on the x, and y axis. 
+The first two parameters position the circle on the x, and y axis. Imagine you positioning center point of a compass here. 
 
-The third parameter sets the radius of the circle centered at the x and y position. 
+The third parameter sets the radius of the circle centered at the x and y position. Imagine you are setting the radius of the compass. 
 
-The last two parameters set the _starting_ and _ending_ angle of the arc. An arc is measured in radians. A comnplete circle is 2 PI Radians. In degrees a complete circle is measured as 360.
+The last two parameters set the _starting_ and _ending_ angle of the arc. An arc is measured in radians. A comnplete circle is 2 PI Radians. In degrees a complete circle is measured as 360. Imagine you are sweeping the compass around and drawing a circle. 
 
 - https://www.w3schools.com/tags/canvas_arc.asp
 
@@ -117,7 +126,10 @@ The code above generates a path, to see the circle you'll need to stroke and or 
     - Position the circles in the horizontal center at the bottom edge. This should be x of canvas width / 2, and y of canvas height. 
     - Draw the largest circle first, and concetric circle working inward. 
     - Use HSL color. The hue runs 0 to 360. You want to set it to `360 / totalSteps * step`
+    - Bonus points: Only half the circle is visible. Only draw half the arc. 
   4. Draw the rainbow in front of the column pattern. 
+    - Draw the rectangles first from challenge 1.
+    - Then draw the circles
     
 <figure>
   <figcaption> 

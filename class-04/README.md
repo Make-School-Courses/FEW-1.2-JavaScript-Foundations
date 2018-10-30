@@ -188,6 +188,43 @@ This OOP thing is fun! I can tell you want more! Here are a few more things you 
     - `keyUpHandler()`
     - `mouseMoveHandler()`
 
+2. Use inheritence
+
+The Ball, Birck, and Paddle all use x and y properties. Classes can have a super/parent class. Super classes provide base functionality. Child classes can extend another class to inherit this functionality. 
+
+In this project the Brick, Ball, and Paddle all have the same properties x and y. You can create a base class with thee properties and extend this class to create the Ball, Paddle, and Brick. 
+
+Start with this: 
+
+```JavaScript
+class Node {
+ constructor(x = 0, y = 0) {
+  this.x = x;
+  this.y = y;
+ }
+```
+
+Extend this class like this: 
+
+```JavaScript
+class Ball extends Node {
+ constructor(radius, x, y) {
+  super(x, y)
+  this.radius = radius;
+ }
+
+ render() {
+  ...
+ }
+}
+```
+
+The Ball class extends Node. You must call super() and provide any needed parameters to the super class. Notice Ball impelements the redner() method. 
+
+Think about any other properties that are shared across all of the Objects, you can move these properties into Node. In this way you will only have to edit or work with these in one place. 
+
+If there is a default implementation for a method that is used by most child classes you can implement this in the parent. When a child class implements a method that exists in the parent this called overriding. When you override a method you are using the child's method over the parent's. 
+
 ## Further Challenges 
 
 Stretch challenge week. The goal this week is to complete as many of the challenges and stratch challenges as you can. 
