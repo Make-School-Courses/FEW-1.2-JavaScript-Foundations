@@ -23,6 +23,16 @@ You really need to learn some Phaser! Start the tutorial. This tutorial creates 
 
 - https://phaser.io/tutorials/making-your-first-phaser-3-game/
 
+### MDN Breakout with Phaser
+
+As an alternative to the Phaser Tutorial above you can work on this tutorial which creates a Breakout game with Phaser. This is an easier project that still uses Phaser. 
+
+If you were interested in the physics and collisions in the first tutorial this term this one improves on those using Phaser. The Phaser library includes a full Physics engine. 
+
+This tutorial also shows what it looks like when you break code into Objects. Imagine you kept developing those objects from the first assignment, this project would be the project from the future, after having been developed to a high degree. 
+
+- https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_breakout_game_Phaser
+
 ## Challenges 
 
 **Challenge 1**: Get your local server running
