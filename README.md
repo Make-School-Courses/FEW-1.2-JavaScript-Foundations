@@ -23,26 +23,26 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
 | Week   | Class    | Topics                                 |
 |:-------|:---------|:---------------------------------------|
 | Week 1 |          | Break Out                              |
-|        | Class 1  | [JavaScript with Games intro](class-1) |
-|        | Class 2  | [Loops and Conditionals](class-2)      |
+|        | Class 1  | [JavaScript with Games intro](class-01)|
+|        | Class 2  | [Loops and Conditionals](class-02)     |
 | Week 2 |          |                                        |
-|        | Class 3  | [Working with Canvas](class-3)         |
-|        | Class 4  | [Class Objects OOP](class-4)           |
+|        | Class 3  | [Working with Canvas](class-03)        |
+|        | Class 4  | [Class Objects OOP](class-04)          |
 | Week 3 |          | Oregon Trail                           |
-|        | Class 5  | [Oregon Trail Tutorial](class-5)       |
-|        | Class 6  | [Updating and refactoring](class-6)    |
+|        | Class 5  | [Oregon Trail Tutorial](class-05)      |
+|        | Class 6  | [Updating and refactoring](class-06)   |
 | Week 4 |          |                                        |
-|        | Class 7  | [Working with Class Objects](class-7)  |
-|        | Class 8  | [Debugging and Code Review](class-8)   |
+|        | Class 7  | [Working with Class Objects](class-07) |
+|        | Class 8  | [Debugging and Code Review](class-08)  |
 | Week 5 |          | Phaser JS                              |
-|        | Class 9  | [Wrapping Up Oregon Trail](class-9)    |
-|        | Class 10 | [Phaser Tutorial](class-10) |
+|        | Class 9  | [Wrapping Up Oregon Trail](class-09)   |
+|        | Class 10 | [Phaser Tutorial](class-10)            |
 | Week 6 |          |                                        |
-|        | Class 11 | [TBA](class-9) |
-|        | Class 12 | [TBA](class-9) |
+|        | Class 11 | [TBA](class-11)                        |
+|        | Class 12 | [TBA](class-12)                        |
 | Week 7 |          |                                        |
-|        | Class 13 | [TBA](class-9) |
-|        | Class 14 | [TBA](class-9) |
+|        | Class 13 | [TBA](class-13)                        |
+|        | Class 14 | [TBA](class-14)                        |
 
 ## Course Specifics
 
