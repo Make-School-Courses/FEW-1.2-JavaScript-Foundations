@@ -90,20 +90,7 @@ Convert the UI Object to a class. This Object is defined in 'UI.js'. The `UI` Ob
   - `shopDivHandler(e)`
   - `buyProduct(product)`
   
-**Challenge 3**: Create a Game Class. This should replace the Game Object. This Object is responsible for managing all of the other Objects. 
-    
-- Properties: 
-  - `ui`
-  - `eventManager`
-  - `caravan`
-- Methods
-  - `init()`
-  - `startJourney()`
-  - `step()`
-  - `updateGame()`
-  - `pauseJourney()`
-
-**Challenge 4**: Create an Event Class, and classes for the other Objects used by Event. 
+**Challenge 3**: Create an Event Class, and classes for the other Objects used by Event. 
 
 Look closely at `Event.js`. This file creates several Objects. 
   
@@ -147,7 +134,54 @@ You should make a Class for each of these Objects! Here is a list of the Classes
     - `shopEvent(eventData)`
     - `attackEvent(eventData)`
 
-** Challenge 4**: Make it all work! The last step is getting all of this updated code to work. The goal is to have instances of the Class Objects replace the Objects from the original tutorial code. 
+**Challenge 4**: Create a Game Class. This should replace the Game Object. This Object is responsible for managing all of the other Objects. 
+    
+- Properties: 
+  - `ui`
+  - `eventManager`
+  - `caravan`
+- Methods
+  - `init()`
+  - `startJourney()`
+  - `step()`
+  - `updateGame()`
+  - `pauseJourney()`
+  
+Looking closely you'll see that Each of these classes: UI, Caravan, and EventManager own a reference to the other classes. This is needed since Event will need to send an event to Caravan, and Caravan might need to update UI at some point
+
+You won't be able to set these references until after the Objects are created. For this reason the Game Class has the job of creating and initializing the other classes. 
+
+In the original code Game.init() has the job of setting reference to the other Objects. If you make a class Object for Game you can use the constructor function to create the other Objects and set the references for each. Something like:
+
+```JavaScript
+class Game {
+  // Initialize the Game Object
+  constructor() {
+    // Create dependent Objects 
+    this.ui = new UI(this);
+    this.eventManager = new EventManager(this);
+    this.caravan = new Caravan(this);
+
+    // pass references - set dependencies 
+    this.caravan.ui = this.ui;
+    this.caravan.eventManager = this.eventManager;
+
+    this.ui.caravan = this.caravan;
+    this.ui.eventManager = this.eventManager;
+
+    this.eventManager.caravan = this.caravan;
+    this.eventManager.ui = this.ui;
+
+    // begin adventure!
+    this.startJourney();
+  }
+            
+...
+
+}
+````
+
+** Challenge 5**: Make it all work! The last step is getting all of this updated code to work. The goal is to have instances of the Class Objects replace the Objects from the original tutorial code. 
 
 You'll need to create an instance of each of the new Class Objects. You'll also need to make these instances available to other instances. Notice in `OregonH.Game.init()` find: 
 
@@ -157,9 +191,6 @@ this.ui = OregonH.UI;
 ```
 
 Earlier in 'UI.js' the `UI` Object was created and assigned to `OregonH` as a property. The code snippet above from 'Game.js' assigns this to it's own `ui` property so it has a reference to UI. This happens in a few places. 
-
-
-
 
 
 

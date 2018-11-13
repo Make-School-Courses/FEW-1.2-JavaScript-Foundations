@@ -3,7 +3,8 @@
 Phaser is a library for making games in JS. 
 
 Phaser is pretty sophisticated it takes all of the objects you migth have created in the break out game, expands on them. 
-Pahser uses canvas to render objects to the screen. Pahser breaks all of the common tasks into classes that cna be reused. 
+
+Phaser uses canvas to render objects to the screen. Phaser breaks all of the common tasks into classes that can be reused. 
 
 ## Getting started
 
@@ -11,27 +12,30 @@ Pahser uses canvas to render objects to the screen. Pahser breaks all of the com
 
 Before getting started we need to understand web browsers, security, and Cross-Origin Resource Sharing or [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). 
 CORS is an issue you will run into often working with JavaScript as your applications get more complex. 
-In short the browser puts limits to what files can be accessed via JavaScript in the browser. 
 
-To test Phaser locally you'll need to run a local server. Follow the guide here: 
+In short the browser puts limits to what files can be accessed via JavaScript in the browser. This is a good thing for an end user but places a burden on you as a devleoper. 
 
-- https://phaser.io/tutorials/getting-started-phaser3
+To test Phaser locally you'll need to run a local server. Follow the guide [here](https://phaser.io/tutorials/getting-started-phaser3)
 
 ### Phaser Tutorial
 
-You really need to learn some Phaser! Start the tutorial. This tutorial creates a simple platform game. 
+Everyone is talking about libraries. They seem to be the big thing is web development. Anything bigger than a small project could use a library to save time and make it easier to implement sophisticated features. 
 
-- https://phaser.io/tutorials/making-your-first-phaser-3-game/
+You've decided to make another game. Rather than write it all from scratch you've decided to use a library! This will allow you to implement complext features without having to invent them on your own from scratch. You heard [Phaser JS](https://phaser.io) was pretty good, and they just came out with version 3 time to code! 
+
+You really need to learn some Phaser! Start with the tutorial. This tutorial creates a simple [platform game](https://en.wikipedia.org/wiki/Platform_game). 
+
+- [Phaser 3 Tutorial](https://phaser.io/tutorials/making-your-first-phaser-3-game/)
 
 ### MDN Breakout with Phaser
 
-As an alternative to the Phaser Tutorial above you can work on this tutorial which creates a Breakout game with Phaser. This is an easier project that still uses Phaser. 
+As an alternative to the Phaser Tutorial above you can work on [this](https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_breakout_game_Phaser) tutorial which creates a Breakout game with Phaser. This is an easier project that still uses Phaser. 
 
 If you were interested in the physics and collisions in the first tutorial this term this one improves on those using Phaser. The Phaser library includes a full Physics engine. 
 
 This tutorial also shows what it looks like when you break code into Objects. Imagine you kept developing those objects from the first assignment, this project would be the project from the future, after having been developed to a high degree. 
 
-- https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_breakout_game_Phaser
+- [Break Out with Phaser JS](https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_breakout_game_Phaser)
 
 ## Challenges 
 

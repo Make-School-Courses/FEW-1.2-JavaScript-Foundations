@@ -10,6 +10,8 @@ After playing the game/using the code the next step is reading the code and maki
 
 **Template Strings**
 
+var t = "Hello"+world // var t = `Hello ${world}`;
+
 The code seems to have been written before template strings. Template Strings are really great, they shorten long string concatenations and are easier to read. They can also be broken up on to multiple lines.
 
 - [Template Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
