@@ -18,3 +18,11 @@ Notes for Code Review
 A code review, at its core, is a conversation about a set of proposed changes.
 
 Opportunity to concurrently learn and teach while also strengthening relationship with peers.
+
+Authors should annotate source code before the review
+
+Understand the “Why” of changes
+
+Giving Positive Feedback
+
+Code Review Comment Explained Well
