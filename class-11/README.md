@@ -32,7 +32,116 @@ does too much and is so specific it can't be reused.
 
 Inheritence to the rescue! Any class can be extended. By extending a 
 class you are making a new Class that gains all of the properties 
-and method from another class and 
+and methods from the other class. 
+
+## Why extend a class? 
+
+When you find you are writing two or more classes that are not the same
+but share features you can write a base class they both share. This 
+allows you to make changes to base functionality of both classes in
+one place. 
+
+In the beginning you may find it more complex to puzzle out which class
+is responsible for which piece of the functionality. Later when you 
+are more comfortable with inheritence you'll appreciate being able to 
+make changes to a whole group of classes in a single location. 
+
+For example imagine the BreakOut game. You might have created classes
+for the Ball, Brick, and Paddle. These each need properties x and y. 
+
+```JavaScript
+class Ball {
+	constructor() {
+		this.x = 0
+		this.y = 0
+	}
+}
+
+class Brick {
+	constructor() {
+		this.x = 0
+		this.y = 0
+	}
+}
+
+class Paddle {
+	constructor() {
+		this.x = 0
+		this.y = 0
+	}
+}
+```
+
+These implementations have a lot of duplication. You can save yourself
+some trouble by adding a super class lets call it Sprite, that Ball, 
+Brick, and Paddle inherit from. 
+
+```JavaScript
+class Sprite {
+	constructor() {
+		this.x = 0
+		this.y = 0
+	}
+}
+class Ball extends Sprite {
+	constructor() {
+		super()
+	}
+}
+
+class Brick extends Sprite  {
+	constructor() {
+		super()
+	}
+}
+
+class Paddle extends Sprite  {
+	constructor() {
+		super()
+	}
+}
+```
+
+Here the x and y properties are defined in one place. The other classes
+declare that they `extend Sprite`. A class that extends another class 
+must call `super()` in it's constructor! Calling super is essentially
+calling the `constructor()` in the super class, Sprite in this case. 
+
+If the constructor requires parameters you'll have to include them in 
+`super()`. For example, if out implementation wanted to include values 
+for x and y when the class was initialized we might: 
+
+```JavaScript
+class Sprite {
+	constructor(x = 0, y = 0) {
+		this.x = 0
+		this.y = 0
+	}
+}
+class Ball extends Sprite {
+	constructor(x, y) {
+		super(x, y)
+	}
+}
+
+class Brick extends Sprite  {
+	constructor(x, y) {
+		super(x, y)
+	}
+}
+
+class Paddle extends Sprite  {
+	constructor(x, y) {
+		super(x, y)
+	}
+}
+```
+
+Here every subclass takes x and y in the constructor and pass these on
+to the super class. The super class includes a default value in case 
+these values are missing. 
+
+## Extending Phaser's classes
 
 The Phaser's classes exist for you to use. You can use them as is. 
 
