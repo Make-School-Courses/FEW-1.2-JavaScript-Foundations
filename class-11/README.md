@@ -24,7 +24,7 @@ as many instances of an object from a class as you might need.
 Together these last two points are why it's worth learning Object 
 Oriented Programming. 
 
-## Extending Classes
+## Extending Classes === Inheritence
 
 A Class needs to be generic enough to useful but this can also be a
 frustration when a class either doesn't do enough, it's too generic, or 
@@ -34,17 +34,23 @@ Inheritence to the rescue! Any class can be extended. By extending a
 class you are making a new Class that gains all of the properties 
 and methods from the other class. 
 
-## Why extend a class? 
+### Why extend a class? 
 
 When you find you are writing two or more classes that are not the same
 but share features you can write a base class they both share. This 
 allows you to make changes to base functionality of both classes in
 one place. 
 
+In some cases you may have a class that has basic features you need, 
+but you want to add more features. This is a good time extend that 
+class. 
+
 In the beginning you may find it more complex to puzzle out which class
 is responsible for which piece of the functionality. Later when you 
 are more comfortable with inheritence you'll appreciate being able to 
 make changes to a whole group of classes in a single location. 
+
+### Example
 
 For example imagine the BreakOut game. You might have created classes
 for the Ball, Brick, and Paddle. These each need properties x and y. 
@@ -144,10 +150,12 @@ these values are missing.
 ## Extending Phaser's classes
 
 The Phaser's classes exist for you to use. You can use them as is. 
+That is just make an instance and you're good to go. 
 
 In some cases they also may not have all of the functionality that 
-you might need for your uses. In these cases you can extend those 
-classes to the things that are specific to the needs of your project. 
+you might need for your uses. In these cases you can add new properties
+and methods by creating a new class that extends one of the Phaser 
+classes. 
 
 
 
