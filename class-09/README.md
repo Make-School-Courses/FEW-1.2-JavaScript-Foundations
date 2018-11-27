@@ -1,26 +1,37 @@
 # FEW 1.2 Class 9
 
-Lab day work and problem solving. 
+Lab day work and problem solving.
 
 ## Aside: Why? 
 
 Why are we learning all of the Class syntax? React!
 
-React uses this class syntax heavily. Besides the 
-syntax the component based architecture relies classes 
-to define components. 
+React uses ES6 class syntax heavily. React is built from
+components, and components are based on and written using 
+ther ES6 class syntax. 
 
-Games are just for fun. Really you're solving all the 
-same problems you'd be solving in software sans games. 
+While you may or may not consider games to be fun. All of 
+the problems you solve in games are very similar to the 
+problems you're solving elsewhere. A two dimensional array 
+of bricks might really be a graph of productsm matched to 
+users as recommendations. 
 
-- Arrays, multi-dimensional arrays
-- Objects, properties, methods, classes
+Solving problems is your job as a software developer. You
+should not limit yourself in the types of problems want 
+to solve. Instead you should be willing and able to 
+solve any problem that comes along. 
+
+Here are a few of the bigger problems you are solving: 
+
+- Managing data
+	- Multidimensional arrays 
+	- complex objects
+- Organizing and structuring code
+	- Using Classes 
 - Handing events
 - Dependancy Injection
-- etc. 
 
-All of therse things occur and are aprt of solutions 
-that you will 
+These ideas apply to all software development. 
 
 ## Lab and Review
 
@@ -35,6 +46,11 @@ Group/pair students to work together for a 15 to 20 min block of time with the g
 Repeat the process again mixing group/pairs.
 
 End class with a review of the problems and solutions that were developed during class. 
+
+## After class 
+
+- Finish up the Oregon Trail Project
+- Code review your work with another student	
 
 
 
