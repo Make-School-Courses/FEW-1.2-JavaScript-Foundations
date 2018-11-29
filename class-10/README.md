@@ -2,15 +2,22 @@
 
 Phaser is a library for making games in JS. 
 
-Phaser is pretty sophisticated it takes all of the objects you migth have created in the break out game, expands on them. 
+Phaser is pretty sophisticated it takes all of the objects you
+might have created in the break out game and abstracts them into
+a set of classes you might use to make many different games.
 
-Phaser uses canvas to render objects to the screen. Phaser breaks all of the common tasks into classes that can be reused. 
+Phaser is free. It renders everything to a canvas or WebGL 
+Object with JS. Phaser supports many advanced game concepts like
+physics, spritesheets, tweens, and particle systems. 
 
-## Getting started
+Phaser version 1 was released in 2013. Currently Phaser is up to
+version 3. [Phaser is on GitHub](https://github.com/photonstorm/phaser), 
+you can contribute! 
 
-Why learn Phaser JS? Currently there are more JS libraries 
-written for JS than any other language. Learning to get into 
-and apply a library is an important skill. 
+## Why Learn Phaser JS?
+
+Currently there are more JS libraries written for JS than any other 
+language. Learning to use and implement a library is an important skill. 
 
 The Phaser 3 library is very complex. Learning Phaser isn't 
 about learning Phaser. Instead it's about learning how to 
@@ -18,53 +25,75 @@ read documentation, apply methods and classes from a library
 that you didn't write. This is a valuable job skill and an 
 important skill every developer has to learn. 
 
-Learning Phaser also gives you a chance to see the same problems
-you solved earlier with vanilla JS were solved with a high 
+Learning Phaser gives you a chance to see the same problems
+you solved earlier with vanilla JS and how are solved with a high 
 degree of abstraction. If you kept evolving your previous 
 games you would end up with a library like phaser, after some 
 years of developement! Seriously. 
 
-This is class is not about games. It's about learning JS. 
+## Getting started
+
+Phaser loads assets through the file system. For this reason you will 
+need to run Phaser projects from server. You can not run them from 
+your desktop. The common solution is to create a local file server to 
+server your Phaser Project while testing. 
+
+Read more about this [here](https://phaser.io/tutorials/getting-started-phaser3). 
 
 ### Phaser 3
 
 Phaser is a game library written in JS. The latest version is 3. 
 There is a lot of documentation written for version 2. For this 
 assignment you must use version 3! When you check the notes, 
-tutorials, and documentation part of your jonb will be to 
+tutorials, and documentation part of your job will be to 
 verify that the information you are researching applies to 
 version 3. 
 
 If not you'll need convert the infromation, code snippets, 
 examples, tutorials, etc. to Phaser version 3. 
 
-### The local server and CORS
-
-Before getting started we need to understand web browsers, security, and Cross-Origin Resource Sharing or [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). 
-CORS is an issue you will run into often working with JavaScript as your applications get more complex. 
-
-In short the browser puts limits to what files can be accessed via JavaScript in the browser. This is a good thing for an end user but places a burden on you as a devleoper. 
-
-To test Phaser locally you'll need to run a local server. Follow the guide [here](https://phaser.io/tutorials/getting-started-phaser3)
-
 ### Phaser Tutorial
 
-Everyone is talking about libraries. They seem to be the big thing is web development. Anything bigger than a small project could use a library to save time and make it easier to implement sophisticated features. 
+You've decided to make another game. Rather than write it all from scratch you've decided to use a library! This will allow you to implement complex features without having to invent them on your own from scratch. You heard [Phaser JS](https://phaser.io) is pretty good, and they just came out with version 3, time to code! 
 
-You've decided to make another game. Rather than write it all from scratch you've decided to use a library! This will allow you to implement complext features without having to invent them on your own from scratch. You heard [Phaser JS](https://phaser.io) is pretty good, and they just came out with version 3, time to code! 
+Everyone is talking about libraries. They seem to be the big thing in web development. Anything bigger than the smallest projects could use a library to save time and make it easier to implement sophisticated features. 
 
-You really need to learn some Phaser! Start with the tutorial. This tutorial creates a simple [platform game](https://en.wikipedia.org/wiki/Platform_game). 
+You really need to learn some Phaser! Start with a tutorial. This tutorial creates a simple [platform game](https://en.wikipedia.org/wiki/Platform_game). 
 
 - [Phaser 3 Tutorial](https://phaser.io/tutorials/making-your-first-phaser-3-game/)
 
-### Alternate Tutorials
+Your goal is to complete the tutorial before the next class.
 
-Here are a few alternate tutorials you try instead of the 
+#### Alternate Tutorials
+
+Here are a few alternate tutorials you can try instead of the 
 tutorial above. It's strictly up to you which you choose. 
 
 - [Flappy Bird](http://www.lessmilk.com/tutorial/flappy-bird-phaser-1)
 - [Breakout](http://www.lessmilk.com/tutorial/breakout-phaser)
 - [2D Platformer](http://www.lessmilk.com/tutorial/2d-platformer-phaser)
+
+## Webpack
+
+[Webpack](https://webpack.js.org) is a Module Bundler. It's main purpose is to bundle JavaScript files for use in the browser. Webpack can also run tasks. You can use Webpack to process files, bundle them, then start a local web server and serve your project. 
+
+Phaser 3 has a Webpack starter you can use to for building your projects. 
+Follow these steps: 
+
+1. Down load the start project [here](https://github.com/photonstorm/phaser3-project-template)
+1. Open terminal and `cd` to the directory with the starter template. 
+1. Run `npm install` in the terminal
+
+From here you can start a local server and edit your project and see live updates in your browser by running: `npm start`
+
+Files that are part of your "build" will go in the `src` directory. Webpack looks here and creates the bundle from files in src.
+
+Images, sounds, and other file resources should stored in the assets directory. 
+
+> Note: Astute observers will have noticed the message: "... found 1 high severity vulnerability" in the terminal. This is telling us there is a security vulnerability in one of the packages. Ignore this for now since 
+the fix is a breaking change.
+
+We won't fix this for now. (**Challenge**: Fork the repo, fix this dependancy, and submit a pull request)
 
 ## Challenges 
 
