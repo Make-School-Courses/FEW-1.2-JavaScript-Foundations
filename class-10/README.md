@@ -97,19 +97,15 @@ We won't fix this for now. (**Challenge**: Fork the repo, fix this dependancy, a
 
 ## Challenges 
 
-**Challenge 1**: Get your local server running
-
-Choose your favorite method from the [Getting started with Phaser](https://phaser.io/tutorials/getting-started-phaser3) section. Make sure you can run the server when needed. Take some notes, you'll need to launch your server every time you work on your project. 
+**Challenge 1**: Get the Phaser 3 Starter project running with Webpack. 
 
 **Challenge 2**: Complete the tutorial. 
 
-This tutorial is involved and has a lot new ideas. Take notes along the way. There are lot of new concepts here. 
-you'll want to revisit these ideas after you have completed the tutorial. 
+This tutorial is involved and has a lot new ideas. Take notes along the way. There are lot of new concepts here. you'll want to revisit these ideas after you have completed the tutorial. 
 
 ## Stretch Challenges 
 
-**Stretch Challenge 1**: If you have completed the tutorial try changing the artwork. 
-This is a good start to learning how the system works. Check out these resources or make your own. 
+**Stretch Challenge 1**: If you have completed the tutorial try changing the artwork. This is a good start to learning how the system works. Check out these resources or make your own. 
 
 - https://opengameart.org
 - https://itch.io/game-assets/free
@@ -117,6 +113,4 @@ This is a good start to learning how the system works. Check out these resources
 - http://untamed.wild-refuge.net/rpgxp.php
 - https://opengamegraphics.com
 - https://www.glitchthegame.com/public-domain-game-art/
-
-
 
