@@ -95,8 +95,12 @@ This tutorial is involved and has a lot new ideas. Take notes along the way. The
 - https://opengamegraphics.com
 - https://www.glitchthegame.com/public-domain-game-art/
 
-Modify the tutorial project by changing the art and 'numbers'. Lookup some art on OpenGameArt.org ormake your own. 
+**Stretch Challenge 2**: Modify the tutorial project by changing the art and 'numbers'. Lookup some art on OpenGameArt.org ormake your own. 
 
 The numbers determine how the game plays., Numbers control everything including the speed, position, and size of objects. Read the code carefully and find some numbers and chnage them. Observe the reuslts. 
+
+**Stretch Challenge 3**: If you completed the first tutorial and have some time before the next class try one of the other tutorials. 
+
+Build these alternate tutorials with the Webpack Starter.
 
 
