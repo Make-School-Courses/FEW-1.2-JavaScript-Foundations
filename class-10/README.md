@@ -1,51 +1,32 @@
 # FEW 1.2 Phaser
 
-Phaser is a library for making games in JS. 
+Phaser is a library for making games in JS. Phaser is pretty sophisticated it takes all of the objects you might have created in the Breakout game and abstracts them into a set of classes you might use to make many different games.
 
-Phaser is pretty sophisticated it takes all of the objects you
-might have created in the break out game and abstracts them into
-a set of classes you might use to make many different games.
+Phaser renders everything to a canvas or WebGL Object with JS. Phaser supports many advanced game concepts like physics, spritesheets, tweens, particle systems and more. 
 
-Phaser is free. It renders everything to a canvas or WebGL 
-Object with JS. Phaser supports many advanced game concepts like
-physics, spritesheets, tweens, and particle systems. 
-
-Phaser version 1 was released in 2013. Currently Phaser is up to
-version 3. [Phaser is on GitHub](https://github.com/photonstorm/phaser), 
-you can contribute! 
+Phaser is free and available on [GitHub](https://github.com/photonstorm/phaser), you can contribute! version 1 was released in 2013. Currently Phaser is up to version 3.
 
 ## Why Learn Phaser JS?
 
-Currently there are more JS libraries written for JS than any other 
-language. Learning to use and implement a library is an important skill. 
+Currently there are more libraries and frameworks written for JS than any other language. Learning to use and implement a library is an important skill. 
 
-The Phaser 3 library is very complex. Learning Phaser isn't 
-about learning Phaser. Instead it's about learning how to 
-read documentation, apply methods and classes from a library
-that you didn't write. This is a valuable job skill and an 
-important skill every developer has to learn. 
+The Phaser 3 library is very complex. Implementing a project in Phaser isn't about learning Phaser. Instead it's about learning how to read documentation, apply methods and classes from a library _that you didn't write_. This is an important skill every developer has to learn. 
 
-Learning Phaser gives you a chance to see the same problems
-you solved earlier with vanilla JS and how are solved with a high 
-degree of abstraction. If you kept evolving your previous 
-games you would end up with a library like phaser, after some 
-years of developement! Seriously. 
+Also, learning Phaser gives you a chance to see the same problems you solved earlier with vanilla JS and how they would be solved with a high a degree of abstraction. If you kept evolving your previous games you would end up with a library like phaser, after some years of developement! Seriously. 
 
 ## Getting started
 
-Phaser loads assets through the file system. For this reason you will 
-need to run Phaser projects from server. You can not run them from 
-your desktop. The common solution is to create a local file server to 
-server your Phaser Project while testing. 
+Phaser loads assets through the file system. For this reason you will need to run Phaser projects from a server. 
+
+**You can not run Phaser projects directly from your desktop.**
+
+The common solution is to create a local file server to serve your Phaser Project while testing locally.  
 
 Read more about this [here](https://phaser.io/tutorials/getting-started-phaser3). 
 
 ### Phaser 3
 
-Phaser is a game library written in JS. The latest version is 3. 
-There is a lot of documentation written for version 2. For this 
-assignment you must use version 3! When you check the notes, 
-tutorials, and documentation part of your job will be to 
+Phaser is a game library written in JS. The latest version is 3. There is a lot of documentation written for version 2. For this assignment you must use version 3! When you check the notes, tutorials, and documentation part of your job will be to 
 verify that the information you are researching applies to 
 version 3. 
 
@@ -113,4 +94,9 @@ This tutorial is involved and has a lot new ideas. Take notes along the way. The
 - http://untamed.wild-refuge.net/rpgxp.php
 - https://opengamegraphics.com
 - https://www.glitchthegame.com/public-domain-game-art/
+
+Modify the tutorial project by changing the art and 'numbers'. Lookup some art on OpenGameArt.org ormake your own. 
+
+The numbers determine how the game plays., Numbers control everything including the speed, position, and size of objects. Read the code carefully and find some numbers and chnage them. Observe the reuslts. 
+
 
