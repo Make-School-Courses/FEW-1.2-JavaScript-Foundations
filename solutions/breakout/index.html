@@ -55,6 +55,18 @@
         this.x = 0
         this.y = 0
       }
+			
+			moveTo(x, y) {
+				this.x = x
+				this.y = y
+				return this
+			}
+			
+			moveBy(dx, dy) {
+				this.x += dx
+				this.y += dy
+				return this
+			}
     }
     // ----------------------
     // Defines the ball
