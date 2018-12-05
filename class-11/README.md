@@ -150,12 +150,17 @@ these values are missing.
 ## Extending Phaser's classes
 
 The Phaser's classes exist for you to use. You can use them as is. 
-That is just make an instance and you're good to go. 
 
-In some cases they also may not have all of the functionality that 
-you might need for your uses. In these cases you can add new properties
-and methods by creating a new class that extends one of the Phaser 
-classes. 
+In some cases they also may not have all of the functionality that you might need for your uses. In these cases you can add new properties and methods by creating a new class that extends one of the Phaser classes. 
+
+### Extending Phaser.Scene
+
+Phaser games are made up of Scenes. A scene represents one view of a game. A game might have a scene for preloading, 
+a scene that displays a menu, and a scene to play the game. 
+
+Each of these scenes would need custom code that is unique to each. A good way to organize code around this is to create custom classes that extend Phaser.Scene. 
+
+
 
 
 
