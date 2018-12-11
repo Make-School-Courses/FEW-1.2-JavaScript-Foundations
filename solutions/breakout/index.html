@@ -55,6 +55,18 @@
         this.x = 0
         this.y = 0
       }
+			
+			moveTo(x, y) {
+				this.x = x
+				this.y = y
+				return this
+			}
+			
+			moveBy(dx, dy) {
+				this.x += dx
+				this.y += dy
+				return this
+			}
     }
     // ----------------------
     // Defines the ball
@@ -175,6 +187,21 @@
         this.color = color
         this.align = align
       }
+			
+			setColor(color) {
+				this.color = color
+				return this
+			}
+			
+			setFont(font) {
+				this.font = font
+				return this
+			}
+			
+			setText(text) {
+				this.text = text
+				return this
+			}
 
       render(ctx) {
         ctx.font = this.font
@@ -183,7 +210,8 @@
         ctx.fillText(this.text, this.x, this.y)
       }
     }
-    // ----------------------
+    // ---------------------
+		
     // Defines a game label
     class GameLabel extends Label {
       constructor(text, font, color, align) {
@@ -198,6 +226,14 @@
         ctx.fillText(`${this.text} ${this.value}`, this.x, this.y)
       }
     }
+		
+		class MyLabel extends Label {
+			constructor() {
+				super('Hello', '24px Helvetica', 'blue')
+			}
+		}
+		
+		new MyLabel()
     // ----------------------
     // Defines the game
     class Game {
