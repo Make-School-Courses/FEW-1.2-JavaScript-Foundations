@@ -1,5 +1,37 @@
 # FEW 1.2 - Class 4
 
+---
+
+Notes for improvement! 
+
+class should cover refactoring
+Start with ESLint
+	1: Install ESlint 
+	2: AirBnB Style Guide
+	3: Lint the code https://eslint.org/docs/user-guide/getting-started
+		- Step 1: `npm init`
+		- Step 2: `npm install -g eslint`
+		- Step 3: `eslint --init`
+		- Step 4: Configure for document and window in .eslintrc.js
+```JS
+{
+  "globals": {
+    "document": true,
+    "window": true
+  }
+}
+```
+		- Step 5: Move Script into js file
+		- Challenge: Lint your document. There should be no red linter warnings. Look up the warnings to find solutions. 
+		- Refactor. Your code should work the same but be better quality. 
+		Do your best to arrange your code into the best arrangement possible on the page. Imagine another person looking at your code they should be able to make sense of what you are trying to accomplish. 
+		Use common sense. 
+		Focus on trying to understand what each variable does and why it is used and what it's purpose is in the program. 
+		Do your best to understand why the rules of the linter were chosen. 
+		Do your best to understand what improvements the linter is making in your code as you apply the rules. 
+
+---
+
 ## Class Objects
 
 Class Objects and OOP. Use Object Oriented programming techniques to make your code modular and organized. 

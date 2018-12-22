@@ -46,7 +46,7 @@ ctx.fillRect(x, y, width, height);
 
 - **Challenge 1** 
   1. Fill the background with a gradient
-    - Hint: use sublte changes in the starting and ending gradient color to make better looking gradients. 
+    - Hint: use subtle changes in the starting and ending gradient color to make better looking gradients. 
   2. Use a gradient fill for each brick
   
 <figure>

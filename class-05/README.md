@@ -14,6 +14,10 @@ I got a tip from the VC guys that text adventure games are making a come back! Q
 
 https://gamedevacademy.org/js13kgames-tutorial/
 
+## Notes 
+
+This tutorial was published in 2015. It doesn't make use of newer JS syntax. When I built the tutorial there was also atleast one error, this may have been my mistake, or it may be an error. These things don't make this a bad project, but the opposite! Solving errors and updating code to newer syntax is very much a problem you will run into on a job. There is a lot to learn from solving these kinds of problems. 
+
 ## Challenges 
 
 Imagine this is a code base you inherited from another developer or it's been handed to you as part of a new position. It will be your job to find bugs and fix them, refactor existing code, update code, and implement new features. 

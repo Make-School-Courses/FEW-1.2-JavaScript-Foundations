@@ -2,25 +2,21 @@
 
 ## Learn JavaScript by making games! 
 
-You're hired! Consider this class your job for the next 7 weeks. You'll be respobsinble for making three games, maintaining and improving the code base for your games, keeping notes and documentation for the code that you produce. 
+You're hired! Consider this class your job for the next 7 weeks. You'll be responsible for making three games, maintaining and improving the code base for your games, keeping notes and documentation for the code that you produce. 
 
-It's your job to put in regular hours working on the code you produce. 
+It's your job to put in regular hours working on the code you are responsible for. 
 
-You'll be making three games:
+You will maintain a GitHub Repo for each project. **You need to commit each time you work on the project. For each session you work you should have at least one commit.** This is a requirement. 
 
-- Break Out
-- Oregon Trail
-- A game of your own design using Phaser JS
+You'll be working on three games:
 
-You will also keep a JS notebook. This will be a GitHub repo where you will keep notes, questions, and other useful information about JavaScript. 
+- Breakout - the arcade classic
+- Oregon Trail - one of the most successful games of all time!
+- Platform Game built with Phaser 3 JS
 
-## Getting started
+## Breakout with JS
 
-The first step is to create a GitHub repo for the three games and another for JS Notes. 
-
-Do that now. 
-
-## Break Out with JS
+[Breakout](https://en.wikipedia.org/wiki/Breakout_(video_game)) is a classic arcade game. It's simple and has been ported to almost every platform. Your job is to make the JavaScript version. 
 
 Your goal is to build the tutorial here: 
 

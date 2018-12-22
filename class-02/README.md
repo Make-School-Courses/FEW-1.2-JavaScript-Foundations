@@ -129,7 +129,7 @@ You could also store a list of colors in an array. This would be good if you dec
   <img src='images/Break-Bricks-More.png' />
 </figure>
 
-You're doing well. So well you've been assigned to the _experimental squad_. You've been given the go ahead to implement new and experimental features. These are are dangerous and often have deeper implicatoins that leave regular people scratching their heads asking "but, why would you want to do that?"
+You're doing well. So well, you've been assigned to the _experimental squad_. You've been given the go ahead to implement new and experimental features. These are are dangerous and often have deeper implicatoins that leave regular people scratching their heads asking "but, why would you want to do that?"
 
 - **Stretch Challenges**
   1. Make the bricks different sizes

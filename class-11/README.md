@@ -159,11 +159,3 @@ Phaser games are made up of Scenes. A scene represents one view of a game. A gam
 a scene that displays a menu, and a scene to play the game. 
 
 Each of these scenes would need custom code that is unique to each. A good way to organize code around this is to create custom classes that extend Phaser.Scene. 
-
-
-
-
-
-
-
-
