@@ -158,3 +158,18 @@ You're doing well. So well, you've been assigned to the _experimental squad_. Yo
   <img src='images/Break-Out-Bricks-sizes-3.png' />
 </figure>
 
+### Why solbve these challenges? 
+
+These challenges are similar to questions asked at technical interviews solving these problems is great preparation the future! 
+
+These problems also stretch your knowledge of JavaScript and give you opportunity to practice your craft! The tutorial includes arrays and objects which are core features of the langauges and the basis for advanced topics. The tutorial will push your knowledge with more advanced topics like multidimensional arrays and complex conditional statements. 
+
+## Breakout Tutorial Challenges 
+
+| -            | Does not meet expectations | Meets expectations       | Exceeds expectations |
+|:-------------|:------------------|:-------------------------|:---------------------|
+| **Completed** | Did not complete | Completed the tutorial   | Modified the tutorial and improved on the existing code |
+| **Functional** | Is not functional | Base tutorial functional | Modified the existing code adding improvements, uses `const` and `let` over `var` where appropriate |
+| **Code quality** | Indentation is bad, white space is inconsistent | Uses consistent indentation and spacing | Well written and well commented, code is well organized with variables at the top, and functions arranged logically |
+| **Work Ethic** | Did not commit when working on project | Initial commit at class and commit while working | Commits show 3 hours and clearly document process | 
+

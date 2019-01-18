@@ -26,8 +26,32 @@ The tutorial here is short. You should be able to finish it in an evening.
 
 ## Homework
 
-Read the tutorial and complete the game. You can copy and paste the code samples. Your tutorial should be functional! Test your work and play the game. 
+Read the tutorial and complete the game. Your tutorial should be functional! The tutorial shows the complete sample code at the end of every section. You can test your process against this as you work. Test your work and play the game!
 
 Study the code and and do your best to understand how the code functions and why the game behaves as it does. Look closely at the game, be sure to play. Change some of the values and see how they effect the game. 
 
 After completing the tutorial You will be working on challenges based on the tutorial. This is why it is essential that your tutorial be functioning when you come to class 2. 
+
+### Why do this tutorial?
+
+This tutorial makes a simple which in iteself is not too exciting. Looking deeper it has a majority of the JavaScript language features you will have to master to be an expert at JS! Might as well learn them by making a game! 
+
+The tutorial contains: 
+
+- functions
+- variables 
+- Arrays 
+- Objects
+- loops
+- if then statements 
+
+It is essential that you master these features to make a career in Software developement. Using these features to solve problems and create solutions is an important skill. This tutorial solves some interesting problems using all of these tools. Trying your best to understand the problems that are being solved in the tutorial will help you at technical job interviews in the future!
+
+## Breakout Tutorial
+
+| -            | Does not meet expectations | Meets expectations       | Exceeds expectations |
+|:-------------|:------------------|:-------------------------|:---------------------|
+| **Completed** | Did not complete | Completed the tutorial   | Modified the tutorial and improved on the existing code |
+| **Functional** | Is not functional | Base tutorial functional | Modified the existing code adding improvements, uses `const` and `let` over `var` where appropriate |
+| **Code quality** | Indentation is bad, white space is inconsistent | Uses consistent indentation and spacing | Well written and well commented, code is well organized with variables at the top, and functions arranged logically |
+| **Work Ethic** | Did not commit when working on project | Initial commit at class and commit while working | Commits show 3 hours and clearly document process | 
