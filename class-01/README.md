@@ -30,4 +30,4 @@ Read the tutorial and complete the game. You can copy and paste the code samples
 
 Study the code and and do your best to understand how the code functions and why the game behaves as it does. Look closely at the game, be sure to play. Change some of the values and see how they effect the game. 
 
-After completing the tutorial You will be working on challenges based on the tutorial. This is why it is essential that your tutorial be functioning when you come to class 2. 
+After completing the tutorial, you will be working on challenges based on the tutorial. This is why it is essential that your tutorial be functioning when you come to class 2. 
