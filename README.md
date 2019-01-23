@@ -6,6 +6,8 @@ Deepen your understanding of the JavaScript language by creating games.
 
 During this course you will build three games with the mindset of someone working on, maintaining, and updating a codebase that you are responsible for. Along the way you will work with many core features of the JavaScript language. 
 
+The course will cover foundational JavaScript, debugging JavaScript and working with various JavaScript Libraries to build applications and games. Classes and Object Oriented Programming (OOP) are introduced with a closer look at how OOP is uniquely implemented in JavaScript.   
+
 ### Why you should take this class
 
 JavaScript is one of the most important languages in use today. You work with itt daily in everything you interact with from web sites, to mobile applications, to embedded IoT devices. Applications built with JavaScript have the highest potential impact and lowest barrier to entry. If you want to create an application and put in front of the widest array of users you'll probably want to built it with JavaScript. 
@@ -22,9 +24,9 @@ Class Sessions:  14 classes, 7 labs
 
 ## Prerequisites:  
 
-FEW 1.1 or equivalent
+[FEW 1.1](https://github.com/Make-School-Courses/FEW-1.1-Web-Foundations) or equivalent
 
-## Learning Objectives or Competencies (5-8)
+## Learning Objectives
 
 Students by the end of the course will be able to ...
 
@@ -37,30 +39,26 @@ Students by the end of the course will be able to ...
 ## Schedule
 
 ## Course Schedule
+**Course Dates:** Tuesday, January 22 – Thursday, March 7, 2019 (7 weeks)
 
-| Week   | Class    | Topics                                 |
-|:-------|:---------|:---------------------------------------|
-| Week 1 |          | Breakout                               |
-|        | Class 1  | [JavaScript with Games intro](class-01)|
-|        | Class 2  | [Loops and Conditionals](class-02)     |
-| Week 2 |          |                                        |
-|        | Class 3  | [Working with Canvas](class-03)        |
-|        | Class 4  | [Class Objects OOP](class-04)          |
-| Week 3 |          | Oregon Trail                           |
-|        | Class 5  | [Oregon Trail Tutorial](class-05)      |
-|        | Class 6  | [Updating and refactoring](class-06)   |
-| Week 4 |          |                                        |
-|        | Class 7  | [Working with Class Objects](class-07) |
-|        | Class 8  | [Debugging and Code Review](class-08)  |
-| Week 5 |          | Phaser JS                              |
-|        | Class 9  | [Wrapping Up Oregon Trail](class-09)   |
-|        | Class 10 | [Phaser Tutorial](class-10)            |
-| Week 6 |          |                                        |
-|        | Class 11 | [TBA](class-11)                        |
-|        | Class 12 | [TBA](class-12)                        |
-| Week 7 |          |                                        |
-|        | Class 13 | [TBA](class-13)                        |
-|        | Class 14 | [TBA](class-14)                        |
+**Class Times:** Tuesday and Thursday at 1:30–3:20pm (12 class sessions)
+
+| Class |          Date          |                 Topics                  |
+|:-----:|:----------------------:|:---------------------------------------:|
+|  1 |  Tuesday, January 22              | [JavaScript with Games intro](class-01) |
+|  2 | Thursday, January 24             | [Loops and Conditionals](class-02) |
+|  3 |  Tuesday, January 29             | [Working with Canvas](class-03) |
+|  4 | Thursday, January 31             | [Class Objects OOP](class-04) |
+|  5 |  Tuesday, February 5             | [Oregon Trail Tutorial](class-05) |
+|  6 | Thursday, February 7             | [Updating and refactoring](class-06) |
+|  7 |  Tuesday, February 12             | [Working with Class Objects](class-07) |
+|  8 | Thursday, February 14             | [Debugging and Code Review](class-08) |
+|  - |  Tuesday, February 19             | **President's Day (Observed)** |
+|  9 | Thursday, February 21             | [Wrapping Up Oregon Trail](class-09) |
+|  10 |  Tuesday, February 26             | [Phaser Tutorial](class-10) |
+|  11 | Thursday, February 28             | [TBA](class-11) |
+|  12 |  Tuesday, March 5             | Final Class (presentations, etc) |
+|  13 | Thursday, March 7             | Final Exams/Presentations |
 
 [Lesson 1]: Lessons/Lesson1.md
 [Lesson 2]: Lessons/Lesson2.md
@@ -75,17 +73,38 @@ Students by the end of the course will be able to ...
 [Lesson 11]: Lessons/Lesson11.md
 [Lesson 12]: Lessons/Lesson12.md
 
-## Class Assignments [Remove header if you like]
-- List (with links) of all course-level assignments (i.e. tutorials, challenge sets, contractor project, custom projects, etc)
-- Under each assignment link the rubric used to evaluate it or describe how it is evaluated.
-- Projects should be linked to a project page which has a description & requirements.
+## Class Assignments
 
-### Tutorials
-[REWORD AS RELEVANT TO YOUR COURSE] Tutorials are to help you get started in a topic.  They are graded on completion only.
+### Tutorials/Projects
+- Break Out
+  - You make a repo for this and post it to the tracker
+  - You will get the game working attempt challenges
+  - Use the rubric to gauge your project
+- Oregon Trail
+  - You will make a repo for this project and enter it in the tracker
+  - Get the game working and attempt the challenges 
+  - Use the rubric to gauge your progress 
+- Phaser JS game
+  - You will make a repo for this and enter it in the tracker
+  - You can make anything you like. Try your best to scope this to something you can complete by the end of the term. 
+  - Use the rubric to gauge your progress 
+- JS Notebook 
+  - You create a repo for this
+  - The readme will contain notes with code samples the you can add while you work. Use it to
+  - Save things you want to remember snippets of useful code. Questions about blockers. 
 
-- [Do Cool Stuff Tutorial]()
+### Book/Reading
 
-### Projects
+- https://eloquentjavascript.net/
+
+### Study Resources
+
+- https://repl.it/classroom/invite/ZLKqpSw
+- http://www.jshero.net/en/success.html
+- https://www.codecademy.com/learn/introduction-to-javascript
+
+
+### Project Git Requirements
 **All projects will require a minimum of 10 commits, and must take place throughout the entirety of the course**
 
 - **Good Example:** 40+ commits throughout the length of the course, looking for a healthy spattering of commits each week (such as 3-5 per day).
@@ -102,14 +121,9 @@ We want to encourage best practices that you will see working as a professional 
 
 Through this requirement, we hope to encourage you to think about projects with an iterative, modular mindset. Doing so will allow you to break projects down into smaller milestones that come together to make your fully-realized solution.
 
-[REWORD AS RELEVANT TO YOUR COURSE] Projects are a chance for you to build and ship code that is based on class concepts.  Many are open ended allowing you to be creative and to have individual work for your portfolio.
-- [Sample Project](Sample_Project.md)
-    -   [Sample Project Rubric](Sample_Rubric.md)
-
 ### Other Class assignments
 
 ## Evaluation
-[MAKE SPECIFIC TO YOUR COURSE SO IT IS SUPER CLEAR]
 To pass this course you must meet the following requirements:
 
 - Complete all required tutorials 
@@ -130,89 +144,11 @@ Failure to meet these requirements will result in a PIP (Participation Improveme
 
 ## Make School Course Policies
 
-[Academic Honesty](https://docs.google.com/document/d/1C4Nm-aWa-l_omuyJRkOoNCBpxcK4LvyYlhcdzvNjwGs/preview#heading=h.2mjdzgr0kzu4)<br>
-[Accommodations for Students](https://docs.google.com/document/d/1C4Nm-aWa-l_omuyJRkOoNCBpxcK4LvyYlhcdzvNjwGs/preview#heading=h.s2ivlubnpny2)<br>
-[Attendance Policy](https://docs.google.com/document/d/1C4Nm-aWa-l_omuyJRkOoNCBpxcK4LvyYlhcdzvNjwGs/preview#heading=h.l04zmmqhvj85)  
-[Diversity and Inclusion Policy](https://docs.google.com/document/d/1C4Nm-aWa-l_omuyJRkOoNCBpxcK4LvyYlhcdzvNjwGs/preview#heading=h.u0lbvv9zq3hw)<br>
-[Grading System](https://docs.google.com/document/d/1C4Nm-aWa-l_omuyJRkOoNCBpxcK4LvyYlhcdzvNjwGs/preview#heading=h.cxbhr2jav1ot)
+[Academic Honesty](https://make.sc/academic-honesty)<br>
+[Accommodations for Students](https://make.sc/accommodations-for-students)<br>
+[Attendance Policy](https://make.sc/attendance-policy)  
+[Diversity and Inclusion Policy](https://make.sc/diversity-and-inclusion-policy)<br>
+[Grading System](https://make.sc/grading-system)
 <br>
-[Title IX Policy](https://docs.google.com/document/d/1C4Nm-aWa-l_omuyJRkOoNCBpxcK4LvyYlhcdzvNjwGs/preview#heading=h.i4ms67qdl6oq)<br>
-[Program Learning Outcomes](https://docs.google.com/document/d/1C4Nm-aWa-l_omuyJRkOoNCBpxcK4LvyYlhcdzvNjwGs/preview#heading=h.mmypxnefbswv)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-Catalog Desc
-Prerequisites: FEW 1.1
-Projects: Break Out, Text Adventure, Phaser JS 
-
-Learn key concepts in JavaScript and gain a strong understanding of syntax and features. The course will cover foundational JavaScript, debugging JavaScript and working with various JavaScript Libraries to build applications and games. Classes and Object Oriented Programming (OOP) are introduced with a closer look at how OOP is uniquely implemented in JavaScript.   
-
-
-Tools: HTML, CSS, JavaScript
-
----
-
-
-
-
-## Tutorials & Projects
-
-- Break Out
-  - You make a repo for this and post it to the tracker
-  - You will get the game working attempt challenges
-  - Use the rubric to gauge your project
-- Oregon Trail
-  - You will make a repo for this project and enter it in the tracker
-  - Get the game working and attempt the challenges 
-  - Use the rubric to gauge your progress 
-- Phaser JS game
-  - You will make a repo for this and enter it in the tracker
-  - You can make anything you like. Try your best to scope this to something you can complete by the end of the term. 
-  - Use the rubric to gauge your progress 
-- JS Notebook 
-  - You create a repo for this
-  - The readme will contain notes with code samples the you can add while you work. Use it to
-  - Save things you want to remember snippets of useful code. Questions about blockers. 
-
-## Book/Reading
-
-- https://eloquentjavascript.net/
-
-## Study Resources
-
-- https://repl.it/classroom/invite/ZLKqpSw
-- http://www.jshero.net/en/success.html
-- https://www.codecademy.com/learn/introduction-to-javascript
-
-## Evaluation
-
-To pass this course you must meet the following requirements:
-
-- No more than two no call no shows
-- No more than four excused absences
-- Make up all classwork from all absences
-- Finish all required tutorials and projects
-- Pass the final exam (summative assessment) >=70%
-
-## Make School Course Policies
-
-[Academic Honesty](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Academic-Honesty-and-Plagiarism.md)<br>
-[Accomodation Policy](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Accommodation-Policy.md)<br>
-[Diversity Statement](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Diversity-Statement.md)<br>
-[Evaluation Methods](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Evaluation-Methods.md)
-<br>
-[Title IX Disclaimer](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Evaluations-Title-X-Disclaimer.md)<br>
-[Program Learning Outcomes](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Program-Learning-Outcomes.md)
+[Title IX Policy](https://make.sc/title-ix-policy)<br>
+[Program Learning Outcomes](https://make.sc/program-learning-outcomes)
