@@ -1,160 +1,331 @@
-# FEW 1.2 - Class 3
+# FEW 1.2 - Class 4
 
-## Working with Canvas
+## Class Objects
 
-Canvas draws things into an image made of pixels. Canvas has a few methods that let you draw paths and then fill the path with pixels. You can fill with a color or a gradient. You can also stroke the path with pixels. 
+Class Objects and OOP. Use Object Oriented programming techniques to make your code modular and organized. 
 
-There are too many options to list, and the posibilities are endless! Try the challenges below to experiment with canvas. 
+You've written lots of code so far you've probably incurred some [technical debt](https://en.wikipedia.org/wiki/Technical_debt). It's time to pay this off by refactoring. 
 
-## Canvas 
+## Objectives 
 
-Study up on canvas here are a few articles you can read. Or just jump in and come back to these later. 
+- Use Refactoring to improve code quality
+- Build systems with Objects 
+- Define classes 
+- Use dedendency injection
 
-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors
-- https://eloquentjavascript.net/17_canvas.html
+## Refactoring 
 
-## Break Out canvas challenges 
+The goal of [refactoring code](https://en.wikipedia.org/wiki/Code_refactoring) in short is to improve your existing code base and put it into a shape that will accept future updates. 
 
-This game is looking really good. But, marketing thinks it could look even better, have they even played it yet? It doesn't matter they have the ear of the investors, and they want some fancy graphics, but that's okay because so do you!
+Refactoring is not about adding new features. Instead we want to have same functionality with an improved code base underneath it. 
 
-Use a function or functions to solve these challenges. That is, break complex code out of the a larger block and into a new function to make it more readable. 
+What should you refactor? In this section you will be creating Class objects to represent elements used by the game. Along the way you can also do the following: 
 
-Take a hint from the starting tutorial code. Notice that the tutorial uses a function to handle drawing the, bricks, ball, paddle, score, and lives. This is instead of keeping all of these systems together in the same function. 
+- Improve variable declarations. Replace `var` with `const` and `let`
+- Add comments
+- Improve formatting and indentation
+- Making procedural code Object Oriented
+- Improve anything else you might think of that needs improvement
 
-The code also tries to separate code into related blocks. The function that draws the ball only draws the ball. The code here doesn't try to draw other things. 
+## OOP
 
-_Your goals are to make the game look super fancy by drawing more than just solid colors._
+Whoa, who wrote this tutorial, it's weak in OOP! It's your job to improve it by increasing OOPiness!
 
-**Add a gradient background**
+Making the code more Object Oriented won't make the code execute faster. It will make the code easier to work with, and easier to expand systems and add new features. It will make code that is much safer and more likely to run without error. 
 
-At the moment you're clearing the canvas then drawing bricks, ball, and paddle over the cleared canvas. Clearing the canvas happens on the first line of the `draw()` function. 
+What is an object?
 
-If you want the background to look like something you'll need to fill it *before* drawing all of the other things on top of it.
+Objects are collections and name spaces. An object is a collection of properties (variables) and methods (functions). A namespace gives you one name to access items in the collection. 
 
-[Read up on gradient fills with canvas](https://www.w3schools.com/graphics/canvas_gradients.asp)
+Why make Objects? 
+
+It's easier to think of a ball Object than it is to think about: `x`, `y`, `ballRadius`, `dx`, `dy` as the ball.
+
+Grouping related variables together in an object will organize and encapsulate these variables. Grouping variables together to create a ball Object.
 
 ```JavaScript
-// Create gradient
-var grd = ctx.createLinearGradient(startX, startY, endX, endY);
-grd.addColorStop(0, 'red');   // Places a color at the start
-grd.addColorStop(1, 'white');  // Places a color at the end
-
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(x, y, width, height);
+const ball = {
+	x: 200, 
+	y: 300, 
+	radius: 10, 
+	dx: -2,
+	dy: -2 
+}
 ```
 
-- **Challenge 1** 
-  1. Fill the background with a gradient
-    - Hint: use subtle changes in the starting and ending gradient color to make better looking gradients. 
-  2. Use a gradient fill for each brick
-  
-<figure>
-  <figcaption> 
-    Challenge 1.1: Gradient Background 
-  </figcaption>
-  <img src='images/Break-Bricks-gradient-back.png' />
-</figure> 
-  
-<figure>
-  <figcaption> 
-    Challenge 1.2: Gradient bricks
-  </figcaption>
-  <img src='images/Break-Bricks-Gradient-Bricks.png' />
-</figure> 
+With this arrangement there is only a single global variable. Which makes our code safer, there is less chance we might overwrite a variable by accident. 
 
-_Graphical embelishment_ is the next big thing. Everyone thinks this game could crack the product hunt top ten with a little "graphical embelishment". No one else on the team knows how to do this so it's up to you!
+All the variables that belong to the ball system are grouped together. This makes it easier to reason about. 
 
-Don't bother looking up "graphical embelishment", it just means draw anything you want, take my word for it, you go this! 
+If you need to make another ball you can make another object with the same properties. 
 
-The goal is to draw stuff on the background then draw the bricks, paddle, and the ball on top.
+Objects with the same properties are interchangable. 
 
-For these challenges you'll need to create a function something like: `drawBackground()`. Call this at the top of the `draw()` immediately _after_ `ctx.clearRect(0, 0, canvas.width, canvas.height);`.
+Encapsulation and Polymorphism
 
-- **Challenge 2** 
-  1. Fill the background with vertical stripes.
-    - In side your `drawBackground()` function draw 10 rectangles.
-    - Use a loop to that counts to 10. 
-    - Set the x position of each rectangle to `canvas width / 10 * count`
-    - Set the y of each rectangle to 0
-    - Set the width of each rectangle to 40
-    - Set the height of each rectangle to the height of the canvas
-    - Set the color to `hsl(${360 / 10 * index}, 100%, 50%)`
-  2. Invent your color own scheme
-  
-<figure>
-  <figcaption> 
-    Challenge 1.1:  
-  </figcaption>
-  <img src='images/Break-Bricks-rainbow-1.png' />
-</figure> 
-  
-You're probably sick of drawing rectangles. Good it's time to draw something new. Draw a circle! Here is some code. 
+While defining a ball with an object literal works. You can go a step further by making a template for the ball Object called a class.
 
-```
-ctx.fillStyle = '#ff00ff44';
-ctx.beginPath();
-ctx.arc(x, y, radius, 0, 2 * Math.PI);
-ctx.fill();
+```JavaScript
+class Ball {
+	constructor(x, y, radius = 10) {
+		this.x = x
+		this.y = y
+		this.radius = radius
+		this.dx = -2
+		this.dy = -2
+	}
+}
+
+const ball = new Ball(200, 300)
 ```
 
-Note: The basic procedure with canvas is to create a path then fill and stroke the path.
+An object created from a class is called an instance. 
 
-Look at the `drawBall()` function similar code is used there. 
+ES6 style classes have some features that deserve discussion. 
 
-The important line is this one:
+- constructor 
+- initialization
+- parameters
+- default parameters
 
-`ctx.arc(x, y, radius, 0, 2 * Math.PI);`
+### Classes
 
-The first two parameters position the circle on the x, and y axis. Imagine you positioning center point of a compass here. 
+- [Review Classes in JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) 
 
-The third parameter sets the radius of the circle centered at the x and y position. Imagine you are setting the radius of the compass. 
+## Creating classes
 
-The last two parameters set the _starting_ and _ending_ angle of the arc. An arc is measured in radians. A comnplete circle is 2 PI Radians. In degrees a complete circle is measured as 360. Imagine you are sweeping the compass around and drawing a circle. 
+The engineering team has decided to **OOPify** the whole game. You're in charge of the refactor. You need to make this Object Oriented. 
 
-- https://www.w3schools.com/tags/canvas_arc.asp
+_You're be in charge of making a class for each of the game objects._
 
-The code above generates a path, to see the circle you'll need to stroke and or fill the path. To fill the path set the `cts.fillStyle` and call `ctx.fill()`.
+- Ball
+- Brick
+- Paddle
+- Score
+- Lives 
 
-- **Challenge 3**
-  1. Draw a big circle in the center of the canvas
-  2. Marketing is cutting a deal with Target. You need to draw the Target logo on the canvas. 
-    - Draw a big red circle
-    - then draw a medium white circle
-    - last draw a small red circle
-  3. Screw Target and their capitalist schemes! It's Alan's birthday draw a rainbow! Follow this guide:
-    - Position the circles in the horizontal center at the bottom edge. This should be x of canvas width / 2, and y of canvas height. 
-    - Draw the largest circle first, and concetric circle working inward. 
-    - Use HSL color. The hue runs 0 to 360. You want to set it to `360 / totalSteps * step`
-    - Bonus points: Only half the circle is visible. Only draw half the arc. 
-  4. Draw the rainbow in front of the column pattern. 
-    - Draw the rectangles first from challenge 1.
-    - Then draw the circles
+These are "things" in the game, you can see these things on the screen and the game manipulates these things as you play the game. This gives you an abstract way to think about your code. 
+
+You'll be making a Class for each of these. Each of these should hold the variables that describe or control that object as properties within the class.
+
+For example, the Ball class might look like this: 
+
+```JavaScript
+ class Ball {
+  constructor(radius, color = "#0095DD") {
+    this.radius = radius;
+    this.color = color;
+    this.x = 0;
+    this.y = 0;
+  }
+}
+```
+
+Here `Ball` Class defines instances which will have four properties. Two of the properties, `radius`, and `color` are assigned when the Ball is initialized. `color` has a default value. 
+
+- `color`: the color the ball will render as
+- `radius`: the size of the ball measured as it's radius
+- `x`: the position of the ball on the x axis of a canvas
+- `y`: the position of the ball on the y axis of a canvas
+
+## Dependancy Injection
+
+Many of the game objects need to draw themselves. In order to do this they need access to the canvas rendering context. This is a dependency. These classes should NOT rely on a global variable! The solution is inject the dependency. 
+
+```JavaScript
+ class Ball {
+  constructor(radius, color = "#0095DD") {
+    this.radius = radius;
+    this.color = color;
+    this.x = 0;
+    this.y = 0;
+  }
+						 
+	render(ctx) {
+		...
+	}
+}
+```
+
+Here the render method takes `ctx` as a parameter. This class can now be used anywhere and is not dependent on global variable. Instead the value is passed from outside. 
+
+An important technique you can make use of here is [Depedancy Injection](https://en.wikipedia.org/wiki/Dependency_injection). Skim this.
+
+This is a powerful idea that is used often in software development. In a nutshell: 
+
+> A dependency is an object that can be used by another object. An injection is the passing of a dependency to the dependent object that would use it.
+
+Your goal for the current challenges is to create class objects for the Brick, Ball, Paddle, and Background. These classes will need to draw onto the canvas. The _canvas is a dependancy_ for the Brick, Paddle, Ball etc. These objects are dependent on a canvas context, they can't draw themselvse without one!
+
+While you could supply the canvas when you initialized an object that would create a more tightly coupled system. Passing the canvas to the object when it needs to draw itself is a more elegant solution. 
+
+Revisit the `Ball` class. In the code snippet below I've added a `render()` method. This method takes the rendering context as a parameter. You could say the context is 'injected'.
+
+```JavaScript
+ class Ball {
+  constructor(radius, color = "#0095DD") {
+    this.radius = radius;
+    this.color = color;
+  }
+
+  render(ctx) {
+    ctx.beginPath();
+    ctx.arc(x, y, this.radius, 0, Math.PI * 2);
+    ctx.fillStyle = this.color;
+    ctx.fill();
+    ctx.closePath();
+  }
+}
+``` 
+
+This is dependancy injection at work! Overall this is a very nice Class package you could make and render as many instances of this class as you might need, and render them on any canvas context. 
+
+## OOP Challenges
+
+Your job is to refactor your work. You'll be making class object to replace the existing code. Along the way you should also clean up your code, fixing formatting, indentation, and add comments. 
+
+- **Challenge 1**: Define Classes for Game Objects
+  1. Define a class for `Ball`
+    - Properties 
+      - `radius`
+      - `color`
+      - `x`
+      - `y`
+    - Methods
+      - `render(ctx)`
+			- `move()`
+  2. Define a class for `Brick`
+    - Properties 
+      - `x`
+      - `y` 
+      - `status`
+      - `color`
+      - `width`
+      - `height`
+    - Methods 
+      - `render(ctx)`
+  3. Define a class for `Paddle`
+    - Properties 
+      - `x`
+      - `y` 
+      - `color`
+      - `width`
+      - `height`
+    - Methods 
+      - `render(ctx)`
+  4. Define a class for `Background`
+    - Properties (The Background Object is responsible for rendering the background image. The properties are up to you, and might be as simple as a color)
+      - ?
+    - Methods 
+      - `render(ctx)`
+  5. Define a class for `Score`
+    - Properties 
+      - `x`
+      - `y` 
+      - `color`
+      - `score`
+      - `font`
+    - Methods 
+      - `render(ctx)`
+			- `update(points)`
+			- `reset()`
+  6. Define a class for `Lives`
+    - Properties 
+      - `x`
+      - `y` 
+      - `color`
+      - `lives`
+      - `font`
+    - Methods 
+      - `render(ctx)`
+			- `loseLife()`
+			- `reset()`
+   
+The goal is not to add new features. At the end you should have better code that works the same. You're paying off technical debt and refactoring to make a better code base. 
     
-<figure>
-  <figcaption> 
-    Challenge 1.1: Draw a circle
-  </figcaption>
-  <img src='images/Break-Bricks-circle.png' />
-</figure> 
+## Stretch Challenges 
 
-<figure>
-  <figcaption> 
-    Challenge 1.2: Draw Target
-  </figcaption>
-  <img src='images/Break-Bricks-Target.png' />
-</figure>
+This OOP thing is fun! I can tell you want more! Here are a few more things you can try. 
 
-<figure>
-  <figcaption> 
-    Challenge 1.3: Draw Rainbow
-  </figcaption>
-  <img src='images/Break-Bricks-rainbow.png' />
-</figure>
+1. Make a `Game` Class. The Game itself can be an object that creates and owns all of the other objects. The game can hold all of the global properties, and methods. 
+  - Properties
+    - `ball`
+    - `bricks`
+    - `score`
+    - `lives`
+    - `ctx`
+    - `width`
+    - `height`
+  - Methods
+    - `move()`
+    - `draw()`
+    - `collisionDetection()`
+    - `keyDownHandler()`
+    - `keyUpHandler()`
+    - `mouseMoveHandler()`
 
-<figure>
-  <figcaption> 
-    Challenge 1.4: Draw Rainbow on a Rainbow
-  </figcaption>
-  <img src='images/Break-Bricks-rainbow-2.png' />
-</figure>
+2. Use inheritence
+
+The Ball, Birck, and Paddle all use x and y properties. Classes can have a super/parent class. Super classes provide base functionality. Child classes can extend another class to inherit this functionality. 
+
+In this project the Brick, Ball, and Paddle all have the same properties x and y. You can create a base class with thee properties and extend this class to create the Ball, Paddle, and Brick. 
+
+Start with this: 
+
+```JavaScript
+class Sprite {
+ constructor(x = 0, y = 0) {
+  this.x = x;
+  this.y = y;
+ }
+```
+
+Extend this class like this: 
+
+```JavaScript
+class Ball extends Sprite {
+ constructor(radius, x, y) {
+  super(x, y)
+  this.radius = radius;
+ }
+
+ render() {
+  ...
+ }
+}
+```
+
+The Ball class extends Sprite. You must call super() and provide any needed parameters to the super class. Notice Ball impelements the render() method. 
+
+Think about any other properties that are shared across all of the Objects, you can move these properties into Node. In this way you will only have to edit or work with these in one place. 
+
+If there is a default implementation for a method that is used by most child classes you can implement this in the parent. When a child class implements a method that exists in the parent this called overriding. When you override a method you are using the child's method over the parent's. 
+
+## Further Challenges 
+
+If you have completed all of the challenges you try the challenges here or can design your own challenges. 
+
+This section has some futher challenges you can try if you need more work. 
+
+**Challenge**: Improve the Alert messages
+
+**Problem**: That Alert box is really annoying. It also stops everything until you click it. The Alert box should not be used by applications unless they issuing system type alerts. 
+
+**Solution**: Make a custom overlay that displays a message. There are two approaches you can take
+  
+- Use a DOM element
+  - Make a div that you will hide and show when you win or lose the game. 
+  - Use tricky CSS wizardry (absolute position) to place the div over the canvas.
+  - Use JavaScript to handle button clicks. 
+- Draw the dialog box on canvas (not for the faint of heart)
+  - Make a class that renders a dialog box
+  - Listen for clicks on canvas check if a click is within the area of a button
+
+## Assess your work
+
+| -            | Does not meet expectations | Meets expectations       | Exceeds expectations |
+|:-------------|:---------------------------|:-------------------------|:---------------------|
+|**Completed** | Did not complete           | Created classes for: Ball, Brick, Paddle, Score, Lives | Modified the tutorial and improved on the existing code |
+|**Refactor**| Is not functional | Game functions as before the refactor | Functions as before but also has clearly better structure |
+| **Code quality** | Indentation is bad, white space is inconsistent | Uses consistent indentation and spacing | Well written and well commented, code is well organized with variables at the top, and functions arranged logically. There are no linting errors |
+| **Work Ethic** | Did not commit when working on project | Initial commit at class and commit while working | Commits show 3 hours and clearly document process | 
