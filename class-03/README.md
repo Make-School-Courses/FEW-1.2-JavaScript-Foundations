@@ -328,4 +328,4 @@ This section has some futher challenges you can try if you need more work.
 |**Completed** | Did not complete           | Created classes for: Ball, Brick, Paddle, Score, Lives | Modified the tutorial and improved on the existing code |
 |**Refactor**| Is not functional | Game functions as before the refactor | Functions as before but also has clearly better structure |
 | **Code quality** | Indentation is bad, white space is inconsistent | Uses consistent indentation and spacing | Well written and well commented, code is well organized with variables at the top, and functions arranged logically. There are no linting errors |
-| **Work Ethic** | Did not commit when working on project | Initial commit at class and commit while working | Commits show 3 hours and clearly document process | 
+| **Work Ethic** | Did not commit when working on project | Initial commit at class and commit while working | Commits show 3 hours work and clearly document process | 
