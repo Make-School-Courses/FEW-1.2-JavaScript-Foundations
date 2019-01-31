@@ -10,7 +10,11 @@ You will also use this project to practice your skills as a software developer.
 
 ## Oregon Trail
 
-I got a tip from the VC guys that text adventure games are making a come back! Quick drop everything and do this tutorial:
+I got a tip from the VC guys that text adventure games are making a come back! Quick drop everything and go get this starter project: 
+
+https://github.com/soggybag/adventure-0-starter
+
+The project above was created from the tutorial below. You don't need to read this entire tutorial. It is a little confusing to follow. Starting with the starter code is prefered. Imagine you've inherited the code base and need to figure it out and improve on what is there. 
 
 https://gamedevacademy.org/js13kgames-tutorial/
 
