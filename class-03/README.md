@@ -1,4 +1,4 @@
-# FEW 1.2 - Class 4
+# FEW 1.2 - Class 3
 
 ## Class Objects
 

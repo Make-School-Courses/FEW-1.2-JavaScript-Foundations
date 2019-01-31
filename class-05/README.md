@@ -1,4 +1,4 @@
-# FEW 1.2 - Class 6 
+# FEW 1.2 - Class 5
 
 ## Updating and Refactoring 
 
