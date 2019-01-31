@@ -1,4 +1,4 @@
-# FEW 1.2 - Class 5
+# FEW 1.2 - Class 4
 
 ## Oregon Trail Tutorial
 
