@@ -11,15 +11,15 @@ You've written lots of code so far you've probably incurred some [technical debt
 - Use Refactoring to improve code quality
 - Build systems with Objects 
 - Define classes 
-- Use dedendency injection
+- Use dependency injection
 
 ## Refactoring 
 
 The goal of [refactoring code](https://en.wikipedia.org/wiki/Code_refactoring) in short is to improve your existing code base and put it into a shape that will accept future updates. 
 
-Refactoring is not about adding new features. Instead we want to have same functionality with an improved code base underneath it. 
+Refactoring is not about adding new features. Instead, we want to have the same functionality with an improved code base underneath it. 
 
-What should you refactor? In this section you will be creating Class objects to represent elements used by the game. Along the way you can also do the following: 
+What should you refactor? In this section, you will be creating Class objects to represent elements used by the game. Along the way you can also do the following: 
 
 - Improve variable declarations. Replace `var` with `const` and `let`
 - Add comments
@@ -35,7 +35,7 @@ Making the code more Object Oriented won't make the code execute faster. It will
 
 What is an object?
 
-Objects are collections and name spaces. An object is a collection of properties (variables) and methods (functions). A namespace gives you one name to access items in the collection. 
+Objects are collections and namespaces. An object is a collection of properties (variables) and methods (functions). A namespace gives you one name to access items in the collection. 
 
 Why make Objects? 
 
@@ -45,21 +45,21 @@ Grouping related variables together in an object will organize and encapsulate t
 
 ```JavaScript
 const ball = {
-	x: 200, 
-	y: 300, 
-	radius: 10, 
-	dx: -2,
-	dy: -2 
+    x: 200, 
+    y: 300, 
+    radius: 10, 
+    dx: -2,
+    dy: -2 
 }
 ```
 
-With this arrangement there is only a single global variable. Which makes our code safer, there is less chance we might overwrite a variable by accident. 
+With this arrangement, there is only a single global variable. Which makes our code safer, there is less chance we might overwrite a variable by accident. 
 
 All the variables that belong to the ball system are grouped together. This makes it easier to reason about. 
 
 If you need to make another ball you can make another object with the same properties. 
 
-Objects with the same properties are interchangable. 
+Objects with the same properties are interchangeable. 
 
 Encapsulation and Polymorphism
 
@@ -67,13 +67,13 @@ While defining a ball with an object literal works. You can go a step further by
 
 ```JavaScript
 class Ball {
-	constructor(x, y, radius = 10) {
-		this.x = x
-		this.y = y
-		this.radius = radius
-		this.dx = -2
-		this.dy = -2
-	}
+    constructor(x, y, radius = 10) {
+        this.x = x
+        this.y = y
+        this.radius = radius
+        this.dx = -2
+        this.dy = -2
+    }
 }
 
 const ball = new Ball(200, 300)
@@ -96,7 +96,7 @@ ES6 style classes have some features that deserve discussion.
 
 The engineering team has decided to **OOPify** the whole game. You're in charge of the refactor. You need to make this Object Oriented. 
 
-_You're be in charge of making a class for each of the game objects._
+_You're in charge of making a class for each of the game objects._
 
 - Ball
 - Brick
@@ -125,12 +125,12 @@ Here `Ball` Class defines instances which will have four properties. Two of the 
 
 - `color`: the color the ball will render as
 - `radius`: the size of the ball measured as it's radius
-- `x`: the position of the ball on the x axis of a canvas
-- `y`: the position of the ball on the y axis of a canvas
+- `x`: the position of the ball on the x-axis of a canvas
+- `y`: the position of the ball on the y-axis of a canvas
 
-## Dependancy Injection
+## Dependency Injection
 
-Many of the game objects need to draw themselves. In order to do this they need access to the canvas rendering context. This is a dependency. These classes should NOT rely on a global variable! The solution is inject the dependency. 
+Many of the game objects need to draw themselves. In order to do this, they need access to the canvas rendering context. This is a dependency. These classes should NOT rely on a global variable! The solution is to inject the dependency. 
 
 ```JavaScript
  class Ball {
@@ -140,22 +140,22 @@ Many of the game objects need to draw themselves. In order to do this they need 
     this.x = 0;
     this.y = 0;
   }
-						 
-	render(ctx) {
-		...
-	}
+                         
+    render(ctx) {
+        ...
+    }
 }
 ```
 
-Here the render method takes `ctx` as a parameter. This class can now be used anywhere and is not dependent on global variable. Instead the value is passed from outside. 
+Here the render method takes `ctx` as a parameter. This class can now be used anywhere and is not dependent on a global variable. Instead, the value is passed from outside. 
 
 An important technique you can make use of here is [Depedancy Injection](https://en.wikipedia.org/wiki/Dependency_injection). Skim this.
 
 This is a powerful idea that is used often in software development. In a nutshell: 
 
-> A dependency is an object that can be used by another object. An injection is the passing of a dependency to the dependent object that would use it.
+> A dependency is an object that can be used by another object. Injection is the passing of a dependency to the dependent object that would use it.
 
-Your goal for the current challenges is to create class objects for the Brick, Ball, Paddle, and Background. These classes will need to draw onto the canvas. The _canvas is a dependancy_ for the Brick, Paddle, Ball etc. These objects are dependent on a canvas context, they can't draw themselvse without one!
+Your goal for the current challenges is to create class objects for the Brick, Ball, Paddle, and Background. These classes will need to draw onto the canvas. The _canvas is a dependancy_ for the Brick, Paddle, Ball etc. These objects are dependent on a canvas context, they can't draw themselves without one!
 
 While you could supply the canvas when you initialized an object that would create a more tightly coupled system. Passing the canvas to the object when it needs to draw itself is a more elegant solution. 
 
@@ -178,11 +178,11 @@ Revisit the `Ball` class. In the code snippet below I've added a `render()` meth
 }
 ``` 
 
-This is dependancy injection at work! Overall this is a very nice Class package you could make and render as many instances of this class as you might need, and render them on any canvas context. 
+This is dependency injection at work! Overall this is a very nice Class package you could make and render as many instances of this class as you might need, and render them on any canvas context. 
 
 ## OOP Challenges
 
-Your job is to refactor your work. You'll be making class object to replace the existing code. Along the way you should also clean up your code, fixing formatting, indentation, and add comments. 
+Your job is to refactor your work. You'll be making a class object to replace the existing code. Along the way, you should also clean up your code, fixing formatting, indentation, and add comments. 
 
 - **Challenge 1**: Define Classes for Game Objects
   1. Define a class for `Ball`
@@ -193,7 +193,7 @@ Your job is to refactor your work. You'll be making class object to replace the 
       - `y`
     - Methods
       - `render(ctx)`
-			- `move()`
+            - `move()`
   2. Define a class for `Brick`
     - Properties 
       - `x`
@@ -227,8 +227,8 @@ Your job is to refactor your work. You'll be making class object to replace the 
       - `font`
     - Methods 
       - `render(ctx)`
-			- `update(points)`
-			- `reset()`
+            - `update(points)`
+            - `reset()`
   6. Define a class for `Lives`
     - Properties 
       - `x`
@@ -238,10 +238,10 @@ Your job is to refactor your work. You'll be making class object to replace the 
       - `font`
     - Methods 
       - `render(ctx)`
-			- `loseLife()`
-			- `reset()`
+            - `loseLife()`
+            - `reset()`
    
-The goal is not to add new features. At the end you should have better code that works the same. You're paying off technical debt and refactoring to make a better code base. 
+The goal is not to add new features. In the end, you should have better code that works the same. You're paying off technical debt and refactoring to make a better code base. 
     
 ## Stretch Challenges 
 
@@ -264,11 +264,11 @@ This OOP thing is fun! I can tell you want more! Here are a few more things you 
     - `keyUpHandler()`
     - `mouseMoveHandler()`
 
-2. Use inheritence
+2. Use inheritance
 
-The Ball, Birck, and Paddle all use x and y properties. Classes can have a super/parent class. Super classes provide base functionality. Child classes can extend another class to inherit this functionality. 
+The Ball, Birck, and Paddle all use x and y properties. Classes can have a super/parent class. Superclasses provide base functionality. Child classes can extend another class to inherit this functionality. 
 
-In this project the Brick, Ball, and Paddle all have the same properties x and y. You can create a base class with thee properties and extend this class to create the Ball, Paddle, and Brick. 
+In this project, the Brick, Ball, and Paddle all have the same properties: x and y. You can create a base class with thee properties and extend this class to create the Ball, Paddle, and Brick. 
 
 Start with this: 
 
@@ -295,9 +295,9 @@ class Ball extends Sprite {
 }
 ```
 
-The Ball class extends Sprite. You must call super() and provide any needed parameters to the super class. Notice Ball impelements the render() method. 
+The Ball class extends Sprite. You must call super() and provide any needed parameters to the superclass. Notice Ball implements the render() method. 
 
-Think about any other properties that are shared across all of the Objects, you can move these properties into Node. In this way you will only have to edit or work with these in one place. 
+Think about any other properties that are shared across all of the Objects, you can move these properties into Node. In this way, you will only have to edit or work with these in one place. 
 
 If there is a default implementation for a method that is used by most child classes you can implement this in the parent. When a child class implements a method that exists in the parent this called overriding. When you override a method you are using the child's method over the parent's. 
 
@@ -305,7 +305,7 @@ If there is a default implementation for a method that is used by most child cla
 
 If you have completed all of the challenges you try the challenges here or can design your own challenges. 
 
-This section has some futher challenges you can try if you need more work. 
+This section has some further challenges you can try if you need more work. 
 
 **Challenge**: Improve the Alert messages
 
@@ -325,7 +325,7 @@ This section has some futher challenges you can try if you need more work.
 
 | -            | Does not meet expectations | Meets expectations       | Exceeds expectations |
 |:-------------|:---------------------------|:-------------------------|:---------------------|
-|**Completed** | Did not complete           | Created classes for: Ball, Brick, Paddle, Score, Lives | Modified the tutorial and improved on the existing code |
+|**Completed** | Did not complete           | Created classes for Ball, Brick, Paddle, Score, Lives | Modified the tutorial and improved on the existing code |
 |**Refactor**| Is not functional | Game functions as before the refactor | Functions as before but also has clearly better structure |
 | **Code quality** | Indentation is bad, white space is inconsistent | Uses consistent indentation and spacing | Well written and well commented, code is well organized with variables at the top, and functions arranged logically. There are no linting errors |
 | **Work Ethic** | Did not commit when working on project | Initial commit at class and commit while working | Commits show 3 hours work and clearly document process | 

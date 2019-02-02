@@ -7,7 +7,7 @@ Break out loops and conditionals
 ## Canvas 
 
 Loops are a tool to repeat a task a number of times. 
-Use them to automate repetative code. 
+Use them to automate repetitive code. 
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
 - https://eloquentjavascript.net/02_program_structure.html
@@ -32,7 +32,7 @@ Feedback from extensive user testing has revealed that people would find the gam
     - Make all the colors different.
     - Change the background color. 
 
-The new colors are good but someone had the brilliant idea, and it might really be brilliant, to make make the bricks alternate in color. 
+The new colors are good but someone had a brilliant idea, and it might really be brilliant, to make make the bricks alternate in color. 
 
 <figure>
   <figcaption> 
@@ -43,13 +43,13 @@ The new colors are good but someone had the brilliant idea, and it might really 
 
 To do this you will need to use some conditional logic within the function that draws the bricks. The `drawBricks()` function uses two loops to draw bricks along columns and rows. 
 
-There are a couple variables here that could be useful you in your quest for colors!
+There are a couple of variables here that could be useful you in your quest for colors!
 
 `c` is the column number. It's used to set the x or horizontal position of a brick. This variable counts from 0 to `brickColumnCount`. 
 
 `r` is the row number. It's used to set the y or vertical position of the brick. This variable counts from 0 to `brickRowCount`. 
 
-To determine the colors you'll need to have a plan. First you'll need to decide on the colors you want to use. The colors are stored as strings but the value can be any color that you could use with CSS. Here are a few options: 
+To determine the colors you'll need to have a plan. First, you'll need to decide on the colors you want to use. The colors are stored as strings but the value can be any color that you could use with CSS. Here are a few options: 
 
 **Color Types:**
 
@@ -66,7 +66,7 @@ To determine the colors you'll need to have a plan. First you'll need to decide 
 - [HSLA Color](https://www.w3schools.com/css/css3_colors.asp):
   - `'hsla(0, 100%, 30%, 0.3)'`, `'hsla(115, 59%, 50%, 0.83)'`
 
-**Tip!** HSL colors separate the Hue from the other color components. Because of this use HSL can easily create rainbows, that is a sequence of colors that change hue, or tints and shades of a color, colors that get lighter or darker but stay in the same hue. Using HSL it's easier to programatically transform one color into another or create a sequence.  
+**Tip!** HSL colors separate the Hue from the other color components. Because of this use, HSL can easily create rainbows, that is a sequence of colors that change hue, or tints and shades of a color, colors that get lighter or darker but stay in the same hue. Using HSL it's easier to programmatically transform one color into another or create a sequence.  
 
 Hue has a range of 0 to 360. Think of color as a circle and hue moves around the circle starting with red, moving through all of the colors of the rainbow and ending on red. 
 
@@ -129,13 +129,13 @@ You could also store a list of colors in an array. This would be good if you dec
   <img src='images/Break-Bricks-More.png' />
 </figure>
 
-You're doing well. So well, you've been assigned to the _experimental squad_. You've been given the go ahead to implement new and experimental features. These are are dangerous and often have deeper implicatoins that leave regular people scratching their heads asking "but, why would you want to do that?"
+You're doing well. So well, you've been assigned to the _experimental squad_. You've been given the go-ahead to implement new and experimental features. These are dangerous and often have deeper implications that leave regular people scratching their heads asking "but, why would you want to do that?"
 
 - **Stretch Challenges**
   1. Make the bricks different sizes
-    - You can give the each brick object a width and or height. You'll have to be more careful about layout. 
+    - You can give each brick object width and or height. You'll have to be more careful about the layout. 
   2. Stagger the rows so that the first row is a little further to the left and the next row is a little further to the right. You can probably handle this all in `drawBricks()`.
-  3. Make each row use different sized bricks. You can store the width and height of a brick in brick objects in the bricks Array. You'll need to take in to account the size of each brick in `drawBricks()`. 
+  3. Make each row use different sized bricks. You can store the width and height of a brick as a property of each object in the bricks Array. You'll need to take in to account the width and height of each brick in `drawBricks()`. 
   
 <figure>
   <figcaption> 
@@ -158,11 +158,11 @@ You're doing well. So well, you've been assigned to the _experimental squad_. Yo
   <img src='images/Break-Out-Bricks-sizes-3.png' />
 </figure>
 
-### Why solbve these challenges? 
+### Why solve these challenges? 
 
-These challenges are similar to questions asked at technical interviews solving these problems is great preparation the future! 
+These challenges are similar to questions asked at technical interviews solving these problems is great preparation for the future! 
 
-These problems also stretch your knowledge of JavaScript and give you opportunity to practice your craft! The tutorial includes arrays and objects which are core features of the langauges and the basis for advanced topics. The tutorial will push your knowledge with more advanced topics like multidimensional arrays and complex conditional statements. 
+These problems also stretch your knowledge of JavaScript and give you an opportunity to practice your craft! The tutorial includes arrays and objects which are core features of the language and the basis for advanced topics. The tutorial will push your knowledge with more advanced topics like multidimensional arrays and complex conditional statements. 
 
 ## Breakout Tutorial Challenges 
 
