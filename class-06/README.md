@@ -4,6 +4,17 @@
 
 The original game was made with Object literals. You can improve on this by using Class Objects. Defining a Class makes the code easier to read and provides more intent on what we are trying to express with code. Using Classes also gives us a better syntax for expressing our code. 
 
+## Objectives 
+
+- Build and define classes from code written as object literals
+	- Idenitfy and define Properties 
+	- Identify and define Methods
+- Create class structures with: 
+	- constructor
+	- methods 
+	- properties 
+- Use `this` and identify it's context
+
 ## Update to Class Objects 
 
 Read up on JavaScript Classes [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)

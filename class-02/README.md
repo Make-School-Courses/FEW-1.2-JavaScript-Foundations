@@ -4,6 +4,18 @@
 
 Break out loops and conditionals
 
+## Objectives 
+
+- Write loops with JavaScript
+- Use loops to repeat programming tasks
+- Define colors with JavaScript
+- Use conditional statements to make decisions in code
+- Solve problems with loops and conditional statements
+- Use canvas
+    - Clearing canvas
+    - Drawing circles on `canvas`
+    - drawing rectangles on `canvas`
+
 ## Canvas 
 
 Loops are a tool to repeat a task a number of times. 
@@ -27,7 +39,7 @@ Feedback from extensive user testing has revealed that people would find the gam
 
 - **Challenge 1**
   - Change the colors. 
-    - The colors appear as strings in the drawBall(), drawPaddle(), and drawBricks() functions. 
+    - The colors appear as strings in the `drawBall()`, `drawPaddle()`, and `drawBricks()` functions. 
     - Find these, and choose your own colors. 
     - Make all the colors different.
     - Change the background color. 
@@ -47,7 +59,7 @@ There are a couple of variables here that could be useful you in your quest for 
 
 `c` is the column number. It's used to set the x or horizontal position of a brick. This variable counts from 0 to `brickColumnCount`. 
 
-`r` is the row number. It's used to set the y or vertical position of the brick. This variable counts from 0 to `brickRowCount`. 
+`r` is the row number. It's used to set the `y` or vertical position of the brick. This variable counts from 0 to `brickRowCount`. 
 
 To determine the colors you'll need to have a plan. First, you'll need to decide on the colors you want to use. The colors are stored as strings but the value can be any color that you could use with CSS. Here are a few options: 
 

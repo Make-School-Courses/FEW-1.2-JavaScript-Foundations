@@ -6,6 +6,27 @@ There is a lot of code here. You need to start digging in and figuring out how i
 
 After playing the game/using the code the next step is reading the code and making small changes and improvements. 
 
+## Objectives 
+
+- Define Scope
+    - Local scope
+    - Global Scope
+- Use const, let, and var to define variables in a scope
+    - Block scope
+    - Function Scope
+- Identify the scope of variables and functions
+- Define Closure 
+- Identify the scope of variables captured by Closure
+- Use template strings
+
+## Scope 
+
+Scope is a term that determines where a variable or function is accessible in your software. 
+
+Scope can be Global the variable is visible everywhere or local the variable is accessible in a limited area. 
+
+Variables defined **without** one of the keywords `const`, `let`, or `var` is global. 
+
 ## Updating Syntax
 
 **Template Strings**
@@ -20,7 +41,7 @@ The code seems to have been written before template strings. Template Strings ar
 
 The original code was written before `const` and `let` were available. Using `const` and `let` will improve performance, catch errors, and make your intent more clear.
 
-Updating variable declarations will require you to look at each variable and examine it's scope and figure out whether the variable should be mutable or immutable.
+Updating variable declarations will require you to look at each variable and examine its scope and figure out whether the variable should be mutable or immutable.
 
 Remember `const` and `let` are not hoisted! This effects `var OregonH` which appears at the top of each file! This is shared across all files it will need to use the `var` declaration!
 
@@ -35,7 +56,7 @@ Along the way, while you update the code you can also make changes to the game.
 
 ### Game Events 
 
-Events are things that happen in the game. These occur on a probablity stored in: `EVENT_PROBABILITY`. Events are defined in the file: `Events.js`. The array `OregonH.Event.eventTypes` holds a list of all of the events. Each event is an object with properties named: 
+Events are things that happen in the game. These occur on a probability stored in: `EVENT_PROBABILITY`. Events are defined in the file: `Events.js`. The array `OregonH.Event.eventTypes` holds a list of all of the events. Each event is an object with properties named: 
 
 - `type`: String - naming the type of event
 - `notification`: String - positive or negative
@@ -47,7 +68,7 @@ Events are things that happen in the game. These occur on a probablity stored in
   - `qty`: Number - the number of items that can be bought
   - `price`: Number - the price of an item
 
-The type property has a string value which is:
+The `type` property has a string value which is:
 
 - `STAT-CHANGE` - Changes a stat
 - `SHOP` - Shows the Shop box
@@ -55,7 +76,7 @@ The type property has a string value which is:
 
 Some events create a change to a named stat on the `Caravan` Object. The actual change happens somewhere in the code where events are processed. 
 
-Not all events have all properties. For example only the shop event has `products`. Shop events don't have `stat` or `value`. Shop events change stats on `Caravan` but only when you buy something from the shop. 
+Not all events have all properties. For example, only the shop event has `products`. Shop events don't have `stat` or `value`. Shop events change stats on `Caravan` but only when you buy something from the shop. 
 
 ## Challenges 
 
@@ -74,7 +95,7 @@ this.ui.notify(`Left ${droppedGuns} guns behind`, 'negative');
   1. Read through each file and examine each variable declaration. Ask yourself if this variable should be a `const`, `let`, or `var`. 
 
 - **Challenge 3**: Format Code
-  1. While the code is formatted well it may not use coventions you are familiar with. Along the way format the code the way that you like to read it. 
+  1. While the code is formatted well it may not use conventions you are familiar with. Along the way format the code the way that you like to read it. 
 
 - **Challenge 4**: Modifying Events
   1. Read the list of events in Events.js
@@ -92,7 +113,7 @@ Using object deconstruction and intermediate variables.
   
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
   
-There are a few places in the code where there are long nested properties. These can be easily destructured to mnake your work easier. 
+There are a few places in the code where there are long nested properties. These can be easily destructured to make your work easier. 
 
 Consider this block of code.
 
@@ -114,7 +135,7 @@ OregonH.UI.refreshStats = function() {
 };
 ```
 
-These are long lines of code that are hard to parse on a couple levels. First they are very long so it's hard to absorb. Second, the properties used are nested within objects which adds to the cognitive load. Consider this: 
+These are long lines of code that are hard to parse on a couple levels. First, they are very long so it's hard to absorb. Second, the properties used are nested within objects which adds to the cognitive load. Consider this: 
 
 ```JavaScript
 //refresh visual caravan stats
@@ -145,7 +166,7 @@ OregonH.UI.buyProduct = function(product) {
   ...
 ```
 
-In the function above `product` is an object with properties of `item`, `price`, and `qty`. You can break these into into variables in place of the `product` parameter. 
+In the function above `product` is an object with properties of `item`, `price`, and `qty`. You can break these into variables in place of the `product` parameter. 
 
 ```JavaScript
 //buy product
@@ -155,7 +176,7 @@ OregonH.UI.buyProduct = function({ item, price, qty }) {
     OregonH.UI.notify('Not enough money', 'negative');
     return false;
   }
- 	
+     
   OregonH.UI.caravan.money -= price;
   OregonH.UI.caravan[item] += +qty;
   ...
@@ -163,7 +184,7 @@ OregonH.UI.buyProduct = function({ item, price, qty }) {
 
 **Stretch Challenge 2**: Change the whole story! 
 
-Rewrite all of the events to tell a new and different narrative. Currently the narrative involves travelling 1000 miles. Along the way the following things can happen: 
+Rewrite all of the events to tell a new and different narrative. Currently, the narrative involves traveling 1000 miles. Along the way the following things can happen: 
 
 - Food Intoxication: Causes loss of crew
 - Flu Outbreak: Causes loss of crew
@@ -177,7 +198,7 @@ Rewrite all of the events to tell a new and different narrative. Currently the n
   - "Smugglers sell various goods"
 - Bandits are attacking you: Can lose crew or gain money
 
-The existing narrative is fairly grim and flat. This could be changed is many ways. I'm sure you have your own ideas! Here are a few things that I thought of: 
+The existing narrative is fairly grim and flat. This could be changed in many ways. I'm sure you have your own ideas! Here are a few things that I thought of: 
 
 - "Space pirates launch a volley of laser blasts": Loss of crew
 - "Friendly Unicorns bless the group": Gain food
@@ -192,7 +213,7 @@ Narrative works best with a theme. Build your theme around a genre. Fantasy, sci
 - Firefly
 - Adventure Time
 
-Think of events that might occur and how these would effect the story. With the existing logic an event can do the following: 
+Think of events that might occur and how these would affect the story. With the existing logic an event can do the following: 
 
 - Stat Change: changes the value of a state positive or negative
 - Shop: A shop can offer resources for purchase. Consider making shops that offer some things that are not offered by other shops. This could add interest to your narrative. Gnomish Traders may only sell Clockwork minions (oxen). While Elvish Rangers only sell Lembas Bread (food). 
@@ -207,43 +228,43 @@ Stats can be worked with to make the game interesting. Here is a list of the sta
 - money
 - firepower
 
-Crew, oxen, food, money, and firepower are obvious choices for gains, losses and purchases. But, who's to say a "friendly gold dragon" can't carry the group 50 miles (effects distance) or an "evil wizard" can't cast a time travel spell (effects the day).
+Crew, oxen, food, money, and firepower are obvious choices for gains, losses, and purchases. But, who's to say a "friendly gold dragon" can't carry the group 50 miles (effects distance) or an "evil wizard" can't cast a time travel spell (effects the day).
 
 Changing the name of stats can add a lot to describe and support your narrative. Consider these:
 
 - money: Sounds pretty pedestrian
 - gold: Sounds fantasy
 - doubloons: Sounds like Pirates
-- credits: Sounds Sci Fi
+- credits: Sounds Sci-Fi
 
 - crew: Sounds like people
-- Pirates: Arr matey!
+- Pirates: Arr Matey!
 - soldiers: Sounds military
 - hitpoints: Sounds like you are a single adventurer
 
 - oxen: Sounds like, well, oxen
-- fuel: Powers vehicles and space craft
+- fuel: Powers vehicles and spacecraft
 - dilithium crystals: Were used to power ships in Star Trek
 - engines, thrusters, rockets: These power spacecraft
 
 - firepower: Sounds like guns and stuff
 - bullets: Sounds like guns, I like this name better than firepower. 
 - swords: Sounds fantasy
-- chi: Sounds like mystical power
+- chi: Sounds like a mystical power
 
 - day: Sounds like time in medium scale
 - cycles, seasons, years: Sounds like time at a larger scale
 - minutes, seconds, microns: Sounds like time on a smaller scale
 
-- distance: In the game is a number that is labeled as miles. This is good and describes things in an earthly scale. Consider tens, hundreds, thousands, or millions of miles. Or if you're trying to add some european style make it metric! 
+- distance: In the game is a number that is labeled as miles. This is good and describes things on an earthly scale. Consider tens, hundreds, thousands, or millions of miles. Or if you're trying to add some European style make it metric! 
 
-**Stretch Challenge 3**: Selling goods
+**Stretch Challenge 3**: Selling Goods
 
-This is more of a stretch stretch challenge. Currently the shop allows you only to buy items. If you could also sell items that would add a lot of strategy, and give the player more options. It's the options that makes games interesting, am I right? 
+This is more of a stretch challenge. Currently, the shop allows you only to buy items. If you could also sell items that would add a lot of strategies, and give the player more options. It's the options that make games interesting, am I right? 
 
-Solving this challenge will take a more work since the game doesn't support this feature currently. To do implement this you'll need to:
+Solving this challenge will take more work since the game doesn't support this feature currently. To do implement this you'll need to:
 
 - Determine what a shop will buy and how much they will pay. 
 - Create an interface that allows sales. Maybe this is just a displaying a list of buttons showing items the player owns and how much the shop will pay for that. But the interface will need to be clear which items are being sold vs which are for sale. 
-- You'll need to write a function that handles the transaction. It will need to subtract the item from your stat, and add to your money stat. You may also need to check if you have enough of an item to sell it before completing the transaction. 
+- You'll need to write a function that handles the transaction. It will need to subtract the item from your stat and add to your money stat. You may also need to check if you have enough of an item to sell it before completing the transaction. 
 

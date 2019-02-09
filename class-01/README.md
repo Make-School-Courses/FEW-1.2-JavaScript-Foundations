@@ -8,23 +8,20 @@ It's your job to put in regular hours working on the code you are responsible fo
 
 You will maintain a GitHub Repo for each project. **You need to commit each time you work on the project. For each session you work you should have at least one commit.** This is a requirement.
 
-You'll be working on three games:
+## Objectives 
 
-- Breakout - the arcade classic
-- Oregon Trail - one of the most successful games of all time!
-- Platform Game built with Phaser 3 JS
+- Use JavaScript to create applications of medium complexity
+- Use arrays including multi-dimensional arrays
+- Define objects with Object Literal notation
+- Solve problems and follow instructions
 
-## Breakout with JS
+## Homework: Breakout with JS
 
 [Breakout](https://en.wikipedia.org/wiki/Breakout_(video_game)) is a classic arcade game. It's simple and has been ported to almost every platform. Your job is to make the JavaScript version.
 
-Your goal is to build the tutorial here:
+Your goal is to build the tutorial [here](https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript)
 
-https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript
-
-The tutorial here is short. You should be able to finish it in an evening.
-
-## Homework
+The tutorial is short and contains completed functional code sample at the end of each section, use this to check your work as you progress. 
 
 Read the tutorial and complete the game. Your tutorial should be functional! The tutorial shows the complete sample code at the end of every section. You can test your process against this as you work. Test your work and play the game!
 

@@ -178,7 +178,7 @@ Revisit the `Ball` class. In the code snippet below I've added a `render()` meth
 }
 ``` 
 
-This is dependency injection at work! Overall this is a very nice Class package you could make and render as many instances of this class as you might need, and render them on any canvas context. 
+This is Dependency Injection at work! Overall this is a very nice Class package you could make and render as many instances of this class as you might need, and render them on any canvas context. 
 
 ## OOP Challenges
 
@@ -241,7 +241,7 @@ Your job is to refactor your work. You'll be making a class object to replace th
             - `loseLife()`
             - `reset()`
    
-The goal is not to add new features. In the end, you should have better code that works the same. You're paying off technical debt and refactoring to make a better code base. 
+The goal is not to add new features. In the end, you should have a better code that works the same. You're paying off technical debt and refactoring to make a better code base. 
     
 ## Stretch Challenges 
 
@@ -268,7 +268,7 @@ This OOP thing is fun! I can tell you want more! Here are a few more things you 
 
 The Ball, Birck, and Paddle all use x and y properties. Classes can have a super/parent class. Superclasses provide base functionality. Child classes can extend another class to inherit this functionality. 
 
-In this project, the Brick, Ball, and Paddle all have the same properties: x and y. You can create a base class with thee properties and extend this class to create the Ball, Paddle, and Brick. 
+In this project, the Brick, Ball, and Paddle all have the same properties: x and `y`. You can create a base class with thee properties and extend this class to create the Ball, Paddle, and Brick. 
 
 Start with this: 
 
