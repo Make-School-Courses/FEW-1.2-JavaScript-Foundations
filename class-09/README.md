@@ -1,7 +1,5 @@
 # FEW 1.2 Class 9
 
-
-
 Solving problems and researching documentation. 
 
 ## Intro

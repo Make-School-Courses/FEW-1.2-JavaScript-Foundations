@@ -8,6 +8,11 @@ Phaser renders everything to a canvas or WebGL Object with JS. Phaser supports m
 
 Phaser is free and available on [GitHub](https://github.com/photonstorm/phaser), you can contribute! version 1 was released in 2013. Currently Phaser is up to version 3.
 
+## Objectives 
+
+- Using JavaScript Libraries
+- 
+
 ## Why Learn Phaser JS?
 
 Currently there are more libraries and frameworks written for JS than any other language. Learning to use and implement a library is an important skill. 

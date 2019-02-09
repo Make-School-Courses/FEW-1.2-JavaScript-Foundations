@@ -47,9 +47,9 @@ Students by the end of the course will be able to ...
 
 **Class Times:** Tuesday and Thursday from 1:30–3:20 pm (12 class sessions)
 
-| Class |          Date          |                 Topics                  |
-|:-----:|:----------------------:|:---------------------------------------:|
-| 1 |Tuesday, January 22 | [JavaScript with Games intro](class-01) |
+| Class |      Date       |              Topics              |
+|:-----:|:---------------:|:--------------------------------:|
+| 1 |Tuesday, January 22  | [JavaScript with Games intro](class-01) |
 | 2 | Thursday, January 24| [Loops and Conditionals](class-02) |
 | 3 | Tuesday, January 29 | [Class Objects & OOP](class-03) |
 | 4 | Thursday, January 31| [Oregon Trail](class-04) |
@@ -57,11 +57,11 @@ Students by the end of the course will be able to ...
 | 6 | Thursday, February 7| [Working with Class Objects](class-06) |
 | 7 | Tuesday, February 12| [Debugging and Code Review](class-07) |
 | 8 | Thursday, February 14| [Phaser](class-08) |
-| 9 | Tuesday, February 19 | **President's Day (Observed)** |
-| 10| Thursday, February 21| [Wrapping Up Oregon Trail](class-09) |
-| 11| Tuesday, February 26 | [Phaser Tutorial](class-10) |
-| 12| Thursday, February 28| [TBA](class-11) |
-| 13| Tuesday, March 5     | Final Class presentation |
+| 9 | Tuesday, February 19 **President's Day (Observed)**| [Class 09](class-09) |
+| 10| Thursday, February 21| [Wrapping Up Oregon Trail](class-10) |
+| 11| Tuesday, February 26 | [Phaser Tutorial](class-11) |
+| 12| Thursday, February 28| [TBA](class-12) |
+| 13| Tuesday, March 5     | [Final Class presentation](class-13) |
 | 14| Thursday, March 7    | [Final Assessment](class-14) |
 
 ## Class Assignments
