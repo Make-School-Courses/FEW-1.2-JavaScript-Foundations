@@ -49,20 +49,20 @@ Students by the end of the course will be able to ...
 
 | Class |          Date          |                 Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
-|  1    |  Tuesday, January 22   | [JavaScript with Games intro](class-01) |
-|  2    | Thursday, January 24   | [Loops and Conditionals](class-02) |
-|  3    |  Tuesday, January 29   | [Working with Canvas](class-03) |
-|  4    | Thursday, January 31   | [Class Objects OOP](class-04) |
-|  5    |  Tuesday, February 5   | [Oregon Trail Tutorial](class-05) |
-|  6    | Thursday, February 7   | [Updating and refactoring](class-06) |
-|  7    |  Tuesday, February 12  | [Working with Class Objects](class-07) |
-|  8    | Thursday, February 14  | [Debugging and Code Review](class-08) |
-|  -    |  Tuesday, February 19  | **President's Day (Observed)** |
-|  9    | Thursday, February 21  | [Wrapping Up Oregon Trail](class-09) |
-|  10   |  Tuesday, February 26  | [Phaser Tutorial](class-10) |
-|  11   | Thursday, February 28  | [TBA](class-11) |
-|  12   |  Tuesday, March 5      | Final Class presentation |
-|  13   | Thursday, March 7      | Final Assessment |
+| 1 |Tuesday, January 22 | [JavaScript with Games intro](class-01) |
+| 2 | Thursday, January 24| [Loops and Conditionals](class-02) |
+| 3 | Tuesday, January 29 | [Class Objects & OOP](class-03) |
+| 4 | Thursday, January 31| [Oregon Trail](class-04) |
+| 5 | Tuesday, February 5 | [Updating and Refactoring](class-05) |
+| 6 | Thursday, February 7| [Working with Class Objects](class-06) |
+| 7 | Tuesday, February 12| [Debugging and Code Review](class-07) |
+| 8 | Thursday, February 14| [Phaser](class-08) |
+| 9 | Tuesday, February 19 | **President's Day (Observed)** |
+| 10| Thursday, February 21| [Wrapping Up Oregon Trail](class-09) |
+| 11| Tuesday, February 26 | [Phaser Tutorial](class-10) |
+| 12| Thursday, February 28| [TBA](class-11) |
+| 13| Tuesday, March 5     | Final Class presentation |
+| 14| Thursday, March 7    | [Final Assessment](class-14) |
 
 ## Class Assignments
 

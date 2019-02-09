@@ -1,31 +1,22 @@
-# Class 07 
+# FEW 1.2 - Class 7
 
-## Objectives 
+## Debugging and Code Review
 
-- Defining a a grid and using a grid to build structures
-- Building classes from object literals
-- Idenitfy properties and methods of objects 
+Debugging and code review should be a regular process in development. 
 
-## Using Grid to Layout
+## Debugging tools with JS
 
+### Debugging in the Browser
 
+The more complex your code becomes the more tools you need to 
+help you solve the problems that will eventually arise. 
 
-## Making classes from Object Literals 
+Read this article: https://developers.google.com/web/tools/chrome-devtools/javascript/
 
-
-
-### Identifying Properties 
-
-
-
-### Identifying Methods
-
-
+Follow the tutorial example then try these techniques on your project. 
 
 ## After class 
 
+Continue work on the Oregon Trail project. The goal is to have this finished the half of next week class 9. 
 
 
-## Resources 
-
-- 

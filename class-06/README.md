@@ -1,4 +1,4 @@
-# FEW 1.2 - Class 7
+# FEW 1.2 - Class 6
 
 ## Working with Class Objects
 
