@@ -1,6 +1,14 @@
 # FEW 1.2 - Class 13
 
-Lab day work and problem solving.
+Present your projects
+
+## Presenting your project
+
+Be prepared to show your work in class. You should be able to explain your solution to the best of your ability.
+
+If you have any problems or errors in your code you should be able to say what where and when the problem ocurred and what you have tried to solve it so far. 
+
+Look at this as an opportunity to practice for a coding interview. 
 
 ## Aside: Why? 
 
