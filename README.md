@@ -30,13 +30,10 @@ Class Sessions:  14 classes, 7 labs
 
 Students by the end of the course will be able to ...
 
-1. Use JavaScript with professional syntax
-1. Identify and define Classes and Objects
-1. Use Loops and conditionals
+1. Write fundamental JavaScript including variables, loops, conditionals, and classes with professional syntax
 1. Design & Implement web games with JS
 1. Write functions and differentiate function types; closures, callbacks, and handlers
 1. Modify the DOM with JavaScript
-1. Create variables and define their scope
 1. Define scope and differentiate between function and block scope
 1. Use developer tools to debug projects
 
