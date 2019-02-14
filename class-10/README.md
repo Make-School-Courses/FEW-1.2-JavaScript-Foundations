@@ -2,9 +2,7 @@
 
 ## Phaser Systems 
 
-Libraries are built to solve problems by abstracting solutions into functions and objects that can be used to solve a wider variety of problems. 
-
-Let's look at that in the context of Phaser 3. 
+Libraries are built to solve problems by abstracting solutions into functions and objects that can be used to solve a wider variety of problems. This class will look at that in the context of Phaser 3. 
 
 ## Objectives 
 
