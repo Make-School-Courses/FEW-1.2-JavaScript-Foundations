@@ -31,26 +31,30 @@
 			// The first parameter is the type of the event
 			// The secon param is the handler for the event
 			document.addEventListener('keydown', onKeyDown)
+			document.addEventListener('keydown', (e) => {
+				console.log(e)
+			})
 			
 			// Let's talk inheritence
 			// Look at what the window inherits
 			console.log(window)
 			
 			class Notifier extends EventTarget {
-				constructor() {
-					super()
+				constructor(ms) {
+					super(ms)
 					
 					setInterval(() => {
 						this.dispatchEvent(new Event('notification'))
-					}, 3000)
+					}, ms)
 				}
+				
 			}
 			
-//			const notifier = new Notifier()
-//			notifier.addEventListener('notification', (e) => {
-//				console.log("Notified")
-//				console.log(e)
-//			})
+			const notifier = new Notifier(5000)
+			notifier.addEventListener('notification', (e) => {
+				console.log("Notified")
+				console.log(e)
+			})
 //			
 //			console.log(notifier)
 		</script>
