@@ -31,6 +31,20 @@ Also, learning Phaser gives you a chance to see the same problems you solved ear
 
 ## Getting started
 
+You will follow the video tutorial series here: 
+
+https://www.youtube.com/watch?v=GUZ8SsLQKUs&list=PLoN_ejT35AEhY4icjiEJ5t2qdunwmQj1R
+
+This series of videos walks through all of the steps in the tutorial and then goes further by discussing modifcations and other features you might add.
+
+The video tutorial diverges from the tutorial by using the webpack starter project and ES6 modules.
+
+Follow the videos, takes notes on any questions you have along the way. Don't hesitate to contact me if you have questions.
+
+## Notes
+
+The video tutorial covers everything below you can follow the videos and refer to this section for reference. 
+
 ### Local Server and CORS
 
 Phaser loads assets through the file system. For this reason, you will need to run Phaser projects from a server. 
@@ -39,7 +53,7 @@ Phaser loads assets through the file system. For this reason, you will need to r
 
 Why? The browser prevents accessing files directly from the desktop. This is a security issue. The concept is Cross-Origin Resource Sharing or CORS. 
 
-The common solution is to create a local file server to serve your Phaser Project while testing locally.  
+The common solution is to create a local file server to serve your Phaser Project while testing locally. 
 
 Read more about this [here](https://phaser.io/tutorials/getting-started-phaser3). 
 
