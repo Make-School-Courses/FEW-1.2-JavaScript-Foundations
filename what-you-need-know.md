@@ -88,9 +88,9 @@ In the case of a one dimensional array the results should be the same as above.
 When the array is two dimensional each sub array should print its contents on the same line. For example given 
 [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ] it should print 
 
-1 2 3
-4 5 6
-7 8 9
+1 2 3<br>
+4 5 6<br>
+7 8 9<br>
 
 If the given array is: [11, 22, 33] your function should print: 
 
@@ -102,12 +102,12 @@ Write a function that generates a two dimensional array of any any height and wi
 
 Your function given a width of 4 and a height of 6 display: 
 
-0 0 0 0
-0 0 0 0
-0 0 0 0
-0 0 0 0
-0 0 0 0
-0 0 0 0
+0 0 0 0<br>
+0 0 0 0<br>
+0 0 0 0<br>
+0 0 0 0<br>
+0 0 0 0<br>
+0 0 0 0<br>
 
 Note: if you're using conole.log() you may see: (6) 0 0 0 0. Since each of the 6 lines is the same same string it prints the line once and says how many times it was repeated. 
 
