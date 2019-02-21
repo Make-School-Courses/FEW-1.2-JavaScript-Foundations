@@ -19,6 +19,7 @@ The goal of this class is learning to work with a complex library. While we will
 - Using JavaScript Libraries
 - Using documentation
 - Use build systems
+	- ES6 Modules
 - Use Modules to manage dependencies
 
 ## Why Learn Phaser JS?
