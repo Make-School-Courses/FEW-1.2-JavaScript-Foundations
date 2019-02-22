@@ -77,7 +77,7 @@ Write function that prints the contents of an array. Put a space " " between eac
 
 For example given the the array [33, 12, 74, 8] Your function should print: 
 
-33 12 74 8
+<pre>33 12 74 8</pre>
 
 ## Question 2 - Loops 2
 
@@ -88,13 +88,15 @@ In the case of a one dimensional array the results should be the same as above.
 When the array is two dimensional each sub array should print its contents on the same line. For example given 
 [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ] it should print 
 
+<pre>
 1 2 3
 4 5 6
 7 8 9
+</pre>
 
 If the given array is: [11, 22, 33] your function should print: 
 
-11 22 33 
+<pre>11 22 33</pre> 
 
 ## Question 3 - Loops and Arrays 
 
@@ -102,12 +104,14 @@ Write a function that generates a two dimensional array of any any height and wi
 
 Your function given a width of 4 and a height of 6 display: 
 
+<pre>
 0 0 0 0
 0 0 0 0
 0 0 0 0
 0 0 0 0
 0 0 0 0
 0 0 0 0
+</pre>
 
 Note: if you're using conole.log() you may see: (6) 0 0 0 0. Since each of the 6 lines is the same same string it prints the line once and says how many times it was repeated. 
 
@@ -131,8 +135,86 @@ For example: function combineArray([0,0,0], [5,4,3], 1) should return: [0,5,4]
 
 Write a function that maps a two dimensional array over another two dimensional array. 
 
-https://exercism.io/tracks/javascript/exercises
+For example, given the two arrays below: 
 
 
+```JavaScript
+
+// First Array
+[
+	[0,0,0,0,0,0], 
+	[0,0,0,0,0,0],
+	[0,0,0,0,0,0],
+	[0,0,0,0,0,0],
+	[0,0,0,0,0,0],
+	[0,0,0,0,0,0],
+]
+
+// Second Array
+[
+	[1,1,1],
+	[1,1,1],
+	[1,1,1]
+]
+```
+
+Write a function that takes two arrays, and "draws" the second array into the first array. Your function should take two extra parameter that set the starting row and column. 
+
+For example: 
+
+`mapGridOnToGrid(arr1, arr2, 2, 3)`
+
+Returns: 
+
+```JavaScript
+[
+	[0,0,0,0,0,0], 
+	[0,0,0,0,0,0],
+	[0,0,0,0,0,0],
+	[0,0,1,1,1,0],
+	[0,0,1,1,1,0],
+	[0,0,1,1,1,0],
+]
+```
+
+## Question 7 - 
+
+Same as above but, array 2 only maps non 0 values to array 1. 
+
+
+```JavaScript
+
+// First Array
+[
+	[0,0,0,0,0,0], 
+	[0,0,0,0,0,0],
+	[0,0,0,0,0,0],
+	[0,0,0,0,0,0],
+	[0,0,0,0,0,0],
+	[0,0,0,0,0,0],
+]
+
+// Second Array
+[
+	[0,0,1],
+	[0,1,1],
+	[0,1,0]
+]
+```
+
+`mapGridOnToGrid(arr1, arr2, 2, 3)`
+
+Returns:
+
+```JavaScript
+[
+	[0,0,0,0,0,0], 
+	[0,0,0,0,0,0],
+	[0,0,0,0,0,0],
+	[0,0,0,0,1,0],
+	[0,0,0,1,1,0],
+	[0,0,0,1,0,0],
+]
+```
 
 
