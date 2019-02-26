@@ -60,15 +60,15 @@ Write a function that takes a parameter `n` and returns a random number from `0`
 
 Randomizing characters in a string is your next goal. There are a couple approaches you can take. Here are some tools yoiu can use.
 
-**length**: A String has a length property that tells you how many characters there are. 
+**String.length**: A String has a length property that tells you how many characters there are. 
 
-**charAt(index)**: returns the character at index. 
+**String.charAt(index)**: returns the character at index. 
 
-**slice(beginIndex[, endIndex])**: extracts a section of a string and returns it as a new string, without modifying the original string.
+**String.slice(beginIndex[, endIndex])**: extracts a section of a string and returns it as a new string, without modifying the original string.
 
-**split(separator)**: splits a String object into an array of strings by separating the string into substrings, using a specified separator string to determine where to make each split.
+**String.split(separator)**: splits a String object into an array of strings by separating the string into substrings, using a specified separator string to determine where to make each split.
 
-**substring(indexStart[, indexEnd])**: method returns the part of the string between the start and end indexes, or to the end of the string.
+**String.substring(indexStart[, indexEnd])**: method returns the part of the string between the start and end indexes, or to the end of the string.
 
 Any easy solution is to split the string into an array with "" as the separator. This will give you and array of characters. 
 
@@ -112,7 +112,7 @@ Results: "Waht" "is" "a" "sinrtg"
 
 **Step 3 -**
 
-Write a function that takes a string. Divides it into words on the space and scrambles each word.
+Write a function that takes a string and divide it into words on the space and scrambles each word.
 
 The goal is to take a sentence and scramble each word. This will be naive first approach. 
 
