@@ -30,6 +30,173 @@
 			- extends
 			- create an instance
 
+# Functions 
+
+## Question 0 - Functions 
+
+For Science! We need to write a string scrambler for a scientific study. Seriously science needs this! The articles below talk about a study developed and performed at the University of Cambridge. 
+
+- https://www.mnn.com/lifestyle/arts-culture/stories/why-your-brain-can-read-jumbled-letters
+- https://www.mrc-cbu.cam.ac.uk/people/matt.davis/cmabridge/
+- https://en.wikipedia.org/wiki/Typoglycemia
+
+**tl;dr** 
+
+These studies show that people can read a sentence even if the letters between the first and last are scrambled. 
+
+It's possible there is more to learn. You need to write some functions that will randonly scramble strings. The goal is to randomize words in different ways and test a person's ability to read a sentence where the spelling of words have been scrambled. 
+
+**Step 1 -**
+
+To get started you'll need a function that generates random numbers. JS provides `Math.random()`. This returns a random number between 0 and 1 as a decimal value. We need a reliable way to get random integers in a range. 
+
+Write a function that takes a parameter `n` and returns a random number from `0` to `n - 1`. 
+
+- `Math.random()` returns a number from 0 - 1.
+- `Math.floor(n)` rounds n down to the nearest whole number.
+- `Math.floor(Math.random(10))` returns a whole from 0 - 9.
+
+**Step 2 -**
+
+Randomizing characters in a string is your next goal. There are a couple approaches you can take. Here are some tools yoiu can use.
+
+**length**: A String has a length property that tells you how many characters there are. 
+
+**charAt(index)**: returns the character at index. 
+
+**slice(beginIndex[, endIndex])**: extracts a section of a string and returns it as a new string, without modifying the original string.
+
+**split(separator)**: splits a String object into an array of strings by separating the string into substrings, using a specified separator string to determine where to make each split.
+
+**substring(indexStart[, indexEnd])**: method returns the part of the string between the start and end indexes, or to the end of the string.
+
+Any easy solution is to split the string into an array with "" as the separator. This will give you and array of characters. 
+
+From here it's all about randomizing the array. 
+
+The easy approach is to use a while loop to continue while the length of the array is greater than 0. With each loop remove a random index from the array. To remove an element at an index use: 
+
+**Array.splice(start[, deleteCount])**: Splice can be used to add and remove elements from an array. To remove an element set `start` to the index you want to remove and `deleteCount` to 1.
+
+Another alternative is using an algorithm like Fisher-Yates. 
+
+https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+
+**Goal**
+
+Write a function that randomizes the character in a given string. 
+
+Test these strings: "What" "is" "a" "boolean"
+
+Results: "tWah" "is" "a" "boaleon" or something similar. Remember it's random. 
+
+**Step 2.5 -**
+
+As above but leave the first and last letter in place. Only randomize the letters between the first and last letters. 
+
+To accomplish this you can start with the code from the previous step. 
+
+If you split the string into an array you can remove the first and last characters, randomize what's left and then add these characters to begining and end of the results. 
+
+**Array.pop()**: removes the last letter from an array and returns it. 
+
+**Array.shift()**: removes the first character from an array and returns it. 
+
+**Goal**
+
+Write a _new_ function that randomizes all letters between the first and last in a given string. 
+
+Test with these words: "What" "is" "a" "string"
+
+Results: "Waht" "is" "a" "sinrtg"
+
+**Step 3 -**
+
+Write a function that takes a string. Divides it into words on the space and scrambles each word.
+
+The goal is to take a sentence and scramble each word. This will be naive first approach. 
+
+You can use `String.split(' ')` to get an array of strings split on the " ". From here you need to loop through the array and pass each string through one of the string randomizers you wrote ealier. 
+
+Test this with string: "The rains in spain fall mainly on the plains"
+
+Results: Something like
+
+"The rnais in saipn flal minlay on the palnis"
+
+or 
+
+"ehT nrias in ispan llaf yilnma on the ialsnp"
+
+**Step 3.5-**
+
+The scientists need to be able to process a lot of text in different ways. The system you create needs to be flexible. 
+
+Modify the last function you wrote to take two parameters. The first is the string of words to be randomized. The second parameter is the function used to randomize those words! 
+
+for example your function might look like this: 
+
+```
+const sentenceRandomizer = (stringOfWords, randomizerFunction) => {
+	...
+}
+```
+
+Imagine you defined two functions `randomizeWord` and `randomizeWordWithFirstAndLastInPlace` you could call the function above like this: 
+
+```
+const str = "The rains in spain fall mainly on the plains"
+
+// Should randomize words
+sentenceRandomizer(str, randomizeWord) 
+
+// Should randomize words but leave the first and last letters in place
+sentenceRandomizer(str, randomizeWordWithFirstAndLastInPlace) 
+```
+
+**Step 4 -** 
+
+The next step is handling punctuation. Consider that you need to handle the possiblity of a word ending with `!`, `.`, `?`, or `,`. You need to preserve this character in it's position. 
+
+Test with this sample string: "What the heck! Where are my keys?"
+
+**Step 5 -**
+
+Write a function that shifts the letters of a string by `n` places. For example: 
+
+- ("test", 1) => "ttes" 
+- ("Weather", 3) => "herWeat"
+
+## Question 1 - Functions 
+
+Write a function that counts to any number printing each value to the console. When the number is divisible by 3 in place of the value print "fizz" when the number is divisible by "5" print "buzz". If the number is divisible by 3 and 5 print "fizz buzz". 
+
+## Question 2 - Functions parameters
+
+Modify the function above so that is takes two extra parameters let's call them `a` and `b`. These will replace the fixed numbers 3 and 5 in the first example. You new function should print 'fizz' when the count is divisible by `a`, 'buzz' when the count is divisible by `b`, and 'fizz buzz' when the number is divisible by `a`, and `b`. 
+
+## Loops and Objects
+
+Take a look at `shopping-cart-data.js`. This is a list of 100 items that includes the name, price, and quantity item. Your goal is to write a function that lists all of the products. 
+
+- List the name of each product
+- List the name, price, and quantity
+- List the name, price, quantity, and subtotal 
+	- Subtotal is the price * qty
+
+Display information above in the console. 
+
+- Display the total number of items at the bottom
+	- This should be a total of all qty values
+- Display the total cost at the bottom
+	- This should be total of all subtotals
+
+Now display this all in the browser. 
+
+- List each item in the browser in an p, li, or other tag. 
+	- `<p>Ice Cream Bar - Rolo Cone $5.19 * 6 = 31.14</p>`
+- Include the total and total qty at the bottom
+
 # Arrays
 
 ## Question 1 - Basics
@@ -216,3 +383,4 @@ Returns:
 	[0,0,0,1,0,0],
 ]
 ```
+
