@@ -54,7 +54,7 @@ Write a function that takes a parameter `n` and returns a random number from `0`
 
 - `Math.random()` returns a number from 0 - 1.
 - `Math.floor(n)` rounds n down to the nearest whole number.
-- `Math.floor(Math.random(10))` returns a whole from 0 - 9.
+- `Math.floor(Math.random() * 10)` returns a whole from 0 - 9.
 
 **Step 2 -**
 
