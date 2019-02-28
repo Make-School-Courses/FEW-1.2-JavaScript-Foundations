@@ -30,9 +30,68 @@
 			- extends
 			- create an instance
 
+# Classes and Objects 
+
+## Question 1 - Defining an Object
+
+Online shopping is really big. It's how you and everyone else does much of their shopping.
+
+Every shopping site has a cart. The cart needs to display the items you are purchasing, the quantity of each item, and price. 
+
+You need to build a shopping cart! 
+
+Object Oriented programming will be your approach.
+
+**Step 1 - **
+
+The first step will be to define an object that represents an item in the cart. Use a class. You class should have thefollowing properties: 
+
+- name
+- price
+- qty
+
+**Step 2 -**
+
+Add a method to your class that returns the subtotal (price * qty). 
+
+- subtotal: returns price * qty
+
+**Step 3 -** 
+
+Define a class that will be a shopping cart. A shopping cart is responsible for holding an array of Items. It should have a property:
+
+- items 
+
+**Step 4 -**
+
+The Cart needs to calculate the total cost of the cart. This should be the total of all subtotals of all items in the cart. 
+
+- total: 
+	- loops through all items
+	- calls subtotal on every item
+	- returns the sum of all subtotals
+	
+**Step 5 -**
+
+Add a method to the Cart class that adds a new item to the shopping cart. 
+
+- addItem(name, price, qty) : Creates a new item and adds it to the cart array. 
+
+**Step 6-**
+
+Create a new cart and add 100 items! Use 'shopping-cart-data.js', this file defines an array of objects each with a name, price, and qty.  
+
+- Make an instance of Cart. 
+- loop through the shoppingCartData array
+	- call addItem() with the params from the objects in teh array
+
+**Step 7-**
+
+It's possible to add tewo items with the same name when calling addItem. Modify your code to increase the qty of an item if it already exists in cart. 
+
 # Functions 
 
-## Question 0 - Functions 
+## Question 1 - Functions 
 
 For Science! We need to write a string scrambler for a scientific study. Seriously science needs this! The articles below talk about a study developed and performed at the University of Cambridge. 
 
