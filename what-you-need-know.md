@@ -60,7 +60,7 @@ Add a method to your class that returns the subtotal (price * qty).
 
 Define a class that will be a shopping cart. A shopping cart is responsible for holding an array of Items. It should have a property:
 
-- items 
+- cart
 
 **Step 4 -**
 
@@ -88,6 +88,26 @@ Create a new cart and add 100 items! Use 'shopping-cart-data.js', this file defi
 **Step 7-**
 
 It's possible to add tewo items with the same name when calling addItem. Modify your code to increase the qty of an item if it already exists in cart. 
+
+**Step 8-**
+
+Each item needs a describe() method that returns a string describing the purchase. The description string should read: 
+
+"<name> $<price> * <qty> = <subtotal>"
+
+**Step 9-**
+
+The cart needs to be able to display a list of all everything in the cart. 
+
+Create displayCart() method that prints the contents of the cart to the console by calling describe() on each item in the cart and displaying the return string in the console. 
+
+**Step 10-**
+
+Add a couple more methods to the shopping cart class. 
+
+- itemCount() returns the number of items in cart
+- getTax(tax) takes a tax percent and returns the tax amount
+- describe() returns a string that lists all items in cart, followed by "You have <itemCount> items in your cart. Total cost <total> + tax: <getTax> = <total+tax>"
 
 # Functions 
 
