@@ -26,4 +26,4 @@ Be sure to study the following topics any or all of these will can be in the ass
 
 ## Resources 
 
-- 
+- See the study guide
