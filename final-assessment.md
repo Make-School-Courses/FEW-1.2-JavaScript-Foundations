@@ -69,7 +69,7 @@ feedCat.completed() // not completed
 Test your work: 
 
 ```JavaScript
-console.log(myTask.iscomplete()) // completed
+console.log(myTask.complete()) // completed
 ```
 
 ## Question 4 - Define Task.toString() (10pts)
