@@ -112,7 +112,7 @@ console.log(myTaskList.tasks) // Something like: [{ Task }]
 
 ## Question 7 - Define TaskList.showTasks() (10pts)
 
-The TaskList needs a method to display the list of tasks. Name this new method `showTasks()`. This method should loop through the array of tasks and call `toString()` on each task in the list and print the returned string to the console. 
+The TaskList needs a method to display the list of tasks.  `showTasks()`. This method should loop through the array of tasks and call `toString()` on each task in the list and print the returned string to the console. 
 
 Test your work:
 
@@ -150,7 +150,7 @@ Bake Cake | Mar 3 2019 | completed
 
 ## Question 10 - Show completed/not completed tasks (10pts)
 
-Add a method `showCompleted(completion)` this method takes a boolean `completion`, when true it displays all of the completed tasks false and it shows the not completed tasks. The method should loop through the list and call `toString()` on each task that matches the completion param. 
+Add a method `showCompleted(completion)` this method takes a boolean `completion`, when true it displays all of the completed tasks, false and it shows the not completed tasks. The method should loop through the list and call `toString()` on each task that matches the completion param. 
 
 Bonus: Give completion a default value of true so it shows all completed tasks when the paramter is not present. 
 
