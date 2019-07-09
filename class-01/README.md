@@ -83,7 +83,7 @@ After completing the tutorial You will be working on challenges based on the tut
 
 | -            | Does not meet expectations | Meets expectations       | Exceeds expectations |
 |:-------------|:------------------|:-------------------------|:---------------------|
-| **Completed** | Did not complete | Completed the tutorial   | Modified the tutorial and improved on the existing code |
-| **Functional** | Is not functional | Base tutorial functional | Modified the existing code adding improvements, uses `const` and `let` over `var` where appropriate |
-| **Code quality** | Indentation is bad, white space is inconsistent | Uses consistent indentation and spacing | Well written and well commented, code is well organized with variables at the top, and functions arranged logically |
-| **Work Ethic** | Did not commit when working on project | Initial commit at class and commit while working | Commits show 3 hours and clearly document process |
+| **Completed** | Did **not complete** | **Completed** the tutorial | Modified the tutorial and **improved** on the existing code |
+| **Functional** | Is **not functional** | Base tutorial **functional** | Modified the existing code adding improvements, uses `const` and `let` over `var` where appropriate, **added new features** |
+| **Code quality** | Indentation is bad, white space is **inconsistent** | Uses consistent indentation and spacing, code is **well formatted** | Well written and **well commented**, code is well organized with variables at the top, and functions arranged logically |
+| **Work Ethic** | **Did not commit** when working on project | One commit for **each step**. | Commits **clearly documented** process |
