@@ -11,9 +11,9 @@ You will maintain a GitHub Repo for each project. **You need to commit each time
 ## Objectives 
 
 - Use JavaScript to create applications of medium complexity
-- Use arrays including multi-dimensional arrays
+- Implement arrays, including multi-dimensional arrays
 - Define objects with Object Literal notation
-- Solve problems and follow instructions
+- Implement control flow to solve problems
 
 ## Homework: Breakout with JS
 
