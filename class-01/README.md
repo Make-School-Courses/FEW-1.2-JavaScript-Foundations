@@ -77,6 +77,8 @@ Read the tutorial and complete the game. Your tutorial should be functional! The
 
 Study the code and do your best to understand how the code functions and why the game behaves as it does. Look closely at the game, be sure to play. Change some of the values and see how they affect the game.
 
+### Due: Class 2
+
 After completing the tutorial You will be working on challenges based on the tutorial. This is why it is essential that your tutorial is functioning when you come to class 2.
 
 ## Breakout Tutorial
