@@ -16,7 +16,38 @@ Break out loops and conditionals
     - Drawing circles on `canvas`
     - drawing rectangles on `canvas`
 
-## Canvas 
+## Fun with loops 
+
+Write a for loop
+
+What are you doing? 
+
+Write an array?
+
+Loop through the array. 
+
+What are you doing? 
+
+Write a function
+
+What are you doing? 
+
+Combine the two! 
+
+What if each item in the array was another array? 
+
+Write a 2d array
+
+Visualize rows and columns
+
+Fill even numbered rows with 'A' and odd rows with 'B'
+
+
+Fill event numbered cols with 'A' and odd cols with 'B'
+
+Alternate 
+
+## How does Break use loops and arrays? 
 
 Loops are a tool to repeat a task a number of times. 
 Use them to automate repetitive code. 

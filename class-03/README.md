@@ -17,7 +17,7 @@ You've written lots of code so far you've probably incurred some [technical debt
 
 The goal of [refactoring code](https://en.wikipedia.org/wiki/Code_refactoring) in short is to improve your existing code base and put it into a shape that will accept future updates. 
 
-Refactoring is not about adding new features. Instead, we want to have the same functionality with an improved code base underneath it. 
+Refactoring is not about adding new features. Instead, we want to have the **same functionality** with an **improved codebase** underneath it. 
 
 What should you refactor? In this section, you will be creating Class objects to represent elements used by the game. Along the way you can also do the following: 
 
@@ -29,15 +29,15 @@ What should you refactor? In this section, you will be creating Class objects to
 
 ## OOP
 
-Whoa, who wrote this tutorial, it's weak in OOP! It's your job to improve it by increasing OOPiness!
+Whoa, who wrote this tutorial? It's lacking in OOP! It's your job to improve it by increasing OOPiness!
 
-Making the code more Object Oriented won't make the code execute faster. It will make the code easier to work with, and easier to expand systems and add new features. It will make code that is much safer and more likely to run without error. 
+Making the code more Object Oriented won't make the code execute faster. It will make the code easier to work with, and easier to expand its systems and add new features. It will make code that is much safer and more likely to run without error. 
 
-What is an object?
+**What is an object?**
 
 Objects are collections and namespaces. An object is a collection of properties (variables) and methods (functions). A namespace gives you one name to access items in the collection. 
 
-Why make Objects? 
+**Why make Objects?** 
 
 It's easier to think of a ball Object than it is to think about: `x`, `y`, `ballRadius`, `dx`, `dy` as the ball.
 
@@ -55,13 +55,13 @@ const ball = {
 
 With this arrangement, there is only a single global variable. Which makes our code safer, there is less chance we might overwrite a variable by accident. 
 
-All the variables that belong to the ball system are grouped together. This makes it easier to reason about. 
+It also makes the code easier to reason about. We have one ball with some logical properties that be long to it. Rather than a pool of variables some of which control the appearance of the ball. 
 
-If you need to make another ball you can make another object with the same properties. 
+It also makes the system easier to expand. If you need to make another ball you can make another object with the same properties or even duplicate an existing ball object. If a ball needs a new property this is easy to do. 
 
-Objects with the same properties are interchangeable. 
+Objects with the same properties are also interchangeable. 
 
-Encapsulation and Polymorphism
+**Encapsulation and Polymorphism**
 
 While defining a ball with an object literal works. You can go a step further by making a template for the ball Object called a class.
 
@@ -94,7 +94,7 @@ ES6 style classes have some features that deserve discussion.
 
 ## Creating classes
 
-The engineering team has decided to **OOPify** the whole game. You're in charge of the refactor. You need to make this Object Oriented. 
+The engineering team has decided to **OOPify** the whole game. You're in charge of the _refactor_. You need to make this game _Object Oriented_. 
 
 _You're in charge of making a class for each of the game objects._
 
@@ -104,9 +104,9 @@ _You're in charge of making a class for each of the game objects._
 - Score
 - Lives 
 
-These are "things" in the game, you can see these things on the screen and the game manipulates these things as you play the game. This gives you an abstract way to think about your code. 
+These are objects in the game, you can see these objects on the screen and the game manipulates these objects as you play the game. Objects give you an abstract way to think about and visualize your code. 
 
-You'll be making a Class for each of these. Each of these should hold the variables that describe or control that object as properties within the class.
+You'll be making a Class for each of these. Each should hold the variables that describe or control that object as properties within the class.
 
 For example, the Ball class might look like this: 
 
@@ -130,7 +130,7 @@ Here `Ball` Class defines instances which will have four properties. Two of the 
 
 ## Dependency Injection
 
-Many of the game objects need to draw themselves. In order to do this, they need access to the canvas rendering context. This is a dependency. These classes should NOT rely on a global variable! The solution is to inject the dependency. 
+Many of the game objects need to draw themselves. In order to do this, they need access to the canvas rendering context. This is a _dependency_. These classes should NOT rely on a global variable! The solution is to inject the _dependency_. 
 
 ```JavaScript
  class Ball {
@@ -155,7 +155,7 @@ This is a powerful idea that is used often in software development. In a nutshel
 
 > A dependency is an object that can be used by another object. Injection is the passing of a dependency to the dependent object that would use it.
 
-Your goal for the current challenges is to create class objects for the Brick, Ball, Paddle, and Background. These classes will need to draw onto the canvas. The _canvas is a dependancy_ for the Brick, Paddle, Ball etc. These objects are dependent on a canvas context, they can't draw themselves without one!
+Your goal for the current challenges is to create class objects for the Brick, Ball, Paddle, and Background. These classes will need to draw onto the canvas. The canvas context is a _dependancy_ for the Brick, Paddle, Ball etc. These objects are dependent on a canvas context, they can't draw themselves without one!
 
 While you could supply the canvas when you initialized an object that would create a more tightly coupled system. Passing the canvas to the object when it needs to draw itself is a more elegant solution. 
 
@@ -285,7 +285,8 @@ Extend this class like this:
 ```JavaScript
 class Ball extends Sprite {
  constructor(radius, x, y) {
-  super(x, y)
+  // Must pass params to super when extending a class! 
+  super(x, y) 
   this.radius = radius;
  }
 
@@ -295,11 +296,11 @@ class Ball extends Sprite {
 }
 ```
 
-The Ball class extends Sprite. You must call super() and provide any needed parameters to the superclass. Notice Ball implements the render() method. 
+The Ball class extends `Sprite`. You must call `super()` and pass all parameters to the superclass. Notice Ball implements the `render()` method. 
 
-Think about any other properties that are shared across all of the Objects, you can move these properties into Node. In this way, you will only have to edit or work with these in one place. 
+Think about any other properties that are shared across all of the Objects, you can move these properties into `Sprite`. In this way, you will only have to edit or work with these in one place. In this example all `Sprite`s will have an `x` and `y` property, and a `Ball` will have `x`, `y`, and `radius`. 
 
-If there is a default implementation for a method that is used by most child classes you can implement this in the parent. When a child class implements a method that exists in the parent this called overriding. When you override a method you are using the child's method over the parent's. 
+If there is a default implementation for a method that is used by most child classes you can implement this in the parent. When a child class implements a method that exists in the parent this is called _overriding_. When you _override_ a method you are using the child's method over (in place of) the parent's method. 
 
 ## Further Challenges 
 
@@ -320,6 +321,10 @@ This section has some further challenges you can try if you need more work.
 - Draw the dialog box on canvas (not for the faint of heart)
   - Make a class that renders a dialog box
   - Listen for clicks on canvas check if a click is within the area of a button
+
+**Lint your code!**
+
+Want to improve your code craft? Use the Linter! Install ESLint and lint your code. 
 
 ## Assess your work
 
