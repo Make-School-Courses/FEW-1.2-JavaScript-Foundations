@@ -83,6 +83,19 @@ You first job is to understand the codebase. Obviously, you won't understand at 
     - `div#progress-area`
     - `div#shop` and `div#attack` only appear when needed by the game otherwise they are hidden. Use Grid or Flex Box to arrange these elements. Currently, all of these use Float. You'll want to remove float from their style rules. 
   5. `div#stats-area` displays the Caravan stats. Styles would help make this more interesting and easier to read. This element is made of a collection of `div.stat`. Each of these divs contains some text that acts as a label and a `span.stat-value`. Currently, the label and value look the same. Give the label and value different styles. 
-  6. If you changed the layout and made it look good on the desktop, add some styles to make it work on mobile. Mobile games are popular! Test it in Chrome and set the inspector to emulate a mobile screen. 
+  6. If you changed the layout and made it look good on the desktop, add some styles to make it work on mobile. Mobile games are popular! Test it in Chrome and set the inspector to emulate a mobile screen. The layout should probably be a single column on mobile. Use the `@media`. Use this to target CSS styles to a platform. 
+  ```CSS
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: red;
+    }
+  }
+  ```
+  Here the `background-color` is only applied when displayed on a screen and the width is 600px or less. Add any rules that you want applied when to mobile in the @media block. As long as this comes after the other rules you can also add rules that override the rules outside this block. 
 
-  
+| -            | Does not meet expectations | Meets expectations       | Exceeds expectations |
+|:-------------|:------------------|:-------------------------|:---------------------|
+| **Completed**| Did **not complete** | **Completed** challenges 1 to 3 | Completed challenge 4. |
+| **Functional**| Is **not functional** | Base tutorial **functional** | Modified the existing code to make chnages to the game and game is still functioning with the new features |
+| **Understanding** | Can not explain the DOM structure | Cna explain the DOM structure. Could modify the existing structure if needed. | Cna explain the structure and it's use of class id names. |
+| **Work Ethic** | **Did not commit** when working on project | One commit for **each step**. | Commits **clearly documented** process |
