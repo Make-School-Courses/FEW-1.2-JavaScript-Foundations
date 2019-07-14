@@ -26,7 +26,6 @@ The project above was created from the tutorial link below:
 
 https://gamedevacademy.org/js13kgames-tutorial/
 
-
 ## Why work on this project?  
 
 Imagine that you have inherited this code base as part of a new position. In almost every software job you will be tasked with familiarizing yourself with an existing set of code. At a small scale this is very much the type of work you might do at your first job or internship. 
@@ -96,6 +95,6 @@ You first job is to understand the codebase. Obviously, you won't understand at 
 | -            | Does not meet expectations | Meets expectations       | Exceeds expectations |
 |:-------------|:------------------|:-------------------------|:---------------------|
 | **Completed**| Did **not complete** | **Completed** challenges 1 to 3 | Completed challenge 4. |
-| **Functional**| Is **not functional** | Base tutorial **functional** | Modified the existing code to make chnages to the game and game is still functioning with the new features |
-| **Understanding** | Can not explain the DOM structure | Cna explain the DOM structure. Could modify the existing structure if needed. | Cna explain the structure and it's use of class id names. |
-| **Work Ethic** | **Did not commit** when working on project | One commit for **each step**. | Commits **clearly documented** process |
+| **Functional**| Is **not functional** | Base tutorial **functional** | **Modified** the existing code to make chnages to the game and game is still functioning with the new features |
+| **Understanding** | **Can't explain** the DOM structure | Can explain the DOM structure. **Could modify** the existing structure if needed. | **Can explain** the structure and it's use of class id names. |
+| **Work Ethic** | **Did not commit** when working on project | One commit for **each challenge step**. | Commits **clearly document** process |
