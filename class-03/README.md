@@ -328,11 +328,11 @@ Want to improve your code craft? Use the Linter! Install ESLint and lint your co
 
 ## Assess your work
 
-| -            | Does not meet expectations | Meets expectations       | Exceeds expectations |
-|:-------------|:---------------------------|:-------------------------|:---------------------|
-|**Completed** | Did not complete           | Created classes for Ball, Brick, Paddle, Score, Lives | Modified the tutorial and improved on the existing code |
-|**Refactor**| Is not functional | Game functions as before the refactor | Functions as before but also has clearly better structure |
-| **Code quality** | Indentation is bad, white space is inconsistent | Uses consistent indentation and spacing | Well written and well commented, code is well organized with variables at the top, and functions arranged logically. There are no linting errors |
+| -             | Does not meet expectations | Meets expectations       | Exceeds expectations |
+|:--------------|:---------------------------|:-------------------------|:---------------------|
+| **Completed** | Did not complete           | Created classes for Ball, Brick, Paddle, Score, Lives | Created a Game class collects all of the other objects. Used extends to create a base class that is extended by other classes. |
+| **Refactor** | Doe not function or throws errors | Game functions as before the refactor | Adds new features not seen in the original tutorial, and or improves on the systems from the original tutorial |
+| **Code quality** | Indentation and white spece are inconsistent, naming is unintuitive | Uses consistent indentation and spacing. Naming makes the code self documenting | code is well organized, well commented, and orgasnized. You have checked your code with the linter. |
 | **Work Ethic** | Did not commit when working on project | Initial commit at class and commit while working | Commits show 3 hours work and clearly document process | 
 
 ## Additional Resources 
