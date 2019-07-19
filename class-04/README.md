@@ -11,10 +11,10 @@ You will also use this project to practice your skills as a software developer.
 ## Objectives 
 
 - Build an understanding of an unfamiliar code base
-    - Modifying HTML and CSS 
-    - Identify DOM structure 
-    - Identify naming conventions
-    - Identify and follow convention
+  - Modifying HTML and CSS 
+  - Identify DOM structure 
+  - Identify naming conventions
+  - Identify and follow convention
 
 ## Oregon Trail
 

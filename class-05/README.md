@@ -4,20 +4,63 @@
 
 There is a lot of code here. You need to start digging in and figuring out how it works. 
 
-After playing the game/using the code the next step is reading the code and making small changes and improvements. 
+After playing the game/using the code the next step is reading the code and making small changes and improvements.
 
 ## Objectives 
 
+- Install ESLint
+- Use the linter to improve refactor and anaylze code
 - Define Scope
-    - Local scope
-    - Global Scope
-- Use const, let, and var to define variables in a scope
+  - Local scope
+  - Global Scope
+  - Function scope
+- Use `const`, `let`, and `var` to define variables in a scope
     - Block scope
     - Function Scope
 - Identify the scope of variables and functions
-- Define Closure 
-- Identify the scope of variables captured by Closure
+  - Define Closure 
+  - Identify the scope of variables captured by Closure
 - Use template strings
+
+## ESLint to the Rescue!
+
+What's linting? Linting is the process of cleaning up your code. The linter follows a guide. We will use the Airbnb style guide. You can think of this process as updating your code to the standard used by Airbnb. 
+
+1. Install ESLint
+  - Fix all linting errors
+  - Take notes on any linter suggestions that you can't solve or don't understand. 
+  - Instructions: 
+    - Navigate the terminal to your directory
+    - `npm init -y`
+    - `npm install eslint`
+    - `eslint --init` answer the questions: 
+      - use a popular style guide
+      - Airbnb
+      - Do you use React: No
+      - Format for config file: JavaScript
+      - Would you like to install now: Yes
+    - Install ESLint extension in the code editor
+      - Code > Preferences > Extensions
+      - Search: eslint
+      - Click: Install 
+    - 
+    - You may have to close and reopen your project 
+  - Why? 
+    - Linting catches errors
+    - Recommends best practices
+2. Modify the game to make it unique and different from the original 
+  - Change the names of things
+    - Follow the guide
+  - Change the events
+    - Rewrite the events 
+
+## Linting
+
+The linter will show red underline on everything in your code it sees that is not following the style guide. 
+
+As you work through your code solving linter errors ask youself why the linter is suggesting the changes it is suggesting. 
+
+Many of the changes the linter will suggest have to do with the topics below. 
 
 ## Scope 
 
