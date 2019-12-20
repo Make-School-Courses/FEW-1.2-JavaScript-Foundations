@@ -1,96 +1,146 @@
-# FEW 1.2 Foundation JavaScript
+# Title
+
+### [Reveal Slide Instructions](./Reveal/README.md) <-- Remove this before updating your repo
 
 ## Course Description
 
-Deepen your understanding of the JavaScript language by creating games.
+Describe your course here. A short elevator pitch for the course, use positive, friendly language to get students excited to take your course. Use of I/you/we should be used over instructor/students.
 
-During this course you will build three games with the mindset of someone working on, maintaining, and updating a codebase that you are responsible for. Along the way, you will work with many core features of the JavaScript language.
+### Why you should know this (optional)
 
-The course will cover foundational JavaScript, debugging JavaScript and working with various JavaScript Libraries to build applications and games. Classes and Object Oriented Programming (OOP) are introduced with a closer look at how OOP is uniquely implemented in JavaScript.   
-
-### Why you should take this class
-
-JavaScript is one of the most important languages in use today. You work with it daily in everything you interact with from web sites to mobile applications, to embedded IoT devices. Applications built with JavaScript have the highest potential impact and the lowest barrier to entry. If you want to create an application and put in front of the widest array of users you'll probably want to build it with JavaScript.
+Explain why students should care to learn the material presented in this class.
 
 ## Prerequisites:  
 
-[FEW 1.1](https://github.com/Make-School-Courses/FEW-1.1-Web-Foundations) or equivalent
+- [Prerequisite 1]()
+- [Prerequisite 2]()
 
 ## Learning Outcomes
 
-Students by the end of the course will be able to ...
+### **[INSTRUCTOR NOTE: PLEASE LIST (3-5) LEARNING OUTCOMES]**
 
-1. Write fundamental JavaScript including variables, loops, conditionals, and classes with professional syntax
-1. Design & Implement web games with JS
-1. Write functions and differentiate function types; closures, callbacks, and handlers
-1. Modify the DOM with JavaScript
-1. Define scope and differentiate between function and block scope
-1. Use developer tools to debug projects
+By the end of the course, you will be able to ...
+
+1. Identify & Describe
+1. Explain
+1. Compare & Contrast
+1. Design & Implement
+1. Practice
 
 ## Schedule
 
-**NOTE:** Due to the shorter summer sessions, for some class sessions you will see multiple topics covered. This schedule compression is to ensure that we cover the same material that we normally would in non-summer terms.
+---
 
-**Course Dates:** Tuesday, July 9 – Thursday, August 15, 2019 (6 weeks)
+**[INSTRUCTOR NOTE: PLEASE REMOVE THIS BEFORE JANUARY 19]**
 
-**Class Times:** Tuesday and Thursday at 3:30–5:20pm (12 class sessions)
+If you teach **M/W** or **Tu/Th**, please pick from a template below and delete the other one
 
-| Class |      Date       |              Topics              |
-|:-----:|---------------:|:--------------------------------|
-| 1 |  Tue, July 9        | [JavaScript with Games intro](class-01) |
-| 2 |  Thu, July 11       | [Loops and Conditionals](class-02) |
-| 3 |  Tue, July 16       | [Class Objects & OOP](class-03) |
-| 4 |  Thu, July 18       | [Oregon Trail](class-04) |
-| 5 |  Tue, July 23       | [Updating and Refactoring](class-05) |
-| 6 |  Thu, July 25       | [Working with Class Objects](class-06) |
-| 7 |  Tue, July 30       | [Debugging and Code Review](class-07) |
-| 8 |  Thu, August 1      | [Inheritance and Extend](class-09) |
-| 9 | Tue, August 6       | [Wrapping Up Oregon Trail](class-10) |
-| 10|  Thu, August 8      | [Phaser](class-08) <br/> **/** <br/> [Phaser Tutorial](class-11) |
-| 11|  Tue, August 13     | [Final Class presentation](class-13) |
-| 12|  Thu, August 15     | [Final Assessment](class-14) |
+---
+
+**M/W Template [PLEASE REMOVE THIS HEADER BEFORE JANUARY 19]**
+
+**Course Dates:** Monday, January 20 – Wednesday, March 4, 2020 (7 weeks)
+
+**Class Times:** Monday and Wednesday at 3:30–5:20pm (12 class sessions)
+
+| Class |          Date          |                 Topics                  |
+|:-----:|:----------------------:|:---------------------------------------:|
+|  - |  Mon, January 20               | **NO CLASS** - MLK Day |
+|  1 |  Wed, January 22               | [Lesson 1] |
+|  2 |  Mon, January 27               | [Lesson 2] |
+|  3 |  Wed, January 29               | [Lesson 3] |
+|  4 |  Mon, February 3               | [Lesson 4] |
+|  5 |  Wed, February 5               | [Lesson 5] |
+|  6 |  Mon, February 10              | [Lesson 6] |
+|  7 |  Wed, February 12              | [Lesson 7] |
+|  - |  Mon, February 17              | **NO CLASS** - President's Day |
+|  8 |  Wed, February 19              | [Lesson 8] |
+|  9 |  Mon, February 24              | [Lesson 9] |  
+| 10 |  Wed, February 26              | [Lesson 10]|
+| 11 |  Mon, March 2                  | [Lesson 11] |
+| 12 |  Wed, March 4                  | Final Exam/Presentations |
+
+
+**Tu/Th Template [PLEASE REMOVE THIS HEADER BEFORE JANUARY 19]**
+
+**Course Dates:** Tuesday, January 21 – Thursday, March 5, 2020 (7 weeks)
+
+**Class Times:** Tuesday and Thursday at 3:30–5:20pm (13 class sessions)
+
+| Class |          Date          |                 Topics                  |
+|:-----:|:----------------------:|:---------------------------------------:|
+|  1 |  Tue, January 21               | [Lesson 1] |
+|  - |  Thu, January 23               | **NO CLASS** - Company Offsite |
+|  2 |  Tue, January 28               | [Lesson 2] |
+|  3 |  Thu, January 30               | [Lesson 3] |
+|  4 |  Tue, February 4               | [Lesson 4] |
+|  5 |  Thu, February 6               | [Lesson 5] |
+|  6 |  Tue, February 11              | [Lesson 6] |
+|  7 |  Thu, February 13              | [Lesson 7] |
+|  8 |  Tue, February 18              | [Lesson 8] |
+|  9 |  Thu, February 20              | [Lesson 9] |  
+| 10 |  Tue, February 25              | [Lesson 10]|
+| 11 |  Thu, February 27              | [Lesson 11]|
+| 12 |  Tue, March 3                  | [Lesson 12]|
+| 13 |  Thu, March 5                  | Final Exam/Presentations |
+
+
+[Lesson 1]: Lessons/Lesson1.md
+[Lesson 2]: Lessons/Lesson2.md
+[Lesson 3]: Lessons/Lesson3.md
+[Lesson 4]: Lessons/Lesson4.md
+[Lesson 5]: Lessons/Lesson5.md
+[Lesson 6]: Lessons/Lesson6.md
+[Lesson 7]: Lessons/Lesson7.md
+[Lesson 8]: Lessons/Lesson8.md
+[Lesson 9]: Lessons/Lesson9.md
+[Lesson 10]: Lessons/Lesson10.md
+[Lesson 11]: Lessons/Lesson11.md
+[Lesson 12]: Lessons/Lesson12.md
+[Lesson 13]: Lessons/Lesson13.md
+[Lesson 14]: Lessons/Lesson14.md
+
+## Assignment Schedule 
+
+**[INSTRUCTOR NOTE] REPLACE THE BELOW WITH LINKS TO YOUR ASSIGNMENTS, CORRECT DATES, AND SUBMISSION FORM**
+
+|                        Assignment                         | Date Assigned |   Due Date   |            Submission Form           |
+|:---------------------------------------------------------:|:-------------:|:------------:|:------------------------------------:|
+| [Link to Assignment](makeschool.com)                      |  Tue, Oct 15  |  Tue, Oct 22 | [Submit Assignment](makeschool.com)  |
+| [Link to Assignment](makeschool.com)                      |  day, Date    |  day, Date   | [Submit Assignment](makeschool.com)  |
+| [Link to Assignment](makeschool.com)                      |  day, Date    |  day, Date   | [Submit Assignment](makeschool.com)  |
+| [Link to Assignment](makeschool.com)                      |  day, Date    |  day, Date   | [Submit Assignment](makeschool.com)  |
 
 ## Class Assignments
 
-- Break Out
-  - You make a repo for this and post it to the tracker
-  - You will get the game working attempt challenges
-  - Use the rubric to gauge your project
-- Oregon Trail
-  - You will make a repo for this project and enter it in the tracker
-  - Get the game working and attempt the challenges
-  - Use the rubric to gauge your progress
-- Phaser JS game
-  - You will make a repo for this and enter it in the tracker
-  - You can make anything you like. Try your best to scope this to something you can complete by the end of the term.
-  - Use the rubric to gauge your progress
+### Tutorials
 
-### Book/Reading
+- [Do Cool Stuff Tutorial]()
 
-- https://eloquentjavascript.net/
+### Projects
 
-### Study Resources
-
-- https://repl.it/classroom/invite/ZLKqpSw
-- http://www.jshero.net/en/success.html
-- https://www.codecademy.com/learn/introduction-to-javascript
+- [Project Template - Use to build your own project spec](https://github.com/Make-School-Labs/Project-Template)
 
 ## Evaluation
+
+**[INSTRUCTOR NOTE] REPLACE THE BELOW WITH EVALUATIONS THAT PERTAIN TO YOUR COURSE. THE BELOW ARE PROVIDED AS A SAMPLE**
+
 To pass this course you must meet the following requirements:
 
-- Complete all required tutorials
+- Complete all required assignments 
 - Pass all projects according to the associated project rubric
-- Pass the final summative assessment >=75%
+- Pass the final summative assessment according to the rubric as specified in this class
+    - This will be further explained in the [study guide](ADD_STUDY_GUIDE_LNK)
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
 
 ## Make School Course Policies
 
-- [Program Learning Outcomes](https://make.sc/program-learning-outcomes)
-- [Grading System](https://make.sc/grading-system)
-- [Diversity and Inclusion Statement](https://make.sc/diversity-and-inclusion-statement)
-- [Academic Honesty](https://make.sc/academic-honesty-policy)
-- [Attendance Policy](https://make.sc/attendance-policy)
-- [Course Credit Policy](https://make.sc/course-credit-policy)
-- [Disability Services (Academic Accommodations)](https://make.sc/disability-services)
-- [Student Handbook](https://make.sc/student-handbook)
+- [Program Learning Outcomes](https://make.sc/program-learning-outcomes) - What you will achieve after finishing Make School, all courses are designed around these outcomes.
+- [Grading System](https://make.sc/grading-system) - How grading is done at Make School
+- [Diversity and Inclusion Statement](https://make.sc/diversity-and-inclusion-statement) - Learn about Diversity and Inclusion at Make School
+- [Academic Honesty](https://make.sc/academic-honesty-policy) - Our policies around plagerism, cheating, and other forms of academic misconduct 
+- [Attendance Policy](https://make.sc/attendance-policy) - What we expect from you in terms of attendance for all classes at Make School
+- [Course Credit Policy](https://make.sc/course-credit-policy) - Our policy for how you obtain credit for your courses
+- [Disability Services (Academic Accommodations)](https://make.sc/disability-services) - Services and accommodations we provide for students
+- [Student Handbook](https://make.sc/student-handbook) - Guidelines, policies, and resources for all Make School students

@@ -1,6 +1,6 @@
 # FEW 1.2 - Class 1
 
-## Learn JavaScript by making games!
+## Learn JavaScript
 
 You're hired! Consider this class your job for the next 7 weeks. You'll be responsible for making three games, maintaining and improving the code base for your games, keeping notes and documentation for the code that you produce.
 
@@ -21,7 +21,7 @@ The first game you're repsonsible for is Breakout! It's a classic arcade game. Y
 
 Start with a new repo for the project. Create a repo and add the repo link to the class progress tracker. 
 
-YOu'll be followinfg the tutorial here: 
+You'll be followinfg the tutorial here: 
 
 https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript
 
