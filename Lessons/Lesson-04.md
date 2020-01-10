@@ -1,5 +1,5 @@
 <!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
-# Class - Lesson 4
+# Class - JS OOP part 2
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -7,7 +7,7 @@
 
 <!-- > -->
 
-## OOP and Inheritence
+## OOP part 2
 
 This class will be an OOP workshop with the goal of reviewing the concepts from the previous class.
 
@@ -21,53 +21,99 @@ This is a big topic which reaches deeply into important areas of computer scienc
 
 ## Learning Objectives
 
-1. Identify and describe
-1. Define
-1. Design
-1. Implement
+1. Create base/super classes 
+1. Use inheritence with super and extends
+1. Create classes that inherit from a super class
 
 <!-- > -->
 
-## Initial Exercise (15 min)
+## What is inheritence? 
 
-- Funny comic
-- Prime the Pump (e.g. think and jot, think pair share, etc)
-- Productivity Tip/Tool
-- Review of current event (e.g. tech news relevant to your track/topic)
-- Quiz on homework or topic(s) of past class
-- Concept Test
+Inheritence is when you get something from your ancestors. 
+
+- genes
+- money
+- property
+
+In software this could be: 
+
+- variables/properties
+- methods/functions
+
+Who do you inherit from? 
+
+- Your parents
+- Your grandparents
+
+In software who who do you inherit from?
+
+- Your parent/super class
+
+## Inheritence with JS
+
+Any class can inherit from another. You can also think of classes that inherit from another class as extensions of the other class. 
+
+```js
+class Sprite {
+  constructor() {
+    this.x = 0
+    this.y = 0
+  }
+}
+
+class Ball extends Sprite {
+  constructor() {
+    super()
+
+    this.radius = 10
+  }
+}
+
+const ball = new Ball() // { x: 0, y: 0, radius: 10 }
+```
+
+Calling super() in a sub class is like calling the constructor function in your super class. 
+
+** You must call super()!**
+
+If a class takes parameters in it's constructor it must pass these to super. 
+
+```js
+class Sprite {
+  constructor(x, y) {
+    this.x = 0
+    this.y = 0
+  }
+}
+
+class Ball extends Sprite {
+  constructor(x, y, color, radius) {
+    super(x, y) // Must pass parameters to super!
+
+    this.color = color
+    this.radius = radius
+  }
+}
+
+const ball = new Ball(10, 20, 'red', 30) 
+// { x: 10, y: 20, color:'red', radius: 30 }
+```
+
+You must pass parameters to super. Notice the contructor takes these parameters, calling super is like calling the constructor of the super class. 
 
 <!-- > -->
 
-# Topic 1
+# Using Inheritence
+
+Pair with some at the same stage/level and work on the stretch challenges together.
 
 <!-- v -->
 
-## Overview/TT I (20 min)
 
-- Why learn this?
-- Industry examples of usage
-- Best practices
-- Personal anecdote
-
-<aside class="notes">
-Place more detailed information or speaker notes in "aside" elements - it will appear in GitHub Pages but not in the slides.
-</aside>
 
 <!-- v -->
 
-## In Class Activity I (30 min)
 
-- I do, We do, You do
-- Reading & Discussion Questions in small groups
-- Draw a picture/diagram
-- Complete Challenges solo or in pair
-- Q&A about tutorials
-- Pair up and code review
-- Pair program
-- Formative assessment
-- Form into groups
-- etc (get creative :D)
 
 <!-- > -->
 
@@ -106,11 +152,11 @@ Place more detailed information or speaker notes in "aside" elements - it will a
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:30      | In Class Activity I       |
-| 0:50        | 0:10      | BREAK                     |
-| 1:00        | 0:45      | In Class Activity II      |
-| 1:45        | 0:05      | Wrap up review objectives |
-| TOTAL       | 1:50      | -                         |
+| 0:05        | 0:05      | admin   |
+| 0:15        | 0:10      | Overview  |
+| 0:45        | 0:30      | Inheritence  |
+| 0:55        | 0:10      | BREAK   |
+| 2:25        | 1:30      | Workshop problem solving time |
+| 2:45        | 0:20      | Wrap up review objectives |
+| TOTAL       | 2:45      | -                         |
 
