@@ -107,7 +107,39 @@ Take a look at the errors you see and answer these questions:
 
 Here is a list of common changes required by the AirBnB style guide. You can read thheir guide here: 
 
+https://github.com/airbnb/javascript#types
 
+Take a look at the style guide. Pair and discuss.
+
+<!-- > -->
+
+### JS - Const, Let and Var
+
+Best practice: const > let > var. 
+
+Why? const and let are block scoped and are not hoisted. This makes there use more predictable. 
+
+const defines a value that can not be reassigned. Knowing a value will not be reassigned allows the JavaScript engine to operate more efficiently. It also adds safety to your program. 
+
+## JS - Template Strings 
+
+Best Pratice use template literals over the + for concatenation. 
+
+```JS
+const name = 'joe'
+console.log(`hello ${name}`) // concatenate with template literal
+```
+
+## JS - Functions and Hoisting
+
+JavaScript is processed in two steps. The first step the JavaScript engine examines code and processes it. In the second step the code is executed. 
+
+One of the processed that happens in the first step is Hoisting. Hoisting effectively moves some elements to the top of their scope. Things that are effected by hoisting are:
+
+- variables decalred with var
+- functions declarations
+
+https://repl.it/classroom/invite/kHcWR5n
 
 <!-- v -->
 

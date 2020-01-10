@@ -32,7 +32,23 @@ You'll also need to use a style guide. For this assignmen you should be using th
 
 With each change ask yourself why the style guide is asking for that change. Discuss this with other students, TA, or instructor. 
 
-**Challenge 3** 
+This process should cover the following areas: 
+
+- const, let, and var
+- arrow functions 
+- template string literals
+
+Pay close attention to these. They are effected by hoisting. A function or var declare lower in code may need to be declared earlier to work properly. 
+
+**Challenge 3** Write a function to draw the background for the game. Currently the `draw()` function clears the canvas on it's first line with: 
+
+`ctx.clearRect(0, 0, canvas.width, canvas.height);`JS
+
+Add a function called `drawBackground()`. Call this on the first line of `draw()`. 
+
+Try these cahllenges: 
+
+- Fill the background with a color other than the default color. Do this by drawing a rectanlge that starts at x 0, y 0 with a width and height that match your canvas. Do all of this in the `drawBackground()` function. 
 
 ### Deliverable
 
@@ -40,7 +56,7 @@ A link to the branch of your repo with the code changes used to solve the challe
 
 ### Due date
 
-Date this project is due
+Tue, January 28
 
 ## Assessing the assignment
 

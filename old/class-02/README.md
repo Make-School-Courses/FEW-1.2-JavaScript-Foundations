@@ -47,7 +47,7 @@ Fill event numbered cols with 'A' and odd cols with 'B'
 
 Alternate 
 
-## How does Break use loops and arrays? 
+## How does Break Out use loops and arrays? 
 
 Loops are a tool to repeat a task a number of times. 
 Use them to automate repetitive code. 
