@@ -154,6 +154,11 @@ class Ball {
         this.dx = -2
         this.dy = -2
     }
+
+    move() {
+      this.x += this.dx
+      this.y += this.dy
+    }
 }
 
 const ball = new Ball(200, 300)
@@ -167,6 +172,12 @@ ES6 style classes have some features that deserve discussion.
 - initialization
 - parameters
 - default parameters
+
+Vocabulary 
+
+- property - a variable/value stored by a class (x, y, radius, dx, dy)
+- method - a function stored in a class (move)
+
 
 <!-- v -->
 
@@ -184,7 +195,7 @@ _You're in charge of making a class for each of the game objects._
 - Brick
 - Paddle
 - Score
-- Lives 
+- Lives
 
 These are objects in the game, you can see these objects on the screen and the game manipulates these objects as you play the game. Objects give you an abstract way to think about and visualize your code. 
 
@@ -200,6 +211,8 @@ For example, the Ball class might look like this:
     this.x = 0;
     this.y = 0;
   }
+
+  ...
 }
 ```
 
@@ -237,9 +250,9 @@ Many of the game objects need to draw themselves. In order to do this, they need
     this.y = 0;
   }
                          
-    render(ctx) {
-        ...
-    }
+  render(ctx) {
+    ...
+  }
 }
 ```
 
