@@ -182,7 +182,7 @@ This is Dependency Injection at work! Overall this is a very nice Class package 
 
 ## OOP Challenges
 
-Your job is to refactor your work. You'll be making a class object to replace the existing code. Along the way, you should also clean up your code, fixing formatting, indentation, and add comments. 
+Your job is to refactor your work. You'll be making a class object to replace the existing code. Along the way, you should also clean up your code, fixing formatting, indentation, and add comments.
 
 - **Challenge 1**: Define Classes for Game Objects
   1. Define a class for `Ball`

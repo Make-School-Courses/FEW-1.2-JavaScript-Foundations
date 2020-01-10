@@ -7,21 +7,31 @@
 
 <!-- > -->
 
+## Class Learning Objectives
+
+The goal of this class is to improve and develop your JavaScript skills and knowledge, and to further develop your skills in software development. 
+
+- Write quality modern JS
+- Use functions and varaibles to create front end applications
+- 
+
+<!-- > -->
+
 ## Your Goals
 
 Goals - 
 
 There are two goals that will bring you success: building portfolio projects and mastering learning objectives. 
 
-Student goals are to create portfolio projects. You should have two portfolio projects that show off your front end skills at the end of 7 weeks. Building these is your goal. I will present ideas and projects, you need to take them to completion. 
+You should have two portfolio projects that show off your front end skills at the end of 7 weeks. Building these is your goal. I will present ideas and projects, you need to take them to completion. 
 
-If you have ideas that outside the description of the project talk to the instructor. We will always be willing to work with you. My only request will be the projects include the learning objectives and the scope of the project be reasonable.
+### What are learning objectives? 
 
-What are learning objectives? 
+Learning objectives are the concepts and ideas that you need to know to claim mastery of the subject. Learning Objectives are often skills that are related to success at job interviews and on the job. 
 
-I’ll present ideas in class and give them a descriptor. These are learning objectives, concepts and ideas that you need to know to claim mastery of the subject. Learning Objectives are often skills that are related to success at job interviews and on the job. 
+When you understand a learning objective you will be able to explain it and put it into practice. 
 
-When you understand a learning objective you will be able to explain it and put it into practice. There will be learning objectives for each class. You should test your knowledge by explaining the concepts to someone else. Implement the learning objectives in code when the learning objectives are code. Some objectives are larger overarching concepts, in these cases you should identify the learning objective in your code, your project as a whole, or in the larger software ecosystem or the world at large. 
+There will be learning objectives for each class. You should test your knowledge by explaining the concepts to someone else, implement the learning objectives in code when the learning objectives are code. Some objectives are larger overarching concepts, in these cases you should identify the learning objective in your code, your project as a whole, or in the larger software ecosystem or the world at large. 
 
 If you are having trouble understanding a learning objective you need to take action. Discuss the topic with another student, talk with a TA, bring questions to class, talk to an instructor during lab or office hours. 
 
@@ -29,7 +39,7 @@ If you are having trouble understanding a learning objective you need to take ac
 
 ## Projects 
 
-You have two projects your goal is to produce something that shows your skills. 
+The goal is to produce something that shows your skills. 
 
 - Breakout - This is a JavaScript implementation of the arcade game Breakout 
 - Custom/Contractor Project with React - This will be web site built with React and is open to your own ideas and input. 
@@ -47,6 +57,12 @@ The Breakout tutorial is a great JS practice project. It makes use of many of th
 - Objects 
 
 These things are core to programming in general. Learn these things here and you can apply them anywhere. 
+
+After completing the tutorial you will improve the code applying modern techniques and best practices. This will include: 
+
+- Using ES6 JS ideas 
+- Linting to profesional standards 
+- Using build systems and bundling
 
 <!-- > -->
 
@@ -212,18 +228,18 @@ https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_J
 
 <!-- > -->
 
-## Minute-by-Minute [OPTIONAL]
+## Minute-by-Minute 2:45
 
 | **Elapsed** | **Time**  | **Activity** |
 | ----------- | --------- | ------------ |
-| 0:05        | 0:05      | Intro |
+| 0:05        | 0:05      | Admin |
 | 0:20        | 0:15      | Objectives |
 | 0:35        | 0:15      | Overview |
 | 0:50        | 0:15      | Canvas |
 | 1:40        | 0:50      | Lab - Breakout Tutorial |
 | 1:50        | 0:10      | Break |
-| 1:50        | 0:30      | Review progress on Tutorial |
-| 2:30        | 0:10      | Review Homework |
-| 2:30        | 0:20      | Review objectives |
-| TOTAL       | 2:50      | - |
+| 2:20        | 0:30      | Review progress on Tutorial |
+| 2:40        | 0:10      | Review Homework |
+| 2:45        | 0:05      | Review objectives |
+| TOTAL       | 2:45      | - |
 
