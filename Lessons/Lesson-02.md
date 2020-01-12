@@ -7,9 +7,15 @@
 
 <!-- > -->
 
+# Overview
+
+This class will look at the JS you wrote in the tutorial and improve and upgrade it to modern and professional standards. 
+
+<!-- > -->
+
 ## Modern JS 
 
-You should be using the most up to date JS in your work. It's what will be expected at job interviews and in the profesional environment. 
+You should be using the most up to date JS in your work. It's what will be expected at job interviews and in the professional environment. 
 
 <!-- > -->
 
@@ -21,16 +27,16 @@ You should be using the most up to date JS in your work. It's what will be expec
 
 <!-- > -->
 
-## What is code quality? 
+# Code Quality 
 
 <!-- > -->
 
 - Consistent style 
-  - Looks good 
-  - Reads well 
-  - to everyone on the team
+ - Looks good 
+ - Reads well 
+ - to everyone on the team
 - Uses best practices 
-  - e.g. const > let > var
+ - e.g. const > let > var
 
 <!-- > -->
 
@@ -90,11 +96,11 @@ Then link that to your project. In index.html use:
 
 **Start Linting**
 
-Take a look at `index.js`. There should be some red lines hihglighting sections of your code. These are linting errors. 
+Take a look at `index.js`. There should be some red lines highlighting sections of your code. These are linting errors. 
 
-Move the cursor over these and you'll see notes from the linter telling your how your code doesn't meet the requirements of the style guide. 
+Move the cursor over these and you'll see notes from the linter telling you how your code doesn't meet the requirements of the style guide. 
 
-Your job id to figure these out and solve the problems. Your deeper and more important goal job is do your best to understand why profesionals would ask for these changes. 
+Your job id to figure these out and solve the problems. Your deeper and more important goal job is to do your best to understand why professionals would ask for these changes. 
 
 Take a look at the errors you see and answer these questions: 
 
@@ -105,7 +111,7 @@ Take a look at the errors you see and answer these questions:
 
 ## Modern JS 
 
-Here is a list of common changes required by the AirBnB style guide. You can read thheir guide here: 
+Here is a list of common changes required by the AirBnB style guide. You can read their guide here: 
 
 https://github.com/airbnb/javascript#types
 
@@ -117,13 +123,13 @@ Take a look at the style guide. Pair and discuss.
 
 Best practice: const > let > var. 
 
-Why? const and let are block scoped and are not hoisted. This makes there use more predictable. 
+Why? const and let are block-scoped and are not hoisted. This makes there use more predictable. 
 
 const defines a value that can not be reassigned. Knowing a value will not be reassigned allows the JavaScript engine to operate more efficiently. It also adds safety to your program. 
 
 ## JS - Template Strings 
 
-Best Pratice use template literals over the + for concatenation. 
+Best Practice use template literals over the + for concatenation. 
 
 ```JS
 const name = 'joe'
@@ -132,18 +138,18 @@ console.log(`hello ${name}`) // concatenate with template literal
 
 ## JS - Functions and Hoisting
 
-JavaScript is processed in two steps. The first step the JavaScript engine examines code and processes it. In the second step the code is executed. 
+JavaScript is processed in two steps. In the first step, the JavaScript engine examines code and processes it. In the second step, the code is executed. 
 
-One of the processed that happens in the first step is Hoisting. Hoisting effectively moves some elements to the top of their scope. Things that are effected by hoisting are:
+One of the processed that happens in the first step is Hoisting. Hoisting effectively moves some elements to the top of their scope. Things that are affected by hoisting are:
 
-- variables decalred with var
+- variables declared with var
 - functions declarations
 
 https://repl.it/classroom/invite/kHcWR5n
 
 <!-- v -->
 
-## Lab
+# Lab
 
 - Solve all of the linter errors
 - Consult with your peers if you can't solve an error
@@ -153,21 +159,22 @@ https://repl.it/classroom/invite/kHcWR5n
 <!-- > -->
 
 <!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
+# BREAK
 
 <!-- > -->
 
-## After Lab
+# After Lab
 
-List linter suggestions on the board. Split into groupd of 4 to discuss these. Each group decides why these suggestions were inlcuded in the style guide. 
+List linter suggestions on the board. Split into groups of 4 to discuss these. Each group decides why these suggestions were included in the style guide. 
 
 - What changes did the linter ask for? 
 - Why do you think these changes? 
 - What were the problems that couldn't be solved?
 
+
 <!-- > -->
 
-## Homework
+# Homework
 
 - [Assignment 2 ESLint.md](Assignments/Assignment-2-EsLint.md)
 
@@ -183,15 +190,15 @@ List linter suggestions on the board. Split into groupd of 4 to discuss these. E
 
 ## Minute-by-Minute 2:45
 
-| **Elapsed** | **Time**  | **Activity**              |
+| **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------------------- |
-| 0:05        | 0:05      | Admin                     |
-| 0:15        | 0:10      | Objectives                |
-| 0:35        | 0:20      | Overview: Code Quality    |
-| 0:55        | 0:30      | ESLint                    |
-| 1:55        | 0:60      | Lab                       |
-| 2:05        | 0:10      | BREAK                     |
-| 2:35        | 0:30      | Industry best practice    |
-| 2:45        | 0:10      | Wrap up review objectives |
-| TOTAL       | 2:45      | -                         |
+| 0:05 | 0:05 | Admin |
+| 0:15 | 0:10 | [Overview and Objectives](#overview) |
+| 0:35 | 0:20 | [Code Quality](#code-quality) |
+| 0:55 | 0:30 | [ESLint](#eslint) |
+| 1:55 | 0:60 | [Lab](#lab) |
+| 2:05 | 0:10 | [BREAK](#break) |
+| 2:35 | 0:30 | [After Lab]() |
+| 2:45 | 0:10 | [Homework](#homework) |
+| TOTAL | 2:45 | - |
 
