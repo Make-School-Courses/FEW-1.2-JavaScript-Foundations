@@ -219,16 +219,16 @@ https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_J
 ## Additional Resources
 
 1. Variables 
- 1. [Types and Values ](https://eloquentjavascript.net/01_values.html)
- 1. [Variables](https://eloquentjavascript.net/02_program_structure.html#h_lnOC+GBEtu)
+  1. [Types and Values ](https://eloquentjavascript.net/01_values.html)
+  1. [Variables](https://eloquentjavascript.net/02_program_structure.html#h_lnOC+GBEtu)
 1. Functions 
- 1. [Defining functions](https://eloquentjavascript.net/03_functions.html)
- 1. [Scope](https://eloquentjavascript.net/03_functions.html#h_XqQR5FlX+8)
+  1. [Defining functions](https://eloquentjavascript.net/03_functions.html)
+  1. [Scope](https://eloquentjavascript.net/03_functions.html#h_XqQR5FlX+8)
 1. Data Structures
- 1. [Arrays and Objects](https://eloquentjavascript.net/04_data.html)
+  1. [Arrays and Objects](https://eloquentjavascript.net/04_data.html)
 1. Flow Control 
- 1. [If else](https://eloquentjavascript.net/02_program_structure.html#h_wpz5oi2dy7)
- 1. [For loops](https://eloquentjavascript.net/02_program_structure.html#h_oupMC+5FKN)
+  1. [If else](https://eloquentjavascript.net/02_program_structure.html#h_wpz5oi2dy7)
+  1. [For loops](https://eloquentjavascript.net/02_program_structure.html#h_oupMC+5FKN)
 1. [Canvas](https://eloquentjavascript.net/17_canvas.html)
 
 
