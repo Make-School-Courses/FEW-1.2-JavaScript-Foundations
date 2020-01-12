@@ -33,22 +33,22 @@ By the end of the course will be able to:
 
 **Class Times:** Tuesday and Thursday at 9:30am – 12:15pm (14 class sessions)
 
-| Class | Date | Topics | Assignment |
-|:---:|:---:|:---:|:---:|
-|  1 | Tue, January 21 | [JavaScript Basics](Lessons/Lesson-01.md) | [Break Out](Assignment-1-Break-Out.md) |
-|  2 | Thu, January 23 | [JavaScript Professional Best Practice](Lessons/Lesson-02.md) | [EsLint](Assignment/Assignment-2-EsLint.md) |
-|  3 | Tue, January 28 | [JavaScript OOP](Lessons/Lesson-03.md) | [OOP](Assignment/Assignment-3-OOP.md) |
-|  4 | Thu, January 30 | [OOP and Inheritence](Lessons/Lesson-04.md) | - |
-|  5 | Tue, February 4 | [Bundling JS](Lessons/Lesson-05.md) | - |
-|  6 | Thu, February 6 | [Single Page Applications](Lessons/Lesson-06.md)  | [Assignment 6 React Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) |
-|  7 | Tue, February 11 | [Component Architecture](Lessons/Lesson-07.md) | - |
-|  8 | Thu, February 13 | [Lesson 8](Lessons/Lesson-08.md) | [Assignment 3 Final Project](Assignments/Assignment-3-Final-Project.md) |
-|  9 | Tue, February 18 | [Lesson 9](Lessons/Lesson-09.md) | - |
-| 10 | Thu, February 20 | [Lesson 10](Lessons/Lesson-10.md) | - |
-| 11 | Tue, February 25 | [Lesson 11](Lessons/Lesson-11.md) | - |
-| 12 | Thu, February 27 | [Lesson 12](Lessons/Lesson-12.md) | - |
-| 13 | Tue, March 3     | [Lesson 13](Lessons/Lesson-13.md) | - |
-| 14 | Thu, March 5     | [Lesson 14](Lessons/Lesson-14.md) | - |
+| Class | Date | Topics | Assignment start | Assignment due |
+|:-----:|:----:|:------:|:----------------:|:--------------:|
+|  1 | Tue, January 21 | [JavaScript Basics](Lessons/Lesson-01.md) | [Break Out](Assignment-1-Break-Out.md) | - |
+|  2 | Thu, January 23 | [JavaScript Professional Best Practice](Lessons/Lesson-02.md) | [EsLint](Assignment/Assignment-2-EsLint.md) | - |
+|  3 | Tue, January 28 | [JavaScript OOP](Lessons/Lesson-03.md) | [OOP](Assignment/Assignment-3-OOP.md) | - |
+|  4 | Thu, January 30 | [OOP and Inheritence](Lessons/Lesson-04.md) | - | - |
+|  5 | Tue, February 4 | [Bundling JS](Lessons/Lesson-05.md) | - | - |
+|  6 | Thu, February 6 | [Single Page Applications](Lessons/Lesson-06.md)  | [Assignment 6 React Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) | - |
+|  7 | Tue, February 11 | [Component Architecture](Lessons/Lesson-07.md) | - | - |
+|  8 | Thu, February 13 | [Lesson 8](Lessons/Lesson-08.md) | [Assignment 3 Final Project](Assignments/Assignment-3-Final-Project.md) | - |
+|  9 | Tue, February 18 | [Lesson 9](Lessons/Lesson-09.md) | - | - |
+| 10 | Thu, February 20 | [Lesson 10](Lessons/Lesson-10.md) | - | - |
+| 11 | Tue, February 25 | [Lesson 11](Lessons/Lesson-11.md) | - | - |
+| 12 | Thu, February 27 | [Lesson 12](Lessons/Lesson-12.md) | - | - |
+| 13 | Tue, March 3     | [Lesson 13](Lessons/Lesson-13.md) | - | - |
+| 14 | Thu, March 5     | [Lesson 14](Lessons/Lesson-14.md) | - | - |
 
 ### Projects
 
