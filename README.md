@@ -40,7 +40,7 @@ By the end of the course will be able to:
 |  3 | Tue, January 28 | [JavaScript OOP](Lessons/Lesson-03.md) | - |
 |  4 | Thu, January 30 | [OOP and Inheritence](Lessons/Lesson-04.md) | - |
 |  5 | Tue, February 4 | [Bundling JS](Lessons/Lesson-05.md) | - |
-|  6 | Thu, February 6 | [Single Page Applications](Lessons/Lesson-06.md)  | [Assignment 2 Single Page Application Tutorial](Assignments/Assignment-2-Single-Page-Application-Tutorial.md) |
+|  6 | Thu, February 6 | [Single Page Applications](Lessons/Lesson-06.md)  | [Assignment 6 React Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) |
 |  7 | Tue, February 11 | [Component Architecture](Lessons/Lesson-07.md) | - |
 |  8 | Thu, February 13 | [Lesson 8](Lessons/Lesson-08.md) | [Assignment 3 Final Project](Assignments/Assignment-3-Final-Project.md) |
 |  9 | Tue, February 18 | [Lesson 9](Lessons/Lesson-09.md) | - |

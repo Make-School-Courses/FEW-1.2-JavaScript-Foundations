@@ -7,7 +7,7 @@
 
 <!-- > -->
 
-## Class Learning Objectives
+# Class Learning Objectives
 
 The goal of this class is to improve and develop your JavaScript skills and knowledge, and to further develop your skills in software development. 
 
@@ -37,7 +37,7 @@ If you are having trouble understanding a learning objective you need to take ac
 
 <!-- > -->
 
-## Projects 
+# Projects 
 
 The goal is to produce something that shows your skills. 
 
@@ -76,7 +76,7 @@ Today's learning Objectives are:
 
 <!-- > -->
 
-## Initial Exercise
+## Break Out
 
 - What is Breakout
   - Quick history of Breakout
@@ -97,7 +97,7 @@ Exercise 1: Open sketch and draw Breakout
 
 <!-- > -->
 
-## Canvas 
+# Canvas 
 
 Canvas is JS API that allows you to draw bit mapped graphics. Use it to create special effects and games. Bit mapped graphics draw faster and allow for pixel level control of an image.
 
@@ -166,7 +166,7 @@ https://github.com/soggybag/canvas-practice
 
 <!-- > --> 
 
-## Lab: Break Out tutorial 
+# Lab
 
 Your goal is to complete the tutorial:
 
@@ -177,6 +177,12 @@ This tutorial is 10 pages. At the end of every page is the completed source code
 **This should take about an hour**
 
 The code in the tutorial is very naive. You will be updating the code to modern standards in the next assignment.
+
+<!-- > -->
+
+# Break
+
+Take a 10 minute break measure the world in pixels. 
 
 <!-- v -->
 
@@ -233,13 +239,12 @@ https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_J
 | **Elapsed** | **Time**  | **Activity** |
 | ----------- | --------- | ------------ |
 | 0:05        | 0:05      | Admin |
-| 0:20        | 0:15      | Objectives |
-| 0:35        | 0:15      | Overview |
-| 0:50        | 0:15      | Canvas |
-| 1:40        | 0:50      | Lab - Breakout Tutorial |
-| 1:50        | 0:10      | Break |
+| 0:20        | 0:15      | [Class Learning Objectives](#class-learning-objectives) |
+| 0:35        | 0:15      | [Projects](#projects) |
+| 0:50        | 0:15      | [Canvas](#canvas) |
+| 1:40        | 0:50      | [Lab: Break Out Tutorial](#lab) |
+| 1:50        | 0:10      | [Break](#break) |
 | 2:20        | 0:30      | Review progress on Tutorial |
 | 2:40        | 0:10      | Review Homework |
 | 2:45        | 0:05      | Review objectives |
-| TOTAL       | 2:45      | - |
 

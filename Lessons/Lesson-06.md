@@ -226,7 +226,7 @@ https://github.com/MakeSchool-Tutorials/React-Fundamentals
 
 ### After Class
 
-Continue the React Fundamentals tutorial 
+- [Assignment 6 React Fundamentals](Assignments/Assignment-6-react-fundamentals.md)
 
 <!-- > -->
 
