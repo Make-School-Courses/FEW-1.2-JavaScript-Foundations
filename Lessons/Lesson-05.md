@@ -1,5 +1,5 @@
 <!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
-# Class - Lesson 5
+# FEW 1.2 - Lesson 5 - Bundling JS
 
 <!-- Put a link to the slides so that students can find them -->
 
