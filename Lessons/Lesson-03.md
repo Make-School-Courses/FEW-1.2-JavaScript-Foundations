@@ -35,7 +35,7 @@ What should you refactor? In this section, you will be creating Class objects to
 - Improve variable declarations. Replace `var` with `const` and `let`
 - Add comments
 - Improve formatting and indentation
-- Making procedural code Object Oriented
+- Making procedural code Object-Oriented
 - Improve anything else you might think of that needs improvement
 
 (just listen to the linter)
@@ -68,11 +68,11 @@ Grouping related variables together in an object will organize and encapsulate t
 
 ```JavaScript
 const ball = {
-    x: 240, 
-    y: 290, 
-    radius: 10, 
-    dx: -2,
-    dy: -2 
+ x: 240, 
+ y: 290, 
+ radius: 10, 
+ dx: -2,
+ dy: -2 
 }
 ```
 
@@ -90,7 +90,7 @@ const ballRadius = 10;
 ...
 ```
 
-Find where these variables exist in your code and replce them with 
+Find where these variables exist in your code and replace them with 
 
 - `ball.x`
 - `ball.y`
@@ -102,18 +102,18 @@ For example the `drawBall()` function becomes:
 
 ```JS
 const drawBall = () => {
-  ctx.beginPath();
-  // Notice the changes here
-  ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
-  ctx.fillStyle = '#0095DD';
-  ctx.fill();
-  ctx.closePath();
+ ctx.beginPath();
+ // Notice the changes here
+ ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
+ ctx.fillStyle = '#0095DD';
+ ctx.fill();
+ ctx.closePath();
 }
 ```
 
 <!-- > -->
 
-**Disucssion:** 
+**Discussion:** 
 
 - With these changes is the code better? 
 - What is different? 
@@ -121,15 +121,15 @@ const drawBall = () => {
 
 <!-- > -->
 
-With this arrangement, there is only a single global variable. Which makes our code safer, there is less chance we might overwrite a variable by accident. 
+With this arrangement, there is only a single global variable. This makes your code safer, there is less chance we might overwrite a variable by accident. 
 
 **Encapsulation**
 
-Properties that effect the ball are stored together. 
+Properties that affect the ball are stored together. 
 
 <!-- > -->
 
-It also makes the code easier to reason about. We have one ball with some logical properties that be long to it. Rather than a pool of variables some of which control the appearance of the ball. 
+It also makes the code easier to reason about. We have one ball with some logical properties that belong to it. Rather than a pool of variables some of which control the appearance of the ball. 
 
 <!-- > -->
 
@@ -137,7 +137,7 @@ It also makes the system easier to expand. If you need to make another ball you 
 
 <!-- > -->
 
-Objects with the same properties are also interchangeable. This allows for Polymorphism an advanced OOP topics. 
+Objects with the same properties are also interchangeable. This allows for Polymorphism advanced OOP topics. 
 
 <!-- > -->
 
@@ -147,18 +147,18 @@ While defining a ball with an object literal works. You can go a step further by
 
 ```JavaScript
 class Ball {
-    constructor(x, y, radius = 10) {
-        this.x = x
-        this.y = y
-        this.radius = radius
-        this.dx = -2
-        this.dy = -2
-    }
+ constructor(x, y, radius = 10) {
+ this.x = x
+ this.y = y
+ this.radius = radius
+ this.dx = -2
+ this.dy = -2
+ }
 
-    move() {
-      this.x += this.dx
-      this.y += this.dy
-    }
+ move() {
+ this.x += this.dx
+ this.y += this.dy
+ }
 }
 
 const ball = new Ball(200, 300)
@@ -205,14 +205,14 @@ For example, the Ball class might look like this:
 
 ```JavaScript
  class Ball {
-  constructor(radius, color = "#0095DD") {
-    this.radius = radius;
-    this.color = color;
-    this.x = 0;
-    this.y = 0;
-  }
+ constructor(radius, color = "#0095DD") {
+ this.radius = radius;
+ this.color = color;
+ this.x = 0;
+ this.y = 0;
+ }
 
-  ...
+ ...
 }
 ```
 
@@ -225,7 +225,7 @@ Here `Ball` Class defines instances which will have four properties. Two of the 
 
 ## Break 
 
-Take a ten minute break and look at all of the objects in the world and name their properties.
+Take a ten-minute break and look at all of the objects in the world and name their properties.
 
 # Lab
 
@@ -233,28 +233,28 @@ Spend the lab time working on solving the challenges here:
 
 [Assignment 3 OOP](Assignments/Assignment-3-OOP.md)
 
-Take notes as you work for dicussion after the lab. 
+Take notes as you work for discussion after the lab. 
 
 ## After Lab 
 
-We've removed a lot of global variables and grouped properties into objects. There are a couple variables that are shared across some of the objects. You need a way to handle these situations. 
+We've removed a lot of global variables and grouped properties into objects. There are a couple of variables that are shared across some of the objects. You need a way to handle these situations. 
 
 ## Dependency Injection
 
-Many of the game objects need to draw themselves. In order to do this, they need access to the canvas rendering context. This is a _dependency_. These classes should NOT rely on a global variable! The solution is to inject the _dependency_. 
+Many of the game objects need to draw themselves. To do this, they need access to the canvas rendering context. This is a _dependency_. These classes should NOT rely on a global variable! The solution is to inject the _dependency_. 
 
 ```JavaScript
  class Ball {
-  constructor(radius, color = "#0095DD") {
-    this.radius = radius;
-    this.color = color;
-    this.x = 0;
-    this.y = 0;
-  }
-                         
-  render(ctx) {
-    ...
-  }
+ constructor(radius, color = "#0095DD") {
+ this.radius = radius;
+ this.color = color;
+ this.x = 0;
+ this.y = 0;
+ }
+ 
+ render(ctx) {
+ ...
+ }
 }
 ```
 
@@ -264,9 +264,9 @@ An important technique you can make use of here is [Depedancy Injection](https:/
 
 This is a powerful idea that is used often in software development. In a nutshell: 
 
-> A dependency is an object that can be used by another object. Injection is the passing of a dependency to the dependent object that would use it.
+> A dependency is an object that can be used by another object. Dependency Injection is the passing of a dependency to the dependent object that would use it.
 
-Your goal for the current challenges is to create class objects for the Brick, Ball, Paddle, and Background. These classes will need to draw onto the canvas. The canvas context is a _dependancy_ for the Brick, Paddle, Ball etc. These objects are dependent on a canvas context, they can't draw themselves without one!
+Your goal for the current challenges is to create class objects for the Brick, Ball, Paddle, and Background. These classes will need to draw onto the canvas. The canvas context is a _dependancy_ for the Brick, Paddle, Ball, etc. These objects are dependent on a canvas context, they can't draw themselves without one!
 
 While you could supply the canvas when you initialized an object that would create a more tightly coupled system. Passing the canvas to the object when it needs to draw itself is a more elegant solution. 
 
@@ -274,22 +274,22 @@ Revisit the `Ball` class. In the code snippet below I've added a `render()` meth
 
 ```JavaScript
  class Ball {
-  constructor(radius, color = "#0095DD") {
-    this.radius = radius;
-    this.color = color;
-  }
+ constructor(radius, color = "#0095DD") {
+ this.radius = radius;
+ this.color = color;
+ }
 
-  render(ctx) {
-    ctx.beginPath();
-    ctx.arc(x, y, this.radius, 0, Math.PI * 2);
-    ctx.fillStyle = this.color;
-    ctx.fill();
-    ctx.closePath();
-  }
+ render(ctx) {
+ ctx.beginPath();
+ ctx.arc(x, y, this.radius, 0, Math.PI * 2);
+ ctx.fillStyle = this.color;
+ ctx.fill();
+ ctx.closePath();
+ }
 }
 ``` 
 
-This is Dependency Injection at work! Overall this is a very nice Class package you could make and render as many instances of this class as you might need, and render them on any canvas context. 
+This is a Dependency Injection at work! Overall this is a very nice Class package you could make and render as many instances of this class as you might need, and render them on any canvas context. 
 
 
 <!-- .slide: data-background="#087CB8" -->
@@ -313,17 +313,17 @@ This is Dependency Injection at work! Overall this is a very nice Class package 
 
 ## Minute-by-Minute [OPTIONAL]
 
-| **Elapsed** | **Time**  | **Activity** |
+| **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ----------- |
-| 0:05        | 0:05      | Admin |
-| 0:10        | 0:05      | [Overview](#overview) |
-| 0:15        | 0:05      | [Refactoring](#refactoring-code) |
-| 0:30        | 0:15      | [OOP and JS](#oop) |
-| 0:45        | 0:15      | [Defining Classes](#js-classes) |
-| 0:55        | 0:10      | [BREAK](#break) |
-| 1:55        | 0:60      | [Lab - OOP](#lab) |
-| 2:10        | 0:15      | [Post Lab Q & A](#after-lab) |
-| 2:35        | 0:15      | [Dependency Injection](#dependency-injection) |
-| 2:45        | 0:10      | Review Homework |
+| 0:05 | 0:05 | Admin |
+| 0:10 | 0:05 | [Overview](#overview) |
+| 0:15 | 0:05 | [Refactoring](#refactoring-code) |
+| 0:30 | 0:15 | [OOP and JS](#oop) |
+| 0:45 | 0:15 | [Defining Classes](#js-classes) |
+| 0:55 | 0:10 | [BREAK](#break) |
+| 1:55 | 0:60 | [Lab - OOP](#lab) |
+| 2:10 | 0:15 | [Post Lab Q & A](#after-lab) |
+| 2:35 | 0:15 | [Dependency Injection](#dependency-injection) |
+| 2:45 | 0:10 | Review Homework |
 
 
