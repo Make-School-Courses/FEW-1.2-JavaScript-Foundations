@@ -7,7 +7,7 @@
 
 <!-- > -->
 
-## OOP part 2
+# Overview
 
 This class will be an OOP workshop with the goal of reviewing the concepts from the previous class.
 
@@ -27,7 +27,7 @@ This is a big topic which reaches deeply into important areas of computer scienc
 
 <!-- > -->
 
-## What is inheritence? 
+# Inheritence 
 
 Inheritence is when you get something from your ancestors. 
 
@@ -109,20 +109,16 @@ Pair with some at the same stage/level and work on the stretch challenges togeth
 
 <!-- v -->
 
-
-
-<!-- v -->
-
-
-
-<!-- > -->
-
 <!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
+## BREAK
+
+Take a 10 minute break and think about things in the world that share properties. 
 
 <!-- > -->
 
-# Topic 2
+# Workshop Problem Solving
+
+
 
 <!-- v -->
 
@@ -134,7 +130,7 @@ Pair with some at the same stage/level and work on the stretch challenges togeth
 
 <!-- > -->
 
-## Wrap Up (5 min)
+## Wrap Up
 
 - Continue working on your current tutorial
 - Complete reading
@@ -150,13 +146,13 @@ Pair with some at the same stage/level and work on the stretch challenges togeth
 
 ## Minute-by-Minute [OPTIONAL]
 
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:05        | 0:05      | admin   |
-| 0:15        | 0:10      | Overview  |
-| 0:45        | 0:30      | Inheritence  |
-| 0:55        | 0:10      | BREAK   |
-| 2:25        | 1:30      | Workshop problem solving time |
-| 2:45        | 0:20      | Wrap up review objectives |
-| TOTAL       | 2:45      | -                         |
+| **Elapsed** | **Time**  | **Activity** |
+| ----------- | --------- | ------------ |
+| 0:05        | 0:05      | admin |
+| 0:15        | 0:10      | [Overview](#overview) |
+| 0:20        | 0:05      | [Learning Objectives](#learning-objectives) |
+| 0:50        | 0:30      | [Inheritence](#inheritence)  |
+| 1:00        | 0:10      | [BREAK](#break) |
+| 2:25        | 1:30      | [Workshop problem solving](#workshop-problem-solving) |
+| 2:45        | 0:20      | [Wrap up](#wrap-up) |
 

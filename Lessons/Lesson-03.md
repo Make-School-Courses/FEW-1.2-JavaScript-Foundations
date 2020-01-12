@@ -7,7 +7,7 @@
 
 <!-- > -->
 
-## Break Out OOP
+# Overview
 
 Class Objects and OOP. Use Object Oriented programming techniques to make your code modular and organized. 
 
@@ -42,7 +42,7 @@ What should you refactor? In this section, you will be creating Class objects to
 
 <!-- > -->
 
-## OOP
+# OOP
 
 Whoa, who wrote this tutorial? It's lacking in OOP! It's your job to improve it by increasing OOPiness!
 
@@ -225,7 +225,9 @@ Here `Ball` Class defines instances which will have four properties. Two of the 
 
 ## Break 
 
-## Lab OOP
+Take a ten minute break and look at all of the objects in the world and name their properties.
+
+# Lab
 
 Spend the lab time working on solving the challenges here: 
 
@@ -314,15 +316,14 @@ This is Dependency Injection at work! Overall this is a very nice Class package 
 | **Elapsed** | **Time**  | **Activity** |
 | ----------- | --------- | ----------- |
 | 0:05        | 0:05      | Admin |
-| 0:10        | 0:05      | Objectives |
-| 0:15        | 0:05      | Refactoring |
-| 0:30        | 0:15      | OOP and JS |
-| 0:45        | 0:15      | Making classes |
-| 0:55        | 0:10      | BREAK |
-| 1:55        | 0:60      | Lab - OOP |
-| 2:00        | 0:15      | Post Lab Q & A |
-| 2:15        | 0:15      | Dependency Injection |
-| 2:35        | 0:20      | Problem solving |
+| 0:10        | 0:05      | [Overview](#overview) |
+| 0:15        | 0:05      | [Refactoring](#refactoring-code) |
+| 0:30        | 0:15      | [OOP and JS](#oop) |
+| 0:45        | 0:15      | [Defining Classes](#js-classes) |
+| 0:55        | 0:10      | [BREAK](#break) |
+| 1:55        | 0:60      | [Lab - OOP](#lab) |
+| 2:10        | 0:15      | [Post Lab Q & A](#after-lab) |
+| 2:35        | 0:15      | [Dependency Injection](#dependency-injection) |
 | 2:45        | 0:10      | Review Homework |
-| TOTAL       | 1:50      | - |
+
 
