@@ -9,10 +9,10 @@
 
 # Class Learning Objectives
 
-The goal of this class is to improve and develop your JavaScript skills and knowledge, and to further develop your skills in software development. 
+The goal of this class is to improve and develop your JavaScript skills and knowledge and to further develop your skills in software development. 
 
 - Write quality modern JS
-- Use functions and varaibles to create front end applications
+- Use functions and variables to create front end applications
 - 
 
 <!-- > -->
@@ -21,17 +21,17 @@ The goal of this class is to improve and develop your JavaScript skills and know
 
 Goals - 
 
-There are two goals that will bring you success: building portfolio projects and mastering learning objectives. 
+Two goals will bring you success: building portfolio projects and mastering learning objectives. 
 
 You should have two portfolio projects that show off your front end skills at the end of 7 weeks. Building these is your goal. I will present ideas and projects, you need to take them to completion. 
 
-### What are learning objectives? 
+### What are Learning Objectives? 
 
 Learning objectives are the concepts and ideas that you need to know to claim mastery of the subject. Learning Objectives are often skills that are related to success at job interviews and on the job. 
 
 When you understand a learning objective you will be able to explain it and put it into practice. 
 
-There will be learning objectives for each class. You should test your knowledge by explaining the concepts to someone else, implement the learning objectives in code when the learning objectives are code. Some objectives are larger overarching concepts, in these cases you should identify the learning objective in your code, your project as a whole, or in the larger software ecosystem or the world at large. 
+There will be learning objectives for each class. You should test your knowledge by explaining the concepts to someone else, implement the learning objectives in code when the learning objectives are code. Some objectives are larger overarching concepts, in these cases, you should identify the learning objective in your code, your project as a whole, or in the larger software ecosystem or the world at large. 
 
 If you are having trouble understanding a learning objective you need to take action. Discuss the topic with another student, talk with a TA, bring questions to class, talk to an instructor during lab or office hours. 
 
@@ -42,7 +42,7 @@ If you are having trouble understanding a learning objective you need to take ac
 The goal is to produce something that shows your skills. 
 
 - Breakout - This is a JavaScript implementation of the arcade game Breakout 
-- Custom/Contractor Project with React - This will be web site built with React and is open to your own ideas and input. 
+- Custom/Contractor Project with React - This will be a web site built with React and is open to your ideas and input. 
 
 ## Class 1 - Breakout tutorial
 
@@ -51,8 +51,8 @@ The Breakout tutorial is a great JS practice project. It makes use of many of th
 - Variables 
 - Functions
 - Flow control 
-  - loops 
-  - if else statements
+ - loops 
+ - if else statements
 - Arrays
 - Objects 
 
@@ -61,14 +61,14 @@ These things are core to programming in general. Learn these things here and you
 After completing the tutorial you will improve the code applying modern techniques and best practices. This will include: 
 
 - Using ES6 JS ideas 
-- Linting to profesional standards 
+- Linting to professional standards 
 - Using build systems and bundling
 
 <!-- > -->
 
 ## Learning Objectives
 
-Today's learning Objectives are: 
+Today's Learning Objectives are: 
 
 1. Use the JavaScript language
 1. Describe and use canvas
@@ -79,19 +79,19 @@ Today's learning Objectives are:
 ## Break Out
 
 - What is Breakout
-  - Quick history of Breakout
+ - A quick history of Breakout
 - How does the tutorial game work? 
-  - It draws all of the game elements to canvas
-  - What are cartesian coordinates? 
-- Draw Break game with sketch
-  - How big is the desktop: 1440 x 1024
-  - How big is the game: 480 x 320
-  - Draw game elements
-    - bricks: 75 x 20
-      - rows: 3
-      - columns: 5
-    - ball: 10 radius
-    - paddle: 75 x 10
+ - draws all of the game elements with canvas
+ - What are cartesian coordinates? 
+- Draw Break game wit Sketch
+ - How big is the desktop: 1440 x 1024
+ - How big is the game: 480 x 320
+ - Draw game elements
+ - bricks: 75 x 20
+ - rows: 3
+ - columns: 5
+ - ball: 10 radius
+ - paddle: 75 x 10
 
 Exercise 1: Open sketch and draw Breakout 
 
@@ -99,7 +99,7 @@ Exercise 1: Open sketch and draw Breakout
 
 # Canvas 
 
-Canvas is JS API that allows you to draw bit mapped graphics. Use it to create special effects and games. Bit mapped graphics draw faster and allow for pixel level control of an image.
+Canvas is a JS API that allows you to draw bitmapped graphics. Use it to create special effects and games. Bitmapped graphics draw faster and allow for pixel-level control of an image.
 
 Canvas is a tag: 
 
@@ -109,7 +109,7 @@ Canvas is a tag:
 
 Think of canvas as the `<img>` tag with the ability to draw on it. 
 
-Like the `<img>` tag you should give `<canvas>` a width and height. 
+Like the `<img>` tag you should give `<canvas>` width and height. 
 
 ```html
 <canvas id="myCanvas" width="400" height="300"></canvas>
@@ -122,7 +122,7 @@ var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 ```
 
-Draw on your canvas using it's API. The tutorial uses a few of the APIs methods.
+Draw on your canvas using the canvas API. The tutorial uses a few of the APIs methods.
 
 Drawing with canvas generally follows these steps: 
 
@@ -137,11 +137,11 @@ Here are a few examples...
 **Draw a rectangle**
 
 ```js 
-ctx.beginPath()               // begins a new path
+ctx.beginPath() // begins a new path
 ctx.rect(x, y, width, height) // draws a rectangular path
-ctx.fillStyle = "#0095DD"     // sets the fill color
-ctx.closePath()               // closes the path
-ctx.fill()                    // fills the current path
+ctx.fillStyle = "#0095DD" // sets the fill color
+ctx.closePath() // closes the path
+ctx.fill() // fills the current path
 ```
 
 **Draw a circle**
@@ -182,7 +182,7 @@ The code in the tutorial is very naive. You will be updating the code to modern 
 
 # Break
 
-Take a 10 minute break measure the world in pixels. 
+Take a 10-minute break and measure the world in pixels. 
 
 <!-- v -->
 
@@ -200,35 +200,35 @@ Your job is to complete the tutorial here:
 
 https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript
 
-- Make a **new repo** for this project (this project should in it's own repo!)
+- Make a **new repo** for this project (this project should in its separate repo!)
 - Follow and complete the tutorial
-  - Make a commit for each page of the tutorial there are 10 pages.
-  - If you have problems or errors check your code against the source which is provided at the end of each tutorial page. 
+ - Make a commit for each page of the tutorial there are 10 pages.
+ - If you have problems or errors check your code against the source which is provided at the end of each tutorial page. 
 - Be able to explain the following: 
-  - Describe the flow of the break out game. What steps does the code follow to generate the game? 
-  - What variables are used by the game code and what is each variable responsible for? 
-  - What are the functions used by the game? What is each of these functions responsible for?
-  - What is canvas and how is it used in the tutorial/game?
-  - The bricks array
-    - How is this used?
-    - What does it contain?
-  - An object is used to represent bricks in the game, what are it's properties and how does the game use these? 
+ - Describe the flow of the Break Out game. What steps does the code follow to generate the game? 
+ - What variables are used by the game code and what is each variable responsible for? 
+ - What are the functions used by the game? What is each of these functions responsible for?
+ - What is canvas and how is it used in the tutorial/game?
+ - The bricks array
+ - How is this used?
+ - What does it contain?
+ - An object is used to represent bricks in the game, what are it's properties and how does the game use these? 
 
 <!-- > -->
 
 ## Additional Resources
 
 1. Variables 
-  1. [Types and Values ](https://eloquentjavascript.net/01_values.html)
-  1. [Variables](https://eloquentjavascript.net/02_program_structure.html#h_lnOC+GBEtu)
+ 1. [Types and Values ](https://eloquentjavascript.net/01_values.html)
+ 1. [Variables](https://eloquentjavascript.net/02_program_structure.html#h_lnOC+GBEtu)
 1. Functions 
-  1. [Defining functions](https://eloquentjavascript.net/03_functions.html)
-  1. [Scope](https://eloquentjavascript.net/03_functions.html#h_XqQR5FlX+8)
+ 1. [Defining functions](https://eloquentjavascript.net/03_functions.html)
+ 1. [Scope](https://eloquentjavascript.net/03_functions.html#h_XqQR5FlX+8)
 1. Data Structures
-  1. [Arrays and Objects](https://eloquentjavascript.net/04_data.html)
+ 1. [Arrays and Objects](https://eloquentjavascript.net/04_data.html)
 1. Flow Control 
-  1. [If else](https://eloquentjavascript.net/02_program_structure.html#h_wpz5oi2dy7)
-  1. [For loops](https://eloquentjavascript.net/02_program_structure.html#h_oupMC+5FKN)
+ 1. [If else](https://eloquentjavascript.net/02_program_structure.html#h_wpz5oi2dy7)
+ 1. [For loops](https://eloquentjavascript.net/02_program_structure.html#h_oupMC+5FKN)
 1. [Canvas](https://eloquentjavascript.net/17_canvas.html)
 
 
@@ -236,15 +236,15 @@ https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_J
 
 ## Minute-by-Minute 2:45
 
-| **Elapsed** | **Time**  | **Activity** |
+| **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------ |
-| 0:05        | 0:05      | Admin |
-| 0:20        | 0:15      | [Class Learning Objectives](#class-learning-objectives) |
-| 0:35        | 0:15      | [Projects](#projects) |
-| 0:50        | 0:15      | [Canvas](#canvas) |
-| 1:40        | 0:50      | [Lab: Break Out Tutorial](#lab) |
-| 1:50        | 0:10      | [Break](#break) |
-| 2:20        | 0:30      | Review progress on Tutorial |
-| 2:40        | 0:10      | Review Homework |
-| 2:45        | 0:05      | Review objectives |
+| 0:05 | 0:05 | Admin |
+| 0:20 | 0:15 | [Class Learning Objectives](#class-learning-objectives) |
+| 0:35 | 0:15 | [Projects](#projects) |
+| 0:50 | 0:15 | [Canvas](#canvas) |
+| 1:40 | 0:50 | [Lab: Break Out Tutorial](#lab) |
+| 1:50 | 0:10 | [Break](#break) |
+| 2:20 | 0:30 | Review progress on Tutorial |
+| 2:40 | 0:10 | Review Homework |
+| 2:45 | 0:05 | Review objectives |
 
