@@ -262,14 +262,14 @@ Use this lab time to:
 
 ## Minute-by-Minute [OPTIONAL]
 
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:05        | 0:05      | admin                |
+| **Elapsed** | **Time**  | **Activity** |
+| ----------- | --------- | ------------ |
+| 0:05        | 0:05      | admin |
 | 0:05        | 0:15      | [Overview: Bundling](#overview) |
 | 0:10        | 0:25      | [Bundling and compiling JS](#bundling-and-compiling-js) |
-| 0:30        | 0:55      | [How to bundle code](#how-to-bundle-code)  |
-| 1:05        | 0:10      | [BREAK](#break)                     |
+| 0:30        | 0:55      | [How to bundle code](#how-to-bundle-code) |
+| 1:05        | 0:10      | [BREAK](#break) |
 | 2:05        | 1:00      | [Lab](#lab) |
 | 2:35        | 0:30      | [Wrap Up and review](#wrap-up-and-review) |
-| 2:45        | 0:10      | admin   |
+| 2:45        | 0:10      | admin |
 
