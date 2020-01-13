@@ -1,5 +1,5 @@
 <!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
-# FEW 1.2 - Lesson 5 - Bundling JS
+# FEW 1.2 - Lesson 5 - OOP and JS Part 2
 
 <!-- Put a link to the slides so that students can find them -->
 
@@ -9,254 +9,138 @@
 
 # Overview
 
-Bundling is a common practice used across the JS ecosystem. While JS is not compiled to source code like other languages, JS files are processed heavily in modern applications. 
+This class will be an OOP workshop to review the concepts from the previous class.
 
 <!-- > -->
 
-## Why learn bundling
+### Why work with Classes and inheritance?
 
-- It's a professional best practice
-- Expect this to be used in any software job using JS
-- Make more reliable apps
-- Make more widely compatible applications
+This is a big topic which reaches deeply into important areas of computer science. Expect to see OOP and inheritance in the libraries you might work with, in interview questions, and on the job as a software engineer. 
+
+<!-- > -->
 
 ## Learning Objectives
 
-1. Describe bundling
-1. Identify the advantages of bundling code
-1. Implement a bundling system
+1. Create base/superclasses 
+1. Use inheritance with super and extends
+1. Create classes that inherit from a superclass
 
 <!-- > -->
 
-# Bundling and compiling JS
+# Inheritance 
 
-Has anyone used bundling or JS compiler before? 
+Inheritance is when you get something from your ancestors. 
 
-What did it do? 
+- genes
+- money
+- property
 
-## Bundling JS
+In software this could be: 
 
-Modern JS applications are not just written in code and used. At the professional level, they are compiled/bundled. 
+- variables/properties
+- methods/functions
 
-JavaScript is a scripting language. This means it doesn't need to be compiled in a strict sense, processed and turned into machine code. 
+Who do you inherit from? 
 
-While it doesn't need to be turned into machine code we can still do work to make our code more reliable and compatible with the widest array of browsers. 
+- Your parents
+- Your grandparents
 
-A bundler is a tool that converts the source JS that you wrote into code that will be used in your published application/web site. 
+In software who do you inherit from?
 
-<!-- > -->
+- Your parent/superclass
 
-What does bundling do? Processes your sources file and produces new files. What kinds of processes? 
+## Inheritence with JS
 
-- minify - reduces file size by removing unnecessary characters
-- uglify - renames elements to obfuscate code and reduce file size again
-- Compile TypeScript - Converts .ts files into .js files
-- Compatibility - Convert ES6 JS into JS that compatible with older browsers
-- bundling - combining all .js files into a single bundle.js
+Any class can inherit from another. You can also think of classes that inherit from another class as extensions of the other class. 
 
-Try it out:
-
-https://javascript-minifier.com
-https://skalman.github.io/UglifyJS-online/
-https://blog.logrocket.com/uglify-vs-babel-minify-vs-terser-a-mini-battle-royale/
-
-Paste some code here and see what the output is. 
-
-Expect to use bundlers on any professional project or in a professional environment. 
-
-<!-- > -->
-
-## Why call it bundling? 
-
-Another effect of the bundler is that it combines multiple .js files into a single .js file. This provides an advantage when loading projects by reducing the number of streams your page requires to load itself. 
-
-Each file is a separate stream. A browser has to provide overhead and manage each stream. More streams require more work, memory, and CPU. 
-
-In the end, bundling is the process of processing and combining files into a single file, often called bundle.js. This bundle.js is the "compiled" application. 
-
-## Libraries and npm 
-
-The bundling process will require npm. Let's take a look at npm. 
-
-You've probably used npm before but have you ever thought about what npm is? Here is how npm describes itself: 
-
-> npm is the world’s largest software registry. Open-source developers from every continent use npm to share and borrow packages and many organizations use npm to manage private development as well.
-
-<!-- > -->
-
-npm consists of three distinct components:
-
-- the website
-- the Command Line Interface (CLI)
-- the registry
-
-<!-- > --> 
-
-npm stores packages in a registry. Packages are programs, snippets of code. 
-
-npm is a library of code, a web site and a command-line tool that allows you to "check out" packages for use in your projects. 
-
-<!-- > -->
-
-# How to bundle code
-
-You should all have npm installed. If not follow their guide here: https://docs.npmjs.com/about-npm-versions
-
-Create a new npm project in your Break Out directory. 
-
-`npm init -y`
-
-Install webpack. This is a bundler. It's the tool that will do the processing and bundling. 
-
-`npm install --save-dev webpack webpack-cli`
-
-<!-- > -->
-
-## Setup directory 
-
-Setup some directories to manage your files. 
-
-Make the following folders: 
-
-- src (holds your source code)
-- dist (holds code you will distribute)
-
-
-Arrange your files. You should already have some of the files. 
-
-- src/index.js (this is your source code for your break out game)
-- dist/index.html (this is the HTML file for your break out game)
-- package.json (this should have been created in the previous step)
-- webpack.config.json (make this file now you will add code to it later)
-
-In the end your directory will look like this:
-
-```
-|- package.json
-|- webpack.config.js
-|- /src
- |- index.js
-|- /dist
- |- index.html
-```
-
-With this new arrangement, your index.html will now need to load bundle.js. Find the script tag and point it to the bundle.js. 
-
-`<script src="bundle.js"></script>`
-
-Notice we haven't created bundle.js. This file will be created in the next step by webpack. This will be the compiled, minified, uglified file built from your JS code and code you might have imported from other libs. 
-
-## Webpack config 
-
-Webpack is an industry-standard tool. You will see this tool in the future expects to work with it. It does many things. The webpack.config.js file configures webpack, it is written in JavaScript. 
-
-Copy the code below and paste it into your webpack.config.js. 
-
-```
-const path = require('path')
-
-module.exports = {
- entry: './src/index.js',
- output: {
- filename: 'bundle.js',
- path: path.resolve(__dirname, 'dist')
+```js
+class Sprite {
+ constructor() {
+ this.x = 0
+ this.y = 0
  }
 }
-```
 
-Examine the config file discuss it with another student. What do you think it will tell webpack to do? 
+class Ball extends Sprite {
+ constructor() {
+ super()
 
-<!-- > -->
-
-- entry - start with src/index.js
-- output 
- - filename - create a file named bundle.js
- - path - put bundle.js in the dist/ folder 
-
-<!-- > -->
-
-## Running Scripts
-
-You can run scripts from the command line. You did this earlier when you installed the npm packages. You can also store scripts in your package.json and run them with your project. 
-
-Open packages.json and find the scripts section. 
-
-edit package.json
-
-```
-{
- ...
- "scripts": {
- "test": "echo \"Error: no test specified\" && exit 1"
- "develop": "webpack --mode development --watch",
- "build": "webpack --mode production"
- },
- ...
+ this.radius = 10
+ }
 }
- ```
 
-Here you are adding two scripts
+const ball = new Ball() // { x: 0, y: 0, radius: 10 }
+```
 
-- "develop": "webpack --mode development --watch"
-- "build": "webpack --mode production"
+Calling super() in a subclass is like calling the constructor function in your superclass. 
 
-The first is for development mode. Use this one when you are working on your project as a developer. 
+** You must call super()!**
 
-The second is the build script. Use this when you want to create the bundle.js and distribute your project to the world. 
+If a class takes parameters in its constructor it must pass these to super. 
+
+```js
+class Sprite {
+ constructor(x, y) {
+ this.x = 0
+ this.y = 0
+ }
+}
+
+class Ball extends Sprite {
+ constructor(x, y, color, radius) {
+ super(x, y) // Must pass parameters to super!
+
+ this.color = color
+ this.radius = radius
+ }
+}
+
+const ball = new Ball(10, 20, 'red', 30) 
+// { x: 10, y: 20, color:'red', radius: 30 }
+```
+
+You must pass parameters to super. Notice the constructor takes these parameters, calling super is like calling the constructor of the superclass. 
+
+<!-- > -->
+
+# Using Inheritance
+
+Pair with some at the same stage/level and work on the stretch challenges together.
 
 <!-- v -->
-
-### Run your scripts
-
-Test your work. 
-
-`npm run develop`
-
-Running this script should launch Webpack in development mode. It should compile your .js files and create dist.bundle.js. 
-
-This mode uses the--watch flag. The watch flag monitors file changes you make and recompiles each time there is a change.
-
-Try it make some changes, save. Notice the terminal shows output each time you save. Telling us that webpack is working recompiling bundle.js. 
-
-<!-- > -->
 
 <!-- .slide: data-background="#087CB8" -->
-# BREAK
+## BREAK
 
-Take a 10-minute break
+Take a 10-minute break and think about things in the world that share properties. 
 
 <!-- > -->
 
-# Lab
+# Workshop Problem Solving
 
-Use this lab time to: 
 
-- Install webpack and get the bundler working
-- Finish up your Break Project
-- Write a quality readme describing what happened in the project 
- - Be sure to explain where you began and where you ended 
- - Explain the tools used
- - Include mention of the branches that contain the work in different stages
 
 <!-- v -->
 
-# Wrap Up and review
+## Overview/TT II (optional) (20 min)
 
-- What is bundling? 
-- Why use it? 
-- Your thoughts? 
-- Use cases? 
-- What problems did you encounter? 
-- How did you solve them?
+<!-- v -->
+
+## In-Class Activity II (optional) (30 min)
+
+<!-- > -->
+
+## Wrap Up
+
+- Continue working on your current tutorial
+- Complete reading
+- Complete challenges
 
 <!-- > -->
 
 ## Additional Resources
 
-- https://javascript-minifier.com
-- https://skalman.github.io/UglifyJS-online/
-- https://blog.logrocket.com/uglify-vs-babel-minify-vs-terser-a-mini-battle-royale/
-- https://www.sitepoint.com/beginners-guide-webpack-module-bundling/
+1. Links to additional readings and videos
 
 <!-- > -->
 
@@ -265,11 +149,10 @@ Use this lab time to:
 | **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------ |
 | 0:05 | 0:05 | admin |
-| 0:05 | 0:15 | [Overview: Bundling](#overview) |
-| 0:10 | 0:25 | [Bundling and compiling JS](#bundling-and-compiling-js) |
-| 0:30 | 0:55 | [How to bundle code](#how-to-bundle-code) |
-| 1:05 | 0:10 | [BREAK](#break) |
-| 2:05 | 1:00 | [Lab](#lab) |
-| 2:35 | 0:30 | [Wrap Up and review](#wrap-up-and-review) |
-| 2:45 | 0:10 | admin |
+| 0:15 | 0:10 | [Overview](#overview) |
+| 0:20 | 0:05 | [Learning Objectives](#learning-objectives) |
+| 0:50 | 0:30 | [Inheritence](#inheritence) |
+| 1:00 | 0:10 | [BREAK](#break) |
+| 2:25 | 1:30 | [Workshop problem solving](#workshop-problem-solving) |
+| 2:45 | 0:20 | [Wrap up](#wrap-up) |
 
