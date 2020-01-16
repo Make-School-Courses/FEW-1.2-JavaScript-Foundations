@@ -9,7 +9,7 @@
 
 ## Why learn JS? 
 
-JavaScript is one of the most important languages in use today. It's ubiquitous, in everything, and used everwhere. 
+JavaScript is one of the most important languages in use today. It's ubiquitous, in everything, and used everwhere. The language has also been improved recently. It's a great time to learn JS. 
 
 <!-- > -->
 
@@ -18,27 +18,44 @@ JavaScript is one of the most important languages in use today. It's ubiquitous,
 1. Use Loops 
 1. Use Arrays
 1. Use Objects
-1. Solve Problems
+1. Conditional statements
+1. Solve Problem
 
 <!-- > -->
 
-## Initial Exercise (15 min)
+# Discuss Break tutorial
 
-
+- How does the break out game work general overview? 
+- Application state is the data that describes the state of your application. How does break out define it's application state?
+- What areas of the break out code are confusing? 
 
 <!-- > -->
 
-# Topic 1
+# loops 
+
+The great things about comnputers is they are happy to do things over and over again. A computer will will always do something the same way each time. It's one of the reasons we use computers to do things! 
+
+https://repl.it/classroom/invite/k0Yhr38
+
+<!-- > -->
+
+# Arrays
+
+Here are some array problems. These are similar to interview questions. 
+
+https://repl.it/classroom/invite/Z6pW6Gv
 
 <!-- v -->
 
-## Overview/TT I (20 min)
+# Objects 
 
+Practice with Objects. 
 
+https://repl.it/classroom/invite/STIb5DY
 
 <!-- v -->
 
-## In Class Activity I (30 min)
+## Conditional 
 
 
 
