@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Syllabus Template Slides</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./assets/Reveal/makeschool.css" />
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+# FEW 1.2 - Lesson 2 - Modern JS Best Practice
+
+<!-- Put a link to the slides so that students can find them -->
+
+➡️ [**Slides**](/Syllabus-Template/Slides/Lesson1.html ':ignore')
+</script></section><section  data-markdown><script type="text/template">
+# Overview
+
+This class will look at the JS you wrote in the tutorial and improve and upgrade it to modern and professional standards. 
+</script></section><section  data-markdown><script type="text/template">
+## Modern JS 
+
+You should be using the most up to date JS in your work. It's what will be expected at job interviews and in the professional environment. 
+</script></section><section  data-markdown><script type="text/template">
+## Learning Objectives
+
+1. Using consistent syntax
+1. Modern JS best practice
+1. Linting with a style guide
+</script></section><section  data-markdown><script type="text/template">
+# Code Quality 
+</script></section><section  data-markdown><script type="text/template">
+- Consistent style 
+ - Looks good 
+ - Reads well 
+ - to everyone on the team
+- Uses best practices 
+ - e.g. const > let > var
+</script></section><section ><section data-markdown><script type="text/template">
+# ESLint
+
+Make a New Branch in your Break Out repo. You'll be applying all of the changes for this assignment there. 
+
+**Install eslint in your project**
+
+https://eslint.org/docs/user-guide/getting-started
+
+Setup npm:
+
+```
+npm init -y
+```
+
+Install ESLint:
+
+```
+npm install eslint --save-dev
+```
+
+Setup a config file. Use the answers below as you follow the setup process. 
+
+```
+npx eslint --init
+```
+
+Choose these options: 
+
+- To check syntax, find problems, and enforce code style
+- None of these
+- None of these
+- TypeScript No
+- Browser
+- Use a popular style guide 
+- Airbnb: https://github.com/airbnb/javascript 
+- JavaScript
+- Would you like to install them now with npm? Yes
+
+**Install ESLint in your code editor**
+
+You'll need to install ESLint in your code editor. Go to Packages/Plugins/Extensions and search for ESLint and install. 
+</script></section><section data-markdown><script type="text/template">
+## Lint your code
+
+**Move your code into a JS file**
+
+The linter will only lint files with the `.js` file extension. Move your code into it a separate JS file `index.js`. 
+
+Then link that to your project. In index.html use: 
+
+`<script src="index.js">__SCRIPT_END__`
+
+**Start Linting**
+
+Take a look at `index.js`. There should be some red lines highlighting sections of your code. These are linting errors. 
+
+Move the cursor over these and you'll see notes from the linter telling you how your code doesn't meet the requirements of the style guide. 
+
+Your job id to figure these out and solve the problems. Your deeper and more important goal job is to do your best to understand why professionals would ask for these changes. 
+
+Take a look at the errors you see and answer these questions: 
+
+- What changes is the linter asking for? 
+- Why these changes?
+</script></section><section data-markdown><script type="text/template">
+## Modern JS 
+
+Here is a list of common changes required by the AirBnB style guide. You can read their guide here: 
+
+https://github.com/airbnb/javascript#types
+
+Take a look at the style guide. Pair and discuss.
+</script></section></section><section ><section data-markdown><script type="text/template">
+### JS - Const, Let and Var
+
+Best practice: const > let > var. 
+
+Why? const and let are block-scoped and are not hoisted. This makes there use more predictable. 
+
+const defines a value that can not be reassigned. Knowing a value will not be reassigned allows the JavaScript engine to operate more efficiently. It also adds safety to your program. 
+
+## JS - Template Strings 
+
+Best Practice use template literals over the + for concatenation. 
+
+```JS
+const name = 'joe'
+console.log(`hello ${name}`) // concatenate with template literal
+```
+
+## JS - Functions and Hoisting
+
+JavaScript is processed in two steps. In the first step, the JavaScript engine examines code and processes it. In the second step, the code is executed. 
+
+One of the processed that happens in the first step is Hoisting. Hoisting effectively moves some elements to the top of their scope. Things that are affected by hoisting are:
+
+- variables declared with var
+- functions declarations
+
+https://repl.it/classroom/invite/kHcWR5n
+</script></section><section data-markdown><script type="text/template">
+# Lab
+
+- Solve all of the linter errors
+- Consult with your peers if you can't solve an error
+- Take notes for unsolved errors
+- Try the stretch challenges 
+</script></section></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="#087CB8" -->
+# BREAK
+</script></section><section  data-markdown><script type="text/template">
+# After Lab
+
+List linter suggestions on the board. Split into groups of 4 to discuss these. Each group decides why these suggestions were included in the style guide. 
+
+- What changes did the linter ask for? 
+- Why do you think these changes? 
+- What were the problems that couldn't be solved?
+
+</script></section><section  data-markdown><script type="text/template">
+# Homework
+
+- [Assignment 2 ESLint.md](Assignments/Assignment-2-EsLint.md)
+</script></section><section  data-markdown><script type="text/template">
+## Additional Resources
+
+1. https://eslint.org/docs/user-guide/getting-started
+1. https://www.youtube.com/watch?v=SydnKbGc7W8
+1. [Assignment 2 ESLint.md](Assignments/Assignment-2-EsLint.md)
+</script></section><section  data-markdown><script type="text/template">
+## Minute-by-Minute 2:45
+
+| **Elapsed** | **Time** | **Activity** |
+| ----------- | --------- | ------------------------- |
+| 0:05 | 0:05 | Admin |
+| 0:15 | 0:10 | [Overview and Objectives](#overview) |
+| 0:35 | 0:20 | [Code Quality](#code-quality) |
+| 0:55 | 0:30 | [ESLint](#eslint) |
+| 1:55 | 0:60 | [Lab](#lab) |
+| 2:05 | 0:10 | [BREAK](#break) |
+| 2:35 | 0:30 | [After Lab]() |
+| 2:45 | 0:10 | [Homework](#homework) |
+| TOTAL | 2:45 | - |
+
+</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>

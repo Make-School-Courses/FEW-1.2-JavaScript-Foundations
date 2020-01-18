@@ -8,6 +8,8 @@ Learn JavaScript by building the classic arcade Break Out. You will use vanilla 
 
 This assignment includes a wide range of all features of the JavaScript language. Including functions, variables, arrays, objects, and if-else, and loops. 
 
+**Understanding the concepts used in this project will take you a long way to being able to understand and answer technical questions at interviews.**
+
 Besides basic JS included in the tutorial, you will update everything to modern JavaScript syntax and restructure the code using OOP techniques. 
 
 Last you'll implement a build system and apply modern coding best practice to the project. 
