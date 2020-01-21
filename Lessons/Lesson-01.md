@@ -251,7 +251,7 @@ The code in the tutorial is very naive. You will be updating the code to modern 
 
 ## Homework: Breakout Tutorial 
 
-Follow the instructions [here](Assignments/Assignment-1-Break-Out.md)
+Follow the instructions [here](../Assignments/Assignment-1-Break-Out.md)
 
 <!-- > -->
 
