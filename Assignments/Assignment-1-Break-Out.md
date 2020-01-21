@@ -34,7 +34,7 @@ Link to your GitHub Repo in the progress tracker.
 
 ### Due date
 
-Before Class 3
+Before Thu, January 23 - Class 2
 
 ## Assessing the assignment
 
