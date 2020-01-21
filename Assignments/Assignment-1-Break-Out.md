@@ -107,7 +107,7 @@ Make sure the space between the bricks stays the same.
 
 **Offset rows**
 
-![Offset rows](Break-Out-Bricks-sizes-2.png)
+![Offset rows](images/Break-Out-Bricks-sizes-2.png)
 
 **Different sized bricks**
 
