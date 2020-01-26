@@ -7,15 +7,30 @@
 
 <!-- > -->
 
-# Overview
+## Overview
 
-This class will look at the JS you wrote in the tutorial and improve and upgrade it to modern and professional standards. 
+This class will look at the JS you wrote in the tutorial and improve and upgrade it to modern and professional standards.
 
 <!-- > -->
 
-## Modern JS 
+## Code Quality 
 
-You should be using the most up to date JS in your work. It's what will be expected at job interviews and in the professional environment. 
+What is code quality?
+
+What does high quality code look like?
+
+How do you write better quality code?
+
+**Discuss this with your pair**
+
+<!-- > -->
+
+- Consistent style 
+ - Reads well to Everyone on your team 
+ - Uses consistent syntax 
+    - `{}` or `new Object()`
+- Uses up to date best practices 
+ - e.g. `const` > `let` > `var`
 
 <!-- > -->
 
@@ -27,44 +42,65 @@ You should be using the most up to date JS in your work. It's what will be expec
 
 <!-- > -->
 
-# Code Quality 
+### Why is this important?
+
+You should be using the most up to date JS in your work. Its expected in the professional environment. 
+
+We will be using the Airbnb JS style guide. This guide was developed at Airbnb and is used by their engineering team. It defines the coding style expected from Airbnb engineers.
+
+**Using this style guide is profesional best practice, it will make you code better, and make you write higher quality code.**
 
 <!-- > -->
 
-- Consistent style 
- - Looks good 
- - Reads well 
- - to everyone on the team
-- Uses best practices 
- - e.g. const > let > var
+## Linting
 
 <!-- > -->
 
-# ESLint
+**Lint** was the name of a program that flagged suspicious non portable constructs in C code that were likely to cause bugs. The term is now applied generically to tools that flag suspicious code and inconsistent style in any language.
 
-Make a New Branch in your Break Out repo. You'll be applying all of the changes for this assignment there. 
+<!-- > -->
+
+### ESLint
+
+**ESLint** is a tool that "lints" your JavaScript. It has many options and is widely used. 
+
+You will set up ESLint with a Style guide used by profesionals. 
+
+**ESlint has two parts:**
+
+1. A plugin/extension for your code editor
+1. A package with options specific to your project
+
+<!-- > -->
 
 **Install eslint in your project**
 
 https://eslint.org/docs/user-guide/getting-started
 
-Setup npm:
+<!-- > -->
+
+**Setup npm:**
 
 ```
 npm init -y
 ```
 
-Install ESLint:
+
+**Install ESLint:**
 
 ```
 npm install eslint --save-dev
 ```
 
-Setup a config file. Use the answers below as you follow the setup process. 
+**Setup a config file.**
+
+Use the answers below as you follow the setup process. 
 
 ```
 npx eslint --init
 ```
+
+<!-- > -->
 
 Choose these options: 
 
@@ -78,13 +114,17 @@ Choose these options:
 - JavaScript
 - Would you like to install them now with npm? Yes
 
+<!-- > -->
+
 **Install ESLint in your code editor**
 
 You'll need to install ESLint in your code editor. Go to Packages/Plugins/Extensions and search for ESLint and install. 
 
-<!-- v -->
+<!-- > -->
 
-## Lint your code
+### Lint your code
+
+(If you haven't already)
 
 **Move your code into a JS file**
 
@@ -94,6 +134,8 @@ Then link that to your project. In index.html use:
 
 `<script src="index.js"></script>`
 
+<!-- > -->
+
 **Start Linting**
 
 Take a look at `index.js`. There should be some red lines highlighting sections of your code. These are linting errors. 
@@ -102,16 +144,18 @@ Move the cursor over these and you'll see notes from the linter telling you how 
 
 Your job id to figure these out and solve the problems. Your deeper and more important goal job is to do your best to understand why professionals would ask for these changes. 
 
+<!-- > -->
+
 Take a look at the errors you see and answer these questions: 
 
 - What changes is the linter asking for? 
 - Why these changes?
 
-<!-- v -->
+<!-- > -->
 
-## Modern JS 
+## Modern JS
 
-Here is a list of common changes required by the AirBnB style guide. You can read their guide here: 
+You can read about the Airbnb style guide here: 
 
 https://github.com/airbnb/javascript#types
 
@@ -121,22 +165,26 @@ Take a look at the style guide. Pair and discuss.
 
 ### JS - Const, Let and Var
 
-Best practice: const > let > var. 
 
-Why? const and let are block-scoped and are not hoisted. This makes there use more predictable. 
-
-const defines a value that can not be reassigned. Knowing a value will not be reassigned allows the JavaScript engine to operate more efficiently. It also adds safety to your program. 
-
-## JS - Template Strings 
-
-Best Practice use template literals over the + for concatenation. 
+Bad 
 
 ```JS
-const name = 'joe'
-console.log(`hello ${name}`) // concatenate with template literal
+var score = 0
 ```
 
-## JS - Functions and Hoisting
+Goode 
+
+```JS
+let score = 0
+```
+
+Why? `const` and `let` are block-scoped and are not hoisted. This makes your code more predictable.
+
+`const` defines a value that can not be reassigned. Knowing a value will not be reassigned makes code more efficient. It also adds safety to your program. 
+
+<!-- > -->
+
+### JS - Functions and Hoisting
 
 JavaScript is processed in two steps. In the first step, the JavaScript engine examines code and processes it. In the second step, the code is executed. 
 
@@ -147,10 +195,45 @@ One of the processed that happens in the first step is Hoisting. Hoisting effect
 
 https://repl.it/classroom/invite/kHcWR5n
 
-<!-- v -->
+<!-- > -->
 
-# Lab
+### JS - Template Strings 
 
+Best Practice use template literals over the + for concatenation. 
+
+Bad!
+
+```JS 
+const name = 'joe'
+console.log('hello' + name) // concatenate with +
+```
+
+Good
+
+```JS
+const name = 'joe'
+console.log(`hello ${name}`) // concatenate with template literal
+```
+
+<!-- > -->
+
+### What's wrong with "" + ?
+
+The + is used for addition and for concatenation. This makes it ambiguous sometiems to developers and to JavaScript engine.
+
+```JS
+const str = "Score:" + score + 10  // Score:1010
+```
+
+This is a common source of problems in JS
+
+<!-- > -->
+
+## Lab
+
+- Install ESlint 
+- Install the Aitbnb styleguide
+- Make a new branch for changes
 - Solve all of the linter errors
 - Consult with your peers if you can't solve an error
 - Take notes for unsolved errors
@@ -159,11 +242,11 @@ https://repl.it/classroom/invite/kHcWR5n
 <!-- > -->
 
 <!-- .slide: data-background="#087CB8" -->
-# BREAK
+## BREAK
 
 <!-- > -->
 
-# After Lab
+## After Lab
 
 List linter suggestions on the board. Split into groups of 4 to discuss these. Each group decides why these suggestions were included in the style guide. 
 
@@ -171,10 +254,9 @@ List linter suggestions on the board. Split into groups of 4 to discuss these. E
 - Why do you think these changes? 
 - What were the problems that couldn't be solved?
 
-
 <!-- > -->
 
-# Homework
+## Homework
 
 - [Assignment 2 ESLint.md](Assignments/Assignment-2-EsLint.md)
 

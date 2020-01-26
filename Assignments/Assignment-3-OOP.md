@@ -20,7 +20,7 @@ This will be another new branch in your GitHub repo.
 
 ### Due date
 
-Class 4
+Class 4 - Thu, January 30
 
 ## OOP Challenges
 
@@ -119,53 +119,11 @@ This OOP thing is fun! I can tell you want more! Here are a few more things you 
  - `keyUpHandler()`
  - `mouseMoveHandler()`
 
-**Stretch Challenge 2**: Use inheritance
-
-Sometimes you have code that gets repeated across several classes because they have similar functionality. Inheritance allows you to define a parent or base class that contains the shared features. Other classes that extend the base class the features without having to define the features themselves. 
-
-In this project, the Brick, Ball, score, lives, and Paddle all have the same properties: x and `y`. You can create a base class with thee properties. Classes that extend this base class will get x and y without having to define these properties on their own. 
-
-Start with this: 
-
-```JavaScript
-class Sprite {
- constructor(x = 0, y = 0) {
- this.x = x;
- this.y = y;
- }
-```
-
-Extend this class like this: 
-
-```JavaScript
-class Ball extends Sprite {
- constructor(radius, x, y) {
- // Must pass params to super when extending a class! 
- super(x, y) 
- this.radius = radius;
- }
-
- render() {
- ...
- }
-}
-```
-
-**You must call `super()` and pass all parameters to the superclass.**
-
-Think about any other properties that are shared across all of the Objects, you can move these properties into `Sprite`. In this way, you will only have to edit or work with these in one place. In this example, all `Sprite`s will have an `x` and `y` property, and a `Ball` will have `x`, `y`, and `radius`. 
-
-If there is a default implementation for a method that is used by most child classes you can implement this in the parent. When a child class implements a method that exists in the parent this is called _overriding_. When you _override_ a method you are using the child's method over (in place of) the parent's method. 
-
-## Further Challenges 
-
-If you have completed all of the challenges you try the challenges here or can design your challenges. 
-
-This section has some further challenges you can try if you need more work. 
+ **Stretch Challenge 2**: Improved alert message. 
 
 **Challenge**: Improve Alert messages.
 
-**Problem**: That Alert box is annoying. It also stops everything until you click it. The Alert box should not be used by applications unless they issuing system type alerts. 
+**Problem**: That Alert box is annoying. It also stops everything until you click it. The Alert box should not be used by applications unless they issuing system type warnings. 
 
 **Solution**: Make a custom overlay that displays a message. There are two approaches you can take
  
@@ -177,13 +135,23 @@ This section has some further challenges you can try if you need more work.
  - Make a class that renders a dialog box
  - Listen for clicks on canvas check if a click is within the area of a button
 
+ **Improve collisions**: 
+
+ Currently the game checks for a collision of the ball with a brick or paddle by checking to see if the center of the ball is within the rectangular area of a brick or paddle. 
+
+ (There is a different system used with the edges of the screen)
+
+ This system of collision dete ction is easy to implement but has some imperfections. The ball will pass half way into any object before a collision is detected. 
+
+**Solution**: There are a few ways to handle this. A step up from the current system would be to consider the ball as a rectangle with 4 points, one at each corner. Your code check each corner to find if it is within the rectangle of a brick or the paddle. 
+
 ## Assess your work
 
 | expectations | Does not meet (0) | Meets (1) | Exceeds (2) |
 |:--------------|:---------------------------|:-------------------------|:---------------------|
 | **Completed** | Did not complete the challenges | Completed all challenges | Completed stretch challenges |
 | **Functionality** | Does not function or throws errors | Game functions as it did before the refactor | New features improve the functionality of the game |
-| **Code quality** | Does not meet industry best practices | Meets industry best practice (confirmed by the linter) | Code is well organized and well commented |
+| **Code quality** | Does not meet industry best practices | Meets industry best practice (confirmed by the linter) | Code is well organized and well commented, variables and functions make the code self documenting. |
 | **Work Ethic** | less than 3 commits | New changes are in a branch, and more than 3 commits | Commits are descriptive and well documented | 
 
 ## Assessing your knowledge
