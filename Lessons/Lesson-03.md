@@ -163,7 +163,7 @@ The key word this is used for that purpose.
 Here an object with x and dx properties also has a function move.
 
 ```JS
-{
+ball = {
   x: 100,
   dx: 2,
   move: function() {
@@ -197,7 +197,7 @@ Give the ball object a move method. This method should calculate the new x and y
 
 - `move()`
 
-This function
+This function should add x + dx, and y + dy of the ball object. 
 
 <!-- > -->
 
@@ -220,6 +220,30 @@ Create an object that owns all of the variables that were originally global.
 **Challenge 5** 
 
 Consolidate all of the functions into your game object.
+
+```JS 
+
+{
+  bricks: [],
+  canvas:  document.getElementById("myCanvas"),
+  ctx: canvas.getContext("2d"),
+  ...
+  drawBall: function() {
+    ctx.beginPath(),
+    ...
+  },
+  ...
+}
+
+```
+
+<!-- > -->
+
+**Challenge 6** 
+
+Create a function that draws something interesting on the background of the game.
+
+This functions needs to be useful outside of the game. You can make this possible by passing ctx and any other values needed into this function as parameters. 
 
 <!-- > -->
 
