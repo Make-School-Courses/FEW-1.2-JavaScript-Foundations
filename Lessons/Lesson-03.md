@@ -28,10 +28,10 @@ JavaScript is one of the most important languages in use today. It's ubiquitous,
 Discuss these questions with someone else in class:
 
 - How does the break out game work? (general overview)
-    - Code flow what happens in what order?
-- Application state is the data that describes the state of your application. 
-    - How does break out define its application state?
-    - The values stored by the game and how are they updated?
+ - Code flow what happens in what order?
+- The application state is the data that describes the state of your application. 
+ - How does break out define its application state?
+ - The values stored by the game and how are they updated?
 
 <!-- > -->
 
@@ -48,7 +48,7 @@ The great thing about computers is they are happy to do things over and over aga
 
 # Arrays
 
-Arrays store collections of related data in an a list with each element at an index.  
+Arrays store collections of related data in a list with each element at an index. 
 
 - How are arrays used by Break Out?
 - What do the Arrays store? 
@@ -59,7 +59,7 @@ Arrays store collections of related data in an a list with each element at an in
 
 # Objects 
 
-Objects are collections of related data. Each value is stored at a key or label.  
+Objects are collections of related data. Each value is stored at a key or label. 
 
 - Where are objects used? 
 - How are the Objects used? 
@@ -91,9 +91,9 @@ Conditional statements control the flow of your programs. They allow programs to
 
 Identifiers are the names of you create that represent: variables, and functions.
 
-Scope sets the rules for where an indentifier can be created and accessed. 
+Scope sets the rules for where an identifier can be created and accessed. 
 
-The code needs some improvement. Currently the game creates many identifiers in the global name space. 
+The code needs some improvement. Currently, the game creates many identifiers in the global namespace. 
 
 - Is this a problem? 
 - What kinds of problems could this cause? 
@@ -106,31 +106,31 @@ Use an IIFE to organize your code.
 
 - What is an IIFE?
 - What is scope? 
-    - global
-    - local
-    - function
-    - block
+ - global
+ - local
+ - function
+ - block
 
 <!-- > -->
 
 <!-- .slide: data-background="#087CB8" -->
 ## BREAK
 
-Take a 10 minute break.
+Take a 10-minute break.
 
 <!-- > -->
 
 ## Expanding the game
 
-How would you solve these problems. Discuss these with someone else in class. 
+How would you solve these problems? Discuss these with someone else in class. 
 
-1. Each brick must display it's own color?
+1. Each brick must display its own color?
 2. Each brick is worth different point values?
 3. The ball should move faster as the game progresses?
 4. The ball needs to start at a random angle?
 5. Imagine each time the bricks are cleared a new row of bricks is added?
 6. Imagine bricks take more than one hit to remove? 
-7. One brick is special, when hit it releases a second ball? 
+7. One brick is special when hit it releases a second ball? 
 
 <!-- > -->
 
@@ -138,9 +138,9 @@ How would you solve these problems. Discuss these with someone else in class.
 
 Many of the problems above require the creation of new variables. This starts to make the game impossible to work with. 
 
-While you could arrays of variables this would be hard to understand. 
+While you could use an array of values this would be hard to understand. 
 
-Object Oriented Programming gives us a style and tools to treat our code like Objects in the real world. Instead of creating new variables and functions to handle new elements and systems we would create new objects that embody those systems and elements. 
+Object-Oriented Programming gives us style and tools to treat our code like Objects in the real world. Instead of creating new variables and functions to handle new elements and systems we would create new objects that embody those systems and elements. 
 
 <!-- > -->
 
@@ -152,11 +152,11 @@ Discuss: Name some Objects that you use every day, name their properties, and me
 
 #### This
 
-When code refers to Objects, their properties, and namespace there are opportunities to infer the which object you are refering to. 
+When code refers to Objects, their properties, and namespace there are opportunities to infer the which object you are referring to. 
 
 `this`
 
-The key word this is used for that purpose. 
+The keyword `this` is used for that purpose. 
 
 <!-- > -->
 
@@ -164,15 +164,15 @@ Here an object with x and dx properties also has a function move.
 
 ```JS
 ball = {
-  x: 100,
-  dx: 2,
-  move: function() {
-    this.x += this.dx
-  }
+ x: 100,
+ dx: 2,
+ move: function() {
+ this.x += this.dx
+ }
 }
 ```
 
-Within the move function the object can refer to it's own properties using the `this` keyword.
+Within the move function, the object can refer to its own properties using the `this` keyword.
 
 <!-- > -->
 
@@ -224,15 +224,15 @@ Consolidate all of the functions into your game object.
 ```JS 
 
 {
-  bricks: [],
-  canvas:  document.getElementById("myCanvas"),
-  ctx: canvas.getContext("2d"),
-  ...
-  drawBall: function() {
-    ctx.beginPath(),
-    ...
-  },
-  ...
+ bricks: [],
+ canvas: document.getElementById("myCanvas"),
+ ctx: canvas.getContext("2d"),
+ ...
+ drawBall: function() {
+ ctx.beginPath(),
+ ...
+ },
+ ...
 }
 
 ```
