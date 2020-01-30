@@ -30,7 +30,7 @@ The goal of [refactoring code](https://en.wikipedia.org/wiki/Code_refactoring) i
 
 <!-- > -->
 
-Refactoring is not about adding new features. Instead, we want to have the **same functionality** with an **improved codebase** underneath it. 
+Refactoring is not about adding new features. Instead, you want to have the **same functionality** with an **improved codebase** underneath it. 
 
 <!-- > -->
 
@@ -50,19 +50,21 @@ You need to make this game **Object Oriented**.
 
 You need to make a class for each of the game objects.
 
-- Ball
-- Brick
-- Paddle
-- Score
-- Lives
+- **Ball**
+- **Brick**
+- **Paddle**
+- **Score**
+- **Lives**
 
 <!-- > -->
 
-These are objects in the game, you can see these objects on the screen and the game manipulates these objects as you play the game. Objects give you an abstract way to think about and visualize your code. 
+Objects give you an **abstract way to think about and visualize your code**. 
 
 <!-- > -->
 
-You'll be making a Class for each of these. Each should hold the variables that describe or control that object as properties within the class.
+You'll be making a **Class for each** of these. 
+
+Define properties in each class with the values that the object needs to do it's job. 
 
 <!-- > -->
 
