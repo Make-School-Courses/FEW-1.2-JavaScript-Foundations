@@ -29,72 +29,72 @@ Your job is to refactor your work. You'll be making a class object to replace th
 **Challenge 1**: Define a class for `Ball`. This class is responsible for the ball object it should track its position and speed. The ball should have a method to draw it on the canvas and a method to update its position. 
 
 - Properties 
- - `radius`
- - `color`
- - `x`
- - `y`
- - `dx`
- - `dy`
+    - `radius`
+    - `color`
+    - `x`
+    - `y`
+    - `dx`
+    - `dy`
 - Methods
- - `render(ctx)`
- - `move()`
+    - `render(ctx)`
+    - `move()`
 
 **Challenge 2**: Define a class for `Brick`. This class should be responsible for a brick. It should keep track of the width, height, color, status, and location of a brick. It should also have a method to draw the brick on the canvas.
 
 - Properties 
- - `x`
- - `y` 
- - `status`
- - `color`
- - `width`
- - `height`
+    - `x`
+    - `y` 
+    - `status`
+    - `color`
+    - `width`
+    - `height`
 - Methods 
- - `render(ctx)`
+    - `render(ctx)`
 
 **Challenge 3**: Define a class for `Paddle`. This class is responsible for the paddle. It should track the paddle's position, it's color and size. 
 
 - Properties 
- - `x`
- - `y` 
- - `color`
- - `width`
- - `height`
+    - `x`
+    - `y` 
+    - `color`
+    - `width`
+    - `height`
 - Methods 
- - `render(ctx)`
+    - `render(ctx)`
 
 **Challenge 4**: Define a class for `Background`. This class is responsible for drawing the background. It should know the color of the background and include a method to draw the background. 
 
 - Properties
- - `color`
- - `?`
+    - `color`
+    - `?`
 - Methods 
- - `render(ctx)`
+    - `render(ctx)`
 
 **Challenge 5**: Define a class for `Score`. The score class is responsible for drawing the score and keeping track of the numeric value of the score. It should also track the position of the score on the screen. It needs a method to draw the score on the canvas.
 
 - Properties 
- - `x`
- - `y` 
- - `color`
- - `score`
- - `font`
+    - `x`
+    - `y` 
+    - `color`
+    - `score`
+    - `font`
 - Methods 
- - `render(ctx)`
- - `update(points)`
- - `reset()`
+    - `render(ctx)`
+    - `update(points)`
+    - `reset()`
 
 **Challenge 6**: Define a class for `Lives`. Lives class should have a method to draw the lives text on the canvas. It should keep track of the number of lives, along with its position on the canvas, color, and font. 
 
 - Properties 
- - `x`
- - `y` 
- - `color`
- - `lives`
- - `font`
+    - `x`
+    - `y` 
+    - `color`
+    - `lives`
+    - `font`
 - Methods 
- - `render(ctx)`
- - `loseLife()`
- - `reset()`
+    - `render(ctx)`
+    - `loseLife()`
+    - `reset()`
  
 **The goal is not to add new features.** In the end, you should have a better code that works the same. You're paying off technical debt and refactoring to make a better codebase.
 
@@ -105,19 +105,19 @@ This OOP thing is fun! I can tell you want more! Here are a few more things you 
 **Stretch Challenge 1**: Make a `Game` Class. The Game itself can be an object that creates and owns all of the other objects. The game can hold all of the global properties, and methods. 
 
 - Properties
- - `ball` - an instance of `Ball`
- - `bricks` - an array of `Bricks`
- - `score` - an instacne of `Score`
- - `lives` - an instance of `Lives`
- - `ctx` - a refernce to the canvas context
- - `width` - the width of the canvas
- - `height` - the height of the canvas
+    - `ball` - an instance of `Ball`
+    - `bricks` - an array of `Bricks`
+    - `score` - an instacne of `Score`
+    - `lives` - an instance of `Lives`
+    - `ctx` - a refernce to the canvas context
+    - `width` - the width of the canvas
+    - `height` - the height of the canvas
 - Methods
- - `draw()` 
- - `collisionDetection()`
- - `keyDownHandler()`
- - `keyUpHandler()`
- - `mouseMoveHandler()`
+    - `draw()` 
+    - `collisionDetection()`
+    - `keyDownHandler()`
+    - `keyUpHandler()`
+    - `mouseMoveHandler()`
 
  **Stretch Challenge 2**: Improved alert message. 
 
@@ -128,12 +128,12 @@ This OOP thing is fun! I can tell you want more! Here are a few more things you 
 **Solution**: Make a custom overlay that displays a message. There are two approaches you can take
  
 - Use a DOM element
- - Make a div that you will hide and show when you win or lose the game. 
- - Use tricky CSS wizardry (absolute position) to place the div over the canvas.
- - Use JavaScript to handle button clicks. 
+    - Make a div that you will hide and show when you win or lose the game. 
+    - Use tricky CSS wizardry (absolute position) to place the div over the canvas.
+    - Use JavaScript to handle button clicks. 
 - Draw the dialog box on canvas (not for the faint of heart)
- - Make a class that renders a dialog box
- - Listen for clicks on canvas check if a click is within the area of a button
+    - Make a class that renders a dialog box
+    - Listen for clicks on canvas check if a click is within the area of a button
 
  **Improve collisions**: 
 
