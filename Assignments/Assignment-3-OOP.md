@@ -20,7 +20,7 @@ This will be another new branch in your GitHub repo.
 
 ### Due date
 
-Class 4 - Thu, January 30
+Class 5 - Tue, February 4
 
 ## OOP Challenges
 

@@ -7,7 +7,7 @@
 
 <!-- > -->
 
-# Overview
+## Overview
 
 Class Objects and OOP. Use Object Oriented programming techniques to make your code modular and organized. 
 
@@ -28,21 +28,179 @@ You've written lots of code so far you've probably incurred some [technical debt
 
 The goal of [refactoring code](https://en.wikipedia.org/wiki/Code_refactoring) in short is to improve your existing code base and put it into a shape that will accept future updates. 
 
+<!-- > -->
+
 Refactoring is not about adding new features. Instead, we want to have the **same functionality** with an **improved codebase** underneath it. 
-
-What should you refactor? In this section, you will be creating Class objects to represent elements used by the game. Along the way you can also do the following: 
-
-- Improve variable declarations. Replace `var` with `const` and `let`
-- Add comments
-- Improve formatting and indentation
-- Making procedural code Object-Oriented
-- Improve anything else you might think of that needs improvement
-
-(just listen to the linter)
 
 <!-- > -->
 
-# OOP
+## Creating classes
+
+The engineering team has decided to **OOP**ify the whole game. 
+
+<!-- > -->
+
+**You** are in charge of the **refactor**. 
+
+<!-- > -->
+
+You need to make this game **Object Oriented**.
+
+<!-- > -->
+
+You need to make a class for each of the game objects.
+
+- Ball
+- Brick
+- Paddle
+- Score
+- Lives
+
+<!-- > -->
+
+These are objects in the game, you can see these objects on the screen and the game manipulates these objects as you play the game. Objects give you an abstract way to think about and visualize your code. 
+
+<!-- > -->
+
+You'll be making a Class for each of these. Each should hold the variables that describe or control that object as properties within the class.
+
+<!-- > -->
+
+For example, the Ball class might look like this: 
+
+```JavaScript
+class Ball {
+  constructor(radius, color = "#0095DD") {
+    this.radius = radius;
+    this.color = color;
+    this.x = 0;
+    this.y = 0;
+  }
+  move() {
+    this.x += this.dx
+    this.y += this.dy
+  }
+}
+```
+
+<!-- > -->
+
+Here `Ball` Class defines instances which will have four properties. Two of the properties, `radius`, and `color` are assigned when the Ball is initialized. `color` has a default value. 
+
+- `color`: the color the ball will render as
+- `radius`: the size of the ball measured as it's radius
+- `x`: the position of the ball on the x-axis of a canvas
+- `y`: the position of the ball on the y-axis of a canvas
+
+<!-- > -->
+
+### Making an instance
+
+Make instance of a class like this: 
+
+```JS 
+const ball = new Ball(10)
+
+console.log( ball.x ) // 0
+console.log( ball.y ) // 0
+console.log( ball.radius ) // 10
+```
+
+<!-- > -->
+
+### What about drawing the ball?
+
+Objects like: Ball, Brick, and Paddle own all of the properties they need to render themselves on canvas. 
+
+It makes sense they should own their render method. 
+
+<!-- > -->
+
+These objects should have a `render()` method.
+
+```JS 
+class Ball {
+  ...
+  render() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    ctx.fillStyle = this.color;
+    ctx.fill();
+    ctx.closePath();
+  }
+}
+```
+
+<!-- > -->
+
+### What about this global references?
+
+These are not scalable, create code that is not portable, and invite errors. `ctx` is a global reference.
+
+```JS 
+...
+const ctx = canvas.getContext('2d')
+
+class Ball {
+  ...
+  render() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    ctx.fillStyle = this.color;
+    ctx.fill();
+    ctx.closePath();
+  }
+}
+```
+
+<!-- > -->
+
+### Dependency Injection
+
+Use dependency injection to pass these this dependency to the render method. 
+
+```JS 
+...
+const ctx = canvas.getContext('2d')
+
+class Ball {
+  ...
+  render(ctx) {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    ctx.fillStyle = this.color;
+    ctx.fill();
+    ctx.closePath();
+  }
+}
+```
+
+<!-- > -->
+
+**Calling methods and passing dependencies.**
+
+```JS 
+...
+const ctx = canvas.getContext('2d')
+const ball = new Ball(...)
+...
+
+function draw() {
+  ball.move()
+  ball.render(ctx)
+  ...
+}
+```
+
+<!-- > -->
+
+### Lab
+
+Start working on [Assignment 3](../Assignments/Assignment-3-OOP.md)
+
+<!-- > -->
+
+## OOP
 
 Whoa, who wrote this tutorial? It's lacking in OOP! It's your job to improve it by increasing OOPiness!
 
@@ -60,7 +218,7 @@ Objects are collections and namespaces. An object is a collection of properties 
 
 **Why make Objects?** 
 
-It's easier to think of a ball Object than it is to think about: `x`, `y`, `ballRadius`, `dx`, `dy` as the ball.
+It's easier to think of a ball Object than it is to think about: `x`, `y`, `ballRadius`, `dx`, `dy`, and `color` as the ball.
 
 <!-- > -->
 
@@ -72,11 +230,16 @@ const ball = {
  y: 290, 
  radius: 10, 
  dx: -2,
- dy: -2 
+ dy: -2, 
+ color: '#0095DD'
 }
 ```
 
-With the change above the location of the ball which was previously determined by `x` and `y` is now determined by `ball.x` and `ball.y`. 
+<!-- > -->
+
+With the change above the location of the ball which was previously determined by `x` and `y` is now determined by `ball.x` and `ball.y`.
+
+<!-- > -->
 
 **Remove** the variables that are now stored with the ball object: 
 
@@ -90,13 +253,17 @@ const ballRadius = 10;
 ...
 ```
 
+<!-- > -->
+
 Find where these variables exist in your code and replace them with 
 
-- `ball.x`
-- `ball.y`
-- `ball.dx`
-- `ball.dy`
-- `ball.radius`
+- `x` becomes `ball.x`
+- `y` becomes `ball.y`
+- `dx` becomes `ball.dx`
+- `dy` becomes `ball.dy`
+- `ballRadius` becomes `ball.radius`
+
+<!-- > -->
 
 For example the `drawBall()` function becomes: 
 
@@ -105,7 +272,7 @@ const drawBall = () => {
  ctx.beginPath();
  // Notice the changes here
  ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
- ctx.fillStyle = '#0095DD';
+ ctx.fillStyle = ball.color;
  ctx.fill();
  ctx.closePath();
 }
@@ -129,15 +296,17 @@ Properties that affect the ball are stored together.
 
 <!-- > -->
 
-It also makes the code easier to reason about. We have one ball with some logical properties that belong to it. Rather than a pool of variables some of which control the appearance of the ball. 
+It also **makes the code easier to reason about**. We have one ball with some logical properties that belong to it. Rather than a pool of variables some of which control the appearance of the ball. 
 
 <!-- > -->
 
-It also makes the system easier to expand. If you need to make another ball you can make another object with the same properties or even duplicate an existing ball object. If a ball needs a new property this is easy to do. 
+It also makes the system easier to expand. If you need to make another ball you can make another object with the same properties or even duplicate an existing ball object. 
+
+Adding new properties to the ball is easier. 
 
 <!-- > -->
 
-Objects with the same properties are also interchangeable. This allows for Polymorphism advanced OOP topics. 
+Objects with the same properties are also interchangeable. This allows for Polymorphism an advanced OOP topic. 
 
 <!-- > -->
 
@@ -147,85 +316,65 @@ While defining a ball with an object literal works. You can go a step further by
 
 ```JavaScript
 class Ball {
- constructor(x, y, radius = 10) {
- this.x = x
- this.y = y
- this.radius = radius
- this.dx = -2
- this.dy = -2
- }
+  constructor(x, y, radius = 10) {
+    this.x = x
+    this.y = y
+    ...
+  }
 
- move() {
- this.x += this.dx
- this.y += this.dy
- }
+  move() {
+    this.x += this.dx
+    this.y += this.dy
+  }
 }
 
 const ball = new Ball(200, 300)
 ```
 
+<!-- > -->
+
 An object created from a class is called an instance. 
 
-ES6 style classes have some features that deserve discussion. 
+```JS 
+const ball = new Ball(100, 30)
+
+console.log( ball.x ) // 100
+```
+
+<!-- > -->
+
+**ES6 style classes** have some features that deserve discussion. 
 
 - constructor 
 - initialization
 - parameters
 - default parameters
 
-Vocabulary 
+(refer to the code samples above)
 
-- property - a variable/value stored by a class (x, y, radius, dx, dy)
-- method - a function stored in a class (move)
+<!-- > -->
+
+**Vocabulary** 
+
+- **property** - a variable/value stored by a class 
+    - `x`, `y`, `radius`, `dx`, `dy`, `color`
+- **method** - a function stored in a class 
+    - `move()`
 
 
-<!-- v -->
+<!-- > -->
 
 ### Classes
 
 - [Review Classes in JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) 
 
-## Creating classes
-
-The engineering team has decided to **OOPify** the whole game. You're in charge of the _refactor_. You need to make this game _Object Oriented_. 
-
-_You're in charge of making a class for each of the game objects._
-
-- Ball
-- Brick
-- Paddle
-- Score
-- Lives
-
-These are objects in the game, you can see these objects on the screen and the game manipulates these objects as you play the game. Objects give you an abstract way to think about and visualize your code. 
-
-You'll be making a Class for each of these. Each should hold the variables that describe or control that object as properties within the class.
-
-For example, the Ball class might look like this: 
-
-```JavaScript
- class Ball {
- constructor(radius, color = "#0095DD") {
- this.radius = radius;
- this.color = color;
- this.x = 0;
- this.y = 0;
- }
-
- ...
-}
-```
-
-Here `Ball` Class defines instances which will have four properties. Two of the properties, `radius`, and `color` are assigned when the Ball is initialized. `color` has a default value. 
-
-- `color`: the color the ball will render as
-- `radius`: the size of the ball measured as it's radius
-- `x`: the position of the ball on the x-axis of a canvas
-- `y`: the position of the ball on the y-axis of a canvas
+<!-- > -->
 
 ## Break 
 
 Take a ten-minute break and look at all of the objects in the world and name their properties.
+
+<!-- > -->
 
 # Lab
 

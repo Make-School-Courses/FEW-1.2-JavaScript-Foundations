@@ -38,7 +38,7 @@ By the end of the course will be able to:
 |  1 | Tue, January 21 | [JavaScript Basics](Lessons/Lesson-01.md) | [Break Out](Assignments/Assignment-1-Break-Out.md) | - |
 |  2 | Thu, January 23 | [JavaScript Professional Best Practice](Lessons/Lesson-02.md) | [EsLint](Assignment/Assignment-2-EsLint.md) | Assignment 1 Break Out |
 |  3 | Tue, January 28 | [JavaScript OOP](Lessons/Lesson-03.md) | [OOP](Assignment/Assignment-3-OOP.md) | Assignment 2 ESlint |
-|  4 | Thu, January 30 | [OOP and Inheritence](Lessons/Lesson-04.md) | [Break Out - Bundling](Assignment/Assignment-4-OOP.md) | Assignment 3 OOP |
+|  4 | Thu, January 30 | [OOP and Classes](Lessons/Lesson-04.md) | [JS OOP and Classes](Assignment/Assignment-4-OOP.md) | Assignment 3 OOP |
 |  5 | Tue, February 4 | [Bundling JS](Lessons/Lesson-05.md) | - | - |
 |  6 | Thu, February 6 | [Single Page Applications](Lessons/Lesson-06.md)  | [Assignment 6 React Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) | - |
 |  7 | Tue, February 11 | [Component Architecture](Lessons/Lesson-07.md) | - | - |
