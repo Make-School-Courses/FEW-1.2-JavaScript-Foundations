@@ -45,7 +45,7 @@ By the end of the course will be able to:
 |  8 | Thu, February 13 | [Component Architecture](Lessons/Lesson-08.md) | [Assignment 3 Final Project](Assignments/Assignment-3-Final-Project.md) | Assignment 6 |
 |  9 | Tue, February 18 | [Styling Components](Lessons/Lesson-09.md) | - | - |
 | 10 | Thu, February 20 | [Dynamic Data](Lessons/Lesson-10.md) | - | - |
-| 11 | Tue, February 25 | [Lesson 11](Lessons/Lesson-11.md) | - | - |
+| 11 | Tue, February 25 | [Review Projects](Lessons/Lesson-11.md) | - | - |
 | 12 | Thu, February 27 | [Lesson 12](Lessons/Lesson-12.md) | - | - |
 | 13 | Tue, March 3     | [Final Presentations](Lessons/Lesson-13.md) | - | - |
 | 14 | Thu, March 5     | [Final Assessment](Lessons/Lesson-14.md) | - | - |
