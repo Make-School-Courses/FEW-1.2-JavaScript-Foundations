@@ -193,9 +193,13 @@ Take a 10-minute break and think about things in the world that share properties
 
 ## Wrap Up
 
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+- Review Inheritence
+
+<!-- > -->
+
+## After Class 
+
+- [Assignment 4 Inheritence](../Assignments/Assignment-4-Inheritance.md)
 
 <!-- > -->
 
