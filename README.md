@@ -52,9 +52,9 @@ By the end of the course will be able to:
 
 ### Projects
 
-- [Assignment 1 Break Out](Assignment-1-Break-Out.md)
-- [Assignment 2 Single Page Application Tutorial](Assignments/Assignment-2-Single-Page-Application-Tutorial.md)
-- [Assignment 3 Final Project](Assignments/Assignment-3-Final-Project.md)
+- Assignment 1 Break Out - Assignments 1-5
+- Assignment 2 Single Page Application Tutorial - Assignment 6
+- Assignment 3 Final Project - Assignment 7
 
 ## Evaluation
 
