@@ -20,6 +20,8 @@ Bundling is a common practice used across the JS ecosystem. While JS is not comp
 - Make more reliable apps
 - Make more widely compatible applications
 
+<!-- > -->
+
 ## Learning Objectives
 
 1. Describe bundling
@@ -33,6 +35,8 @@ Bundling is a common practice used across the JS ecosystem. While JS is not comp
 Has anyone used bundling or JS compiler before? 
 
 What did it do? 
+
+<!-- > -->
 
 ## Bundling JS
 
@@ -54,6 +58,8 @@ What does bundling do? Processes your sources file and produces new files. What 
 - Compatibility - Convert ES6 JS into JS that compatible with older browsers
 - bundling - combining all .js files into a single bundle.js
 
+<!-- > -->
+
 Try it out:
 
 https://javascript-minifier.com
@@ -73,6 +79,8 @@ Another effect of the bundler is that it combines multiple .js files into a sing
 Each file is a separate stream. A browser has to provide overhead and manage each stream. More streams require more work, memory, and CPU. 
 
 In the end, bundling is the process of processing and combining files into a single file, often called bundle.js. This bundle.js is the "compiled" application. 
+
+<!-- > -->
 
 ## Libraries and npm 
 
@@ -121,6 +129,7 @@ Make the following folders:
 - src (holds your source code)
 - dist (holds code you will distribute)
 
+<!-- > -->
 
 Arrange your files. You should already have some of the files. 
 
@@ -128,6 +137,8 @@ Arrange your files. You should already have some of the files.
 - dist/index.html (this is the HTML file for your break out game)
 - package.json (this should have been created in the previous step)
 - webpack.config.json (make this file now you will add code to it later)
+
+<!-- > -->
 
 In the end your directory will look like this:
 
@@ -140,11 +151,15 @@ In the end your directory will look like this:
  |- index.html
 ```
 
+<!-- > -->
+
 With this new arrangement, your index.html will now need to load bundle.js. Find the script tag and point it to the bundle.js. 
 
 `<script src="bundle.js"></script>`
 
 Notice we haven't created bundle.js. This file will be created in the next step by webpack. This will be the compiled, minified, uglified file built from your JS code and code you might have imported from other libs. 
+
+<!-- > -->
 
 ## Webpack config 
 
@@ -164,6 +179,8 @@ module.exports = {
 }
 ```
 
+<!-- > -->
+
 Examine the config file discuss it with another student. What do you think it will tell webpack to do? 
 
 <!-- > -->
@@ -178,6 +195,8 @@ Examine the config file discuss it with another student. What do you think it wi
 ## Running Scripts
 
 You can run scripts from the command line. You did this earlier when you installed the npm packages. You can also store scripts in your package.json and run them with your project. 
+
+<!-- > -->
 
 Open packages.json and find the scripts section. 
 
@@ -195,6 +214,8 @@ edit package.json
 }
  ```
 
+<!-- > -->
+
 Here you are adding two scripts
 
 - "develop": "webpack --mode development --watch"
@@ -204,7 +225,7 @@ The first is for development mode. Use this one when you are working on your pro
 
 The second is the build script. Use this when you want to create the bundle.js and distribute your project to the world. 
 
-<!-- v -->
+<!-- > -->
 
 ### Run your scripts
 
@@ -238,7 +259,7 @@ Use this lab time to:
  - Explain the tools used
  - Include mention of the branches that contain the work in different stages
 
-<!-- v -->
+<!-- > -->
 
 # Wrap Up and review
 

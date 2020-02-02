@@ -39,7 +39,7 @@ A link to the branch of your repo with the code changes.
 
 ### Due date
 
-Class 6 - Thu, February 6
+Class 7 - Thu, February 11
 
 ## Assessing the assignment
 

@@ -38,11 +38,11 @@ By the end of the course will be able to:
 |  1 | Tue, January 21 | [JavaScript Basics](Lessons/Lesson-01.md) | [Break Out](Assignments/Assignment-1-Break-Out.md) | - |
 |  2 | Thu, January 23 | [JavaScript Professional Best Practice](Lessons/Lesson-02.md) | [EsLint](Assignment/Assignment-2-EsLint.md) | Assignment 1 Break Out |
 |  3 | Tue, January 28 | [JavaScript OOP](Lessons/Lesson-03.md) | [OOP](Assignment/Assignment-3-OOP.md) | Assignment 2 ESlint |
-|  4 | Thu, January 30 | [OOP and Classes](Lessons/Lesson-04.md) | [JS OOP and Classes](Assignments/Assignment-3-OOP.md) | Assignment 3 OOP |
-|  5 | Tue, February 4 | [Bundling JS](Lessons/Lesson-05.md) | - | - |
-|  6 | Thu, February 6 | [Single Page Applications](Lessons/Lesson-06.md)  | [Assignment 6 React Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) | - |
-|  7 | Tue, February 11 | [Component Architecture](Lessons/Lesson-07.md) | - | - |
-|  8 | Thu, February 13 | [Lesson 8](Lessons/Lesson-08.md) | [Assignment 3 Final Project](Assignments/Assignment-3-Final-Project.md) | - |
+|  4 | Thu, January 30 | [OOP and Classes](Lessons/Lesson-04.md) | [JS OOP and Classes](Assignments/Assignment-4-Inheritance.md) | Assignment 3 OOP |
+|  5 | Tue, February 4 | [JS OOP Inheritence](Lessons/Lesson-05.md) | [JS OOP and Classes](Assignments/Assignment-3-OOP.md) | Assignment 4 Inheritance |
+|  6 | Thu, February 6 | [Bundling JS](Lessons/Lesson-06.md) | Assignment-5-bundling.md | Assignment 4 Inheritence |
+|  7 | Tue, February 11 | [Single Page Applications](Lessons/Lesson-07.md) | [Assignment 6 React Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) | - |
+|  8 | Thu, February 13 | [Component Architecture](Lessons/Lesson-08.md) | [Assignment 3 Final Project](Assignments/Assignment-3-Final-Project.md) | - |
 |  9 | Tue, February 18 | [Lesson 9](Lessons/Lesson-09.md) | - | - |
 | 10 | Thu, February 20 | [Lesson 10](Lessons/Lesson-10.md) | - | - |
 | 11 | Tue, February 25 | [Lesson 11](Lessons/Lesson-11.md) | - | - |
