@@ -9,24 +9,24 @@
 
 # Overview
 
-Bundling is a common practice used across the JS ecosystem. While JS is not compiled to source code like other languages, JS files are processed heavily in modern applications. 
+Bundling is a common practice used across the JS ecosystem. While JS is not compiled to machine code like other languages, JS files are processed heavily in modern applications. 
 
 <!-- > -->
 
 ## Why learn bundling
 
 - It's a professional best practice
-- Expect this to be used in any software job using JS
+- Expect this to be used in a software job
 - Make more reliable apps
-- Make more widely compatible applications
+- Make compatible applications
 
 <!-- > -->
 
 ## Learning Objectives
 
 1. Describe bundling
-1. Identify the advantages of bundling code
-1. Implement a bundling system
+1. Describe the raison d'etre of bundling
+1. Implement bundling system with webpack
 
 <!-- > -->
 
@@ -42,51 +42,85 @@ What did it do?
 
 Modern JS applications are not just written in code and used. At the professional level, they are compiled/bundled. 
 
+<!-- > -->
+
 JavaScript is a scripting language. This means it doesn't need to be compiled in a strict sense, processed and turned into machine code. 
 
+<!-- > -->
+
 While it doesn't need to be turned into machine code we can still do work to make our code more reliable and compatible with the widest array of browsers. 
+
+<!-- > -->
 
 A bundler is a tool that converts the source JS that you wrote into code that will be used in your published application/web site. 
 
 <!-- > -->
 
-What does bundling do? Processes your sources file and produces new files. What kinds of processes? 
+What does bundling do? 
 
-- minify - reduces file size by removing unnecessary characters
-- uglify - renames elements to obfuscate code and reduce file size again
-- Compile TypeScript - Converts .ts files into .js files
-- Compatibility - Convert ES6 JS into JS that compatible with older browsers
-- bundling - combining all .js files into a single bundle.js
+<!-- > -->
+
+Bundling processes your sources file and produces new files.
+
+<!-- > -->
+
+**What types of processing?**
+
+- **minify** - reduces file size by removing unnecessary characters
+- **uglify** - renames elements to obfuscate code and reduce file size again
+- **Compile TypeScript** - Converts .ts files into .js files
+- **Compatibility** - Convert ES6 JS into JS that is compatible with older browsers
+- **bundling** - combining all .js files into a single bundle.js file
 
 <!-- > -->
 
 Try it out:
 
-https://javascript-minifier.com
-https://skalman.github.io/UglifyJS-online/
-https://blog.logrocket.com/uglify-vs-babel-minify-vs-terser-a-mini-battle-royale/
+Minify: https://javascript-minifier.com
 
-Paste some code here and see what the output is. 
+Uglify: https://skalman.github.io/UglifyJS-online/
 
-Expect to use bundlers on any professional project or in a professional environment. 
+<!-- > -->
+
+Read more about these: https://blog.logrocket.com/uglify-vs-babel-minify-vs-terser-a-mini-battle-royale/
 
 <!-- > -->
 
 ## Why call it bundling? 
 
+<!-- > -->
+
 Another effect of the bundler is that it combines multiple .js files into a single .js file. This provides an advantage when loading projects by reducing the number of streams your page requires to load itself. 
+
+<!-- > -->
 
 Each file is a separate stream. A browser has to provide overhead and manage each stream. More streams require more work, memory, and CPU. 
 
-In the end, bundling is the process of processing and combining files into a single file, often called bundle.js. This bundle.js is the "compiled" application. 
+<!-- > -->
+
+In the end, bundling is the process of processing and combining files into a single file, often called bundle.js. This bundle.js is your "compiled" application. 
 
 <!-- > -->
 
 ## Libraries and npm 
 
+<!-- > -->
+
+Have you used npm before?
+
+How did you use it? 
+
+What did it do?
+
+<!-- > -->
+
 The bundling process will require npm. Let's take a look at npm. 
 
-You've probably used npm before but have you ever thought about what npm is? Here is how npm describes itself: 
+<!-- > -->
+
+You've probably used npm before but have you ever thought about what npm is? Here is how npm describes itself. 
+
+<!-- > -->
 
 > npm is the world’s largest software registry. Open-source developers from every continent use npm to share and borrow packages and many organizations use npm to manage private development as well.
 
@@ -94,25 +128,33 @@ You've probably used npm before but have you ever thought about what npm is? Her
 
 npm consists of three distinct components:
 
-- the website
-- the Command Line Interface (CLI)
-- the registry
+- website
+- Command Line Interface (CLI)
+- package registry
 
-<!-- > --> 
+<!-- > -->
 
-npm stores packages in a registry. Packages are programs, snippets of code. 
+npm stores packages in a registry. Packages are programs (snippets of code).
 
-npm is a library of code, a web site and a command-line tool that allows you to "check out" packages for use in your projects. 
+<!-- > -->
+
+npm is a code library, a web site and a command-line tool that allows you to "check out" packages for use in your projects. 
 
 <!-- > -->
 
 # How to bundle code
 
+<!-- > -->
+
 You should all have npm installed. If not follow their guide here: https://docs.npmjs.com/about-npm-versions
+
+<!-- > -->
 
 Create a new npm project in your Break Out directory. 
 
 `npm init -y`
+
+<!-- > -->
 
 Install webpack. This is a bundler. It's the tool that will do the processing and bundling. 
 
@@ -124,9 +166,11 @@ Install webpack. This is a bundler. It's the tool that will do the processing an
 
 Setup some directories to manage your files. 
 
+<!-- > -->
+
 Make the following folders: 
 
-- src (holds your source code)
+- src (contains the code you write)
 - dist (holds code you will distribute)
 
 <!-- > -->
@@ -146,9 +190,9 @@ In the end your directory will look like this:
 |- package.json
 |- webpack.config.js
 |- /src
- |- index.js
+  |- index.js
 |- /dist
- |- index.html
+  |- index.html
 ```
 
 <!-- > -->
@@ -157,13 +201,19 @@ With this new arrangement, your index.html will now need to load bundle.js. Find
 
 `<script src="bundle.js"></script>`
 
+<!-- > -->
+
 Notice we haven't created bundle.js. This file will be created in the next step by webpack. This will be the compiled, minified, uglified file built from your JS code and code you might have imported from other libs. 
 
 <!-- > -->
 
 ## Webpack config 
 
+<!-- > -->
+
 Webpack is an industry-standard tool. You will see this tool in the future expects to work with it. It does many things. The webpack.config.js file configures webpack, it is written in JavaScript. 
+
+<!-- > -->
 
 Copy the code below and paste it into your webpack.config.js. 
 
@@ -221,7 +271,11 @@ Here you are adding two scripts
 - "develop": "webpack --mode development --watch"
 - "build": "webpack --mode production"
 
+<!-- > -->
+
 The first is for development mode. Use this one when you are working on your project as a developer. 
+
+<!-- > -->
 
 The second is the build script. Use this when you want to create the bundle.js and distribute your project to the world. 
 
@@ -231,15 +285,47 @@ The second is the build script. Use this when you want to create the bundle.js a
 
 Test your work. 
 
+<!-- > -->
+
+Bundle your project in development mode: 
+
 `npm run develop`
+
+<!-- > -->
 
 Running this script should launch Webpack in development mode. It should compile your .js files and create dist.bundle.js. 
 
+<!-- > -->
+
 This mode uses the--watch flag. The watch flag monitors file changes you make and recompiles each time there is a change.
+
+<!-- > -->
 
 Try it make some changes, save. Notice the terminal shows output each time you save. Telling us that webpack is working recompiling bundle.js. 
 
 <!-- > -->
+
+Take a look at the distribution code in bundle.js. It is human readable, even if it isn't what you would have written. Note the file size of this file. For me it was 19k.
+
+<!-- > -->
+
+Try production mode. 
+
+`npm run build`
+
+<!-- > -->
+
+This script doesn't use the --watch flag
+
+`"build": "webpack --mode production"`
+
+<!-- > -->
+
+Running it once builds your code for production. This should be your last step before distributing your work to the world. 
+
+<!-- > -->
+
+Take a look at the distribution code in bundle.js. What happened? The code here has been minified and uglified. Check the file size. For me it was 5k. 
 
 <!-- .slide: data-background="#087CB8" -->
 # BREAK
@@ -250,14 +336,12 @@ Take a 10-minute break
 
 # Lab
 
-Use this lab time to: 
+Use the lab time to complete your project. 
 
-- Install webpack and get the bundler working
-- Finish up your Break Project
-- Write a quality readme describing what happened in the project 
- - Be sure to explain where you began and where you ended 
- - Explain the tools used
- - Include mention of the branches that contain the work in different stages
+- Solve any final errors
+- Write a readme
+- Publish your work to GitHub Pages
+- Post a link to the Project tab in the Progress Tracker
 
 <!-- > -->
 
