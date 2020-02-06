@@ -44,7 +44,7 @@ $ reveal-md Lessons/
 
 ### Generate Slides
 
-Generate static HTML (for GitHub Pages):
+Generate static HTML (for GitHub Pages)
 
 ```bash
 $ reveal-md Lessons/ --static Slides
