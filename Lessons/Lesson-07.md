@@ -51,9 +51,9 @@ Here is what you need to know about React for now:
 - React is written in JS
 - React uses ES6 and must be compiled with webpack and babel
 - React applications are built with components 
- - Components are the building blocks of React Applications
+  - Components are the building blocks of React Applications
 - React uses JSX 
- - JSX is an extension of the JavaScript language used to generate HTML
+  - JSX is an extension of the JavaScript language used to generate HTML
  - JSX has it's own syntax
 
 ## Getting started 
@@ -98,14 +98,14 @@ The React project is a folder with several files and folders.
 You'll do all of your work in src take a look at it. 
 
 - src 
- - App.css - CSS for App component
- - App.js - App Component
- - App.test.js - Tests for App component (ignore it for now)
- - index.css - CSS for index component 
- - index.js - Entry point for your app don't edit this it's boiler plate code
- - logo.svg - It's the picture used in the default app
- - serviceWorker.js - optional code for special purposes ignore this
- - setupTests.js - more optional code testing, ignore this
+  - App.css - CSS for App component
+  - App.js - App Component
+  - App.test.js - Tests for App component (ignore it for now)
+  - index.css - CSS for index component 
+  - index.js - Entry point for your app don't edit this it's boiler plate code
+  - logo.svg - It's the picture used in the default app
+  - serviceWorker.js - optional code for special purposes ignore this
+  - setupTests.js - more optional code testing, ignore this
 
 <!-- > --> 
 
@@ -135,7 +135,7 @@ https://reactjs.org/docs/jsx-in-depth.html
 
 ```JS
 function Heading() {
- return <h1>Hello World</h1>
+  return <h1>Hello World</h1>
 }
 ```
 
@@ -147,9 +147,9 @@ Use a variable in a component:
 
 ```JS
 function Heading() {
- const str = 'Foo Bar'
+  const str = 'Foo Bar'
 
- return <h1>{str}</h1>
+  return <h1>{str}</h1>
 }
 ```
 
@@ -161,7 +161,7 @@ Props are an important part of components. Props are values passed to a componen
 
 ```JS
 function Heading(props) {
- return <h1>{props.str}</h1>
+  return <h1>{props.str}</h1>
 }
 ```
 
@@ -195,7 +195,7 @@ Usually, you'll want to put your components into their a file. Do that with the 
 import React from 'react'
 
 function Heading(props) {
- return <h1>{props.str}</h1>
+  return <h1>{props.str}</h1>
 }
 
 export default Heading
