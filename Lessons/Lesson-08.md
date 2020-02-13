@@ -23,7 +23,7 @@ Single-page applications are how many web applications are built today. Expect t
 
 1. Describe use cases for props
 1. Build applications from components 
-1. Design components 
+1. Design components
 1. Use Component collections and keys
 
 <!-- > -->
@@ -94,22 +94,22 @@ React handles collections in an elegant way. If React sees an Array of JSX eleme
 
 ```JS
 const headings = [
- <Heading str='Hello World' />,
- <Heading str='Foo Bar' />,
- <Heading str='Foo World' />,
- <Heading str='Hello Bar' />,
- <Heading str='Hello foo' />,
- <Heading str='Foo Hello' />
+  <Heading str='Hello World' />,
+  <Heading str='Foo Bar' />,
+  <Heading str='Foo World' />,
+  <Heading str='Hello Bar' />,
+  <Heading str='Hello foo' />,
+  <Heading str='Foo Hello' />
 ]
 
 function App() {
- return (
- <div className="App">
- <header className="App-header">
- {headings}
- </header>
- </div>
- );
+  return (
+    <div className="App">
+      <header className="App-header">
+        {headings}
+      </header>
+    </div>
+  );
 }
 ```
 
@@ -133,12 +133,12 @@ Add a key by giving each element a unique key prop. The value can be anything yo
 
 ```JS
 const headings = [
- <Heading key='Hello World' str='Hello World' />,
- <Heading key='Foo Bar' str='Foo Bar' />,
- <Heading key='Foo World' str='Foo World' />,
- <Heading key='Hello Bar' str='Hello Bar' />,
- <Heading key='Hello foo' str='Hello foo' />,
- <Heading key='Foo Hello' str='Foo Hello' />
+  <Heading key='Hello World' str='Hello World' />,
+  <Heading key='Foo Bar' str='Foo Bar' />,
+  <Heading key='Foo World' str='Foo World' />,
+  <Heading key='Hello Bar' str='Hello Bar' />,
+  <Heading key='Hello foo' str='Hello foo' />,
+  <Heading key='Foo Hello' str='Foo Hello' />
 ]
 
 ...
