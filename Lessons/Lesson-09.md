@@ -28,15 +28,107 @@ https://reactjs.org/docs/faq-styling.html
 
 **Inline styles**
 
-**CSS In JS**
+Any HTML element can uses styles defined in the style sttribute. Generally these are considered not best practice. 
 
-**Style Sheets**
+React turns this notion on it's head. Since components are self contained and reusable it's a good idea for them to contain their styles. 
+
+In traditional websites separation of style structure and logic is the standard. 
+
+```JSX
+const divStyle = {
+  color: 'blue',
+  backgroundImage: 'url(' + imgUrl + ')',
+};
+
+function HelloWorldComponent() {
+  return <div style={divStyle}>Hello World!</div>;
+}
+```
+
+Note the value assigned to the style prop/attribute is an object and all properties should match the JS property names in camelcase.
+
+```JSX
+function HelloWorldComponent() {
+  return <div style={{ color: 'blue', fontSize: '24px' }}>Hello World!</div>;
+}
+```
+
+- Pros: 
+  - Styles and components are in a single file. You can see the styles and code side by side.
+  - Styles are written in JS which allows values to be calculated with JS
+  - Styles are very portable with no extra files. 
+  - Avoids name space collisions
+- Cons: 
+  - Inline styles may have performance issue. 
+  - Inline styles are add some extra code to your component files.
+  - Doesn't leverage the advantages of using a styl`esheet`
+
+**Single Stylesheet**
+
+You can still use a single stylesheet like you have done in the past. This works best when components are not shared across multiple projects. 
+
+This has the advantages of traditional stylesheets in that all of your styles are in one place.
+
+To implement this technique put all of your styles in index.css or App.css.
+
+- Pros: 
+  - Having all of your styles in one place is efficient
+  - It's way you have worked in the past. 
+  - Leverages the advantages of stylesheets
+- Cons: 
+  - Components are less portable since styles are separate.
+
+**Component StyleSheets**
+
+Since components are reusable from project to project being able to easily include styles with the component is good. 
+
+This technique replies on the configuration of the Create React App project. This project allows styles to be imported into components just like JS files. 
+
+Using this technique you would create a style sheet for each component. Best practice would be to name the style sheet with the same name as the component. You'll see this in the Create React App starter code. 
+
+Create a style sheet with the same name as your component. 
+
+`App.css`
+
+Import that style sheet at the top of the component: 
+
+`import App.css`
+
+- Pros: 
+  - Using Style sheets is good
+  - Components are very portable
+  - Clear which styles belong to which components
+- Cons: 
+  - Has potential for name clashes
+  - Requires careful naming of classes in style sheet
+
+<!-- > -->
+
+## Using Sketch 
+
+Sketch can be a valuable tool for designing websites. 
+
+Create an art board for web. 
+
+Wire frame in components. 
+
+Use Symbols like components. 
+
+<!-- > -->
+
+## Defining your Final Project
+
+Your final project should
+
+- Use react
+- Use React Router
+- Be worth putting in your portfolio
 
 <!-- > -->
 
 # Lab
 
-Use this Lab period to style your React final project
+
 
 <!-- > -->
 
