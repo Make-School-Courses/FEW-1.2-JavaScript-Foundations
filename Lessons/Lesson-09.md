@@ -106,13 +106,39 @@ Import that style sheet at the top of the component:
 
 ## Using Sketch 
 
-Sketch can be a valuable tool for designing websites. 
+Sketch can be a valuable tool for designing websites. I recommend you plan your project with Sketch before starting to code. 
 
 Create an art board for web. 
 
-Wire frame in components. 
+- Choose insert > Artboard
+- Choose Responsive Web
+  - Create an artboard at one of the sizes
+  - You can choose sizes for desktop, tablet, and mobile
+- Draw your wire frame!
 
-Use Symbols like components. 
+Wire frame in components. As you work on your wireframes think of each box you draw as a component. Remember you can reuse components. Elements that are repeated can share the same component.
+
+Use Symbols like components. Symbols in Sketch are reusable elements that also allow some level of configuration. 
+
+**Symbols in Sketch are very similar to React Components**
+
+Try it for yourself. 
+
+- Open Sketch or Adobe XD. 
+- Make an artboard for a desktop sized app.
+- Wireframe the page page you want to create, or tutorial project. 
+- When you find an element that is repeated make a symbol. 
+  - Repeated elements might be: 
+    - Links
+    - Content sections
+    - Cards
+
+Do your best to style elements as closely as you can to what you want in your web site. 
+
+- Set the colors
+- Set the fonts
+
+Later when you are applying styles right click elements in sketch and choose "Copy CSS Styles". While this will do all of the work it migth help you respolve the style properties needed for various elements. 
 
 <!-- > -->
 
@@ -126,16 +152,12 @@ Your final project should
 
 <!-- > -->
 
-# Lab
-
-
-
-<!-- > -->
-
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
 
 <!-- > -->
+
+## Lab
 
 
 
