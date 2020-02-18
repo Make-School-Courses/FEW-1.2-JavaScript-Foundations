@@ -22,6 +22,66 @@ Components can be styled with CSS. The component architecture and virtual DOM me
 
 <!-- > -->
 
+## Using Sketch 
+
+Sketch can be a valuable tool for designing websites. I recommend you plan your project with Sketch before starting to code. 
+
+Create an art board for web. Use the artboard as one webpage. For responsive designs you'll need an artboard for each screen size you want to support. 
+
+- Choose insert > Artboard
+- Choose Responsive Web
+  - Create an artboard at one of the sizes
+  - You can choose sizes for desktop, tablet, and mobile
+- Draw your wire frame!
+
+Wire frame in components. As you work on your wireframes think of each box you draw as a component. Remember you can reuse components. Elements that are repeated can share the same component.
+
+Use Symbols like components. Symbols in Sketch are reusable elements that also allow some level of configuration. 
+
+**Symbols in Sketch are very similar to React Components**
+
+Dram soemthing with Sketch. This could be an object made of several shapes and text. Draw a button using a rectangle for the background and a text object as a label. 
+
+- Select both elements and choose: Layer > Create Symbol. 
+- Give the Symbol a descriptive name
+- Select the symbol in your Artboard. Look at the properties. Notice the Overrides section. You can edit the text of the Symbole here. 
+- Insert a new copy of this Symbol choose: Insert > Document > [Symbol Name]
+- With this new Symbol override the text.
+
+Editing a Symbol changes all instacnes of a Symbol. 
+
+- Double Click either of your Symbol instances. This should display a special Page where you can edit the source of the Symbol. 
+- Change your Symbole. Chaneg the font, color, or background
+- Click Return to Instance. 
+
+You can have as many sintacnes in a document as you need. Instances can be embeded in other Symbols. This is an especially powerful feature since the symbol becomes an override. 
+
+- Edit the button Symbol. 
+- Make a Symbol out of backgroud rectangle in the button symbol. Make sure to not include the text object. 
+- Give your new Symbol a name like: "Button back gray"
+- Copy this symbol in your Symbols page. Change the color of the reactangle and rename the Symbol: "Button Back Blue" or something similar. 
+- In your main page select one of of the instances of the button symbol. Override the background color symbol instance. 
+
+## Wire frame your project in skecth 
+
+- Open Sketch or Adobe XD. 
+- Make an artboard for a desktop sized app.
+- Wireframe the page page you want to create, or tutorial project. 
+- When you find an element that is repeated make a symbol. 
+  - Repeated elements might be: 
+    - Links
+    - Content sections
+    - Cards
+
+Do your best to style elements as closely as you can to what you want in your web site. 
+
+- Set the colors
+- Set the fonts
+
+Later when you are applying styles right click elements in sketch and choose "Copy CSS Styles". While this will do all of the work it migth help you respolve the style properties needed for various elements. 
+
+<!-- > -->
+
 ## Styling Comoponents
 
 https://reactjs.org/docs/faq-styling.html
@@ -101,44 +161,6 @@ Import that style sheet at the top of the component:
 - Cons: 
   - Has potential for name clashes
   - Requires careful naming of classes in style sheet
-
-<!-- > -->
-
-## Using Sketch 
-
-Sketch can be a valuable tool for designing websites. I recommend you plan your project with Sketch before starting to code. 
-
-Create an art board for web. 
-
-- Choose insert > Artboard
-- Choose Responsive Web
-  - Create an artboard at one of the sizes
-  - You can choose sizes for desktop, tablet, and mobile
-- Draw your wire frame!
-
-Wire frame in components. As you work on your wireframes think of each box you draw as a component. Remember you can reuse components. Elements that are repeated can share the same component.
-
-Use Symbols like components. Symbols in Sketch are reusable elements that also allow some level of configuration. 
-
-**Symbols in Sketch are very similar to React Components**
-
-Try it for yourself. 
-
-- Open Sketch or Adobe XD. 
-- Make an artboard for a desktop sized app.
-- Wireframe the page page you want to create, or tutorial project. 
-- When you find an element that is repeated make a symbol. 
-  - Repeated elements might be: 
-    - Links
-    - Content sections
-    - Cards
-
-Do your best to style elements as closely as you can to what you want in your web site. 
-
-- Set the colors
-- Set the fonts
-
-Later when you are applying styles right click elements in sketch and choose "Copy CSS Styles". While this will do all of the work it migth help you respolve the style properties needed for various elements. 
 
 <!-- > -->
 
