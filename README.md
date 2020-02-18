@@ -43,7 +43,7 @@ By the end of the course will be able to:
 |  6 | Thu, February 6 | [Bundling JS](Lessons/Lesson-06.md) | [Bundling JavaScript](Assignments/Assignment-5-bundling.md) | Assignment 4 |
 |  7 | Tue, February 11 | [Single Page Applications](Lessons/Lesson-07.md) | [Assignment 6 React Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) | Assignment 5 |
 |  8 | Thu, February 13 | [Component Architecture](Lessons/Lesson-08.md) | [Assignment 3 Final Project](Assignments/Assignment-3-Final-Project.md) | Assignment 6 |
-|  9 | Tue, February 18 | [Styling Components](Lessons/Lesson-09.md) | - | - |
+|  9 | Tue, February 18 | [Styling Components](Lessons/Lesson-09.md) | [Final Project Getting started](./Assignments/Assignment-7-fina-project.md) | - |
 | 10 | Thu, February 20 | [Dynamic Data](Lessons/Lesson-10.md) | - | - |
 | 11 | Tue, February 25 | [Review Projects](Lessons/Lesson-11.md) | - | - |
 | 12 | Thu, February 27 | [Lesson 12](Lessons/Lesson-12.md) | - | - |
