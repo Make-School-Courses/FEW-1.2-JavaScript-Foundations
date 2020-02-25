@@ -71,6 +71,14 @@ Make the a tip calculator. Google Tip Calculator and use the Google tip calculat
   - Per person amount
 - These values should update as you change the values
 
+### Stretch Challenges
+
+If you've got the tip calculator working try these stretch goals. 
+
+- Use CSS to style the tip calculator
+- Format the Bill with a decimal
+- Create an input for the tip amount that calculates the tip percent
+
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
 
