@@ -7,61 +7,69 @@
 
 <!-- > -->
 
-## Why you should know this or industry application (optional) (5 min)
+## Why you should know this
 
-Reviewing your work is important to improving it. 
-
-<!-- > -->
-
-## Learning Objectives (5 min)
-
-1. Identify areas for improvement.
-1. 
+Reviewing your work is important to improving it.
 
 <!-- > -->
 
-## Initial Exercise (15 min)
+## Learning Objectives
 
-- Funny comic
-- Prime the Pump (e.g. think and jot, think pair share, etc)
-- Productivity Tip/Tool
-- Review of current event (e.g. tech news relevant to your track/topic)
-- Quiz on homework or topic(s) of past class
-- Concept Test
+1. Identify areas for improvement in your work
+1. Develop strategies to complete final project
+1. Using State with React
 
 <!-- > -->
 
-# Topic 1
+## Review Your Work
 
-<!-- v -->
+Pair up and review projects show your work. Walk through all of the features you have implemented.
 
-## Overview/TT I (20 min)
+Make a list of Everything you need to complete to show your work in class on Tue, March 3.
 
-- Why learn this?
-- Industry examples of usage
-- Best practices
-- Personal anecdote
+Identify the three most important things on your list that need to get done.
 
-<aside class="notes">
-Place more detailed information or speaker notes in "aside" elements - it will appear in GitHub Pages but not in the slides.
-</aside>
-
-<!-- v -->
-
-## In Class Activity I (30 min)
-
-- I do, We do, You do
-- Reading & Discussion Questions in small groups
-- Draw a picture/diagram
-- Complete Challenges solo or in pair
-- Q&A about tutorials
-- Pair up and code review
-- Pair program
-- Formative assessment
-- Form into groups
-- etc (get creative :D)
+Identify one or more items on the list that you can accomplish in class today during lab time.
 
 <!-- > -->
+
+# React and Forms
+
+When using forms and inputs React has a special pattern. 
+
+https://reactjs.org/docs/forms.html
+
+<!-- > -->
+
+The controlled component pattern uses state to hold the valeu of an input. 
+
+You should try it for yourself with these challenges. 
+
+<!-- > -->
+
+### Challenge 1
+
+Use the Controlled Component pattern.
+
+- Make a React Project
+- Make a New Component with an input
+- Use Conotrolled Component pattern to display text that is entered in the input
+
+<!-- > -->
+
+### Challenge 2
+
+Make the a tip calculator. Google Tip Calculator and use the Google tip calculator as a model. 
+
+- You'll need inputs for: 
+  - Bill
+  - Tip %
+  - Split (number of ways to split the bill)
+- Dipslay: 
+  - Tip amount
+  - The bill total 
+  - Per person amount
+- These values should update as you change the values
 
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
@@ -69,14 +77,6 @@ Place more detailed information or speaker notes in "aside" elements - it will a
 <!-- > -->
 
 # Topic 2
-
-<!-- v -->
-
-## Overview/TT II (optional) (20 min)
-
-<!-- v -->
-
-## In Class Activity II (optional) (30 min)
 
 <!-- > -->
 
