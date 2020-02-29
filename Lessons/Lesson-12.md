@@ -29,7 +29,7 @@ Find the scripts section and add these two lines.
 
 ```JSON
 "scripts": {
-  //...
+  ...
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build"
 }
