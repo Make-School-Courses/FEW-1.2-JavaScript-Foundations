@@ -43,7 +43,7 @@ Last, run:
 
 This should build your React project, compiling your ES6 and JSX into a JS bundle. Then, it creates a gh-pages branch on your GitHub repo and pushes your production code to this branch. 
 
-Note! I had an error in the console that read: 
+**Note!** I had an error in the console that read: 
 
 > `Failed to get remote.origin.url (task must either be run in a git repository with a configured origin remote or must be configured with the "repo" option).`
 
