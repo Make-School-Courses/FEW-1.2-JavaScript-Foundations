@@ -63,6 +63,20 @@ Change this to:
 
 `import { HashRouter as Router, Route } from 'react-router-dom'`
 
+Why is this needed? GitHub's server delivers a "fresh" for each unique router. For example if you're page is: `github.io/user-name/index.html`, and  `index.html` is a real file in your repo GitHub's server finds this and serves it. 
+
+If internally your page generates a route like: `github.io/user-name/index.html/id/42` the GitHub server will look for the file 42 in the id folder, which probably doesn't exist. 
+
+Remember! You are not writing the routes that handle requests. 
+
+Why does HashRouter work? By inserting a hash the params you're adding to a route become part of the hash which doesn't change the file GitHub is serving. 
+
+`github.io/user-name/index.html#/id/42`
+
+Hashes are used to navigate internally! So: 
+
+`github.io/user-name/index.html#contact` would navigate to the element with the `id="contact"` within the smae page. 
+
 <!-- > -->
 
 ## Workshop Day
