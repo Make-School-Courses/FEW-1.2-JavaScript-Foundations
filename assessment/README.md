@@ -60,11 +60,17 @@ Add the `<Like>` component to the `<Band>` component. Each band should show a nu
 
 ### Challenge 7
 
+Style your Components. Create a stylesheet for each of the components you created and link that to the component. 
+
+Alternatively you can style your components using inline styles and a JS style Object. 
+
+### Challenge 8
+
 Not all of the bands are still together. The band objects have a `"split"` property. If the value is `'-'` the band is still together, otherwise the value is the year the band split up. 
 
 Your goal is to only display the `<Like>` component for bands that have NOT split. For bands that have split display the year they split in place of the `<Like>` Component. 
 
-### Challenge 8
+### Challenge 9
 
 Count the number of unique countries in the array of bands. Each band has an `"origin` property that is the countery where they originated. Your goal is to count the number of unique countries and the number of bands from each country. 
 
@@ -92,5 +98,3 @@ You can follow these steps:
   - check if the band_name is a property on your object
   - if not add that band_name as a key with a value of 1
   - If the band_name is a key add 1 to the value
-
-
