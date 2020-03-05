@@ -98,3 +98,21 @@ You can follow these steps:
   - check if the band_name is a property on your object
   - if not add that band_name as a key with a value of 1
   - If the band_name is a key add 1 to the value
+
+Display the number of countries at the top of your page. 
+
+### Challenge 10 
+
+Display a list of all countries. Show the name and number of bands from that country. 
+
+- {Country_Name} {Number_of_bands}
+
+### Challenge 11
+
+The country list could be better. Your goal is to display the number of bands who originated in each country along with the total number of fans of all bands from that country.
+
+Display this in a list:
+
+- {country_name}
+- {number_of_bands}
+- {number_of_fans}
