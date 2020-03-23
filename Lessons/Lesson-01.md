@@ -9,10 +9,14 @@
 
 ## Class Learning Objectives
 
-The goal of this class is to improve and develop your JavaScript skills and knowledge and to further develop your skills in software development. 
+The goal of this class is to improve and develop your JavaScript skill, knowledge, and to further develop your skills in software development. 
+
+By the end of the class you should be able to: 
 
 - Write quality modern JS
 - Use functions and variables to create front end applications
+- Create classes and instances of classes 
+- Use Objects and arrays
 
 <!-- > -->
 
@@ -25,9 +29,9 @@ These are the two goals that will bring you success.
 
 <!-- > -->
 
-Portfolio projects are what get you noticed. It's often the reason people get invited to job interviews.
+Portfolio projects are what get you noticed. Your portfolio is often the reason people get invited to job interviews.
 
-You should have two portfolio projects that show off your front end skills at the end of 7 weeks. Building these is your goal. I will present ideas and projects, you need to take them to completion. 
+One of your goals this term will be to build two portfolio projects. 
 
 <!-- > -->
 
@@ -43,7 +47,7 @@ When you understand a learning objective you will be able to explain it and put 
 
 <!-- > -->
 
-**There will be learning objectives for each class.** You should test your knowledge by explaining the concepts to someone else, implement the learning objectives in code when the learning objectives are code. Some objectives are larger overarching concepts, in these cases, you should identify the learning objective in your code, your project as a whole, or in the larger software ecosystem or the world at large. 
+**There will be learning objectives for each class.** You should test your knowledge by explaining the concepts to someone else and implement the learning objectives in code when the learning objectives are code. Some objectives are larger overarching concepts, in these cases, you should identify the learning objective in your code, your project as a whole, or in the larger software ecosystem or the world at large. 
 
 <!-- > -->
 
@@ -56,7 +60,7 @@ When you understand a learning objective you will be able to explain it and put 
 The goal is to produce something that shows your skills. 
 
 - Breakout - This is a JavaScript implementation of the arcade game Breakout 
-- Custom/Contractor Project with React - This will be a web site built with React and is open to your ideas and input. 
+- Custom/Contractor Project with React - This will be a web site built with React and is open to your ideas and input.
 
 <!-- > -->
 
@@ -74,11 +78,11 @@ The Breakout tutorial is a great JS practice project. It makes use of many of th
 
 <!-- > -->
 
-These things are core to programming in general. Learn these things here and you can apply them anywhere. 
+These things are core to programming in general. Learn these things here and you can apply them anywhere (in many languages). 
 
 After completing the tutorial you will improve the code applying modern techniques and best practices. This will include: 
 
-- Using ES6 JS ideas 
+- Using ES6 JS ideas and syntax
 - Linting to professional standards 
 - Using build systems and bundling
 
@@ -201,7 +205,7 @@ ctx.closePath()
 
 - **Q:** How big is the circle? 
 - **Q:** Where is the circle? 
-- **Try it:** (in theory) look at your skecth and find the ball. Get it's radius and coordinates. 
+- **Try it:** (in theory) look at your sketch and find the ball. Get it's radius and coordinates. 
 
 <!-- > -->
 
