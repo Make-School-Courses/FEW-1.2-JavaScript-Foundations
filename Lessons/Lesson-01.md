@@ -7,16 +7,31 @@
 
 <!-- > -->
 
+## Minute-by-Minute 2:45
+
+| **Elapsed** | **Time** | **Activity** |
+| ----------- | --------- | ------------ |
+| 0:05 | 0:05 | Roll - Checkin |
+| 0:20 | 0:15 | [Class Learning Objectives](#class-learning-objectives) |
+| 0:35 | 0:15 | [Projects](#projects) |
+| 0:50 | 0:15 | [Canvas](#canvas) |
+| 1:40 | 0:50 | [Lab: Break Out Tutorial](#lab) |
+| 1:50 | 0:10 | [Break](#break) |
+| 2:20 | 0:30 | Review progress on Tutorial |
+| 2:40 | 0:10 | Review Homework |
+| 2:45 | 0:05 | Review objectives |
+
+<!-- > -->
+
 ## Class Learning Objectives
 
 The goal of this class is to improve and develop your JavaScript skill, knowledge, and to further develop your skills in software development. 
 
 By the end of the class you should be able to: 
 
-- Write quality modern JS
 - Use functions and variables to create front end applications
-- Create classes and instances of classes 
-- Use Objects and arrays
+- Use For loops 
+- Us if statements
 
 <!-- > -->
 
@@ -270,19 +285,5 @@ Follow the instructions [here](../Assignments/Assignment-1-Break-Out.md)
 1. [For loops](https://eloquentjavascript.net/02_program_structure.html#h_oupMC+5FKN)
 1. [Canvas](https://eloquentjavascript.net/17_canvas.html)
 
-<!-- > -->
 
-## Minute-by-Minute 2:45
-
-| **Elapsed** | **Time** | **Activity** |
-| ----------- | --------- | ------------ |
-| 0:05 | 0:05 | Admin |
-| 0:20 | 0:15 | [Class Learning Objectives](#class-learning-objectives) |
-| 0:35 | 0:15 | [Projects](#projects) |
-| 0:50 | 0:15 | [Canvas](#canvas) |
-| 1:40 | 0:50 | [Lab: Break Out Tutorial](#lab) |
-| 1:50 | 0:10 | [Break](#break) |
-| 2:20 | 0:30 | Review progress on Tutorial |
-| 2:40 | 0:10 | Review Homework |
-| 2:45 | 0:05 | Review objectives |
 
