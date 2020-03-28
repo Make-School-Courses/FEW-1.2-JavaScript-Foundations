@@ -37,8 +37,8 @@ By the end of the course will be able to:
 
 **Class Times:** Tuesday and Thursday at 9:30am – 12:15pm (14 class sessions)
 
-| Class | Date | Topics | Assignment start |
-|:------|:-----|:-------|:-----------------|
+| Class | Date | Topics | Assignment |
+|:------|:-----|:-------|:-----------|
 |  1 | Tue, March 31 | [JavaScript Basics](Lessons/Lesson-01.md) | [Break Out](Assignments/Assignment-1-Break-Out.md) | 
 |  2 | Thu, April 2 | [JavaScript Professional Best Practice](Lessons/Lesson-02.md) | [EsLint](Assignments/Assignment-2-EsLint.md) |
 |  3 | Tue, April 7 | [JavaScript OOP](Lessons/Lesson-03.md) | [OOP](Assignments/Assignment-3-OOP.md) |
@@ -49,10 +49,10 @@ By the end of the course will be able to:
 |  8 | Thu, April 23 | [Component Architecture](Lessons/Lesson-08.md) | [Assignment 3 Final Project](Assignments/Assignment-3-Final-Project.md) |
 |  9 | Tue, April 28 | [Styling Components](Lessons/Lesson-09.md) | [Final Project Getting started](./Assignments/Assignment-7-fina-project.md) |
 | 10 | Thu, April 30 | [Dynamic Data](Lessons/Lesson-10.md) | - | 
-| 11 | Tue, May 5 | [Review Projects](Lessons/Lesson-11.md) | - | 
-| 12 | Thu, May 7 | [Lesson 12](Lessons/Lesson-12.md) | - | 
-| 13 | Tue, May 12 | [Final Presentations](Lessons/Lesson-13.md) | - | 
-| 14 | Thu, May 14 | [Final Assessment](Lessons/Lesson-14.md) | - |
+| 11 | Tue, May 5 | [Forms and User inputs](Lessons/Lesson-11.md) | - | 
+| 12 | Thu, May 7 | [Building and Publishing](Lessons/Lesson-12.md) | - | 
+| 13 | Tue, May 12 | [Test your Knowledge](Lessons/Lesson-13.md) | - | 
+| 14 | Thu, May 14 | [Present your work](Lessons/Lesson-14.md) | - |
 
 ### Projects
 
