@@ -7,12 +7,13 @@
 
 <!-- > -->
 
-## Minute-by-Minute [OPTIONAL]
+## Minute-by-Minute
 
 | **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------ |
 | 0:05 | 0:05 | admin |
-| 0:15 | 0:10 | [Overview](#overview) |
+| 0:05 | 0:10 | [Overview](#overview) |
+| 0:05 | 0:15 | [Why learn Classes and inheritance](#why-learn-classes-and-inheritance) |
 | 0:20 | 0:05 | [Learning Objectives](#learning-objectives) |
 | 0:50 | 0:30 | [Inheritence](#inheritence) |
 | 1:00 | 0:10 | [BREAK](#break) |
@@ -27,7 +28,7 @@ This class will be an OOP workshop to review the concepts from the previous clas
 
 <!-- > -->
 
-### Why work with Classes and inheritance?
+## Why learn Classes and Inheritance?
 
 This is a big topic which reaches deeply into important areas of computer science. Expect to see OOP and inheritance in the libraries you might work with, in interview questions, and on the job as a software engineer. 
 

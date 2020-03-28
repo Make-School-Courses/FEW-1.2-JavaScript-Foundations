@@ -7,12 +7,13 @@
 
 <!-- > -->
 
-## Minute-by-Minute [OPTIONAL]
+## Minute-by-Minute
 
 | **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ----------- |
 | 0:05 | 0:05 | Admin |
-| 0:05 | 0:10 | [Objectives](#learning-objectives) |
+| 0:05 | 0:05 | [Class Learning Objectives](#class-learning-objectives) |
+| 0:05 | 0:05 | [Why Learn JS?](#why-learn-js) |
 | 0:05 | 0:15 | [Discuss Break tutorial](#discuss-nreak-tutorial) |
 | 0:05 | 0:20 | [Arrays](#arrays) |
 | 0:05 | 0:25 | [Loops](#loops) |
@@ -35,13 +36,12 @@ JavaScript is one of the most important languages in use today. It's ubiquitous,
 
 <!-- > -->
 
-## Learning Objectives
+## Class Learning Objectives
 
-1. Use Loops 
+1. Use for Loops 
 1. Use Arrays
 1. Use Objects
-1. Conditional statements
-1. Solve Problems
+1. Use Conditional statements
 
 <!-- > -->
 

@@ -7,12 +7,13 @@
 
 <!-- > -->
 
-## Minute-by-Minute [OPTIONAL]
+## Minute-by-Minute
 
 | **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------ |
 | 0:05 | 0:05 | Admin |
-| 0:20 | 0:15 | [Overview](#overview) |
+| 0:05 | 0:10 | [Overview](#overview) |
+| 0:05 | 0:15 | [Learning](#learning-objectives) |
 | 0:50 | 0:30 | [React Collections](#react-collection) |
 | 1:00 | 0:10 | [BREAK](#break) |
 | 2:00 | 1:00 | [Lab](#lab) |

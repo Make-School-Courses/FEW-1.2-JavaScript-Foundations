@@ -7,11 +7,11 @@
 
 <!-- > -->
 
-## Minute-by-Minute 2:45
+## Minute-by-Minute
 
 | **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------ |
-| 0:05 | 0:05 | Roll - Checkin |
+| 0:05 | 0:05 | Admin |
 | 0:20 | 0:15 | [Class Learning Objectives](#class-learning-objectives) |
 | 0:35 | 0:15 | [Projects](#projects) |
 | 0:50 | 0:15 | [Canvas](#canvas) |

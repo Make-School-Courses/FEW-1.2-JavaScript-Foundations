@@ -7,12 +7,13 @@
 
 <!-- > -->
 
-## Minute-by-Minute [OPTIONAL]
+## Minute-by-Minute
 
 | **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------ |
 | 0:05 | 0:05 | admin |
-| 0:05 | 0:15 | [Overview: Bundling](#overview) |
+| 0:05 | 0:10 | [Overview: Bundling](#overview) |
+| 0:05 | 0:15 | [Learning Objectives](#learning-objectives) |
 | 0:10 | 0:25 | [Bundling and compiling JS](#bundling-and-compiling-js) |
 | 0:30 | 0:55 | [How to bundle code](#how-to-bundle-code) |
 | 1:05 | 0:10 | [BREAK](#break) |

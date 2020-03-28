@@ -7,12 +7,12 @@
 
 <!-- > -->
 
-## Minute-by-Minute 2:45
+## Minute-by-Minute
 
 | **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------------------- |
 | 0:05 | 0:05 | Admin |
-| 0:15 | 0:10 | [Overview and Objectives](#overview) |
+| 0:20 | 0:15 | [Class Learning Objectives](#class-learning-objectives) |
 | 0:35 | 0:20 | [Code Quality](#code-quality) |
 | 0:55 | 0:30 | [ESLint](#eslint) |
 | 1:55 | 0:60 | [Lab](#lab) |
@@ -20,6 +20,14 @@
 | 2:35 | 0:30 | [After Lab]() |
 | 2:45 | 0:10 | [Homework](#homework) |
 | TOTAL | 2:45 | - |
+
+<!-- > -->
+
+## Class Learning Objectives
+
+- Describe linting 
+- Use ESLint
+- Evaulate your work against profesional standards
 
 <!-- > -->
 

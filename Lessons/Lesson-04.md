@@ -7,12 +7,13 @@
 
 <!-- > -->
 
-## Minute-by-Minute [OPTIONAL]
+## Minute-by-Minute
 
 | **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ----------- |
 | 0:05 | 0:05 | Admin |
-| 0:10 | 0:05 | [Overview](#overview) |
+| 0:05 | 0:10 | [Overview](#overview) |
+| 0:05 | 0:15 | [Learning Objectives](#learning-objectives) |
 | 0:15 | 0:05 | [Refactoring](#refactoring-code) |
 | 0:30 | 0:15 | [OOP and JS](#oop) |
 | 0:45 | 0:15 | [Defining Classes](#js-classes) |

@@ -7,17 +7,16 @@
 
 <!-- > -->
 
-## Minute-by-Minute [OPTIONAL]
+## Minute-by-Minute
 
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:30      | In Class Activity I       |
-| 0:50        | 0:10      | BREAK                     |
-| 1:00        | 0:45      | In Class Activity II      |
-| 1:45        | 0:05      | Wrap up review objectives |
-| TOTAL       | 1:50      | -                         |
+| **Elapsed** | **Time** | **Activity** |
+| ----------- | --------- | ------------ |
+| 0:00 | 0:05 | [Why you should know this?](#why-you-should-know-this) |
+| 0:05 | 0:15 | [Learning Objectives](#learning-objectives) |
+| 0:20 | 0:30 | [Using Sketch](#using-sketch) |
+| 0:50 | 0:10 | BREAK |
+| 1:00 | 0:45 | In Class Activity II |
+| 1:45 | 0:05 | Wrap up review objectives |
 
 <!-- > -->
 
@@ -27,7 +26,7 @@ Components can be styled with CSS. The component architecture and virtual DOM me
 
 <!-- > -->
 
-## Learning Objectives (5 min)
+## Learning Objectives
 
 1. Use CSS with React
 1. Organize CSS with Components 

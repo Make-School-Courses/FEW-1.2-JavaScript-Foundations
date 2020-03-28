@@ -7,13 +7,14 @@
 
 <!-- > -->
 
-## Minute-by-Minute [OPTIONAL]
+## Minute-by-Minute
 
 | **Elapsed** | **Time** | **Activity** |
 | ----------- | -------- | ------------ |
 | 0:05 | 0:05 | admin |
-| 0:20 | 0:25 | [Overview](#overview) |
-| 0:30 | 0:55 | [React](#react) |
+| 0:05 | 0:10 | [Overview](#overview) |
+| 0:05 | 0:15 | [Learning Objectives](#learning-objectives) |
+| 0:30 | 0:55 | [Single Page Applications](#single-page-applications) |
 | 0:10 | 1:05 | BREAK |
 | 1:00 | 2:05 | [Lab](#lab) |
 | 0:20 | 2:25 | [Wrap Up](#wrap-up) |
