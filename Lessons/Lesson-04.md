@@ -7,6 +7,23 @@
 
 <!-- > -->
 
+## Minute-by-Minute [OPTIONAL]
+
+| **Elapsed** | **Time** | **Activity** |
+| ----------- | --------- | ----------- |
+| 0:05 | 0:05 | Admin |
+| 0:10 | 0:05 | [Overview](#overview) |
+| 0:15 | 0:05 | [Refactoring](#refactoring-code) |
+| 0:30 | 0:15 | [OOP and JS](#oop) |
+| 0:45 | 0:15 | [Defining Classes](#js-classes) |
+| 0:55 | 0:10 | [BREAK](#break) |
+| 1:55 | 0:60 | [Lab - OOP](#lab) |
+| 2:10 | 0:15 | [Post Lab Q & A](#after-lab) |
+| 2:35 | 0:15 | [Dependency Injection](#dependency-injection) |
+| 2:45 | 0:10 | Review Homework |
+
+<!-- > -->
+
 ## Overview
 
 Class Objects and OOP. Use Object Oriented programming techniques to make your code modular and organized. 
@@ -459,22 +476,3 @@ This is a Dependency Injection at work! Overall this is a very nice Class packag
 ## Additional Resources
 
 1. Links to additional readings and videos
-
-<!-- > -->
-
-## Minute-by-Minute [OPTIONAL]
-
-| **Elapsed** | **Time** | **Activity** |
-| ----------- | --------- | ----------- |
-| 0:05 | 0:05 | Admin |
-| 0:10 | 0:05 | [Overview](#overview) |
-| 0:15 | 0:05 | [Refactoring](#refactoring-code) |
-| 0:30 | 0:15 | [OOP and JS](#oop) |
-| 0:45 | 0:15 | [Defining Classes](#js-classes) |
-| 0:55 | 0:10 | [BREAK](#break) |
-| 1:55 | 0:60 | [Lab - OOP](#lab) |
-| 2:10 | 0:15 | [Post Lab Q & A](#after-lab) |
-| 2:35 | 0:15 | [Dependency Injection](#dependency-injection) |
-| 2:45 | 0:10 | Review Homework |
-
-

@@ -7,6 +7,28 @@
 
 <!-- > -->
 
+## Minute-by-Minute [OPTIONAL]
+
+| **Elapsed** | **Time** | **Activity** |
+| ----------- | --------- | ----------- |
+| 0:05 | 0:05 | Admin |
+| 0:05 | 0:10 | [Objectives](#learning-objectives) |
+| 0:05 | 0:15 | [Discuss Break tutorial](#discuss-nreak-tutorial) |
+| 0:05 | 0:20 | [Arrays](#arrays) |
+| 0:05 | 0:25 | [Loops](#loops) |
+| 0:05 | 0:30 | [Functions](#functions) |
+| 0:05 | 0:35 | [Objects](#objects) |
+| 0:05 | 0:40 | [Conditional](#conditional) |
+| 0:05 | 0:45 | [Name Space and Identifiers](#name-space-and-identifiers) |
+| 0:05 | 0:50 | [Scope](#scope) |
+| 0:10 | 1:00 | BREAK |
+| 0:10 | 1:10 | [Expanding the game](#expanding-the-game) |
+| 0:10 | 1:20 | [OOP](#oop) |
+| 0:60 | 2:20 | [Challenges](#challenges) |
+| TOTAL | 1:50 | - |
+
+<!-- > -->
+
 ## Why learn JS? 
 
 JavaScript is one of the most important languages in use today. It's ubiquitous, in everything, and used everywhere. The language has also been improved recently. It's a great time to learn JS. 
@@ -256,26 +278,3 @@ This functions needs to be useful outside of the game. You can make this possibl
 ## Additional Resources
 
 1. 
-
-<!-- > -->
-
-## Minute-by-Minute [OPTIONAL]
-
-| **Elapsed** | **Time** | **Activity** |
-| ----------- | --------- | ----------- |
-| 0:05 | 0:05 | Admin |
-| 0:05 | 0:10 | [Objectives](#learning-objectives) |
-| 0:05 | 0:15 | [Discuss Break tutorial](#discuss-nreak-tutorial) |
-| 0:05 | 0:20 | [Arrays](#arrays) |
-| 0:05 | 0:25 | [Loops](#loops) |
-| 0:05 | 0:30 | [Functions](#functions) |
-| 0:05 | 0:35 | [Objects](#objects) |
-| 0:05 | 0:40 | [Conditional](#conditional) |
-| 0:05 | 0:45 | [Name Space and Identifiers](#name-space-and-identifiers) |
-| 0:05 | 0:50 | [Scope](#scope) |
-| 0:10 | 1:00 | BREAK |
-| 0:10 | 1:10 | [Expanding the game](#expanding-the-game) |
-| 0:10 | 1:20 | [OOP](#oop) |
-| 0:60 | 2:20 | [Challenges](#challenges) |
-| TOTAL | 1:50 | - |
-

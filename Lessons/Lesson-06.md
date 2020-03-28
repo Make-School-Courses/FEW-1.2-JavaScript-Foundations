@@ -7,6 +7,21 @@
 
 <!-- > -->
 
+## Minute-by-Minute [OPTIONAL]
+
+| **Elapsed** | **Time** | **Activity** |
+| ----------- | --------- | ------------ |
+| 0:05 | 0:05 | admin |
+| 0:05 | 0:15 | [Overview: Bundling](#overview) |
+| 0:10 | 0:25 | [Bundling and compiling JS](#bundling-and-compiling-js) |
+| 0:30 | 0:55 | [How to bundle code](#how-to-bundle-code) |
+| 1:05 | 0:10 | [BREAK](#break) |
+| 2:05 | 1:00 | [Lab](#lab) |
+| 2:35 | 0:30 | [Wrap Up and review](#wrap-up-and-review) |
+| 2:45 | 0:10 | admin |
+
+<!-- > -->
+
 # Overview
 
 Bundling is a common practice used across the JS ecosystem. While JS is not compiled to machine code like other languages, JS files are processed heavily in modern applications. 
@@ -362,19 +377,3 @@ Use the lab time to complete your project.
 - https://skalman.github.io/UglifyJS-online/
 - https://blog.logrocket.com/uglify-vs-babel-minify-vs-terser-a-mini-battle-royale/
 - https://www.sitepoint.com/beginners-guide-webpack-module-bundling/
-
-<!-- > -->
-
-## Minute-by-Minute [OPTIONAL]
-
-| **Elapsed** | **Time** | **Activity** |
-| ----------- | --------- | ------------ |
-| 0:05 | 0:05 | admin |
-| 0:05 | 0:15 | [Overview: Bundling](#overview) |
-| 0:10 | 0:25 | [Bundling and compiling JS](#bundling-and-compiling-js) |
-| 0:30 | 0:55 | [How to bundle code](#how-to-bundle-code) |
-| 1:05 | 0:10 | [BREAK](#break) |
-| 2:05 | 1:00 | [Lab](#lab) |
-| 2:35 | 0:30 | [Wrap Up and review](#wrap-up-and-review) |
-| 2:45 | 0:10 | admin |
-

@@ -7,6 +7,20 @@
 
 <!-- > -->
 
+## Minute-by-Minute [OPTIONAL]
+
+| **Elapsed** | **Time** | **Activity** |
+| ----------- | -------- | ------------ |
+| 0:05 | 0:05 | admin |
+| 0:20 | 0:25 | [Overview](#overview) |
+| 0:30 | 0:55 | [React](#react) |
+| 0:10 | 1:05 | BREAK |
+| 1:00 | 2:05 | [Lab](#lab) |
+| 0:20 | 2:25 | [Wrap Up](#wrap-up) |
+| 0:20 | 2:45 | Admin |
+
+<!-- > -->
+
 # Overview
 
 Today we will talk about Single Page Applications, what they are, and one of the frameworks/libraries used to make them: React.
@@ -242,17 +256,3 @@ https://github.com/MakeSchool-Tutorials/React-Fundamentals
 1. https://waverleysoftware.com/blog/yarn-vs-npm/
 1. https://stackshare.io/stackups/npm-vs-yarn
 1. https://github.com/MakeSchool-Tutorials/React-Fundamentals
-
-<!-- > -->
-
-## Minute-by-Minute [OPTIONAL]
-
-| **Elapsed** | **Time** | **Activity** |
-| ----------- | -------- | ------------ |
-| 0:05 | 0:05 | admin |
-| 0:20 | 0:25 | [Overview](#overview) |
-| 0:30 | 0:55 | [React](#react) |
-| 0:10 | 1:05 | BREAK |
-| 1:00 | 2:05 | [Lab](#lab) |
-| 0:20 | 2:25 | [Wrap Up](#wrap-up) |
-| 0:20 | 2:45 | Admin |

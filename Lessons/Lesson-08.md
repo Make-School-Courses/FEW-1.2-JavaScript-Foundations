@@ -7,6 +7,20 @@
 
 <!-- > -->
 
+## Minute-by-Minute [OPTIONAL]
+
+| **Elapsed** | **Time** | **Activity** |
+| ----------- | --------- | ------------ |
+| 0:05 | 0:05 | Admin |
+| 0:20 | 0:15 | [Overview](#overview) |
+| 0:50 | 0:30 | [React Collections](#react-collection) |
+| 1:00 | 0:10 | [BREAK](#break) |
+| 2:00 | 1:00 | [Lab](#lab) |
+| 1:00 | 0:30 | [After Lab](#after-lab) |
+| 2:45 | 0:15 | [Wrap up review objectives](#wrap-up) |
+
+<!-- > -->
+
 # Overview
 
 This class you will explore React a little more in-depth. We will learn about the virtual DOM and how React handles collections. 
@@ -180,19 +194,3 @@ Discuss
 
 1. https://www.codecademy.com/articles/react-virtual-dom
 1. https://reactjs.org/docs/faq-internals.html
-
-
-<!-- > -->
-
-## Minute-by-Minute [OPTIONAL]
-
-| **Elapsed** | **Time** | **Activity** |
-| ----------- | --------- | ------------ |
-| 0:05 | 0:05 | Admin |
-| 0:20 | 0:15 | [Overview](#overview) |
-| 0:50 | 0:30 | [React Collections](#react-collection) |
-| 1:00 | 0:10 | [BREAK](#break) |
-| 2:00 | 1:00 | [Lab](#lab) |
-| 1:00 | 0:30 | [After Lab](#after-lab) |
-| 2:45 | 0:15 | [Wrap up review objectives](#wrap-up) |
-

@@ -7,6 +7,22 @@
 
 <!-- > -->
 
+## Minute-by-Minute 2:45
+
+| **Elapsed** | **Time** | **Activity** |
+| ----------- | --------- | ------------------------- |
+| 0:05 | 0:05 | Admin |
+| 0:15 | 0:10 | [Overview and Objectives](#overview) |
+| 0:35 | 0:20 | [Code Quality](#code-quality) |
+| 0:55 | 0:30 | [ESLint](#eslint) |
+| 1:55 | 0:60 | [Lab](#lab) |
+| 2:05 | 0:10 | [BREAK](#break) |
+| 2:35 | 0:30 | [After Lab]() |
+| 2:45 | 0:10 | [Homework](#homework) |
+| TOTAL | 2:45 | - |
+
+<!-- > -->
+
 ## Overview
 
 This class will look at the JS you wrote in the tutorial and improve and upgrade it to modern and professional standards.
@@ -267,20 +283,4 @@ List linter suggestions on the board. Split into groups of 4 to discuss these. E
 1. https://eslint.org/docs/user-guide/getting-started
 1. https://www.youtube.com/watch?v=SydnKbGc7W8
 1. [Assignment 2 ESLint.md](Assignments/Assignment-2-EsLint.md)
-
-<!-- > -->
-
-## Minute-by-Minute 2:45
-
-| **Elapsed** | **Time** | **Activity** |
-| ----------- | --------- | ------------------------- |
-| 0:05 | 0:05 | Admin |
-| 0:15 | 0:10 | [Overview and Objectives](#overview) |
-| 0:35 | 0:20 | [Code Quality](#code-quality) |
-| 0:55 | 0:30 | [ESLint](#eslint) |
-| 1:55 | 0:60 | [Lab](#lab) |
-| 2:05 | 0:10 | [BREAK](#break) |
-| 2:35 | 0:30 | [After Lab]() |
-| 2:45 | 0:10 | [Homework](#homework) |
-| TOTAL | 2:45 | - |
 

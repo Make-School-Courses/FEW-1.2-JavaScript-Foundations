@@ -7,6 +7,20 @@
 
 <!-- > -->
 
+## Minute-by-Minute [OPTIONAL]
+
+| **Elapsed** | **Time** | **Activity** |
+| ----------- | --------- | ------------ |
+| 0:05 | 0:05 | admin |
+| 0:15 | 0:10 | [Overview](#overview) |
+| 0:20 | 0:05 | [Learning Objectives](#learning-objectives) |
+| 0:50 | 0:30 | [Inheritence](#inheritence) |
+| 1:00 | 0:10 | [BREAK](#break) |
+| 2:25 | 1:30 | Lab |
+| 2:45 | 0:20 | [Wrap up](#wrap-up) |
+
+<!-- > -->
+
 # Overview
 
 This class will be an OOP workshop to review the concepts from the previous class and expand your understanding of OOP to include inheritence.
@@ -206,18 +220,4 @@ Take a 10-minute break and think about things in the world that share properties
 ## Additional Resources
 
 1. https://javascript.info/classes
-
-<!-- > -->
-
-## Minute-by-Minute [OPTIONAL]
-
-| **Elapsed** | **Time** | **Activity** |
-| ----------- | --------- | ------------ |
-| 0:05 | 0:05 | admin |
-| 0:15 | 0:10 | [Overview](#overview) |
-| 0:20 | 0:05 | [Learning Objectives](#learning-objectives) |
-| 0:50 | 0:30 | [Inheritence](#inheritence) |
-| 1:00 | 0:10 | [BREAK](#break) |
-| 2:25 | 1:30 | Lab |
-| 2:45 | 0:20 | [Wrap up](#wrap-up) |
 
