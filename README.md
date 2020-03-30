@@ -43,7 +43,7 @@ By the end of the course will be able to:
 |  2 | Thu, April 2 | [JavaScript Professional Best Practice](Lessons/Lesson-02.md) | [EsLint](Assignments/Assignment-2-EsLint.md) |
 |  3 | Tue, April 7 | [JavaScript OOP](Lessons/Lesson-03.md) | [OOP](Assignments/Assignment-3-OOP.md) |
 |  4 | Thu, April 9 | [OOP and Classes](Lessons/Lesson-04.md) | [JS OOP and Classes](Assignments/Assignment-4-Inheritance.md) |
-|  5 | Tue, April 14 | [JS OOP Inheritence](Lessons/Lesson-05.md) | [JS Classes and Inheritence](Assignments/Assignment-4-Inheritance.md) |
+|  5 | Tue, April 14 | [JS OOP Inheritence](Lessons/Lesson-05.md) | - |
 |  6 | Thu, April 16 | [Bundling JS](Lessons/Lesson-06.md) | [Bundling JavaScript](Assignments/Assignment-5-bundling.md) |
 |  7 | Tue, April 21 | [Single Page Applications](Lessons/Lesson-07.md) | [Assignment 6 React Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) |
 |  8 | Thu, April 23 | [Component Architecture](Lessons/Lesson-08.md) | [Final Project Getting started](./Assignments/Assignment-7-fina-project.md) |
