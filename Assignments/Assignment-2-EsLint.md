@@ -40,16 +40,6 @@ This process should cover the following areas:
 
 Pay close attention to these. They are effected by hoisting. A function or var declare lower in code may need to be declared earlier to work properly. 
 
-**Challenge 3** Write a function to draw the background for the game. Currently the `draw()` function clears the canvas on it's first line with: 
-
-`ctx.clearRect(0, 0, canvas.width, canvas.height);`JS
-
-Add a function called `drawBackground()`. Call this on the first line of `draw()`. 
-
-Try these challenges: 
-
-- Fill the background with a color other than the default color. Do this by drawing a rectangle that starts at x 0, y 0 with a width and height that match your canvas. Do all of this in the `drawBackground()` function. 
-
 ### Deliverable
 
 A link to the branch of your repo with the code changes used to solve the challenges in this assignment. 

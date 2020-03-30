@@ -117,3 +117,14 @@ Make sure the space between the bricks stays the same.
 
 Make each row of bricks worth a different number of points. The first row is worth 10. The second row is worth 100 and the top row is worth 100 for each brick.
 
+**Custom Background** Write a function to draw the background for the game. Currently the `draw()` function clears the canvas on it's first line with: 
+
+`ctx.clearRect(0, 0, canvas.width, canvas.height);`JS
+
+Add a function called `drawBackground()`. Call this on the first line of `draw()`. 
+
+Try these challenges: 
+
+- Fill the background with a color other than the default color. Do this by drawing a rectangle that starts at x 0, y 0 with a width and height that match your canvas. Do all of this in the `drawBackground()` function. 
+
+
