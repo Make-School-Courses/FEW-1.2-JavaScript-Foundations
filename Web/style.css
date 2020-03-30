@@ -149,3 +149,5 @@ table>tbody>tr>td::before {
   text-decoration: none;
   color: white;
 }
+
+td::before { display: none }
