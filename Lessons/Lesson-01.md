@@ -11,10 +11,9 @@
 
 | **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------ |
-| 0:05 | 0:05 | Admin |
-| 0:20 | 0:15 | [Class Learning Objectives](#class-learning-objectives) |
-| 0:35 | 0:15 | [Projects](#projects) |
-| 0:50 | 0:15 | [Canvas](#canvas) |
+| 0:05 | 0:05 | [Class Learning Objectives](#class-learning-objectives) |
+| 0:05 | 0:10 | [Projects](#projects) |
+| 0:50 | 0:15 | [Start Break out](#start-break-out-tutorial) |
 | 1:40 | 0:50 | [Lab: Break Out Tutorial](#lab) |
 | 1:50 | 0:10 | [Break](#break) |
 | 2:20 | 0:30 | Review progress on Tutorial |
@@ -27,15 +26,17 @@
 
 The goal of this class is to improve and develop your JavaScript skill, knowledge, and to further develop your skills in software development. 
 
-By the end of the class you should be able to: 
+By the end of the class you should be able to:
 
 - Use functions and variables to create front end applications
-- Use For loops 
-- Us if statements
+- Write For loops in JavaScript
+- Write if statements in JavaScript
+- Use Canvas to draw bitmap graphics
+- Describe program flow
 
 <!-- > -->
 
-## Your Goals
+### Your Goals
 
 These are the two goals that will bring you success. 
 
@@ -46,15 +47,15 @@ These are the two goals that will bring you success.
 
 Portfolio projects are what get you noticed. Your portfolio is often the reason people get invited to job interviews.
 
-One of your goals this term will be to build two portfolio projects. 
+One of your goals this term will be to build two portfolio projects.
 
 <!-- > -->
 
 ### What are Learning Objectives? 
 
-Learning objectives are the concepts and ideas that you need to know to claim mastery of a subject. 
+Learning objectives are the concepts and ideas that you need to know to claim mastery of a subject.
 
-Learning Objectives are often skills that are related to success at job interviews and on the job. 
+Learning Objectives are often skills that are related to success at job interviews and on the job.
 
 <!-- > -->
 
@@ -74,28 +75,31 @@ When you understand a learning objective you will be able to explain it and put 
 
 The goal is to produce something that shows your skills. 
 
-- Breakout - This is a JavaScript implementation of the arcade game Breakout 
-- Custom/Contractor Project with React - This will be a web site built with React and is open to your ideas and input.
+- **Breakout** - This is a JavaScript implementation of the arcade game Breakout 
+- **React Fundamentals Tutorial** - This tutorial will get you started with React
+- **Custom/Contractor Project with React** - This will be a web site built with React and is open to your ideas and input.
 
 <!-- > -->
 
-## Class 1 - Breakout tutorial
+## Start Breakout tutorial
 
 The Breakout tutorial is a great JS practice project. It makes use of many of the core concepts found in every programming language. 
 
-- Variables 
-- Functions
-- Flow control 
- - loops 
- - if else statements
-- Arrays
-- Objects 
+- **Variables** - values stored and used by the program
+- **Functions** - code blocks used and reused by the program 
+- **Flow control** - controlling when which blocks of code are run and how often
+ - **loops** - repeats blocks of code 
+ - **if else** statements - makes decisions about which blocks should be run
+- **Arrays** - stores lists of things/values accessible by index
+- **Objects** - stores things/values accessed by key
+
+Today in class your job is to start on the tutorial and identify the things on this list
 
 <!-- > -->
 
 These things are core to programming in general. Learn these things here and you can apply them anywhere (in many languages). 
 
-After completing the tutorial you will improve the code applying modern techniques and best practices. This will include: 
+After completing the tutorial you will improve the code applying modern techniques and best practices. This will include:
 
 - Using ES6 JS ideas and syntax
 - Linting to professional standards 
@@ -106,16 +110,6 @@ After completing the tutorial you will improve the code applying modern techniqu
 ### Contractor/Custom project 
 
 The Custom/Constractor project will be built with React. Here you will put all of the things from the first project into something that is built using the one of the most common and popular libraries in use today.
-
-<!-- > -->
-
-## Learning Objectives
-
-Today's Learning Objectives are: 
-
-1. Use the JavaScript language
-1. Describe and use canvas
-1. Identify functional logic and program flow
 
 <!-- > -->
 
@@ -252,7 +246,17 @@ Your goal is to complete the tutorial: https://developer.mozilla.org/en-US/docs/
 
 This tutorial is 10 pages. At the end of every page is the completed source code. If you run into any problems you can check your code against the source.
 
-**This should take about an hour**
+While you work look for the things on this list:
+
+- **Variables** - values stored and used by the program
+- **Functions** - code blocks used and reused by the program 
+- **Flow control** - controlling when which blocks of code are run and how often
+ - **loops** - repeats blocks of code 
+ - **if else** statements - makes decisions about which blocks should be run
+- **Arrays** - stores lists of things/values accessible by index
+- **Objects** - stores things/values accessed by key
+
+Today in class your job is to start on the tutorial and identify the things on this list
 
 The code in the tutorial is very naive. You will be updating the code to modern standards in the next assignment.
 
