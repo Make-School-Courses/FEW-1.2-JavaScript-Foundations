@@ -24,6 +24,19 @@
 
 ➡️ [**Slides**](/Syllabus-Template/Slides/Lesson1.html ':ignore')
 </script></section><section  data-markdown><script type="text/template">
+## Minute-by-Minute
+
+| **Elapsed** | **Time** | **Activity** |
+| ----------- | --------- | ------------ |
+| 0:05 | 0:05 | Admin |
+| 0:05 | 0:10 | [Overview](#overview) |
+| 0:05 | 0:15 | [Learning](#learning-objectives) |
+| 0:50 | 0:30 | [React Collections](#react-collection) |
+| 1:00 | 0:10 | [BREAK](#break) |
+| 2:00 | 1:00 | [Lab](#lab) |
+| 1:00 | 0:30 | [After Lab](#after-lab) |
+| 2:45 | 0:15 | [Wrap up review objectives](#wrap-up) |
+</script></section><section  data-markdown><script type="text/template">
 # Overview
 
 This class you will explore React a little more in-depth. We will learn about the virtual DOM and how React handles collections. 
@@ -36,7 +49,7 @@ Single-page applications are how many web applications are built today. Expect t
 
 1. Describe use cases for props
 1. Build applications from components 
-1. Design components 
+1. Design components
 1. Use Component collections and keys
 </script></section><section  data-markdown><script type="text/template">
 # React Concepts
@@ -93,22 +106,22 @@ React handles collections in an elegant way. If React sees an Array of JSX eleme
 
 ```JS
 const headings = [
- <Heading str='Hello World' />,
- <Heading str='Foo Bar' />,
- <Heading str='Foo World' />,
- <Heading str='Hello Bar' />,
- <Heading str='Hello foo' />,
- <Heading str='Foo Hello' />
+  <Heading str='Hello World' />,
+  <Heading str='Foo Bar' />,
+  <Heading str='Foo World' />,
+  <Heading str='Hello Bar' />,
+  <Heading str='Hello foo' />,
+  <Heading str='Foo Hello' />
 ]
 
 function App() {
- return (
- <div className="App">
- <header className="App-header">
- {headings}
- </header>
- </div>
- );
+  return (
+    <div className="App">
+      <header className="App-header">
+        {headings}
+      </header>
+    </div>
+  );
 }
 ```
 
@@ -132,12 +145,12 @@ Add a key by giving each element a unique key prop. The value can be anything yo
 
 ```JS
 const headings = [
- <Heading key='Hello World' str='Hello World' />,
- <Heading key='Foo Bar' str='Foo Bar' />,
- <Heading key='Foo World' str='Foo World' />,
- <Heading key='Hello Bar' str='Hello Bar' />,
- <Heading key='Hello foo' str='Hello foo' />,
- <Heading key='Foo Hello' str='Foo Hello' />
+  <Heading key='Hello World' str='Hello World' />,
+  <Heading key='Foo Bar' str='Foo Bar' />,
+  <Heading key='Foo World' str='Foo World' />,
+  <Heading key='Hello Bar' str='Hello Bar' />,
+  <Heading key='Hello foo' str='Hello foo' />,
+  <Heading key='Foo Hello' str='Foo Hello' />
 ]
 
 ...
@@ -171,20 +184,6 @@ Discuss
 
 1. https://www.codecademy.com/articles/react-virtual-dom
 1. https://reactjs.org/docs/faq-internals.html
-
-</script></section><section  data-markdown><script type="text/template">
-## Minute-by-Minute [OPTIONAL]
-
-| **Elapsed** | **Time** | **Activity** |
-| ----------- | --------- | ------------ |
-| 0:05 | 0:05 | Admin |
-| 0:20 | 0:15 | [Overview](#overview) |
-| 0:50 | 0:30 | [React Collections](#react-collection) |
-| 1:00 | 0:10 | [BREAK](#break) |
-| 2:00 | 1:00 | [Lab](#lab) |
-| 1:00 | 0:30 | [After Lab](#after-lab) |
-| 2:45 | 0:15 | [Wrap up review objectives](#wrap-up) |
-
 </script></section></div>
     </div>
 
