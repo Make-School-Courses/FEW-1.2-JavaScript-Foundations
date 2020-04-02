@@ -10,22 +10,23 @@
 ## Minute-by-Minute
 
 | **Elapsed** | **Time** | **Activity** |
-| ----------- | --------- | ------------------------- |
-| 0:05 | 0:05 | Admin |
-| 0:20 | 0:15 | [Class Learning Objectives](#class-learning-objectives) |
-| 0:35 | 0:20 | [Code Quality](#code-quality) |
-| 0:55 | 0:30 | [ESLint](#eslint) |
-| 1:55 | 0:60 | [Lab](#lab) |
-| 2:05 | 0:10 | [BREAK](#break) |
-| 2:35 | 0:30 | [After Lab]() |
-| 2:45 | 0:10 | [Homework](#homework) |
-| TOTAL | 2:45 | - |
+| ----------- | --------- | ----------- |
+| 0:05 | 0:05 | Roll |
+| 0:10 | 0:05 | [Class Learning Objectives](#class-learning-objectives) (Lecture) |
+| 0:20 | 0:10 | [Code Quality](#code-quality) (Discussion) |
+| 0:40 | 0:20 | [ESLint - Setup](#eslint) (Lab) |
+| 1:40 | 0:60 | [ESLint - Lab](#lab) (Lab) |
+| 1:50 | 0:10 | Break |
+| 2:00 | 0:10 | [JS Best Practice](#js-est-practice) |
+| 2:40 | 0:40 | Code Review/Lab Time |
+| 2:45 | 0:05 | [Homework](#homework) |
+
 
 <!-- > -->
 
 ## Class Learning Objectives
 
-- Describe linting 
+- Describe linting
 - Use ESLint
 - Evaulate your work against profesional standards
 
@@ -39,30 +40,23 @@ This class will look at the JS you wrote in the tutorial and improve and upgrade
 
 ## Code Quality 
 
-What is code quality?
+Pair up and discuss code quality. Answer these questions:
 
-What does high quality code look like?
-
-How do you write better quality code?
-
-**Discuss this with your pair**
+- What is code quality?
+- What does high quality code look like?
+- How do you write better quality code?
 
 <!-- > -->
 
 - Consistent style 
- - Reads well to Everyone on your team 
- - Uses consistent syntax 
-    - `{}` or `new Object()`
-- Uses up to date best practices 
- - e.g. `const` > `let` > `var`
-
-<!-- > -->
-
-## Learning Objectives
-
-1. Using consistent syntax
-1. Modern JS best practice
-1. Linting with a style guide
+    - Reads well to Everyone on your team 
+    - Uses consistent syntax 
+        - `{}` or `new Object()`
+- Uses up to date best practices
+    - e.g. `const` > `let` > `var`
+    - Uses deconstruction
+    - Uses template strings over concatenation
+    - Uses += instead of ++
 
 <!-- > -->
 
@@ -70,7 +64,9 @@ How do you write better quality code?
 
 You should be using the most up to date JS in your work. Its expected in the professional environment. 
 
-We will be using the Airbnb JS style guide. This guide was developed at Airbnb and is used by their engineering team. It defines the coding style expected from Airbnb engineers.
+Improves the quality of your work by reducing errors and making your code easier to understand. 
+
+You will be using the Airbnb JS style guide. This guide was developed at Airbnb and is used by their engineering team. It defines the coding style expected from Airbnb engineers.
 
 **Using this style guide is profesional best practice, it will make you code better, and make you write higher quality code.**
 
@@ -103,37 +99,37 @@ https://eslint.org/docs/user-guide/getting-started
 
 <!-- > -->
 
-**Setup npm:**
+**Setup npm**
 
 ```
 npm init -y
 ```
 
 
-**Install ESLint:**
+**Install ESLint**
 
 ```
 npm install eslint --save-dev
 ```
 
-**Setup a config file.**
-
-Use the answers below as you follow the setup process. 
+**Setup a config file**
 
 ```
 npx eslint --init
 ```
 
+Use the answers below as you follow the setup process. 
+
 <!-- > -->
 
-Choose these options: 
+Choose these options:
 
 - To check syntax, find problems, and enforce code style
 - None of these
 - None of these
 - TypeScript No
 - Browser
-- Use a popular style guide 
+- Use a popular style guide
 - Airbnb: https://github.com/airbnb/javascript 
 - JavaScript
 - Would you like to install them now with npm? Yes
@@ -177,7 +173,7 @@ Take a look at the errors you see and answer these questions:
 
 <!-- > -->
 
-## Modern JS
+## JS Best Practice
 
 You can read about the Airbnb style guide here: 
 
