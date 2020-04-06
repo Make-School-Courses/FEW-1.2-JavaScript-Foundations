@@ -21,7 +21,6 @@
 | 2:40 | 0:40 | Code Review/Lab Time |
 | 2:45 | 0:05 | [Homework](#homework) |
 
-
 <!-- > -->
 
 ## Class Learning Objectives
