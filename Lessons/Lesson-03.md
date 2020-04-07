@@ -347,19 +347,31 @@ This functions needs to be useful outside of the game. You can make this possibl
 ### Breakout Code with Comments
 
 ```JS
+/* ***************************************************************
+
+Challenge 1 - Make Constants
+* Make these into constants defined at the top.
+
+Challenge 2 - Identify duplicate code
+** This block of code is repeated better to make a function for this.
+
+Challenge 3 - Use Subroutines
+*** This block of code would be better as a function.
+
+Challenge 4 - Encapsulating code
+**** Use objects to encapsulate code
+
+***************************************************************** */
+
 // **************************************************************
-
 // DOM references
-
 // **************************************************************
 
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 
 // **************************************************************
-
 // Variables
-
 // **************************************************************
 
 // --------------------------------------------------------------
@@ -403,6 +415,7 @@ let leftPressed = false;
 
 const bricks = [];
 
+// *** This would be better in a function
 for (let c = 0; c < brickColumnCount; c += 1) {
   bricks[c] = [];
   for (let r = 0; r < brickRowCount; r += 1) {
@@ -415,9 +428,7 @@ for (let c = 0; c < brickColumnCount; c += 1) {
 }
 
 // **************************************************************
-
 // Functions
-
 // **************************************************************
 
 function drawBall() {
@@ -601,16 +612,4 @@ document.addEventListener('mousemove', mouseMoveHandler, false);
 // **************************************************************
 
 draw();
-
-/*
-
-* Make these into constants defined at the top.
-
-** This block of code is repeated better to make a function for this. 
-
-*** This block of code would be better as a function.
-
-**** Use objects to encapsulate code
-
-*/
 ```
