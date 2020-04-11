@@ -165,7 +165,7 @@ Your GitHub repo with these changes committed and pushed.
 
 ### Due date
 
-Class 5 - Tue, February 4
+Class 5 - Thu, April 16
 
 ## Assessing the assignment
 

@@ -10,7 +10,7 @@
 ## Minute-by-Minute
 
 | **Elapsed** | **Time** | **Activity** |
-| ----------- | --------- | ------------ |
+| ----------- | -------- | ------------ |
 | 0:05 | 0:05 | admin |
 | 0:05 | 0:10 | [Overview: Bundling](#overview) |
 | 0:05 | 0:15 | [Learning Objectives](#learning-objectives) |
@@ -82,11 +82,35 @@ Bundling processes your sources file and produces new files.
 
 **What types of processing?**
 
-- **minify** - reduces file size by removing unnecessary characters
-- **uglify** - renames elements to obfuscate code and reduce file size again
-- **Compile TypeScript** - Converts .ts files into .js files
-- **Compatibility** - Convert ES6 JS into JS that is compatible with older browsers
-- **bundling** - combining all .js files into a single bundle.js file
+<!-- > -->
+
+- **minify** - 🗜
+
+reduces file size by removing unnecessary characters: 
+
+<!-- > -->
+
+- **uglify** - 🙀
+
+renames elements to obfuscate code and reduce file size
+
+<!-- > -->
+
+- **Compile TypeScript** - 🦆 →  🦢
+
+Converts .ts files into .js files
+
+<!-- > -->
+
+- **Compatibility** - 🔩
+
+Convert ES6 JS into JS that is compatible with older browsers
+
+<!-- > -->
+
+- **bundling** - 🏀🏓🧱 → 📦
+
+combining all .js files into a single bundle.js file
 
 <!-- > -->
 
@@ -106,7 +130,13 @@ Read more about these: https://blog.logrocket.com/uglify-vs-babel-minify-vs-ters
 
 <!-- > -->
 
-Another effect of the bundler is that it combines multiple .js files into a single .js file. This provides an advantage when loading projects by reducing the number of streams your page requires to load itself. 
+Another effect of the bundler is that it combines multiple .js files into a single .js file. 
+
+<!-- > -->
+
+This provides an advantage when loading projects by reducing the number of streams your page requires to load itself. 
+
+Loading fewer files is faster.
 
 <!-- > -->
 
@@ -134,7 +164,7 @@ The bundling process will require npm. Let's take a look at npm.
 
 <!-- > -->
 
-You've probably used npm before but have you ever thought about what npm is? Here is how npm describes itself. 
+You may have used npm before but have you ever thought about what npm is? Here is how npm describes itself. 
 
 <!-- > -->
 
@@ -193,10 +223,10 @@ Make the following folders:
 
 Arrange your files. You should already have some of the files. 
 
-- src/index.js (this is your source code for your break out game)
-- dist/index.html (this is the HTML file for your break out game)
-- package.json (this should have been created in the previous step)
-- webpack.config.json (make this file now you will add code to it later)
+- src/index.js (Code you wrote)
+- dist/index.html (Code compiled by webpack)
+- package.json
+- webpack.config.json 
 
 <!-- > -->
 
@@ -213,21 +243,25 @@ In the end your directory will look like this:
 
 <!-- > -->
 
-With this new arrangement, your index.html will now need to load bundle.js. Find the script tag and point it to the bundle.js. 
+Edit index.html. The script tag shoould point to `bundle.js`. 
 
 `<script src="bundle.js"></script>`
 
-<!-- > -->
-
-Notice we haven't created bundle.js. This file will be created in the next step by webpack. This will be the compiled, minified, uglified file built from your JS code and code you might have imported from other libs. 
+`bundle.js` doesn't exist yet...
 
 <!-- > -->
 
-## Webpack config 
+Notice we haven't created bundle.js. This file will be created in the next step by webpack. This will be the compiled, minified, and uglified file built from your JS code and code you might have imported from other libs. 
 
 <!-- > -->
 
-Webpack is an industry-standard tool. You will see this tool in the future expects to work with it. It does many things. The webpack.config.js file configures webpack, it is written in JavaScript. 
+## webpack.config.js
+
+<!-- > -->
+
+Webpack is an industry-standard tool. You will see this tool in the future, expect to work with it. 
+
+The webpack.config.js file configures webpack, it is written in JavaScript. 
 
 <!-- > -->
 
@@ -270,13 +304,12 @@ edit package.json
 
 ```
 {
- ...
- "scripts": {
- "test": "echo \"Error: no test specified\" && exit 1"
- "develop": "webpack --mode development --watch",
- "build": "webpack --mode production"
- },
- ...
+  ...
+  "scripts": {
+    "develop": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  ...
 }
  ```
 
