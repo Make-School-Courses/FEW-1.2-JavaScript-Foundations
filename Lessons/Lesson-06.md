@@ -226,7 +226,7 @@ Arrange your files. You should already have some of the files.
 - src/index.js (Code you wrote)
 - dist/index.html (Code compiled by webpack)
 - package.json
-- webpack.config.json 
+- webpack.config.js 
 
 <!-- > -->
 
