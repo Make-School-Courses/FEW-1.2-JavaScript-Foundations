@@ -48,7 +48,7 @@ By the end of the course will be able to:
 |  7 | Tue, April 21 | [Single Page Applications](Lessons/Lesson-07.md) | [Assignment 6 React Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) |
 |  8 | Thu, April 23 | [Component Architecture](Lessons/Lesson-08.md) | [Final Project Getting started](./Assignments/Assignment-7-fina-project.md) |
 |  9 | Tue, April 28 | [Styling Components](Lessons/Lesson-09.md) | - |
-| 10 | Thu, April 30 | [Dynamic Data](Lessons/Lesson-10.md) | - | 
+| 10 | Thu, April 30 | [Component State](Lessons/Lesson-10.md) | - | 
 | 11 | Tue, May 5 | [Forms and User inputs](Lessons/Lesson-11.md) | - | 
 | 12 | Thu, May 7 | [Building and Publishing](Lessons/Lesson-12.md) | - | 
 | 13 | Tue, May 12 | [Test your Knowledge](Lessons/Lesson-13.md) | - | 
