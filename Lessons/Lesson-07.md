@@ -94,7 +94,6 @@ Use the Terminal to navigate a directory where you will build your first React P
 npx create-react-app my-first-app
 ```
 
-
 This command creates a new react starter project using the Create React tool. 
 
 `my-first-app` would be the name of your app. 
