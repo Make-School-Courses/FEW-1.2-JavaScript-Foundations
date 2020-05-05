@@ -96,7 +96,7 @@ class FormThing {
     <form>
       <input 
         type="text"
-        value={this.state.value}
+        value={this.state.name}
         onChange={(e) => this.setState({ name: e.target.value })}
       />
     </form>
