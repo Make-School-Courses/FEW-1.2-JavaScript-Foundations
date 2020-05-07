@@ -32,7 +32,7 @@ The process can be accomplished with `gh-pages` package. Install it now:
 
 Edit your `package.json` add the following line at the root level of the JSON  object. 
 
-`"homepage": "http://{username}.github.io/{repo-name}",`
+`"homepage": "https://{username}.github.io/{repo-name}",`
 
 **Replace `{username}` with your GitHub user name, and `{repo-name}` with the name of the for this project**
 
