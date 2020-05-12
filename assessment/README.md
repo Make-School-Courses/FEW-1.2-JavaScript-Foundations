@@ -1,12 +1,14 @@
 # Assessment
 
-Youe goal is to make a project with React. 
+Your goal is to make a project with React. Load some JSON, display components, use state, and use Array.map.
 
 ## Challenges 
 
 ### Challenge 1
 
-Create a React Project. I should be able to run your project with `npm start` or `yarn start`. 
+Create a React Project. 
+
+I should be able to run your project with `npm start` or `yarn start`. 
 
 ### Challenge 2 
 
@@ -31,6 +33,8 @@ Display the number of bands at the top of the page. Display the count something 
 
 - Bands: {#}
 
+The number of bands is the length of the array of bands in the json file. 
+
 ### Challenge 4
 
 List all the bands. Make a `<Band>` Component that will display the following: 
@@ -44,25 +48,25 @@ This component should accept the information above as props.
 
 You need to create an instance of this component for each band in the array, and display these in the App.js. 
 
-Use `Array.map()` to transform the array of bands objects into an array `<Band>` components. 
+Use `Array.map()` to transform the array of bands objects into an array of `<Band>` components. Dipslay this array in your `App` component. 
 
 ### Challenge 5
 
 Make a `<Like>` component. This component will track a like count. It will have two buttons, one button to increase the count, and the other to decrease the count, it should also display the count.
 
-This component should use state. 
+This component will increment by one with each count and do this with state.
 
 ### Challenge 6 
 
 Add the `<Like>` component to the `<Band>` component. Each band should show a number of likes and have buttons to increase or decrease the count. 
 
-## Extra Credit
-
 ### Challenge 7
 
 Style your Components. Create a stylesheet for each of the components you created and link that to the component. 
 
-Alternatively you can style your components using inline styles and a JS style Object. 
+Alternatively you can style your components using inline styles and a JS style Object.
+
+You don't have to spend much time on styling. Add enough styles where I can tell that you styled the components.
 
 ### Challenge 8
 
@@ -114,5 +118,5 @@ The country list could be better. Your goal is to display the number of bands wh
 Display this in a list:
 
 - {country_name}
-- {number_of_bands}
-- {number_of_fans}
+  - {number_of_bands}
+  - {number_of_total_fans}
