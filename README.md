@@ -20,6 +20,12 @@ JavaScript is one of the most important languages in use today. You work with it
 
 [FEW 1.1](https://github.com/Make-School-Courses/FEW-1.1-Web-Foundations) or equivalent
 
+## Course Specifics
+
+**Course Delivery**: online | 7 weeks | 14 sessions
+
+**Course Credits**: 3 units | 37.5 Seat Hours | 75 Total Hours
+
 ## Learning Outcomes
 
 By the end of the course will be able to:
@@ -70,6 +76,12 @@ To pass this course you must meet the following requirements:
     - This will be further explained in the [study guide](ADD_STUDY_GUIDE_LNK)
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
+
+##  Information Resources
+
+Any additional resources you may need (online books, etc.) can be found here. You can also find additional resources through the library linked below:
+
+- [make.sc/library](http://make.sc/library)
 
 ## Make School Course Policies
 
