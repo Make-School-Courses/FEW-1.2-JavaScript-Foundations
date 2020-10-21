@@ -20,6 +20,12 @@ JavaScript is one of the most important languages in use today. You work with it
 
 [FEW 1.1](https://github.com/Make-School-Courses/FEW-1.1-Web-Foundations) or equivalent
 
+## Course Specifics
+
+**Course Delivery**: online | 7 weeks | 14 sessions
+
+**Course Credits**: 3 units | 37.5 Seat Hours | 75 Total Hours
+
 ## Learning Outcomes
 
 By the end of the course will be able to:
@@ -33,26 +39,29 @@ By the end of the course will be able to:
 
 ## Schedule
 
-**Course Dates:** Tuesday, March 31 – Thursday, May 14, 2020 (7 weeks)
+**Course Dates:** Wednesday, October 21 – Wednesday, December 9, 2020 (8 weeks)
 
-**Class Times:** Tuesday and Thursday at 9:30am – 12:15pm (14 class sessions)
+**Class Times:** Monday, Wednesday at 2:45am–5:30pm (13 class sessions)
 
 | Class | Date | Topics | Assignment |
 |:------|:-----|:-------|:-----------|
-|  1 | Tue, March 31 | [JavaScript Basics](Lessons/Lesson-01.md) | [Break Out](Assignments/Assignment-1-Break-Out.md) | 
-|  2 | Thu, April 2 | [JavaScript Professional Best Practice](Lessons/Lesson-02.md) | [EsLint](Assignments/Assignment-2-EsLint.md) |
-|  3 | Tue, April 7 | [JavaScript OOP](Lessons/Lesson-03.md) | [OOP](Assignments/Assignment-3-OOP.md) |
-|  4 | Thu, April 9 | [OOP and Classes](Lessons/Lesson-04.md) | [JS OOP and Classes](Assignments/Assignment-4-Inheritance.md) |
-|  5 | Tue, April 14 | [JS OOP Inheritence](Lessons/Lesson-05.md) | - |
-|  6 | Thu, April 16 | [Bundling JS](Lessons/Lesson-06.md) | [Bundling JavaScript](Assignments/Assignment-5-bundling.md) |
-|  7 | Tue, April 21 | [Single Page Applications](Lessons/Lesson-07.md) | [Assignment 6 React Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) |
-|  8 | Thu, April 23 | [Component Architecture](Lessons/Lesson-08.md) | [Final Project Getting started](./Assignments/Assignment-7-fina-project.md) |
-|  9 | Tue, April 28 | [Styling Components](Lessons/Lesson-09.md) | - |
-| 10 | Thu, April 30 | [Component State](Lessons/Lesson-10.md) | - | 
-| 11 | Tue, May 5 | [Forms and User inputs](Lessons/Lesson-11.md) | - | 
-| 12 | Thu, May 7 | [Building and Publishing](Lessons/Lesson-12.md) | - | 
-| 13 | Tue, May 12 | [Test your Knowledge](Lessons/Lesson-13.md) | - | 
-| 14 | Thu, May 14 | [Present your work](Lessons/Lesson-14.md) | - |
+|  1 |  Wed, Oct 21  | [JavaScript Basics](Lessons/Lesson-01.md) | [Break Out](Assignments/Assignment-1-Break-Out.md) | 
+|  2 |  Mon, Oct 26  | [JavaScript Professional Best Practice](Lessons/Lesson-02.md) | [EsLint](Assignments/Assignment-2-EsLint.md) |
+|  3 |  Wed, Oct 28  | [JavaScript OOP](Lessons/Lesson-03.md) | [OOP](Assignments/Assignment-3-OOP.md) |
+|  - |  Mon, Nov 2              | **Vote! - Civic Responsibility Break** |
+|  4 |  Wed, Nov 4   | [OOP and Classes](Lessons/Lesson-04.md) | [JS OOP and Classes](Assignments/Assignment-4-Inheritance.md) |
+|  5 |  Mon, Nov 9   | [JS OOP Inheritence](Lessons/Lesson-05.md) | - |
+|  6 |  Wed, Nov 11  | [Bundling JS](Lessons/Lesson-06.md) | [Bundling JavaScript](Assignments/Assignment-5-bundling.md) |
+|  7 |  Mon, Nov 16  | [Single Page Applications](Lessons/Lesson-07.md) | [Assignment 6 React Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) |
+|  8 |  Wed, Nov 18  | [Component Architecture](Lessons/Lesson-08.md) | [Final Project Getting started](./Assignments/Assignment-7-fina-project.md) |
+|  9 |  Mon, Nov 23 | [Styling Components](Lessons/Lesson-09.md) | - |
+|  - |  Wed, Nov 25               | **Holiday - Thanksgiving** |
+| 10 |  Mon, Nov 30  | [Component State](Lessons/Lesson-10.md) | - | 
+| 11 |  Wed, Dec 2  | [Forms and User inputs](Lessons/Lesson-11.md) | - | 
+| 12 |  Mon, Dec 7 | [Building and Publishing](Lessons/Lesson-12.md) | - | 
+| 13 |  Wed, Dec 9  | [Test your Knowledge](Lessons/Lesson-13.md) | - | 
+
+<!-- | 14 | Thu, May 14 | [Present your work](Lessons/Lesson-14.md) | - | -->
 
 ### Projects
 
@@ -70,6 +79,12 @@ To pass this course you must meet the following requirements:
     - This will be further explained in the [study guide](ADD_STUDY_GUIDE_LNK)
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
+
+##  Information Resources
+
+Any additional resources you may need (online books, etc.) can be found here. You can also find additional resources through the library linked below:
+
+- [make.sc/library](http://make.sc/library)
 
 ## Make School Course Policies
 
