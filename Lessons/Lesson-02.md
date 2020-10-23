@@ -108,7 +108,7 @@ npm init -y
 **Install ESLint**
 
 ```
-npm install eslint --save-dev
+npm install eslint -g
 ```
 
 **Setup a config file**
