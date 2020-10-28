@@ -3,7 +3,7 @@
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](/Syllabus-Template/Slides/Lesson1.html ':ignore')
+➡️ [**Slides**](https://docs.google.com/presentation/d/1rPysF_OH56K4KWP5-coqoreRpVyDm8iYPXsOwhM9ods/edit?usp=sharing)
 
 <!-- > -->
 
@@ -108,7 +108,7 @@ npm init -y
 **Install ESLint**
 
 ```
-npm install eslint --save-dev
+npm install eslint -g
 ```
 
 **Setup a config file**
