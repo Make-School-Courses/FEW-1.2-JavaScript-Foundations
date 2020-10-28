@@ -18,7 +18,7 @@ JavaScript is one of the most important languages in use today. You work with it
 
 ## Prerequisites:  
 
-[FEW 1.1](https://github.com/Make-School-Courses/FEW-1.1-Web-Foundations) or equivalent
+[WEB 1.0](https://github.com/Make-School-Courses/WEB-1.0-Web-Foundations) or equivalent
 
 ## Course Specifics
 
