@@ -3,7 +3,7 @@
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](/Syllabus-Template/Slides/Lesson1.html ':ignore')
+➡️ [**Slides**](https://docs.google.com/presentation/d/1hHmOvX6HLqNt-8E94Rj-N_t7z-QUAVQ1rii_cQIIthw/edit?usp=sharing)
 
 <!-- > -->
 
@@ -47,31 +47,83 @@ Discuss these questions with someone else in class:
   - How does break out define its application state?
   - The values stored by the game and how are they updated?
 
+## How does Break Out work? 
+
+The MDN break out code organizes it's code in the following areas. 
+
+It uses variable to hold values, constants are values that don't change, functions encapsulate blocks of code, and some code that initializes the game. 
+
+### Variables
+
+These variables hold values that are used by the game to control and display game elements. 
+
+- `bricks` - an **array** of objects `{ x, y, status }`
+- `x`, `y` - These track the position of the ball
+- `dx`, `dy` - **number** tracks the speed and direction of the ball. 
+- `paddleX` - **number** tracks the position of the paddle. 
+- `leftPressed`, `rightPressed` - **boolean** tracks when the arrow keys are pressed. 
+- `score` - **number** holds the score
+- `lives` - **number** holds lives 
+
+### Constants 
+
+Constants are fixed values used by the game that don't change. 
+
+- `canvas` - a reference to the canvas used to get the canvas context
+- `ctx` - canvas context needed for drawing on the canvas
+- `ballRadius` - 
+- `paddleHeight` - 
+- `paddleWidth` - 
+- `brickRowCount` - Number of rows of bricks
+- `brickColumnCount` - Number columns of bricks
+- `brickWidth` - 
+- `brickHeight` - 
+- `brickPadding` - 
+- `brickOffsetTop` - space between the bricks and the top of the canvas
+- `brickOffsetLeft` - Space between the bricks and the left of the canvas
+
+### Functions 
+
+- `drawScore()` - Draws the score
+- `drawLives()` - Draws lives 
+- `drawBricks()` - Draws bricks 
+- `collisionDetection()` - looks for a collision between the ball and bricks
+- `keyDownHandler()` - looks for right or left arrow pressed down
+- `keyUpHandler()` - Looks for the left or right arrow key released. 
+- `mouseMoveHandler()` - Looks for mouse move events and sets the paddle position. 
+- `drawBall()` - Draws the ball 
+- `drawPaddle()` - draws the paddle 
+- `draw()` - Does a lot
+  - clears the canvas
+  - moves the ball 
+  - looks for a collision between the ball and the edge of the canvas
+  - Looks for a collision between the ball and the paddle
+  - moves the paddle if the arrow keys are pressed 
+  - calls all of the other functions: `drawBricks()`, `drawBall()`, `drawPaddle()`, `drawScore()`, `drawLives()`, `collisionDetection()`
+  - Calls `requestAnimationFrame(draw)` which runs the draw function on the frame update. 
+
+### Code just hanging out 
+
+Some of the code is not in a function and is not a variable declaration and initialization. 
+
+This code is run once when the page is loaded. You can think of it as initializing the program. 
+
+- For loop initializes bricks array
+- Adding event listeners
+- Starting the game loop by calling `draw()`
+
 <!-- > -->
-
-## Breakout Code
-
-Refer to your code or the code [here](#breakout-code-with-comments) for reference. 
-
-Discuss with your pair how the code is organized.
-
-- DOM references - Reference to HTML elements
-- Variables - Values used by the program
-  - Constants - Values that don't change
-  - Variables - Values that change while the program runs
-  - Setup Bricks Array - Use a loop to initialize this value
-- Functions - Blocks of code used by the program
-  - Game Loop - The main function used by the game
-  - Event Handlers - Handle events from the browser
-- Register Events - Register listeners
-- Entry Point - Starts the game running
 
 ### Breakout Flow
 
 Discuss the flow of code. 
 
 - Initialization
-- Entry point
+  - Define constants 
+  - Define variables 
+  - Define functions
+  - Populate the bricks array 
+  - Start the game
 - Game Loop
   - Clear canvas
   - drawBricks()
@@ -89,35 +141,95 @@ Discuss the flow of code.
       - Game Over?
   - Move Ball
   - Check for keyboard input
-  - register draw() to be called again when the screen refreshes. The program continues by repeating everything from Game Loop down.
+  - Registers `draw()` to be called again when the screen refreshes. The program continues by repeating everything from Game Loop down.
 
 <!-- > -->
 
 ## Challenges
 
-Try these challenges to improve your understanding of the breakout code by improving the code. 
+Try these challenges to improve your understanding of the breakout code by improving the code.
 
-### Challenge 1 - Make Constants
+### Challenge 1 - Organize Code 
+
+Code works better and is easier to understand when it is organized.
+
+- Arrange your code into these areas: 
+  - constants 
+  - variables 
+  - functions 
+  - initialization code
+
+Use comments to mark each of the areas above. 
+
+### Challenge 2 - Make Constants
 
 Identify values that could be constants. These would be any value that you might want to change in future. Making it a constant and defining it at the top will make it easy to find and change in the future. 
-  - color values are a good example. Move these to the top. 
 
-### Challenge 2 - Identify duplicate code
+- color values are a good example. Move these into your constants section
+
+What should you define as new constants? Anything that is a string, especially if it appears more than once. Here are some suggestions: 
+
+- `const color = '#0095DD'`
+- `const ARROW_RIGHT = 'ArrowRight'`
+- `const ARROW_LEFT = 'ArrowLeft'`
+- `const RIGHT = 'RIGHT'`
+- `condst LEFT = 'LEFT'`
+
+### Challenge 3 - Define new functions 
+
+Storing your code in functions is a best practice. The tutorial code does an okay job but doesn't go far enough, you can improve on this! 
+
+- Define an initialization function and move all of the initialization code here. 
+- You'll need to call your initialization function to intialize the game. 
+
+### Challenge 4 - Define new functions 
+
+Functions are best when they do one thing. When a function does too much it's a sign of poor quality code. 
+
+The `draw()` function does too much. Functions like `drawPaddle()`, `drawBall()`, `drawBricks()` are good they have one job that they do. Notice these functions are generally shorter. 
+
+The draw function currently does all of this: 
+
+- Clear canvas
+- drawBricks()
+- drawBall()
+- drawPaddle()
+- drawScore()
+- drawLives()
+- collisionDetection()
+- Check ball position
+  - Left and right side of canvas?
+  - Top of canvas?
+  - bottom?
+    - Hit Paddle?
+    - Lose life
+    - Game Over?
+- Move Ball
+- Check for keyboard input
+- Registers `draw()` to be called again when the screen refreshes.
+
+Notice that one of the things the draw function is responsible for is calling other functions. 
+
+Your job is to extract code from the draw function and create some new functions. Make the following functions using code you remove from draw then add a call to the new function inside draw. 
+
+- `function moveBall()` - this function should move the ball by changing the x and y. 
+- `function collisionCanvas()` - Checks for collision of the ball with the edges of the canvas. 
+- `function collisionPaddle()` - Checks for collision with between the ball and the paddle.
+- `function checkKeys()` - Moves the paddle if the left or right arrow is pressed. 
+
+### Challenge 5 - Identify duplicate code
 
 Identify Duplicate code. Any time you are doing the same operation more than once you should make a function. This will avoid errors in the future and make it easier to make changes and find problems.
-  - Code that initializes the ball and paddle positions. This appears at the top and in draw().
 
-### Challenge 3 - Use Subroutines
+- Look at the array where the bricks array is initialized. Each brick has an x and y of 0. Now look at the `drawBricks` function. Here the x and y of each brick is calculated each time the bricks are drawn. Your goal is to initialize bricks with the correct x and y. Now just use the x and y of each in `drawBricks`.
 
-Subroutines are blocks of code that are run each time the main part of your code is run. Having blocks of related code inside functions makes it easy for you reason about your program. Currently drawBricks, drawBall, drawPaddle are all subroutines to the main game loop in draw. The draw function also contains a big block of code that could be broken out into separate functions. 
-  - moveBall() - is not a function but it should be! The ball is moved in the draw() function this code could be moved into a new function. 
-  - initializeBricks() - is not a function but it should be! The bricks are initialized at the top of code. This would be better handled by moving this code into a function. 
+### Challenge 6 - More Challenges 
 
-### Challenge 4 - Encapsulating code
-
-Encapsulating Values. Moving values into Objects groups those values together making them easier to reason about. Currently the Bricks are objects but they could be improved. 
-  - Bricks - Each brick is an object with three properties: x, y, and status. These properties get set in drawBricks(). This would be better set in when the bricks are initialized.  
-  - Ball - Is not an object but it could be. The ball is moved and positioned by the variables: x, y, dx, and dy. M aking a ball object with these properties would be better, more organized, and make it easier to expand the code in the future. 
+- Change the color of the game elements. Use a different color for the ball, paddle, bricks, and background. 
+- Colors the bricks so that each row is a different color
+- Make the ball change color each time it hits a brick
+- Change the number of rows and columns of bricks. For example make 4 rows or 6 columns of bricks. 
+- Make bricks 
 
 <!-- > -->
 
@@ -137,7 +249,7 @@ The great thing about computers is they are happy to do things over and over aga
 Arrays store collections of related data in a list with each element at an index. 
 
 - How are arrays used by Break Out?
-- What do the Arrays store? 
+- What do the Arrays store?
 
 <!-- https://repl.it/classroom/invite/Z6pW6Gv -->
 
