@@ -42,16 +42,16 @@
 Discuss these questions with someone else in class:
 
 - How does the break out game work? (general overview)
-  - Code flow what happens in what order?
+ - Code flow what happens in what order?
 - The application state is the data that describes the state of your application. 
-  - How does break out define its application state?
-  - The values stored by the game and how are they updated?
+ - How does break out define its application state?
+ - The values stored by the game and how are they updated?
 
 ## How does Break Out work? 
 
-The MDN break out code organizes it's code in the following areas. 
+The MDN break out code organizes its code in the following areas. 
 
-It uses variable to hold values, constants are values that don't change, functions encapsulate blocks of code, and some code that initializes the game. 
+It uses variable to hold values, constants are values that don't change, functions encapsulate blocks of code and some code that initializes the game. 
 
 ### Variables
 
@@ -94,13 +94,13 @@ Constants are fixed values used by the game that don't change.
 - `drawBall()` - Draws the ball 
 - `drawPaddle()` - draws the paddle 
 - `draw()` - Does a lot
-  - clears the canvas
-  - moves the ball 
-  - looks for a collision between the ball and the edge of the canvas
-  - Looks for a collision between the ball and the paddle
-  - moves the paddle if the arrow keys are pressed 
-  - calls all of the other functions: `drawBricks()`, `drawBall()`, `drawPaddle()`, `drawScore()`, `drawLives()`, `collisionDetection()`
-  - Calls `requestAnimationFrame(draw)` which runs the draw function on the frame update. 
+ - clears the canvas
+ - moves the ball 
+ - looks for a collision between the ball and the edge of the canvas
+ - Looks for a collision between the ball and the paddle
+ - moves the paddle if the arrow keys are pressed 
+ - calls all of the other functions: `drawBricks()`, `drawBall()`, `drawPaddle()`, `drawScore()`, `drawLives()`, `collisionDetection()`
+ - Calls `requestAnimationFrame(draw)` which runs the draw function on the frame update. 
 
 ### Code just hanging out 
 
@@ -119,29 +119,29 @@ This code is run once when the page is loaded. You can think of it as initializi
 Discuss the flow of code. 
 
 - Initialization
-  - Define constants 
-  - Define variables 
-  - Define functions
-  - Populate the bricks array 
-  - Start the game
+ - Define constants 
+ - Define variables 
+ - Define functions
+ - Populate the bricks array 
+ - Start the game
 - Game Loop
-  - Clear canvas
-  - drawBricks()
-  - drawBall()
-  - drawPaddle()
-  - drawScore()
-  - drawLives()
-  - collisionDetection()
-  - Check ball position
-    - Left and right side of canvas?
-    - Top of canvas?
-    - bottom?
-      - Hit Paddle?
-      - Lose life
-      - Game Over?
-  - Move Ball
-  - Check for keyboard input
-  - Registers `draw()` to be called again when the screen refreshes. The program continues by repeating everything from Game Loop down.
+ - Clear canvas
+ - drawBricks()
+ - drawBall()
+ - drawPaddle()
+ - drawScore()
+ - drawLives()
+ - collisionDetection()
+ - Check ball position
+ - Left and right side of the canvas?
+ - Top of canvas?
+ - bottom?
+ - Hit Paddle?
+ - Lose life
+ - Game Over?
+ - Move Ball
+ - Check for keyboard input
+ - Registers `draw()` to be called again when the screen refreshes. The program continues by repeating everything from Game Loop down.
 
 <!-- > -->
 
@@ -154,16 +154,16 @@ Try these challenges to improve your understanding of the breakout code by impro
 Code works better and is easier to understand when it is organized.
 
 - Arrange your code into these areas: 
-  - constants 
-  - variables 
-  - functions 
-  - initialization code
+ - constants 
+ - variables 
+ - functions 
+ - initialization code
 
 Use comments to mark each of the areas above. 
 
 ### Challenge 2 - Make Constants
 
-Identify values that could be constants. These would be any value that you might want to change in future. Making it a constant and defining it at the top will make it easy to find and change in the future. 
+Identify values that could be constants. These would be any value that you might want to change in the future. Making it a constant and defining it at the top will make it easy to find and change in the future. 
 
 - color values are a good example. Move these into your constants section
 
@@ -180,7 +180,7 @@ What should you define as new constants? Anything that is a string, especially i
 Storing your code in functions is a best practice. The tutorial code does an okay job but doesn't go far enough, you can improve on this! 
 
 - Define an initialization function and move all of the initialization code here. 
-- You'll need to call your initialization function to intialize the game. 
+- You'll need to call your initialization function to initialize the game. 
 
 ### Challenge 4 - Define new functions 
 
@@ -201,9 +201,9 @@ The draw function currently does all of this:
   - Left and right side of canvas?
   - Top of canvas?
   - bottom?
-    - Hit Paddle?
-    - Lose life
-    - Game Over?
+  - Hit Paddle?
+  - Lose life
+  - Game Over?
 - Move Ball
 - Check for keyboard input
 - Registers `draw()` to be called again when the screen refreshes.
@@ -221,229 +221,33 @@ Your job is to extract code from the draw function and create some new functions
 
 Identify Duplicate code. Any time you are doing the same operation more than once you should make a function. This will avoid errors in the future and make it easier to make changes and find problems.
 
-- Look at the array where the bricks array is initialized. Each brick has an x and y of 0. Now look at the `drawBricks` function. Here the x and y of each brick is calculated each time the bricks are drawn. Your goal is to initialize bricks with the correct x and y. Now just use the x and y of each in `drawBricks`.
+- Look at the array where the bricks array is initialized. Each brick has an x and y of 0. Now, look at the `drawBricks` function. Here the x and y of each brick is calculated each time the bricks are drawn. Your goal is to initialize bricks with the correct x and y. Now just use the x and y of each in `drawBricks`.
 
 ### Challenge 6 - More Challenges 
 
 - Change the color of the game elements. Use a different color for the ball, paddle, bricks, and background. 
 - Colors the bricks so that each row is a different color
 - Make the ball change color each time it hits a brick
-- Change the number of rows and columns of bricks. For example make 4 rows or 6 columns of bricks. 
+- Change the number of rows and columns of bricks. For example, make 4 rows or 6 columns of bricks. 
 - Make bricks 
 
-<!-- > -->
+### Challenge 7 - Draw something on the background
 
-## loops 
+The game currently fills the canvas with a light gray then draws the game objects.
 
-The great thing about computers is they are happy to do things over and over again. A computer will always do something the same way each time. It's one of the reasons we use computers to do things! 
+your goal with this challenge is to draw something interesting on the background. do this by creating a function that draws the background, call this new function from at the top of the draw function. 
 
-- Where are loops used in Break Out?
-- How are the loops used?
+### More Challenges
 
-<!-- https://repl.it/classroom/invite/k0Yhr38 -->
-
-<!-- > -->
-
-## Arrays
-
-Arrays store collections of related data in a list with each element at an index. 
-
-- How are arrays used by Break Out?
-- What do the Arrays store?
-
-<!-- https://repl.it/classroom/invite/Z6pW6Gv -->
-
-<!-- > -->
-
-## Objects 
-
-Objects are collections of related data. Each value is stored at a key or label. 
-
-- Where are objects used? 
-- How are the Objects used? 
-- Why not use an array?
-
-<!-- https://repl.it/classroom/invite/STIb5DY -->
-
-<!-- > -->
-
-## Functions
-
-Functions store blocks of code that can be called and executed at any time as often as needed.
-
-- Where are functions used?
-- What is the general flow of code?
-- Why no parameters?
-
-<!-- > -->
-
-## Conditional Statements
-
-Conditional statements control the flow of your programs. They allow programs to make decisions. What kinds of decisions does the Break Out code make? 
-
-- Where are conditional statements used? 
-
-<!-- > -->
-
-## Name Space and Identifiers
-
-Identifiers are the names of you create that represent: variables, and functions.
-
-Scope sets the rules for where an identifier can be created and accessed. 
-
-The code needs some improvement. Currently, the game creates many identifiers in the global namespace. 
-
-- Is this a problem? 
-- What kinds of problems could this cause? 
-
-<!-- > -->
-
-## Scope
-
-Use an IIFE to organize your code. 
-
-- What is an IIFE?
-- What is scope? 
- - global
- - local
- - function
- - block
-
-<!-- > -->
-
-<!-- .slide: data-background="#087CB8" -->
-## BREAK
-
-Take a 10-minute break.
-
-<!-- > -->
-
-## Expanding the game
-
-How would you solve these problems? Discuss these with someone else in class. 
+How would you solve these problems? Discuss these with someone else in the class. 
 
 1. Each brick must display its own color?
 2. Each brick is worth different point values?
 3. The ball should move faster as the game progresses?
 4. The ball needs to start at a random angle?
-5. Imagine each time the bricks are cleared a new row of bricks is added?
+5. Imagine each time all the bricks are cleared a new row of bricks is added?
 6. Imagine bricks take more than one hit to remove? 
 7. One brick is special when hit it releases a second ball? 
-
-<!-- > -->
-
-### OOP
-
-Many of the problems above require the creation of new variables. This starts to make the game impossible to work with. 
-
-While you could use an array of values this would be hard to understand. 
-
-Object-Oriented Programming gives us style and tools to treat our code like Objects in the real world. Instead of creating new variables and functions to handle new elements and systems we would create new objects that embody those systems and elements. 
-
-<!-- > -->
-
-Objects on software are analogous to objects in the real world. 
-
-Discuss: Name some Objects that you use every day, name their properties, and methods?
-
-<!-- > -->
-
-#### This
-
-When code refers to Objects, their properties, and namespace there are opportunities to infer the which object you are referring to. 
-
-`this`
-
-The keyword `this` is used for that purpose. 
-
-<!-- > -->
-
-Here an object with x and dx properties also has a function move.
-
-```JS
-ball = {
- x: 100,
- dx: 2,
- move: function() {
- this.x += this.dx
- }
-}
-```
-
-Within the move function, the object can refer to its own properties using the `this` keyword.
-
-<!-- > -->
-
-# Challenges
-
-<!-- > -->
-
-**Challenge 1**
-
-Make an Object for the ball. It should have 4 properties: 
-
-- `x`
-- `y`
-- `dx`
-- `dy`
-
-<!-- > -->
-
-**Challenge 2**
-
-Give the ball object a move method. This method should calculate the new x and y position by adding the dx and dy. 
-
-- `move()`
-
-This function should add x + dx, and y + dy of the ball object. 
-
-<!-- > -->
-
-**Challenge 3**
-
-Use the ball object in your game.
-
-Find each of the variables: x, y, dx, dy replace these with ball.x, ball.y, ball.dx, ball.dy.
-
-<!-- > -->
-
-**Challenge 4**
-
-The game has created a lot of global variables it would be good if these were consolidated into a single namespace. Creating only a single object that groups all of these together.
-
-Create an object that owns all of the variables that were originally global. 
-
-<!-- > -->
-
-**Challenge 5** 
-
-Consolidate all of the functions into your game object.
-
-```JS 
-
-{
- bricks: [],
- canvas: document.getElementById("myCanvas"),
- ctx: canvas.getContext("2d"),
- ...
- drawBall: function() {
- ctx.beginPath(),
- ...
- },
- ...
-}
-
-```
-
-<!-- > -->
-
-**Challenge 6** 
-
-Create a function that draws something interesting on the background of the game.
-
-This functions needs to be useful outside of the game. You can make this possible by passing ctx and any other values needed into this function as parameters. 
-
-<!-- > -->
 
 ## Wrap Up (5 min)
 
@@ -529,14 +333,14 @@ const bricks = [];
 
 // *** This would be better in a function
 for (let c = 0; c < brickColumnCount; c += 1) {
-  bricks[c] = [];
-  for (let r = 0; r < brickRowCount; r += 1) {
-    bricks[c][r] = {
-      x: 0,
-      y: 0,
-      status: 1,
-    };
-  }
+ bricks[c] = [];
+ for (let r = 0; r < brickRowCount; r += 1) {
+ bricks[c][r] = {
+ x: 0,
+ y: 0,
+ status: 1,
+ };
+ }
 }
 
 // **************************************************************
@@ -544,73 +348,73 @@ for (let c = 0; c < brickColumnCount; c += 1) {
 // **************************************************************
 
 function drawBall() {
-  ctx.beginPath();
-  // * Math.PI * 2 could be a constant
-  ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
-  ctx.fillStyle = '#0095DD'; // * Could be good as a constant
-  ctx.fill();
-  ctx.closePath();
+ ctx.beginPath();
+ // * Math.PI * 2 could be a constant
+ ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+ ctx.fillStyle = '#0095DD'; // * Could be good as a constant
+ ctx.fill();
+ ctx.closePath();
 }
 
 function drawPaddle() {
-  ctx.beginPath();
-  ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
-  ctx.fillStyle = '#0095DD'; // * Could be good as a constant
-  ctx.fill();
-  ctx.closePath();
+ ctx.beginPath();
+ ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
+ ctx.fillStyle = '#0095DD'; // * Could be good as a constant
+ ctx.fill();
+ ctx.closePath();
 }
 
 function drawBricks() {
-  for (let c = 0; c < brickColumnCount; c += 1) {
-    for (let r = 0; r < brickRowCount; r += 1) {
-      if (bricks[c][r].status === 1) {
-        // **** This block should really be part of the brick initialization
-        const brickX = (c * (brickWidth + brickPadding)) + brickOffsetLeft;
-        const brickY = (r * (brickHeight + brickPadding)) + brickOffsetTop;
-        bricks[c][r].x = brickX;
-        bricks[c][r].y = brickY;
+ for (let c = 0; c < brickColumnCount; c += 1) {
+ for (let r = 0; r < brickRowCount; r += 1) {
+ if (bricks[c][r].status === 1) {
+ // **** This block should really be part of the brick initialization
+ const brickX = (c * (brickWidth + brickPadding)) + brickOffsetLeft;
+ const brickY = (r * (brickHeight + brickPadding)) + brickOffsetTop;
+ bricks[c][r].x = brickX;
+ bricks[c][r].y = brickY;
 
-        ctx.beginPath();
-        ctx.rect(brickX, brickY, brickWidth, brickHeight);
-        ctx.fillStyle = '#0095DD'; // * Could be good as a constant
-        ctx.fill();
-        ctx.closePath();
-      }
-    }
-  }
+ ctx.beginPath();
+ ctx.rect(brickX, brickY, brickWidth, brickHeight);
+ ctx.fillStyle = '#0095DD'; // * Could be good as a constant
+ ctx.fill();
+ ctx.closePath();
+ }
+ }
+ }
 }
 
 function collisionDetection() {
-  for (let c = 0; c < brickColumnCount; c += 1) {
-    for (let r = 0; r < brickRowCount; r += 1) {
-      const b = bricks[c][r];
-      if (b.status === 1) {
-        if (x > b.x && x < b.x + brickWidth && y > b.y && y < b.y + brickHeight) {
-          dy = -dy;
-          b.status = 0;
-          score += 1;
-          if (score === brickRowCount * brickColumnCount) {
-            // eslint-disable-next-line no-alert
-            alert('YOU WIN, CONGRATULATIONS!'); // * Could be good as a constant
-            document.location.reload();
-          }
-        }
-      }
-    }
-  }
+ for (let c = 0; c < brickColumnCount; c += 1) {
+ for (let r = 0; r < brickRowCount; r += 1) {
+ const b = bricks[c][r];
+ if (b.status === 1) {
+ if (x > b.x && x < b.x + brickWidth && y > b.y && y < b.y + brickHeight) {
+ dy = -dy;
+ b.status = 0;
+ score += 1;
+ if (score === brickRowCount * brickColumnCount) {
+ // eslint-disable-next-line no-alert
+ alert('YOU WIN, CONGRATULATIONS!'); // * Could be good as a constant
+ document.location.reload();
+ }
+ }
+ }
+ }
+ }
 }
 
 function drawScore() {
-  ctx.font = '16px Arial'; // * Could be good as a constant
-  ctx.fillStyle = '#0095DD'; // * Could be good as a constant
-  ctx.fillText(`Score: ${score}`, 8, 20);
+ ctx.font = '16px Arial'; // * Could be good as a constant
+ ctx.fillStyle = '#0095DD'; // * Could be good as a constant
+ ctx.fillText(`Score: ${score}`, 8, 20);
 }
 
 function drawLives() {
-  ctx.font = '16px Arial'; // * Could be good as a constant
-  ctx.fillStyle = '#0095DD'; // * Could be good as a constant
-  // * canvas.width might be better as a constants
-  ctx.fillText(`Lives: ${lives}`, canvas.width - 65, 20);
+ ctx.font = '16px Arial'; // * Could be good as a constant
+ ctx.fillStyle = '#0095DD'; // * Could be good as a constant
+ // * canvas.width might be better as a constants
+ ctx.fillText(`Lives: ${lives}`, canvas.width - 65, 20);
 }
 
 // --------------------------------------------------------------
@@ -618,69 +422,69 @@ function drawLives() {
 // --------------------------------------------------------------
 
 function draw() {
-  // Clear the canvas
-  // * canvas.width, and canvas.height might be better as constants 
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  // Call helper functions
-  drawBricks();
-  drawBall();
-  drawPaddle();
-  drawScore();
-  drawLives();
-  collisionDetection();
+ // Clear the canvas
+ // * canvas.width, and canvas.height might be better as constants 
+ ctx.clearRect(0, 0, canvas.width, canvas.height);
+ // Call helper functions
+ drawBricks();
+ drawBall();
+ drawPaddle();
+ drawScore();
+ drawLives();
+ collisionDetection();
 
-  // Bounce the ball off the left and right of the canvas
-  if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
-    dx = -dx;
-  }
+ // Bounce the ball off the left and right of the canvas
+ if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
+ dx = -dx;
+ }
 
-  // Bounce the ball off the top, paddle, or hit the bottom of the canvas
-  if (y + dy < ballRadius) {
-    // hit the top
-    dy = -dy;
-  } else if (y + dy > canvas.height - ballRadius) {
-    // hit the bottom
-    if (x > paddleX && x < paddleX + paddleWidth) {
-      // Hit the paddle
-      dy = -dy;
-    } else {
-      // Lose a life
-      lives -= 1;
-      if (!lives) {
-        // Game Over
-        // eslint-disable-next-line no-alert
-        alert('GAME OVER'); // * Could be good as a constant
-        x = 200;
-        y = 200;
-        document.location.reload();
-      } else {
-        // Start the over you hit the bottom
-        // ** Set the position of ball and paddle
-        // ** And set the speed and direction of the ball
-        x = canvas.width / 2;
-        y = canvas.height - 30;
-        dx = 2;
-        dy = -2;
-        paddleX = (canvas.width - paddleWidth) / 2;
-      }
-    }
-  }
+ // Bounce the ball off the top, paddle, or hit the bottom of the canvas
+ if (y + dy < ballRadius) {
+ // hit the top
+ dy = -dy;
+ } else if (y + dy > canvas.height - ballRadius) {
+ // hit the bottom
+ if (x > paddleX && x < paddleX + paddleWidth) {
+ // Hit the paddle
+ dy = -dy;
+ } else {
+ // Lose a life
+ lives -= 1;
+ if (!lives) {
+ // Game Over
+ // eslint-disable-next-line no-alert
+ alert('GAME OVER'); // * Could be good as a constant
+ x = 200;
+ y = 200;
+ document.location.reload();
+ } else {
+ // Start the over you hit the bottom
+ // ** Set the position of ball and paddle
+ // ** And set the speed and direction of the ball
+ x = canvas.width / 2;
+ y = canvas.height - 30;
+ dx = 2;
+ dy = -2;
+ paddleX = (canvas.width - paddleWidth) / 2;
+ }
+ }
+ }
 
-  // Move Ball
-  // *** Better as a separate function
-  x += dx;
-  y += dy;
+ // Move Ball
+ // *** Better as a separate function
+ x += dx;
+ y += dy;
 
-  // Check for arrow keys
-  // *** Better as a function
-  if (rightPressed && paddleX < canvas.width - paddleWidth) {
-    paddleX += 7;
-  } else if (leftPressed && paddleX > 0) {
-    paddleX -= 7;
-  }
+ // Check for arrow keys
+ // *** Better as a function
+ if (rightPressed && paddleX < canvas.width - paddleWidth) {
+ paddleX += 7;
+ } else if (leftPressed && paddleX > 0) {
+ paddleX -= 7;
+ }
 
-  // Draw the screen again
-  requestAnimationFrame(draw);
+ // Draw the screen again
+ requestAnimationFrame(draw);
 }
 
 // --------------------------------------------------------------
@@ -688,26 +492,26 @@ function draw() {
 // --------------------------------------------------------------
 
 function keyDownHandler(e) {
-  if (e.keyCode === 39) {
-    rightPressed = true;
-  } else if (e.keyCode === 37) {
-    leftPressed = true;
-  }
+ if (e.keyCode === 39) {
+ rightPressed = true;
+ } else if (e.keyCode === 37) {
+ leftPressed = true;
+ }
 }
 
 function keyUpHandler(e) {
-  if (e.keyCode === 39) {
-    rightPressed = false;
-  } else if (e.keyCode === 37) {
-    leftPressed = false;
-  }
+ if (e.keyCode === 39) {
+ rightPressed = false;
+ } else if (e.keyCode === 37) {
+ leftPressed = false;
+ }
 }
 
 function mouseMoveHandler(e) {
-  const relativeX = e.clientX - canvas.offsetLeft;
-  if (relativeX > 0 && relativeX < canvas.width) {
-    paddleX = relativeX - paddleWidth / 2;
-  }
+ const relativeX = e.clientX - canvas.offsetLeft;
+ if (relativeX > 0 && relativeX < canvas.width) {
+ paddleX = relativeX - paddleWidth / 2;
+ }
 }
 
 // **************************************************************
@@ -725,3 +529,4 @@ document.addEventListener('mousemove', mouseMoveHandler, false);
 
 draw();
 ```
+
