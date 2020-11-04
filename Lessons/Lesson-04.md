@@ -96,9 +96,18 @@ class Ball {
     this.x = 0;
     this.y = 0;
   }
+
   move() {
     this.x += this.dx
     this.y += this.dy
+  }
+
+  render(ctx) {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    ctx.fillStyle = this.color;
+    ctx.fill();
+    ctx.closePath();
   }
 }
 ```
@@ -141,7 +150,7 @@ These objects should have a `render()` method.
 ```JS 
 class Ball {
   ...
-  render() {
+  render(ctx) {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
     ctx.fillStyle = this.color;
@@ -151,11 +160,15 @@ class Ball {
 }
 ```
 
+**Important**: The render method should take the canvas context as a parameter. 
+
 <!-- > -->
 
 ### What about this global references?
 
-These are not scalable, create code that is not portable, and invite errors. `ctx` is a global reference.
+The canvas context `ctx` is a global variable in the original code. To reference a global variable in a class is bad practice. Imagine you needed to change the name of that variable, you'd have to make lots changes. What if you wanted to use this class in another project, that project would have to define a variable with the same name. 
+
+A better way to handle this is to pass the *dependancy* into the class as a parameter. 
 
 ```JS 
 ...
@@ -163,7 +176,7 @@ const ctx = canvas.getContext('2d')
 
 class Ball {
   ...
-  render() {
+  render(ctx) { // pass ctx here! 
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
     ctx.fillStyle = this.color;
@@ -177,7 +190,7 @@ class Ball {
 
 ### Dependency Injection
 
-Use dependency injection to pass these this dependency to the render method. 
+Call this: *dependency injection* 
 
 ```JS 
 ...
@@ -246,12 +259,12 @@ Grouping related variables together in an object will organize and encapsulate t
 
 ```JavaScript
 const ball = {
- x: 240, 
- y: 290, 
- radius: 10, 
- dx: -2,
- dy: -2, 
- color: '#0095DD'
+  x: 240, 
+  y: 290, 
+  radius: 10, 
+  dx: -2,
+  dy: -2, 
+  color: '#0095DD'
 }
 ```
 
@@ -289,12 +302,12 @@ For example the `drawBall()` function becomes:
 
 ```JS
 const drawBall = () => {
- ctx.beginPath();
- // Notice the changes here
- ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
- ctx.fillStyle = ball.color;
- ctx.fill();
- ctx.closePath();
+  ctx.beginPath();
+  // Notice the changes here
+  ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
+  ctx.fillStyle = ball.color;
+  ctx.fill();
+  ctx.closePath();
 }
 ```
 
@@ -413,17 +426,17 @@ We've removed a lot of global variables and grouped properties into objects. The
 Many of the game objects need to draw themselves. To do this, they need access to the canvas rendering context. This is a _dependency_. These classes should NOT rely on a global variable! The solution is to inject the _dependency_. 
 
 ```JavaScript
- class Ball {
- constructor(radius, color = "#0095DD") {
- this.radius = radius;
- this.color = color;
- this.x = 0;
- this.y = 0;
- }
+class Ball {
+  constructor(radius, color = "#0095DD") {
+    this.radius = radius;
+    this.color = color;
+    this.x = 0;
+    this.y = 0;
+  }
  
- render(ctx) {
- ...
- }
+  render(ctx) {
+    ...
+  }
 }
 ```
 
@@ -443,18 +456,18 @@ Revisit the `Ball` class. In the code snippet below I've added a `render()` meth
 
 ```JavaScript
  class Ball {
- constructor(radius, color = "#0095DD") {
- this.radius = radius;
- this.color = color;
- }
+  constructor(radius, color = "#0095DD") {
+    this.radius = radius;
+    this.color = color;
+  }
 
- render(ctx) {
- ctx.beginPath();
- ctx.arc(x, y, this.radius, 0, Math.PI * 2);
- ctx.fillStyle = this.color;
- ctx.fill();
- ctx.closePath();
- }
+  render(ctx) {
+    ctx.beginPath();
+    ctx.arc(x, y, this.radius, 0, Math.PI * 2);
+    ctx.fillStyle = this.color;
+    ctx.fill();
+    ctx.closePath();
+  }
 }
 ``` 
 
