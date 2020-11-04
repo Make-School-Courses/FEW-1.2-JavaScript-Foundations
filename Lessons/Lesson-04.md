@@ -394,7 +394,6 @@ console.log( ball.x ) // 100
 - **method** - a function stored in a class 
     - `move()`
 
-
 <!-- > -->
 
 ### Classes
@@ -479,14 +478,12 @@ This is a Dependency Injection at work! Overall this is a very nice Class packag
 
 <!-- > -->
 
-## Wrap Up 
+## After Class 
 
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+- [Assignment 3 OOP](../Assignments/Assignment-3-OOP.md)
 
 <!-- > -->
 
 ## Additional Resources
 
-1. Links to additional readings and videos
+1. Video Playlist walking through the entire assignment: https://www.youtube.com/playlist?list=PLoN_ejT35AEiSYr-OhYV-C6uWZgPLBMZM
