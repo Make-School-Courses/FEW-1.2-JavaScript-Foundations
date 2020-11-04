@@ -3,7 +3,7 @@
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](/Syllabus-Template/Slides/Lesson1.html ':ignore')
+➡️ [**Slides**](https://docs.google.com/presentation/d/1nheTZgY5fXrCbiw9hst0XGkr_fpnlAq44y7o5GrYvS4/edit?usp=sharing)
 
 <!-- > -->
 
