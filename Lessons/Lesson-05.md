@@ -115,6 +115,7 @@ class Sprite {
     this.y = 0
   }
 }
+
 class Ball extends Sprite {
   constructor(x, y, color, radius) {
     super(x, y) // Must pass parameters to super!
@@ -128,7 +129,7 @@ const ball = new Ball(10, 20, 'red', 30)
 
 <!-- > -->
 
-You must pass parameters to super. Notice the constructor takes these parameters, calling super is like calling the constructor of the superclass. 
+You must pass parameters to super. Notice the constructor takes these parameters, **calling super is like calling the constructor of the superclass.**
 
 <!-- > -->
 
@@ -222,7 +223,7 @@ All of these classes should extend the new `Sprite` class.
 
 <!-- > -->
 
-**Challenge 2**: Some of the classes draw themselves with the same code. 
+**Challenge 2**: Some of the classes draw themselves with the same code.
 
 - `Paddle`
 - `Brick`
@@ -284,6 +285,8 @@ class Ball extends Sprite {
   }
 }
 ```
+
+Here you could say that Ball extends Sprite and overrides the render method of it's super class. Ball is the class, Sprite is the super class. 
 
 <!-- > -->
 
