@@ -70,13 +70,11 @@ By the end of the course will be able to:
 - Assignment 3 Final Project - Assignment 7
 
 ## Evaluation
-
 To pass this course you must meet the following requirements:
 
-- Complete all required assignments 
-- Pass the final project
+- Pass 70% projects according to the associated project rubric
 - Pass the final summative assessment according to the rubric as specified in this class
-    - This will be further explained in the [study guide](ADD_STUDY_GUIDE_LNK)
+    - This will be further explained in the [study guide](study-guide.md)
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
 
