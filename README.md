@@ -65,15 +65,15 @@ By the end of the course will be able to:
 
 ### Projects
 
-- Assignment 1 Break Out - Assignments 1-5
-- Assignment 2 Single Page Application Tutorial - Assignment 6
-- Assignment 3 Final Project - Assignment 7
+- Project 1 - Break Out - Assignments 1-5
+- Project 2 - Single Page Application Tutorial - Assignment 6
+- Project 3 - Final Project - Assignment 7
 
 ## Evaluation
 
 To pass this course you must meet the following requirements:
 
-- Achieve a passing score according to the rubric on each of the three assignments.
+- Achieve a passing score according to the rubric on each of the three [projects](#projects).
 
 ##  Information Resources
 
