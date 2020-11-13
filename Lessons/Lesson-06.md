@@ -88,6 +88,21 @@ Bundling processes your sources file and produces new files.
 
 reduces file size by removing unnecessary characters: 
 
+```JS
+function hello(str) {
+	if (str === 'foo') {
+		return 'bar'
+	}
+	return 'foo'
+}
+```
+
+Becomes: 
+
+```JS 
+function hello(str){if(str==='foo'){return 'bar'}return'foo'}
+```
+
 <!-- > -->
 
 - **uglify** - 🙀
@@ -267,16 +282,16 @@ The webpack.config.js file configures webpack, it is written in JavaScript.
 
 Copy the code below and paste it into your webpack.config.js. 
 
-```
-const path = require('path')
+```JS
+const path = require('path');
 
 module.exports = {
- entry: './src/index.js',
- output: {
- filename: 'bundle.js',
- path: path.resolve(__dirname, 'dist')
- }
-}
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+};
 ```
 
 <!-- > -->
@@ -289,6 +304,16 @@ Examine the config file discuss it with another student. What do you think it wi
 - output 
  - filename - create a file named bundle.js
  - path - put bundle.js in the dist/ folder 
+
+<!-- > -->
+
+You need to change the name here (`index.js`) to the name of the JS file that you link to in your inde.html!
+
+```JS
+...
+entry: './src/index.js',
+...
+```
 
 <!-- > -->
 

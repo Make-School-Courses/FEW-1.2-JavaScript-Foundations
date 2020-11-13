@@ -1,8 +1,8 @@
 # FEW 1.2 - Foundation JavaScript
 
-| Course Section | Instructor | Slack Channel | Course Website | Instructor 1-on-1 | Tracker |
+| Course Section | Instructor | Slack Channel | Course Website | Instructor 1-on-1 |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| A | **@mitchell** | `#few-1_2` | [make.sc/few1.2](https://make.sc/few1.2) | [Virtual Office](https://make.sc/mitchell-zoom) | [Tracker](https://docs.google.com/spreadsheets/d/1t88XMzn6LieVWLkR4KBi7_XHW-4-YxxxjviY16MJq1c/edit?usp=sharing) |
+| A | **@mitchell** | `#few-1_2` | [make.sc/few1.2](https://make.sc/few1.2) | [Virtual Office](https://make.sc/mitchell-zoom) |
 
 ## Course Description
 

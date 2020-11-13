@@ -294,3 +294,41 @@ Use this rubric to assess how your understanding of the learning objectives. You
 |:-------------|:--------------|:-----|:---------|
 | **OOP theory** | Can't explain the OOP in JS | Can explain OOP in JS | Can provide use cases and hypothetical examples for OOP in JS |
 | **OOP Practice** | Can't create classes and sub classes without the documentation | Can create classes and sub classes without the documentation | Can use `super()` to call methods ont he super class, or override those methods when needed |
+
+
+```JS
+// Define an Object
+const ball = { x: 23, y: 112, radius: 10, color: 'red' }
+// Access properties
+const paddle = { x: 23, y: 112, color: 'blue', minX: 0, maxX: 400 }
+const brick = { x: 23, y: 112, color: 'orange', status: 1 }
+
+class Sprite {
+  constructor(x, y, color) {
+    this.x = x
+    this.y = y
+    this.color = color
+  }
+
+  moveTo(x, y) {
+    this.x = x
+    this.y = y
+  }
+}
+
+const sprite = new Sprite(123, 234, 'fuchsia')
+{x:12, y:23, color: 'fuchsia'}
+
+class Ball extends Sprite {
+  constructor(x, y, color, radius) {
+    super(x, y, color)
+    this.radius = radius
+  }
+}
+
+const ball = new Ball(12, 23, 'orange', 10)
+ball.moveTo(55,77)
+
+{x: 1, y: 3, color: 'green'}
+{x:40, y: 34, color: 'red', radius: 10}
+```
