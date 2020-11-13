@@ -28,7 +28,7 @@ Include the visual desing in your wireframe. Style the elements as you envision 
 ## Assess your work
 
 | expectations | Does not meet (0) | Meets (1) | Exceeds (2) |
-|:--------------|:---------------------------|:-------------------------|:---------------------|
+|:-------------|:------------------|:----------|:------------|
 | **Completed** | Your project is not defined | You have a good idea of what it is you will create. | Your project is clearly defined and you have thought about all possible edge cases. |
 | **Wireframes** | Have not created wireframes | Created wireframes | Also created a visual design for the project |
 | **Read and repo** | Did not create a read and or repo | Cretaed a Read me and repo for the project. The readme describes the project and it's goals and uses. | The readme includes a clear road map of what needs to be done and extra features and expansions that might be included |
