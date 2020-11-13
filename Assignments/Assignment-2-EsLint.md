@@ -42,11 +42,9 @@ Pay close attention to these. They are effected by hoisting. A function or var d
 
 ### Deliverable
 
-A link to the branch of your repo with the code changes used to solve the challenges in this assignment. 
+### Deliverable
 
-### Due date
-
-Tue, January 28
+Submit your work on [GradeScope](https://www.gradescope.com/courses/202953).
 
 ## Assessing the assignment
 

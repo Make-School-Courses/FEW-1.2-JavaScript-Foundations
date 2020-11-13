@@ -19,13 +19,7 @@ The first stage is to define the project. Then create a wireframe.
 
 ### Deliverable
 
-A github repo with a readme describing the project you are going to make.
-
-Include wireframe images describing what the project will look like. Your wire frames should also include names given to each of the components you envision creating. While the components might change as you work it's good to visualize what you need before hand.
-
-### Due date
-
-Class 10 - Thu, February 20
+Submit your work on [GradeScope](https://www.gradescope.com/courses/202953). 
 
 ## Stretch Challenges 
 

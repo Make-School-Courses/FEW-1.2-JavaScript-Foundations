@@ -20,14 +20,7 @@ https://github.com/MakeSchool-Tutorials/React-Fundamentals
 
 ### Deliverable
 
-A GitHub repo with your completed tutorial. 
-
-### Due date
-
-
-
-## Stretch Challenges 
-
+Submit your work on [GradeScope](https://www.gradescope.com/courses/202953). 
 
 ## Assess your work
 

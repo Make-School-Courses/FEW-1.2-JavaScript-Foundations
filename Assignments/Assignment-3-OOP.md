@@ -145,6 +145,10 @@ This OOP thing is fun! I can tell you want more! Here are a few more things you 
 
 **Solution**: There are a few ways to handle this. A step up from the current system would be to consider the ball as a rectangle with 4 points, one at each corner. Your code check each corner to find if it is within the rectangle of a brick or the paddle. 
 
+### Deliverable
+
+Submit your work on [GradeScope](https://www.gradescope.com/courses/202953). 
+
 ## Assess your work
 
 | expectations | Does not meet (0) | Meets (1) | Exceeds (2) |

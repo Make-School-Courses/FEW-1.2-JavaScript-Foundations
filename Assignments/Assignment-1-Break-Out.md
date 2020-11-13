@@ -30,11 +30,7 @@ Follow these steps:
 
 ### Deliverable
 
-Link to your GitHub Repo in the progress tracker.
-
-### Due date
-
-Before Thu, January 23 - Class 2
+Submit your work on [GradeScope](https://www.gradescope.com/courses/202953). 
 
 ## Assessing the assignment
 

@@ -35,11 +35,7 @@ Create a Readme that documents your work process from start to finish. Describe 
 
 ### Deliverable
 
-A link to the branch of your repo with the code changes.
-
-### Due date
-
-Class 7 - Thu, February 11
+Submit your work on [GradeScope](https://www.gradescope.com/courses/202953). 
 
 ## Assessing the assignment
 

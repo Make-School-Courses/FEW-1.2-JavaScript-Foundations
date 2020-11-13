@@ -270,11 +270,7 @@ If you're looping over
 
 ### Deliverable
 
-Your GitHub repo with these changes committed and pushed.
-
-### Due date
-
-Class 5 - Thu, April 16
+Submit your work on [GradeScope](https://www.gradescope.com/courses/202953). 
 
 ## Assessing the assignment
 
