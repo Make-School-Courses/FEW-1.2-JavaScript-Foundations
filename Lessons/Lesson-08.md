@@ -3,7 +3,7 @@
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](/Syllabus-Template/Slides/Lesson1.html ':ignore')
+<!-- ➡️ [**Slides**](/Syllabus-Template/Slides/Lesson1.html ':ignore') -->
 
 <!-- > -->
 
@@ -63,23 +63,21 @@ Discuss: the virtual DOM
 
 <!-- v -->
 
-## Important things you should know about the Virtual DOM
+### Important things you should know about the Virtual DOM
 
 - It's a React thing, it's not part of the default JS API
-- You shouldn't: 
- - use jQuery or other non-react JS libs with React
- - manipulate DOM elements directly, for example: 
- - getElementById() is not reliable since elements might be added and removed by the virtual DOM system
- - innerHTML is not reliable since the virtual DOM system will not be aware of your changes and overwrite them
- - etc.
+- Do not use jQuery or other non-react JS libs with React
+- Do not manipulate DOM elements directly, for example: 
+  - `getElementById()` is not reliable since elements might be added and removed by the virtual DOM system
+  - `innerHTML` is not reliable since the virtual DOM system will not be aware of your changes and overwrite them
 
 How do you get around this? 
 
-**Make all of your changes via components within React's systems**
+**Make all of your changes within React components**
 
 There are a couple of special cases that need to be looked at closely. We will be covering these later. 
 
-- Forms and inputs - if the virtual DOM replaces input you'd lose what was typed into that input. There is a special pattern for this. 
+- Forms and inputs - if the virtual DOM replaces input you'd lose what was typed into that input. There is a special pattern for this. You also need values entered into inputs and don't have a reliable reference to these elements.
 - Animation - animation of components can have problems when the virtual DOM updates. You can use a ref or a React specific animation lib. 
 - Canvas - if the virtual DOM was to update your canvas you'd lose anything that was drawn on the canvas. React has a special feature called a ref which prevents virtual DOM from updating a referenced node. 
 
@@ -87,50 +85,36 @@ There are a couple of special cases that need to be looked at closely. We will b
 
 # React Collections
 
-Collections groups of things you keep together. In programming terms, a collection is an array, an object, or a dictionary. 
+Collections are groups of things you keep together. In life collections are things like books, and movies, stuffed animals, Legos, or Star Wars mini figures. In programming terms, a collection is an array, an object, or a dictionary. 
 
 React is a library for building user interfaces. Often user interfaces are made up of collections. Give me some examples of situations where you have used an Array of Objects to display elements in a user interface? 
 
-<!-- > -->
-
 What kind of code did you write to use an array to display something on the screen? 
 
-<!-- > -->
+You might show a list of products in a shopping cart, an array of images in a slide show, create a list of users, or posts, or comments. The possibilities are endless.
 
-You probably used a loop. Loops are common an allow us to display none or many things. Or perform none, one, or many actions. 
-
-You might show a list of products in a shopping cart, an array of images in a slide show, create a list of users, or posts, or comments. The possibilities are endless. 
-
-When you have an Array and you want to look at each item in the array you have used a loop. 
-
-<!-- > -->
-
-React handles collections in an elegant way. If React sees an Array of JSX elements it will automatically display them all no need for a loop. What would this look like? 
+React handles collections in an elegant way. If React sees an Array of JSX elements it will automatically display them all, no need for you to write a loop. What would this look like? 
 
 ```JS
+// An array of components
 const headings = [
-  <Heading str='Hello World' />,
-  <Heading str='Foo Bar' />,
-  <Heading str='Foo World' />,
-  <Heading str='Hello Bar' />,
-  <Heading str='Hello foo' />,
-  <Heading str='Foo Hello' />
+  <Heading str='Apples' />,
+  <Heading str='Bananas' />,
+  <Heading str='Currants' />,
+  <Heading str='Durian' />,
+  <Heading str='Elderberry' />
 ]
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {headings}
+        {headings} {/* headings is an array and we don't need a loop! */}
       </header>
     </div>
   );
 }
 ```
-
-Hey, there's no loop! 
-
-Where would the loop have been here?
 
 ## Keys 
 
@@ -148,14 +132,12 @@ Add a key by giving each element a unique key prop. The value can be anything yo
 
 ```JS
 const headings = [
-  <Heading key='Hello World' str='Hello World' />,
-  <Heading key='Foo Bar' str='Foo Bar' />,
-  <Heading key='Foo World' str='Foo World' />,
-  <Heading key='Hello Bar' str='Hello Bar' />,
-  <Heading key='Hello foo' str='Hello foo' />,
-  <Heading key='Foo Hello' str='Foo Hello' />
+  <Heading key="Apples" str='Apples' />,
+  <Heading key="Bananas" str='Bananas' />,
+  <Heading key="Currants" str='Currants' />,
+  <Heading key="Durian" str='Durian' />,
+  <Heading key="Elderberry" str='Elderberry' />
 ]
-
 ...
 ```
 

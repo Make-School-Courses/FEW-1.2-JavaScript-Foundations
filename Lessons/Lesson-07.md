@@ -3,7 +3,7 @@
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](/Syllabus-Template/Slides/Lesson1.html ':ignore')
+<!-- ➡️ [**Slides**](/Syllabus-Template/Slides/Lesson1.html ':ignore') -->
 
 <!-- > -->
 
@@ -35,6 +35,8 @@ By the end of the class you should be able to:
 1. Describe Single Page Applications
 1. Create your Single Page Application
 1. Use React and `Create React App` to create a single page application
+1. Use JSX to define UI
+1. Create components with JS
 
 <!-- > -->
 
@@ -52,7 +54,7 @@ Discuss.
 
 <!-- > -->
 
-Single Page Applications are web pages that act like multipage static sites but are built on top of a single HTML file. **These pages don't load or reload new HTML files. Instead, they rewrite the content of the existing HTML page to show new content.**
+Single Page Applications are web pages that act like multipage static sites but are built from a single HTML file. **These pages don't load or reload new HTML files. Instead, they rewrite the content of the existing HTML page to show new content.**
 
 Read this: 
 
@@ -282,7 +284,7 @@ Take a 10 minute break and visualize the workd as components.
 
 # Lab
 
-Work through the React Fundamentals tutorial. 
+Work through the React Fundamentals tutorial.
 
 https://github.com/MakeSchool-Tutorials/React-Fundamentals
 
