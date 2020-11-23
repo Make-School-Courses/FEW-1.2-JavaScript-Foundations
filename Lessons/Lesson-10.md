@@ -1,9 +1,9 @@
 <!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
-# FEW 1.2 - Lesson 10
+# FEW 1.2 - Lesson 11 - Forms and User inputs
 
 <!-- Put a link to the slides so that students can find them -->
 
-➡️ [**Slides**](/Syllabus-Template/Slides/Lesson1.html ':ignore')
+<!-- ➡️ [**Slides**](/Syllabus-Template/Slides/Lesson1.html ':ignore') -->
 
 <!-- > -->
 
@@ -11,8 +11,8 @@
 
 | **Elapsed** | **Time** | **Activity** |
 | ----------- | -------- | ------------ |
-| 0:00 | 0:05 | [Learning Objectives](#learning-objectives) |
-| 0:05 | 0:15 | [Why you should know this](#why-you-should-know-this)] |
+| 0:00 | 0:05 | [Why you should know this](#why-you-should-know-this) |
+| 0:05 | 0:15 | [Learning Objectives](#learning-objectives) |
 | 0:20 | 0:30 | In Class Activity I |
 | 0:50 | 0:10 | BREAK |
 | 1:00 | 0:45 | In Class Activity II |
@@ -20,235 +20,145 @@
 
 <!-- > -->
 
-## Why you should know this?
+## Why you should know this
 
-**State** is a key part of components. To fully understand React you have to undestand props and state. 
+Reviewing your work is important to improving it.
 
 <!-- > -->
 
 ## Learning Objectives
 
-1. Describe State
-1. Compare Props and State
-1. Use State in components
+1. Identify areas for improvement in your work
+1. Develop strategies to complete final project
+1. Using State with React
 
 <!-- > -->
 
-## Class Based components 
+## Review Your Work
 
-Components can also be written/Created from a class. In the previouse examples you used functions to make components. 
+Pair up and review projects show your work. Walk through all of the features you have implemented.
 
-```JSX
-import React, { Component } from 'react'
+Make a list of Everything you need to complete to show your work in class on Tue, March 3.
 
-class Clicker extends Component {
-  constructor(props) {
-    super(props)
-    ...
-  }
-  render() {
-    return (
-      <div>
-        <h1>0</h1>
-        <button>Click</button>
-      </div>
-    )
-  }
-}
+Identify the three most important things on your list that need to get done.
+
+Identify one or more items on the list that you can accomplish in class today during lab time.
+
+<!-- > -->
+
+# React and Forms
+
+When using forms and inputs React has a special pattern. 
+
+https://reactjs.org/docs/forms.html
+
+<!-- > -->
+
+The controlled component pattern uses state to hold the value of an input. 
+
+You should try it for yourself with these challenges. 
+
+## Using Input with React
+
+When using input fields/form elements with React you'll use a special pattern called the controlled component pattern. 
+
+https://reactjs.org/docs/forms.html
+
+The idea is that the value you enter into a form element is stored in state and it's that value that is displayed by the form element. 
+
+Imagine the input below takes in a person's name. Imagine this is defined a component with state defined as `{ name: '' }`.
+
+```JS 
+<input 
+  type="text"
+  value={this.state.name}
+  onChange={(e) => this.setState({ name: e.target.value })}
+/>
 ```
 
-<!-- > -->
+This might seem a little strange or circular. Here is the process. 
 
-Class based components: 
+- You enter a character in the field
+- onChange fires
+- Call set state and change state to the new value in the field
+- set the value of the input to the new value on state
 
-- Written as a class
-- Must Extend React.Component
-- Must include a render method 
-- Must pass props to super
-
-Pick these things out of the code sample above.
-
-<!-- > -->
-
-## Why use a Class based Component? 
-
-Class based components have access to `state`. State is an important part of components. 
-
-Props are values that are injected into a component from outside and cause a component to render when they are updated. 
-
-State is a value held internally by a component. When state changes the component renders. 
-
-<!-- > -->
-
-### Defining state 
-
-Define state in the constructor. State is always an object. 
-
-```JSX
-import React, { Component } from 'react'
-class Clicker extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { count: 0 }
-  }
-  ...
-}
-```
-
-<!-- > -->
-
-- State is always an object
-- State is always an instance property on this
-- Values are stored as properties
-
-<!-- > -->
-
-### Changing State
-
-You **must** change state by calling `this.setState()` with the new value for state. 
-
-```JSX
-import React, { Component } from 'react'
-class Clicker extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { count: 0 }
-  }
-
-  increment() {
-    this.setState({ count: this.state.count + 1 })
-  }
-
-  render() {
-    ...
-  }
-}
-```
-
-<!-- > -->
-
-- You should always change state by calling `this.setState()`
-- With the new value of state `this.setState({ value: newValue })`
-- Always access state with `this.state.someProperty`
-
-<!-- > -->
-
-### Handling Click events
-
-Adding events in React is done through props. In vanilla JS you might add an event listener: 
+Here is the whole component. 
 
 ```JS
-button.addEventListener('click', (e) => { ... })
-```
-
-This same type of event would be created in React like this: 
-
-```JSX
-<button onClick={(e) => { ... }}>Click</button>
-```
-
-<!-- > -->
-
-```JSX
-import React, { Component } from 'react'
-class Clicker extends Component {
+class FormThing {
   constructor(props) {
     super(props)
-
-    this.state = { count: 0 }
-  }
-
-  increment() {
-    this.setState({ count: this.state.count + 1 })
+    this.state = { name: '' }
   }
 
   render() {
-    return (
-      <div>
-        <h1>0</h1>
-        <button onClick={(e) => {
-          this.increment()
-        }}>Click</button>
-      </div>
-    )
+    <form>
+      <input 
+        type="text"
+        value={this.state.name}
+        onChange={(e) => this.setState({ name: e.target.value })}
+      />
+    </form>
   }
 }
 ```
 
 <!-- > -->
-
-- Events receive an event object
-- Arrow functions are good here
-
-<!-- > -->
-
-## Lab
-
-Try these challenges during lab: 
 
 ### Challenge 1
 
-Create a counter component. It should have a button that increases the count and display the count. Each time you click the displayed count should update and show the new value. 
+Use the Controlled Component pattern. The goal of this challenge is to create a component with an input field and an H1. As you enter text in the input the H1 should display the same text
 
-Use state to track the count. 
+- Make a React Project
+- Make a New Component with an input
+- Use Conotrolled Component pattern to store the input value on state
+- Display the value of state in the H1. 
+
+<!-- > -->
 
 ### Challenge 2
 
-Make an instance of your counter in the root component App. test it and make sure it's working. 
+Make the a tip calculator. Google Tip Calculator and use the Google tip calculator as a model.
 
-### Challenge 3 
+You'll use the controlled component pattern for the tip calculator inputs. This should store the bill, tip%, and split vlaues on state. In the render method calculate the tip amount from the values in state and display it. 
 
-Make three instances of the Counter Component in the root component. Test these. They should each track a separate value. 
+- You'll need inputs for: 
+  - Bill
+  - Tip %
+  - Split (number of ways to split the bill)
+- Dipslay: 
+  - Tip amount
+  - The bill total 
+  - Per person amount
+- These values should update as you change the values
 
-This is state. Each component can keep their own state. State is held inside each component that defines it. 
+### Stretch Challenges
 
-### Challenge 4
+If you've got the tip calculator working try these stretch goals. 
 
-Modify the counter component so that it can count in any increment. For example each click adds 1, 3, or 5. Then **make three counters using the same component**. The first counter shouls count in 1, the second by 3, and the third by 50!
-
-You'll be making a single counter component. Then making three instances of this component. 
-
-To make this work you'll be passing the step amount (the amount to add with each click) to each instance of the component as a prop. For example: 
-
-```js
-<Counter step={1} />
-<Counter step={3} />
-<Counter step={50} />
-```
-
-### Challenge 5
-
-Add some styles to your component. 
-
-### Challenge 6
-
-You want to show the total count of all counters. To do this you'll need to **move state out of the counters** and into the parent component! 
-
-This is called lifting state. Lifting state is the idea of moving state out of a child and into the parent. You can think of components as a tree.
-
-The Counter parent component will need to define state which is passes down to each of Counter components which are it's children.
-
-Do this by defining state in the parent and passing the value to the children. 
-
-To handle clicks you'll need those clicks to execute in the parent. To do this pass the click handler down to the child components with a prop. 
-
-<!-- > -->
+- Use CSS to style the tip calculator
+- Format the Bill with a decimal
+- Create an input for the tip amount that calculates the tip percent
 
 <!-- .slide: data-background="#087CB8" -->
 ## [**10m**] BREAK
 
-Take a break. 
+<!-- > -->
+
+# Topic 2
 
 <!-- > -->
 
 ## Wrap Up (5 min)
 
-- Review State
-- Compare Props and State
-- Update tracker and answer questions about homework
+- Continue working on your current tutorial
+- Complete reading
+- Complete challenges
 
 <!-- > -->
 
 ## Additional Resources
 
-1. https://reactjs.org/docs/faq-state.html
+1. Links to additional readings and videos
+
