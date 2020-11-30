@@ -30,7 +30,6 @@
 
 1. Describe State
 1. Compare and contrast state and props
-1. Compare Props and State
 1. Use State in components
 
 <!-- > -->

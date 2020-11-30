@@ -7,30 +7,17 @@
 
 <!-- > -->
 
-## Minute-by-Minute
-
-| **Elapsed** | **Time** | **Activity** |
-| ----------- | -------- | ------------ |
-| 0:00 | 0:05 | [Why you should know this](#why-you-should-know-this) |
-| 0:05 | 0:15 | [Learning Objectives](#learning-objectives) |
-| 0:20 | 0:30 | In Class Activity I |
-| 0:50 | 0:10 | BREAK |
-| 1:00 | 0:45 | In Class Activity II |
-| 1:45 | 0:05 | Wrap up review objectives |
-
-<!-- > -->
-
 ## Why you should know this
 
-Reviewing your work is important to improving it.
+Collecting user data is crucial to many apps you will create. React is a library for creating user interfaces and creating interfaces for forms is an art in itself. React handles forms a little differently from how you have handled forms in other systems. 
 
 <!-- > -->
 
 ## Learning Objectives
 
-1. Identify areas for improvement in your work
-1. Develop strategies to complete final project
-1. Using State with React
+1. Use State to manage form input
+1. Implement the controlled component patern
+1. Create forms using components
 
 <!-- > -->
 
@@ -48,7 +35,7 @@ Identify one or more items on the list that you can accomplish in class today du
 
 # React and Forms
 
-When using forms and inputs React has a special pattern. 
+When using forms and inputs React has a special pattern.
 
 https://reactjs.org/docs/forms.html
 
@@ -102,6 +89,42 @@ class FormThing {
     </form>
   }
 }
+```
+
+### Hooks 
+
+Hooks are a new way to handle state with a function based component. 
+
+```JS
+import react, { useState } from 'react'
+
+function FormThing() {
+ const [name, setName] = useState('')
+
+  return (
+    <form>
+      <input 
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value )}
+      />
+    </form>
+  )
+}
+```
+
+Here state is defined with `setState` which returns a value of state and a function used to change or set a new value for state. 
+
+```js
+const [name, setName] = useState('hello')
+```
+
+Here `name` is a value and `setName` is a  function used to change the value of `name`. Call `useState()` with the default value. Here name would have a default value of `hello`.
+
+To change state call the setter function with the new value: 
+
+```JS
+setName('Foo Bar')
 ```
 
 <!-- > -->
@@ -162,3 +185,15 @@ If you've got the tip calculator working try these stretch goals.
 
 1. Links to additional readings and videos
 
+<!-- > -->
+
+<!-- ## Minute-by-Minute
+
+| **Elapsed** | **Time** | **Activity** |
+| ----------- | -------- | ------------ |
+| 0:00 | 0:05 | [Why you should know this](#why-you-should-know-this) |
+| 0:05 | 0:15 | [Learning Objectives](#learning-objectives) |
+| 0:20 | 0:30 | In Class Activity I |
+| 0:50 | 0:10 | BREAK |
+| 1:00 | 0:45 | In Class Activity II |
+| 1:45 | 0:05 | Wrap up review objectives | -->
