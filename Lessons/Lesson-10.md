@@ -126,6 +126,7 @@ To change state call the setter function with the new value:
 ```JS
 setName('Foo Bar')
 ```
+ With Hooks you'll use always change state by calling your setter. When changing state the component will render again and update it's view. Calling the setter function has the same effect as calling `this.setState()` in class based component. 
 
 <!-- > -->
 
