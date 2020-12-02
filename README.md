@@ -54,11 +54,11 @@ By the end of the course will be able to:
 |  6 |  Wed, Nov 11  | [Bundling JS](Lessons/Lesson-06.md) | [Break out: Bundling JavaScript](Assignments/Assignment-5-bundling.md) |
 |  7 |  Mon, Nov 16  | [Single Page Applications](Lessons/Lesson-07.md) | [React: Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) |
 |  8 |  Wed, Nov 18  | [Component Architecture](Lessons/Lesson-08.md) | [Final Project: Getting started](./Assignments/Assignment-7-fina-project.md) |
-|  9 |  Mon, Nov 23  | [Styling Components](Lessons/Lesson-09.md) | - |
+|  9 |  Mon, Nov 23  | [Components and State](Lessons/Lesson-09.md) | - |
 |  - |  Wed, Nov 25  | **Holiday - Thanksgiving** |
-| 10 |  Mon, Nov 30  | [Component State](Lessons/Lesson-10.md) | - | 
-| 11 |  Wed, Dec 2   | [Forms and User inputs](Lessons/Lesson-11.md) | - | 
-| 12 |  Mon, Dec 7   | [Show Your Worl: Building and Publishing](Lessons/Lesson-12.md) | - | 
+| 10 |  Mon, Nov 30  | [Forms and user input](Lessons/Lesson-10.md) | - | 
+| 11 |  Wed, Dec 2   | [Building and Publishing](Lessons/Lesson-11.md) | - | 
+| 12 |  Mon, Dec 7   | [Show Your Work](Lessons/Lesson-12.md) | - | 
 | 13 |  Wed, Dec 9   | [Final Assessment: Test your Knowledge](Lessons/Lesson-13.md) | - | 
 
 <!-- | 14 | Thu, May 14 | [Present your work](Lessons/Lesson-14.md) | - | -->
