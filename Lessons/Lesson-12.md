@@ -46,6 +46,10 @@ An easy what to format your feedback is in the form of:
 
 Review your work with your peers. Each of you will present your work. Give yourself up to 5 minutes to show your work. Take a few minutes to provide feedback.
 
+In groups of 4 take 3 to 5 minutes to show your work. Take a couple more minutes to provide feedback. 
+
+Choose one person from your group to show their work to the whole class. 
+
 ## Final Assessment Study Guide 
 
 The final assessment is used to measure your skills and check your fit for the next classes that come in the track. 
