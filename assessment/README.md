@@ -1,14 +1,20 @@
 # Assessment
 
+These challenges are an assessment of your skills. It's job is to measure your ability to succeed in upcoming classes. 
+
 Your goal is to make a project with React. Load some JSON, display components, use state, and use Array.map.
 
 ## Challenges 
 
 ### Challenge 1
 
-Create a React Project. 
+Create a React Project.
 
-I should be able to run your project with `npm start` or `yarn start`. 
+I should be able to run your project with `npm start` or `yarn start`.
+
+Name your project with your name and few 1.2:
+
+`<name>-few-1-2-final`
 
 ### Challenge 2 
 
@@ -23,13 +29,15 @@ Display this component in `App.js`.
 
 ### Challenge 3
 
-Import the `metal.json`. You can do this by adding the file to your src directory and using: 
+Create a component that displays information about the data. Name this component: `MetalMeta.js`
+
+Import the `metal.json`. You can do this by adding the file to your src directory and using:
 
 `import data from './metal.json'`
 
-Thie JSON file contains an array of objects, each of which describes a metal band. 
+This JSON file contains an array of objects, each of which describes a metal band. 
 
-Display the number of bands at the top of the page. Display the count something like: 
+Display the number of bands at the top of the page. Display the count something like:
 
 - Bands: {#}
 
