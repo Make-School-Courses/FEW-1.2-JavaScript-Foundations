@@ -124,7 +124,9 @@ Extra stretch: Also search by style.
 
 Hint! use `someNumber.toLocaleString('en')`. For example: `(1000000).toLocaleString('en')` should return `"1,000,000"`.
 
-3) 
+3) Display the styles in the `<Band>` component as a list. To do this you need split the style on the ','. Something like this: `band.style.split(',')`. Map this to a list items: `<li>` and display the list items. 
+
+
 
 ## Assessing your knowledge
 
