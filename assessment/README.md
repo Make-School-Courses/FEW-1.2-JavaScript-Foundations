@@ -4,6 +4,10 @@ These challenges are a tool to measure the skills you developed this term.
 
 Your goal is to make a project with React, load data from a JSON file, create and display components, use state, and use Array.map to create a collection of components.
 
+Here is a screen shot of what you will be building. What you make should similar but doesn't need to look exactly like it. 
+
+![Screen Shot](Screen-Shot.png)
+
 ## Challenges 
 
 ### Challenge 1: Make a React project
