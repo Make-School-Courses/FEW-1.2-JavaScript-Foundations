@@ -110,11 +110,21 @@ Here is one way to handle this problem.
 - Make two copies of the Band component: Band and BandSplit
 - When you are mapping your band data look at the band.split value. If split === '-' return the Band component, else return a BandSplit component. 
 
-### Stretch Challenge: Search
+### Stretch Challenges
 
-Add an input field that allows us to search for bands by their band name. 
+
+
+1) Add an input field that allows us to search for bands by their band name. 
 
 Extra stretch: Also search by style.
+
+2) The number of fans is in thousands. Multiply the fans by 1000 and format the number with commas. For example: 
+
+4147 would become: 4,147,000
+
+Hint! use `someNumber.toLocaleString('en')`. For example: `(1000000).toLocaleString('en')` should return `"1,000,000"`.
+
+3) 
 
 ## Assessing your knowledge
 
