@@ -126,6 +126,8 @@ Hint! use `someNumber.toLocaleString('en')`. For example: `(1000000).toLocaleStr
 
 4) In your meta component display the total number of all fans. To do this you'll need to loop through all bands and add the number of fans together, then multiply the total by 10000. Extra stretch: format the number with commas. 
 
+5) Publish your work to GitHub pages! 
+
 ## Assessing your knowledge
 
 Use this rubric to assess how your understanding of the learning objectives. You should be striving for an average score of 1 or greater in each row. 
