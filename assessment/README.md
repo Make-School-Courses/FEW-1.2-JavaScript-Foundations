@@ -112,8 +112,6 @@ Here is one way to handle this problem.
 
 ### Stretch Challenges
 
-
-
 1) Add an input field that allows us to search for bands by their band name. 
 
 Extra stretch: Also search by style.
@@ -126,7 +124,7 @@ Hint! use `someNumber.toLocaleString('en')`. For example: `(1000000).toLocaleStr
 
 3) Display the styles in the `<Band>` component as a list. To do this you need split the style on the ','. Something like this: `band.style.split(',')`. Map this to a list items: `<li>` and display the list items. 
 
-
+4) In your meta component display the total number of all fans. To do this you'll need to loop through all bands and add the number of fans together, then multiply the total by 10000. Extra stretch: format the number with commas. 
 
 ## Assessing your knowledge
 
