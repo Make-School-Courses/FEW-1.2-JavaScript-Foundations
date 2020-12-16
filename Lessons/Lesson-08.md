@@ -130,6 +130,8 @@ You can see the warning in the console.
 
 Add a key by giving each element a unique key prop. The value can be anything you like but keys in a collection should unique.
 
+You may think list index would be ideal, however this is an anti-pattern. *Anti-patterns are common solutions to common problems where the solution is ineffective and may result in undesired consequences.*
+
 ```JS
 const headings = [
   <Heading key="Apples" str='Apples' />,
