@@ -240,7 +240,7 @@ When writing JS expressions (JS code) inside a block of JSX you must wrap is in 
 
 <!-- > -->
 
-Props are an important part of components. **Props are values passed to a component to configure it.**
+Props are an important part of components. **Props are attributes passed into a component. The component then receives the attributes as a prop object**
 
 ```JS
 const Heading = props => {
@@ -253,6 +253,8 @@ Pass props to your component through attributes:
 ```JSX
 <Heading str='Hello World' />
 ```
+
+Any attribute passed into a component will be available to the component through the **props object**.
 
 <!-- > -->
 
