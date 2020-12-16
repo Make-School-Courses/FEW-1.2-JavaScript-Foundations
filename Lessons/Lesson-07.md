@@ -242,6 +242,18 @@ When writing JS expressions (JS code) inside a block of JSX you must wrap is in 
 
 Props are an important part of components. **Props are attributes passed into a component. The component then receives the attributes as a prop object**
 
+In class-based components:
+
+```JS
+class Heading extends React.Component {
+  render () {
+    return <h1>{this.props.str}</h1>
+  }
+}
+```
+
+In functional components:
+
 ```JS
 const Heading = props => {
   return <h1>{props.str}</h1>
