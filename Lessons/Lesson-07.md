@@ -187,13 +187,28 @@ https://reactjs.org/docs/jsx-in-depth.html
 
 <!-- > -->
 
+When creating components, you have the choice between two different ways:
+
+1. Class-based components
+2. Functional components
+
+A Class-based component has a render method that returns JSX.
+
+```JS
+class Heading extends React.Component {
+  render () {
+    return <h1>Hello World</h1>
+  }
+}
+```
+
+A functional component is just a function that returns JSX.
+
 ```JS
 const Heading = () => {
   return <h1>Hello World</h1>
 }
 ```
-
-
 
 Use this component like this:
 
