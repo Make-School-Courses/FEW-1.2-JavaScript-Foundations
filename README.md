@@ -45,21 +45,20 @@ By the end of the course will be able to:
 
 | Class | Date | Topics | Assignment |
 |:------|:-----|:-------|:-----------|
-|  1 |  Wed, Oct 21  | [JavaScript Basics](Lessons/Lesson-01.md) | [Break Out: Tutorial](Assignments/Assignment-1-Break-Out.md) | 
-|  2 |  Mon, Oct 26  | [JavaScript Professional Best Practice](Lessons/Lesson-02.md) | [Break Out: EsLint](Assignments/Assignment-2-EsLint.md) |
-|  3 |  Wed, Oct 28  | [JavaScript OOP](Lessons/Lesson-03.md) | [Break Out: OOP](Assignments/Assignment-3-OOP.md) |
-|  - |  Mon, Nov 2   | **Vote! - Civic Responsibility Break** |
-|  4 |  Wed, Nov 4   | [OOP and Classes](Lessons/Lesson-04.md) | [Break Out: OOP Inheritance](Assignments/Assignment-4-Inheritance.md) |
-|  5 |  Mon, Nov 9   | [JS OOP Inheritence](Lessons/Lesson-05.md) | Lab |
-|  6 |  Wed, Nov 11  | [Bundling JS](Lessons/Lesson-06.md) | [Break out: Bundling JavaScript](Assignments/Assignment-5-bundling.md) |
-|  7 |  Mon, Nov 16  | [Single Page Applications](Lessons/Lesson-07.md) | [React: Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) |
-|  8 |  Wed, Nov 18  | [Component Architecture](Lessons/Lesson-08.md) | [Final Project: Getting started](./Assignments/Assignment-7-fina-project.md) |
-|  9 |  Mon, Nov 23  | [Components and State](Lessons/Lesson-09.md) | - |
-|  - |  Wed, Nov 25  | **Holiday - Thanksgiving** |
-| 10 |  Mon, Nov 30  | [Forms and user input](Lessons/Lesson-10.md) | - | 
-| 11 |  Wed, Dec 2   | [Building and Publishing](Lessons/Lesson-11.md) | - | 
-| 12 |  Mon, Dec 7   | [Show Your Work](Lessons/Lesson-12.md) | - | 
-| 13 |  Wed, Dec 9   | [Final Assessment: Test your Knowledge](Lessons/Lesson-13.md) | - | 
+|  - |  Mon, Jan 18 | **No Class - MLK Day** | 
+|  1 |  Wed, Jan 20 | [JavaScript Basics](Lessons/Lesson-01.md) | [Break Out: Tutorial](Assignments/Assignment-1-Break-Out.md) | 
+|  2 |  Mon, Jan 25  | [JavaScript Professional Best Practice](Lessons/Lesson-02.md) | [Break Out: EsLint](Assignments/Assignment-2-EsLint.md) |
+|  3 |  Wed, Jan 27  | [JavaScript OOP](Lessons/Lesson-03.md) | [Break Out: OOP](Assignments/Assignment-3-OOP.md) |
+|  4 |  Mon, Feb 1   | [OOP and Classes](Lessons/Lesson-04.md) | [Break Out: OOP Inheritance](Assignments/Assignment-4-Inheritance.md) |
+|  5 |  Wed, Feb 3   | [JS OOP Inheritence](Lessons/Lesson-05.md) | Lab |
+|  6 |  Mon, Feb 8  | [Bundling JS](Lessons/Lesson-06.md) | [Break out: Bundling JavaScript](Assignments/Assignment-5-bundling.md) |
+|  7 |  Wed, Feb 10  | [Single Page Applications](Lessons/Lesson-07.md) | [React: Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) |
+|  8 |  Mon, Feb 15  | [Component Architecture](Lessons/Lesson-08.md) | [Final Project: Getting started](./Assignments/Assignment-7-fina-project.md) |
+|  9 |  Wed, Feb 17  | [Components and State](Lessons/Lesson-09.md) | - |
+| 10 |  Mon, Feb 22 | [Forms and user input](Lessons/Lesson-10.md) | - | 
+| 11 |  Wed, Feb 24   | [Building and Publishing](Lessons/Lesson-11.md) | - | 
+| 12 |  Mon, Mar 1   | [Show Your Work](Lessons/Lesson-12.md) | - | 
+| 13 |  Wed, Mar 3   | [Final Assessment: Test your Knowledge](Lessons/Lesson-13.md) | - | 
 
 <!-- | 14 | Thu, May 14 | [Present your work](Lessons/Lesson-14.md) | - | -->
 
