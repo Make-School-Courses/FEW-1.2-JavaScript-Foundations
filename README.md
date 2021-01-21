@@ -64,7 +64,7 @@ By the end of the course will be able to:
 
 ## Assignments
 
-Assignments will be made available at the date listed and **must be turned in one week after becoming available (with exception to the final project which must be turned in by the last day of class).
+Assignments will be made available at the date listed and **must be turned in one week after becoming available (with exception to the final project which must be turned in by the last day of class)**.
 
 Assignments **must be turned in via [Gradescope](https://gradescope.com) for credit!**
 
