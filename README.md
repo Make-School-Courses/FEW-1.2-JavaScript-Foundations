@@ -62,6 +62,28 @@ By the end of the course will be able to:
 
 <!-- | 14 | Thu, May 14 | [Present your work](Lessons/Lesson-14.md) | - | -->
 
+## Assignments
+
+Assignments will be made available at the date listed and **must be turned in one week after becoming available (with exception to the final project which must be turned in by the last day of class).
+
+Assignments **must be turned in via [Gradescope](https://gradescope.com) for credit!**
+
+| Topic | Date Made Available | Assignment |
+| :---: | :-----------------: | :--------: |
+| 1 |  Wed, Jan 20 |  [Break Out: Tutorial](Assignments/Assignment-1-Break-Out.md) | 
+| 2 |  Mon, Jan 25  | [Break Out: EsLint](Assignments/Assignment-2-EsLint.md) |
+| 3 |  Wed, Jan 27  | [Break Out: OOP](Assignments/Assignment-3-OOP.md) |
+| 4 |  Mon, Feb 1   | [Break Out: OOP Inheritance](Assignments/Assignment-4-Inheritance.md) |
+| 5 |  Mon, Feb 8  | [Break out: Bundling JavaScript](Assignments/Assignment-5-bundling.md) |
+| 6 |  Wed, Feb 10 | [React: Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) |
+| 7 |  Mon, Feb 15 | [Final Project: Getting started](./Assignments/Assignment-7-fina-project.md) |
+
+
+
+## Class Recordings
+
+All class recordings will be available [here](https://drive.google.com/drive/folders/1OJ2z6Nr2foddItk2gKUrXPxwMsGYi0i3?usp=sharing) no later than 24 hours after the class session. For privacy reasons, please do not share the recordings outside of the Make School student body.
+
 ### Projects
 
 - Project 1 - Break Out - Assignments 1-5
