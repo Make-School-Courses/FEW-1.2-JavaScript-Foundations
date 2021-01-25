@@ -2,7 +2,7 @@
 
 | Course Section | Instructor | Slack Channel | Course Website | Instructor 1-on-1 |
 | :---: | :---: | :---: | :---: | :---: |
-| A | **@mitchell** | `#few-1_2` | [make.sc/few1.2](https://make.sc/few1.2) | [Virtual Office](https://make.sc/mitchell-zoom) |
+| A | **@Jay** | `#few-1_2` | [make.sc/few1.2](https://join.slack.com/share/zt-lbncudk5-BDpt5WqMBlcULpOf1f4IuQ) | [Virtual Office](https://make.sc/jay-zoom) |
 
 ## Course Description
 
