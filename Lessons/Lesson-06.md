@@ -236,12 +236,12 @@ Make the following folders:
 
 <!-- > -->
 
-Arrange your files. You should already have some of the files. 
+Arrange your files. You should already have some but may need to create them as well! 
 
 - src/index.js (Code you wrote)
 - dist/index.html (Code compiled by webpack)
 - package.json
-- webpack.config.js
+- webpack.config.js (can be manually created as an empty .js file)
 
 <!-- > -->
 
@@ -366,6 +366,8 @@ Bundle your project in development mode:
 `npm run develop`
 
 <!-- > -->
+
+Notice that since we aren't running a specific file but rather **running a script**, we use `npm run scriptName`!
 
 Running this script should launch Webpack in development mode. It should compile your .js files and create dist.bundle.js. 
 
