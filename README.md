@@ -45,7 +45,6 @@ By the end of the course will be able to:
 
 | Class | Date | Topics | Assignment |
 |:------|:-----|:-------|:-----------|
-|  - |  Mon, Jan 18 | **No Class - MLK Day** | 
 |  1 |  Wed, Jan 20 | [JavaScript Basics](Lessons/Lesson-01.md) | [Break Out: Tutorial](Assignments/Assignment-1-Break-Out.md) | 
 |  2 |  Mon, Jan 25  | [JavaScript Professional Best Practice](Lessons/Lesson-02.md) | [Break Out: EsLint](Assignments/Assignment-2-EsLint.md) |
 |  3 |  Wed, Jan 27  | [JavaScript OOP](Lessons/Lesson-03.md) | [Break Out: OOP](Assignments/Assignment-3-OOP.md) |
@@ -77,8 +76,6 @@ By the end of the course will be able to:
 | 13 |  Tue, July 13        | Lab and Review | - |
 | 14 |  Thu, July 15        | [Final Assessment: Test your Knowledge](Lessons/Lesson-13.md) | - |
 
-
-<!-- | 14 | Thu, May 14 | [Present your work](Lessons/Lesson-14.md) | - | -->
 
 ## Assignments
 
