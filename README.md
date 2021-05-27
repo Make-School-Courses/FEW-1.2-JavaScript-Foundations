@@ -60,6 +60,24 @@ By the end of the course will be able to:
 | 12 |  Mon, Mar 1   | [Show Your Work](Lessons/Lesson-12.md) | - | 
 | 13 |  Wed, Mar 3   | [Final Assessment: Test your Knowledge](Lessons/Lesson-13.md) | - | 
 
+| Class |          Date          |                 Topics                  |
+|:-----:|:----------------------:|:---------------------------------------:|
+|  1 |  Tue, June 1         | [JavaScript Basics](Lessons/Lesson-01.md) | [Break Out: Tutorial](Assignments/Assignment-1-Break-Out.md) | 
+|  2 |  Thu, June 3         | [JavaScript Professional Best Practice](Lessons/Lesson-02.md) | [Break Out: EsLint](Assignments/Assignment-2-EsLint.md) |
+|  3 |  Tue, June 8         | [JavaScript OOP](Lessons/Lesson-03.md) | [Break Out: OOP](Assignments/Assignment-3-OOP.md) |
+|  4 |  Thu, June 10        | [OOP and Classes](Lessons/Lesson-04.md) | [Break Out: OOP Inheritance](Assignments/Assignment-4-Inheritance.md) |
+|  5 |  Tue, June 15        | [JS OOP Inheritence](Lessons/Lesson-05.md) | Lab |
+|  6 |  Thu, June 17        | [Bundling JS](Lessons/Lesson-06.md) | [Break out: Bundling JavaScript](Assignments/Assignment-5-bundling.md) |
+|  7 |  Tue, June 22        | [Single Page Applications](Lessons/Lesson-07.md) | [React: Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) |
+|  8 |  Thu, June 24        | [Component Architecture](Lessons/Lesson-08.md) | [Final Project: Getting started](./Assignments/Assignment-7-fina-project.md) |
+|  9 |  Tue, June 29        | [Components and State](Lessons/Lesson-09.md) | - |
+| 10 |  Thu, July 1         | [Forms and user input](Lessons/Lesson-10.md) | - | 
+| 11 |  Tue, July 6         | [Building and Publishing](Lessons/Lesson-11.md) | - |
+| 12 |  Thu, July 8         | [Show Your Work](Lessons/Lesson-12.md) | - |
+| 13 |  Tue, July 13        | Lab and Review | - |
+| 14 |  Thu, July 15        | [Final Assessment: Test your Knowledge](Lessons/Lesson-13.md) | - |
+
+
 <!-- | 14 | Thu, May 14 | [Present your work](Lessons/Lesson-14.md) | - | -->
 
 ## Assignments
@@ -70,13 +88,13 @@ Assignments **must be turned in via [Gradescope](https://gradescope.com) for cre
 
 | Topic | Date Made Available | Assignment |
 | :---: | :-----------------: | :--------: |
-| 1 |  Wed, Jan 20 |  [Break Out: Tutorial](Assignments/Assignment-1-Break-Out.md) | 
-| 2 |  Mon, Jan 25  | [Break Out: EsLint](Assignments/Assignment-2-EsLint.md) |
-| 3 |  Wed, Jan 27  | [Break Out: OOP](Assignments/Assignment-3-OOP.md) |
-| 4 |  Mon, Feb 1   | [Break Out: OOP Inheritance](Assignments/Assignment-4-Inheritance.md) |
-| 5 |  Mon, Feb 8  | [Break out: Bundling JavaScript](Assignments/Assignment-5-bundling.md) |
-| 6 |  Wed, Feb 10 | [React: Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) |
-| 7 |  Mon, Feb 15 | [Final Project: Getting started](./Assignments/Assignment-7-fina-project.md) |
+| 1 |  Tue, June 1 |  [Break Out: Tutorial](Assignments/Assignment-1-Break-Out.md) | 
+| 2 |  Thu, June 3  | [Break Out: EsLint](Assignments/Assignment-2-EsLint.md) |
+| 3 |  Tue, June 8  | [Break Out: OOP](Assignments/Assignment-3-OOP.md) |
+| 4 |  Thu, June 10   | [Break Out: OOP Inheritance](Assignments/Assignment-4-Inheritance.md) |
+| 5 |  Thu, June 17  | [Break out: Bundling JavaScript](Assignments/Assignment-5-bundling.md) |
+| 6 |  Tue, June 22  | [React: Fundamentals Tutorial](Assignments/Assignment-6-react-fundamentals.md) |
+| 7 |  Thu, June 24  | [Final Project: Getting started](./Assignments/Assignment-7-fina-project.md) |
 
 
 
