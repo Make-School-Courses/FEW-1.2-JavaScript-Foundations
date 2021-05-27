@@ -39,9 +39,9 @@ By the end of the course will be able to:
 
 ## Schedule
 
-**Course Dates:** Wednesday, October 21 – Wednesday, December 9, 2020 (8 weeks)
+**Course Dates:** Monday, May 31 – Wednesday, July 14, 2021 (7 weeks)
 
-**Class Times:** Monday, Wednesday at 2:45am–5:30pm (13 class sessions)
+**Class Times:** Monday, Wednesday at 4:00pm–5:30pm (12 class sessions)
 
 | Class |          Date          |                 Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
