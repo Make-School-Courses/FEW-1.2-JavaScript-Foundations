@@ -81,7 +81,7 @@ Assignments **must be turned in via [Gradescope](https://gradescope.com) for cre
 
 ## Class Recordings
 
-All class recordings will be available [here](https://drive.google.com/drive/folders/1OJ2z6Nr2foddItk2gKUrXPxwMsGYi0i3?usp=sharing) no later than 24 hours after the class session. For privacy reasons, please do not share the recordings outside of the Make School student body.
+All class recordings will be available [here](https://drive.google.com/drive/folders/15gooeULA5qDnf6icbConWJTzNl5xPPPj?usp=sharing) no later than 24 hours after the class session. For privacy reasons, please do not share the recordings outside of the Make School student body.
 
 ### Projects
 
